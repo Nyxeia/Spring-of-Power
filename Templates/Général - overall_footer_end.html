@@ -60,28 +60,13 @@ $(document).ready(function() {
 <div class="sidebar">
 	<!-- Barre switcheroo -->
 	<nav id="switcheroo" class="switcheroo"></nav>
-  
-  	<div class="sidebar_bottom">
-          
-            <!-- Lien retour en haut -->
-            <a href="#top"><i class="ion-chevron-up"></i></a>
-        
-            <!-- Switch thème button -->
-            <div data-theme-controls>
-                <button class="color-scheme-toggle" title="Activer le mode sombre" aria-describedby="theme-controls-focus-text">
-                    <!-- Light theme -->
-                    <div class="icon light"><i class="ion-ios-sunny"></i></div>
-                    <!-- Dark theme -->
-                    <div class="icon dark"><i class="ion-ios-moon"></i></div>
-                </button>
-            </div>
-        
-            <!-- Lien retour en bas -->
-            <a href="#bottom"><i class="ion-chevron-down"></i></a>
-        </div>
 </div>
   
-  
+<!-- Ascenseur -->
+<div class="elevator">
+	<a href="#top">&#9650;</a>
+	<a href="#bottom">&#9660;</a>
+</div>
   
 <!-- Wombat.js -->
 <script src="https://cdn.jsdelivr.net/gh/caezd/wombat/dist/wombat.min.js"></script>
@@ -117,54 +102,6 @@ $(document).ready(function() {
   
 </script>
 
-
-  <script>(function () {
-    var html = document.documentElement;
-    var themeControls = document.querySelector("[data-theme-controls]");
-    var toggle = themeControls.querySelector(".color-scheme-toggle");
-    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
-
-
-    var setToggleLabel = function () {
-        let mode;
-
-        mode = !html.dataset.colorScheme
-            ? prefersDark.matches
-                ? "dark"
-                : "light"
-            : html.dataset.colorScheme;
-
-        toggle.setAttribute(
-            "title",
-            "Enable" + (mode === "dark" ? "light" : "dark") + "mode"
-        );
-    };
-
-    var setColorScheme = function (value) {
-        html.dataset.colorScheme = value;
-        localStorage.setItem("color-scheme", value);
-        setToggleLabel();
-    };
-
-    var init = function () {
-        setToggleLabel();
-    };
-
-    toggle.addEventListener("click", function () {
-        if (!html.dataset.colorScheme && prefersDark.matches) {
-            setColorScheme("light");
-            updateColorSchemeStatus("light");
-            return;
-        }
-
-        var scheme = html.dataset.colorScheme === "dark" ? "light" : "dark";
-
-        setColorScheme(scheme);
-    });
-
-    init();
-
-    })();</script>
 </body>
 </html>
             

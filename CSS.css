@@ -1,27 +1,24 @@
-/****** STRUCTURE DU FORUM ----------------------------------------------------------- 
- ****** Elements du forum qui définissent sa structure et sa hiérachie sur toutes les pages 
- ****** (ne les RENOMMEZ PAS, ils sont généraux aux pages Web ou à Forumactif) ------- ******/
-
-/*** ROOT 
- *** Tutoriel : geniuspandalab.tumblr.com/post/634694343906689024/cssroot ***/
-
-/* VARIABLE DU MODE DE BASE (ici clair) */
+/* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    --header: url('https://nsm09.casimages.com/img/2021/03/21//21032105561425394217327016.png');
+    --header: url('https://images2.imgbox.com/1b/a5/4bb6Hgju_o.png');
 
-    --neutral: #fafbfc;
-    --neutralDark: #f2f4f9;
-    --neutralDarker: #dce3f4;
+    --neutral: #1e212a;
+    --neutralDark: #181a21;
+    --neutralDarker: #313543;
 
-    --contrast: #171938;
-    --contrastLight: #232657;
-    --contrastLighter: #c3c8f3;
+    --contrast: #e5e5f0;
+    --contrastLight: #F4F4F4;
+    --contrastLighter: #40485e;
 
-    --accentClr: #4B57C5;
+    --accentClr: #7583ff;
     --accentClrDark: #333c92;
 
-    --textColor: #232657;
-    --textColorAccent: #000;
+    --textColor: #c7c5cd;
+    --textColorAccent: #e5e5f0;
+
+    --border: 1px solid #2b2e3b;
+
+    --shadowBox: 0 0 20px var(--neutralDark);
 
     --gradient: linear-gradient(90deg, var(--accentClrDark) 55%, var(--accentClr));
     --border: 1px solid #2a2a2a;
@@ -38,7 +35,69 @@
     --main-font: 'Chakra Petch';
     --main-font-spacing: 1.5px;
 
-     /* VARIABLES MESSENGER */
+    --scrollbar-thumb: var(--accentClr);
+    --scrollbar-bg: var(--neutralDark);
+
+    /* VARIABLES MESSENGER */
+    --FAM-pluginBackground: #1e212a;
+    --FAM-chatBackground: #181a21;
+    --FAM-textareaBackground: #1e212a;
+    --FAM-msgBackground: #0B0E17;
+    --FAM-myMsgBackground: #1e212a;
+    --FAM-quoteBackground: rgba(255,255,255,0.04);
+
+    --FAM-gradient: linear-gradient(-90deg, rgba(30,33,42,1) 20%, rgba(30,33,42,0) 100%);
+    --FAM-gradientTop: linear-gradient(180deg, rgba(24, 26, 33,1) 20%, rgba(24, 26, 33,0) 100%);
+    --FAM-gradientBot: linear-gradient(0deg, rgba(24, 26, 33,1) 20%, rgba(24, 26, 33,0) 100%);
+
+    --FAM-border: 1px solid #313543;
+    --FAM-shadow: 0 0 20px var(--neutralDark);
+  
+    --FAM-sleepModeBackground: rgba(0, 0, 0, 0.5);
+    --FAM-newMsgAnimation: rgb(255, 255, 255,.5);
+
+    --FAM-accentClr: #7583ff;
+    --FAM-secondClr: #333c92;
+    --FAM-fontClr: #c7c5cd;
+    --FAM-fontLightClr: #9a96a3;
+    --FAM-linkClr: #7583ff;
+    --FAM-titleClr: #f0f0f8;
+    --FAM-buttonsClr: #E5E5E5;
+
+    --FAM-fontSize: 14px;
+    --FAM-titleFont: 'Open Sans';
+    --FAM-titleSize: 24px;
+
+    --FAM-light: white;
+    --FAM-dark: black;
+
+    --FAM-windowSize: 750px;
+}
+
+
+/* VARIABLES DU MODE INVERSE (ici clair) */
+ [data-theme="light"] {
+    --header: url('https://nsm09.casimages.com/img/2021/03/21//21032105561425394217327016.png');
+ 
+    --neutral: #fafbfc;
+    --neutralDark: #f2f4f9;
+    --neutralDarker: #dce3f4;
+
+    --contrast: #171938;
+    --contrastLight: #232657;
+    --contrastLighter: #c3c8f3;
+
+    --accentClr: #4B57C5;
+    --accentClrDark: #333c92;
+
+    --textColor: #232657;
+    --textColorAccent: #000;
+
+    --border: 1px solid #2b2e3b;
+
+    --shadowBox: 0 0 20px var(--neutralDark);
+
+    /* VARIABLES MESSENGER */
     --FAM-pluginBackground: #fafbfc;
     --FAM-chatBackground: #f2f4f9;
     --FAM-textareaBackground: #fafbfc;
@@ -63,130 +122,80 @@
     --FAM-linkClr: #4B57C5;
     --FAM-titleClr: #171938;
     --FAM-buttonsClr: #171938;
-
-    --FAM-fontSize: 14px;
-    --FAM-titleFont: 'Open Sans';
-    --FAM-titleSize: 24px;
-
-    --FAM-light: white;
-    --FAM-dark: black;
-
-    --FAM-windowSize: 750px;
-}
-
-
-/* VARIABLES DU MODE INVERSE (ici sombre) */
- [data-color-scheme="dark"] {
-     --header: url('https://images2.imgbox.com/1b/a5/4bb6Hgju_o.png');
- 
-    --neutral: #1e212a;
-    --neutralDark: #181a21;
-    --neutralDarker: #313543;
-
-    --contrast: #e5e5f0;
-    --contrastLight: #F4F4F4;
-    --contrastLighter: #40485e;
-
-    --accentClr: #7583ff;
-    --accentClrDark: #333c92;
-
-    --textColor: #c7c5cd;
-    --textColorAccent: #e5e5f0;
-
-    --border: 1px solid #2b2e3b;
-
-    --shadowBox: 0 0 20px var(--neutralDark);
-
-    /* VARIABLES MESSENGER */
-    --FAM-pluginBackground: #1e212a;
-    --FAM-chatBackground: #181a21;
-    --FAM-textareaBackground: #1e212a;
-    --FAM-msgBackground: #0B0E17;
-    --FAM-myMsgBackground: #1e212a;
-
-    --FAM-quoteBackground: rgba(255,255,255,0.04);
-
-    --FAM-gradient: linear-gradient(-90deg, rgba(30,33,42,1) 20%, rgba(30,33,42,0) 100%);
-    --FAM-gradientTop: linear-gradient(180deg, rgba(24, 26, 33,1) 20%, rgba(24, 26, 33,0) 100%);
-    --FAM-gradientBot: linear-gradient(0deg, rgba(24, 26, 33,1) 20%, rgba(24, 26, 33,0) 100%);
-
-    --FAM-border: 1px solid #313543;
-    --FAM-shadow: 0 0 20px var(--neutralDark);
-  
-    --FAM-sleepModeBackground: rgba(0, 0, 0, 0.5);
-    --FAM-newMsgAnimation: rgb(255, 255, 255,.5);
-
-    --FAM-accentClr: #7583ff;
-    --FAM-secondClr: #333c92;
-    --FAM-fontClr: #c7c5cd;
-    --FAM-fontLightClr: #9a96a3;
-    --FAM-linkClr: #7583ff;
-    --FAM-titleClr: #f0f0f8;
-    --FAM-buttonsClr: #E5E5E5;
  }
 
- @media (prefers-color-scheme: dark) {
-   [data-color-scheme=dark] {
-     --header: url('https://images2.imgbox.com/1b/a5/4bb6Hgju_o.png');
- 
-    --neutral: #1e212a;
-    --neutralDark: #181a21;
-    --neutralDarker: #313543;
-
-    --contrast: #e5e5f0;
-    --contrastLight: #F4F4F4;
-    --contrastLighter: #40485e;
-
-    --accentClr: #7583ff;
-    --accentClrDark: #333c92;
-
-    --textColor: #c7c5cd;
-    --textColorAccent: #e5e5f0;
-
-    --border: 1px solid #2b2e3b;
-
-    --shadowBox: 0 0 20px var(--neutralDark);
-
-    /* VARIABLES MESSENGER */
-    --FAM-pluginBackground: #1e212a;
-    --FAM-chatBackground: #181a21;
-    --FAM-textareaBackground: #1e212a;
-    --FAM-msgBackground: #0B0E17;
-    --FAM-myMsgBackground: #1e212a;
-
-    --FAM-quoteBackground: rgba(255,255,255,0.04);
-
-    --FAM-gradient: linear-gradient(-90deg, rgba(30,33,42,1) 20%, rgba(30,33,42,0) 100%);
-    --FAM-gradientTop: linear-gradient(180deg, rgba(24, 26, 33,1) 20%, rgba(24, 26, 33,0) 100%);
-    --FAM-gradientBot: linear-gradient(0deg, rgba(24, 26, 33,1) 20%, rgba(24, 26, 33,0) 100%);
-
-    --FAM-border: 1px solid #313543;
-    --FAM-shadow: 0 0 20px var(--neutralDark);
-    
-    --FAM-sleepModeBackground: rgba(0, 0, 0, 0.5);
-    --FAM-newMsgAnimation: rgb(255, 255, 255,.5);
-
-    --FAM-accentClr: #7583ff;
-    --FAM-secondClr: #333c92;
-    --FAM-fontClr: #c7c5cd;
-    --FAM-fontLightClr: #9a96a3;
-    --FAM-linkClr: #7583ff;
-    --FAM-titleClr: #f0f0f8;
-    --FAM-buttonsClr: #E5E5E5;
-   }
- }
-
-
-/* S'applique à TOUS les éléments du forum*/
 * {
     box-sizing: border-box; /*évite que les éléments soient agrandis par le padding*/
-    /* SCROLLBAR CUSTOM POUR MOZILLA */
-    scrollbar-color: var(--contrastLight);
     scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accentClrDark);
 }
 
-/*** ------------------------------- ***/
-/*** TOUTES LES PAGES --------------- ***/
+.theme-switch-wrapper {
+    display: inline-block;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    right: 25px;
+}
+.theme-switch-wrapper span {
+    font-size: var(--little-size);
+    font-family: var(--main-font);
+}
+.theme-switch {
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    width: 40px;
+    margin-top: 40px;
+}
+.theme-switch input {
+    display: none;
+}
+.slider {
+    background-color: #000;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+.slider:before {
+    background-color: var(--accentClr);
+    bottom: 4px;
+    content: "";
+    height: 12px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 12px;
+}
+input:checked + .slider {
+    background-color: #ccc;
+}
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+.slider.round {
+    border-radius: 20px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
 
 /* FOND DU FORUM ---*/
 body {
@@ -243,57 +252,35 @@ body {
 
 .sidebar {
     position: fixed;
-    background-color: var(--neutral);
     inset: 0;
     width: max-content;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 15px 10px;
     z-index: 999;
+    height: 100%;
+    max-height: calc(100% - 95px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    direction: rtl;
 }
 
-/* Conteneur de l'ascenseur
- * Sert essentiellement à définir où le placer dans la page */
- .sidebar_bottom {
-    width: 45px;
+.elevator {
+    position: fixed;
+    bottom: 70px;
+    right: 8px;
+    width: 52px;
     z-index: 999;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
-
-/* Lien de renvoi haut/bas */
-.sidebar_bottom > a {
-    padding: 5px 8px;
-    background: var(--neutralDark);
-    border-radius: 5px;
+.elevator a {
+    display: block;
     text-align: center;
-}
-
-/* BOUTON CHANGEMENT DE THEME ---*/
-@media (prefers-color-scheme: dark) {.color-scheme-toggle .dark{display: none}}
-@media (prefers-color-scheme: light) {.color-scheme-toggle .light{display: none}}
-.color-scheme-toggle,
-[data-color-scheme="light"] .color-scheme-toggle .dark,
-[data-color-scheme="dark"] .color-scheme-toggle .light {display: block;width: 100%;}
-
-[data-color-scheme="dark"] .color-scheme-toggle .dark,
-[data-color-scheme="light"] .color-scheme-toggle .light {display: none}
-
-
-
-.color-scheme-toggle {
-    background-color: var(--neutralDark);
-    padding: 5px 8px;
-    font-size: 36px;
-    text-align: center;
-    border-radius: 5px;
-    color: var(--textColor);
-}
-
-.color-scheme-toggle:hover {
+    font-size: var(--title-size);
     color: var(--accentClr);
+    transition: 0.4s;
+}
+.elevator a:hover {
+    color: var(--accentClrDark);
 }
 
 
@@ -306,9 +293,9 @@ body {
 
 /* LIENS DU FORUM --- */
 a {
-    font-weight: 600;
     text-decoration: none;
     color: var(--textColorAccent);
+    font-family: var(--main-font);
 }
 
 /*liens au survol*/
@@ -590,8 +577,9 @@ a.specials_links:empty {
 
 /* Toute la toolbar */
 #fa_toolbar {
-    font-size: var(--little-size);
     font-family: var(--font);
+    width: 100%;
+    z-index: 2000!important;
 }
 
 /* Supression de la barre de recherche, des boutons sociaux et des flèches */
@@ -610,15 +598,12 @@ a.specials_links:empty {
 
 /* Conteneur du lien de bienvenue et notification */
 #fa_right {
-    position: relative;
-    margin-top: 5px;
-    margin-right: 5px;
     background: var(--neutral);
-    border-radius: 5px;
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
-    padding: 5px;
+    justify-content: flex-end;
+    padding-right: 10px;
 }
 
 /* LIENS DE LA TOOLBAR ---*/
@@ -710,6 +695,7 @@ ul#notif_list {
     width: 380px;
     padding: 5px;
     flex-direction: column-reverse;
+    margin-right: 5px;
 }
 
 /* Ligne d'une notification */
@@ -1071,17 +1057,9 @@ ul#notif_list {
 
 /* Conteneur de la barre de nav */
 .navbar {
-    background: var(--neutralDark);
-    border-radius: 5px;
-    margin-top: 10px;
-    padding: 10px;
-
+    padding: 8px;
     display: flex;
-    /* permet de mettre les liens sur une ligne */
-    align-items: center;
-    /*centre verticalement*/
-    justify-content: center;
-    /*centre horizontalement*/
+    text-transform: uppercase;
 }
 
 /* Suppression des liens peu utilisés*/
@@ -1092,6 +1070,13 @@ ul#notif_list {
 .navbar a[href^="/groups"]
 /*groupes*/
     { display: none}
+
+ul.navbar.fix {
+    position: fixed;
+    z-index: 2000 !important;
+    top: 0;
+    left: 0;
+}
 
 /* liens de navigation */
 a.mainmenu {padding: 5px;}
@@ -1180,8 +1165,17 @@ a.forumtitle {
     width: 100%;
     font-size: var(--title-size);
     font-family: var(--main-font);
+    font-weight: 600;
     letter-spacing: var(--main-font-spacing);
     text-transform: uppercase;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: letter-spacing 0.5s;
+}
+
+a.forumtitle:hover {
+    letter-spacing: 5px;
 }
 
 .forum_desc {
@@ -1198,6 +1192,7 @@ a.forumtitle {
     background-color: var(--neutralDark);
     border: var(--border);
     margin-top: 5px;
+    padding-right: 10px;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -1247,26 +1242,8 @@ a.forumtitle {
     border: var(--border);
 }
 
-
-#subforum{font-size:0px;}
-#subforum a.gensmall[href^="/f"]{var(--little-size)!important;}
-#subforum a.gensmall[href^="/f"]:after {
-    content: '+';
-    margin:0px 5px 0px 5px;
-    font-weight:bold;
-    font-size:var(--little-size)!important;
-}
-
-#subforum a.gensmall[href^="/f"]:last-child:after {
-    content: '';
-}
-
-#subforum a {
-    font-size: var(--little-size);
-}
-
 .forum_stats {
-    font-weight: 600;
+    font-family: var(--main-font);
     font-size: var(--little-size);
 }
 

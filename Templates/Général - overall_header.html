@@ -9,7 +9,7 @@
     <!--   INSTALLATION DE NOUVELLE POLICE D'ECRITURE -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
 
     <!--   INSTALLATION DE FONT ICON -->
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"/>
@@ -259,19 +259,46 @@ button, select, input {font-family: var(--font);cursor: pointer;}
 	</script>
 	<!-- END google_analytics_code -->
 
-<!------------------------------------->
-<!-- INITIALISATION DU PLUGIN EDISON -->    
-<script>
-(function () {
-    const html = document.documentElement;
-    const theme = localStorage.getItem('theme');
-    const colorScheme = localStorage.getItem('color-scheme');
+
+<!-- DARK MODE -->
+
+<!-- html dark mode -->
+<div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+  </label><br>
+  <span>thème</span>
+</div>
   
-    html.removeAttribute("data-no-js");
-    colorScheme && html.setAttribute('data-color-scheme', colorScheme);
-    theme && html.setAttribute('data-theme', theme);
-})();
+  <!--fin html dark mode -->
+  
+  <!-- début script dark mode -->
+  <script>
+  const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  
+    if (currentTheme === 'light') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+    else {        document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
 </script>
+  <!-- DARK MODE END -->
 
 </head>
 
@@ -294,7 +321,7 @@ button, select, input {font-family: var(--font);cursor: pointer;}
             <a href="{U_INDEX}" id="header"><img loading="lazy" src="{LOGO}" alt="{L_INDEX}" /></a>
 
            <!-- Barre de navigation -->
-            <ul class="navbar">
+            <ul class="navbar fix">
                 <li>{GENERATED_NAV_BAR}</li>
             </ul>
             <!-- Fin de la barre de nav -->
