@@ -10,8 +10,8 @@
     --contrastLight: #F4F4F4;
     --contrastLighter: #40485e;
 
-    --accentClr: #7583ff;
-    --accentClrDark: #333c92;
+    --accentClr: #9c85ff;
+    --accentClrDark: #c66471;
 
     --textColor: #c7c5cd;
     --textColorAccent: #e5e5f0;
@@ -20,7 +20,9 @@
 
     --shadowBox: 0 0 20px var(--neutralDark);
 
-    --gradient: linear-gradient(90deg, var(--accentClrDark) 55%, var(--accentClr));
+    --gradient: linear-gradient(90deg, var(--accentClrDark) 50%, var(--accentClr));
+    --gradient2: linear-gradient(90deg, var(--accentClr) 30%, var(--accentClrDark));
+
     --border: 1px solid #2a2a2a;
 
     --shadowBox: 0 0 20px #23265730;
@@ -795,7 +797,7 @@ ul#notif_list {
 /* BARRE --- */
 .switcheroo {
     color: var(--textColor);
-    margin-top: 60px;
+    margin-top: 35px;
 }
 
 /* Positionnement des ronds */
@@ -1168,7 +1170,7 @@ a.forumtitle {
     font-weight: 600;
     letter-spacing: var(--main-font-spacing);
     text-transform: uppercase;
-    background: var(--gradient);
+    background: var(--gradient2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: letter-spacing 0.5s;
@@ -1199,6 +1201,13 @@ a.forumtitle:hover {
     flex-direction: row-reverse;
 }
 
+.forum_sub a {
+    color: var(--accentClrDark);
+}
+.forum_sub a:hover {
+    color: var(--accentClr);
+}
+
 .forum_lastpost-avatar {
     background-image: var(--gradient);
 }
@@ -1207,6 +1216,8 @@ a.forumtitle:hover {
     background-color: var(--neutral);
     margin: 1px;
     padding: 5px;
+    width: 97.5px;
+    height: 150px;
 }
 
 .forum_lastpost-avatar img {
@@ -1220,7 +1231,6 @@ a.forumtitle:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60px;
     margin-left: 10px;
     text-transform: uppercase;
 }
@@ -1231,6 +1241,7 @@ a.forumtitle:hover {
     padding: 25px 0px;
     width: 200px;
     border: var(--border);
+    height: 108px;
 }
 
 .forum_details {
@@ -2274,112 +2285,16 @@ form[name=form_login] .content {
     border-radius: 5px;
 }
 
-
 /****** ------------------------------------------------------------------------------
- ****** BLOGS ------------------------------------------------------------------------ ******/
+ ****** CODE DU FORUM ------------------------------------------------------------------------ ******/
 
-/*** ------------------------------- ***/
-/*** LISTE DES BLOGS --------------- ***/
-
-.bloglist {
-    background: var(--neutral);
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 65px auto;
-    grid-template-rows: 60px auto;
-    margin-bottom: 10px;
+tag {
+    background: var(--gradient);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-size: var(--little-size);
 }
 
-
-.bloglist_date {
-    grid-row: 1 / span 2;
-    padding: 10px;
-    border-right: 1px solid var(--neutralDark);
-    line-height: 22px;
-    text-align: center;
-}
-
-.blog_daymonth {
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.blog_year {
-    font-size: 18px;
-}
-
-.bloglist_infos {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.bloglist_details {
-    text-align: right
-}
-
-.bloglist_resum {
-    padding: 0 10px 10px;
-}
-
-
-/*** ------------------------------- ***/
-/***  AFFICHAGE D'UN BLOG ---------- ***/
-
-.blog_post {
-    background: var(--neutral);
-    display: grid;
-    grid-template-rows: auto auto;
-    border-radius: 5px;
-}
-
-.blog_details {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid var(--neutralDark);
-}
-
-.blog_author {
-    flex-grow: 100;
-}
-
-
-/*** ------------------------------- ***/
-/*** COMMENTAIRES D'UN BLOG -------- ***/
-
-.blog_comment {
-    border: var(--border);
-    padding: 10px;
-    border-radius: 5px;
-    margin: 5px auto 10px;
-}
-
-.comment_avatar {
-    margin-right: 10px;
-    float: left;
-}
-
-.comment_avatar img {
-    object-fit: cover;
-    object-position: center;
-    border-radius: 5px;
-    width: 40px;
-    height: 40px;
-    margin: 0;
-}
-
-.comment_details {
-    height: 40px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.comment_details .left {
-    flex-grow: 100;
-}
-
-.comment_content {
-    margin-left: 50px;
-}
