@@ -1,27 +1,31 @@
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    --header: url('https://www.zupimages.net/up/22/42/652r.gif');
+    --background: #494543;
 
-    --neutral: #1c1c25;
-    --neutralDark: #101015;
-    --neutralDarker: #100f13;
+    --neutral: #121413;
+    --neutralDark: #0c0c0c;
+    --neutralDarker: #262626;
 
     --contrast: #e5e5f0;
     --contrastLight: #F4F4F4;
     --contrastLighter: #40485e;
 
-    --accentClr: #9c85ff;
-    --accentClrDark: #c66471;
+    --accent: #c67373;
+    --accentDark: #a42a30;
 
-    --textColor: #c7c5cd;
-    --textColorAccent: #e5e5f0;
+    --special: #5ea2a8;
+    --specialDark: #1a7277;
 
-    --border: 1px solid #342b3f;
+    --textColor: #838383;
+    --textColorAccent: #afafaf;
+
+    --border: 1px solid #42423e2e;
+    --radius: 3px;
 
     --shadowBox: 0 0 20px var(--neutralDark);
 
-    --gradient: linear-gradient(90deg, var(--accentClrDark) 50%, var(--accentClr));
-    --gradient2: linear-gradient(90deg, var(--accentClr) 30%, var(--accentClrDark));
+    --gradient: linear-gradient(75deg, var(--accent) 20%, var(--special));
+    --gradient2: linear-gradient(75deg, var(--special) 20%, var(--accent));
 
     --small-size: 10px;
     --normal-size: 12px;
@@ -33,7 +37,7 @@
     --main-font: 'Chakra Petch';
     --main-font-spacing: 1.5px;
 
-    --scrollbar-thumb: var(--accentClr);
+    --scrollbar-thumb: #4f4f4f;
     --scrollbar-bg: var(--neutralDark);
 
     /* VARIABLES MESSENGER */
@@ -75,8 +79,7 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
-    --header: url('https://nsm09.casimages.com/img/2021/03/21//21032105561425394217327016.png');
- 
+
     --neutral: #fafbfc;
     --neutralDark: #f2f4f9;
     --neutralDarker: #dce3f4;
@@ -85,8 +88,8 @@
     --contrastLight: #232657;
     --contrastLighter: #c3c8f3;
 
-    --accentClr: #4B57C5;
-    --accentClrDark: #333c92;
+    --accent: #4B57C5;
+    --accentDark: #333c92;
 
     --textColor: #232657;
     --textColorAccent: #000;
@@ -138,7 +141,7 @@
     border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--accentClrDark);
+    background: var(--accentDark);
 }
 
 .theme-switch-wrapper {
@@ -173,7 +176,7 @@
     transition: 0.4s;
 }
 .slider:before {
-    background-color: var(--accentClr);
+    background-color: var(--special);
     bottom: 4px;
     content: "";
     height: 12px;
@@ -197,7 +200,7 @@ input:checked + .slider:before {
 
 /* FOND DU FORUM ---*/
 body {
-    background: var(--neutralDarker);
+    background: var(--background);
     font-family: var(--font);
     font-size: var(--normal-size);
     color: var(--textColor);
@@ -222,20 +225,18 @@ body {
     /*largeur forum*/
     margin: 20px auto;
     padding: 20px;
-    background: var(--neutral);
+    background: var(--neutralDark);
     border-radius: 5px;
 }
 
 /* BANNIERE ---*/
 /* Mettre la bannière en fond permet de la changer selon le thème clair ou sombre */
-#header {
-    background-image: var(--header);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: 900px;
-    height: 330px;
+#header img {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    max-width: 900px;
 }
 
 /* Conteneur de toutes les sous-sections
@@ -274,11 +275,11 @@ body {
     display: block;
     text-align: center;
     font-size: var(--title-size);
-    color: var(--accentClr);
+    color: var(--special);
     transition: 0.4s;
 }
 .elevator a:hover {
-    color: var(--accentClrDark);
+    color: var(--specialDark);
 }
 
 
@@ -298,7 +299,7 @@ a {
 
 /*liens au survol*/
 a:hover {
-    color: var(--accentClr);
+    color: var(--accent);
 }
 
 /* Emoji mis par défaut de FA
@@ -376,7 +377,7 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 input[type="hidden"]:hover,
 input[type="reset"]:hover {
-    color: var(--accentClr)
+    color: var(--accent)
 }
 
 .submit-buttons {text-align: center;}
@@ -867,7 +868,7 @@ ul#notif_list {
 /* icon plus */
 .switcheroo__squircle--button i {font-size: 19px;}
 
-.switcheroo__squircle--button:hover {color: var(--accentClr);}
+.switcheroo__squircle--button:hover {color: var(--accent);}
 
 /* Bouton de suppression */
 .switcheroo__delete {
@@ -879,7 +880,7 @@ ul#notif_list {
     top: -7px;
     right: -7px;
     border-radius: 50%;
-    background-color: var(--accentClr);
+    background-color: var(--accent);
     transform: scale(0);
     opacity: 1;
     transition: transform 128ms var(--ease), opacity 64ms var(--ease);
@@ -1008,7 +1009,7 @@ ul#notif_list {
     text-transform: uppercase;
     font-size: 14px;
     align-self: center;
-    background-color: var(--accentClr);
+    background-color: var(--accent);
     cursor: pointer;
     color: var(--neutral);
     font-weight: 600;
@@ -1115,10 +1116,20 @@ a.mainmenu img {display: none}
 /*** CATEGORIES -------------------- ***/
 
 .category {
-    background: var(--neutralDark);
+    background: var(--neutral);
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 25px;
+}
+
+.cate_title {
+    background: var(--gradient);
+    height: 50px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
 }
 
 /* Titre d'une catégorie */
@@ -1126,9 +1137,11 @@ a.mainmenu img {display: none}
     display: block;
     text-align: center;
     text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 10px 0 20px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+    color: white;
 }
 
 .forum_row {
@@ -1147,7 +1160,8 @@ a.mainmenu img {display: none}
 .forum-img {
     width: 35px;
     height: 74px;
-    background-color: #2f2949;
+    background-color: #4f4f4f;
+    border-radius: var(--radius);
 }
 
 .forum_row_main {
@@ -1162,17 +1176,18 @@ a.mainmenu img {display: none}
 }
 .forum_title {
     z-index: 50;
-    background: var(--neutralDark);
+    background: var(--neutral);
     padding: 1px 10px;
     margin-left: 46px;
 }
 .forum_title_line {
-    background: #342b3f;
+    background: linear-gradient(90deg, var(--accent), 15%, var(--special));
     width: calc(100% - 25px);
     height: 1px;
     margin: 0px 10px;
     position: absolute;
     top: 14px;
+    filter: opacity(40%);
 }
 
 
@@ -1181,7 +1196,7 @@ a.forumtitle {
     font-family: var(--main-font);
     letter-spacing: var(--main-font-spacing);
     text-transform: uppercase;
-    background: var(--gradient2);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: letter-spacing 0.5s;
@@ -1195,9 +1210,10 @@ a.forumtitle:hover {
     height: 74px;
     background-color: var(--neutral);
     overflow: auto;
-    border: var(--border);
     padding: 5px 10px;
     text-align: justify;
+    border: var(--border);
+    border-radius: var(--radius);
 }
 
 .forum_sub {
@@ -1213,10 +1229,11 @@ a.forumtitle:hover {
     background: var(--neutral);
     font-family: var(--main-font);
     text-transform: uppercase;
-    color: white;
+    color: var(--textColorAccent);
     border-radius: 10px;
     padding: 2px 10px;
     font-size: var(--small-size);
+    border: var(--border);
 }
 .forum_sub a:hover {
     background: var(--gradient);
@@ -1226,27 +1243,23 @@ a.forumtitle:hover {
     border-radius: 10px;
     padding: 2px 10px;
     font-size: var(--small-size);
+    border: none;
 }
 
 .forum_lastpost-avatar {
-    background-image: var(--gradient);
-    filter: opacity(0.8);
+    background: var(--neutral);
+    height: 105px;
     width: 70px;
-}
-
-.gradient_padding {
-    background-color: var(--neutral);
-    margin: 1px;
-    padding: 5px;
-    width: 68px;
-    height: 103px;
+    border: var(--border);
+    border-radius: var(--radius);
 }
 
 .forum_lastpost-avatar img {
-    height: 93px;
-    width: 58px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: var(--radius);
 }
 
 .forum_lastpost {
@@ -1265,6 +1278,7 @@ a.forumtitle:hover {
     width: 100%;
     height: 74px;
     border: var(--border);
+    border-radius: var(--radius);
 }
 
 .forum_details {
@@ -1273,10 +1287,11 @@ a.forumtitle:hover {
     margin-top: 5px;
     width: 100%;
     height: 25px;
-    border: var(--border);
     display: flex;
     justify-content: center;
     align-items: center;
+    border: var(--border);
+    border-radius: var(--radius);
 }
 
 .forum_stats {
