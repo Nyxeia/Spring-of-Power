@@ -1,10 +1,10 @@
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    --header: url('https://images2.imgbox.com/1b/a5/4bb6Hgju_o.png');
+    --header: url('https://www.zupimages.net/up/22/42/652r.gif');
 
-    --neutral: #1e212a;
-    --neutralDark: #181a21;
-    --neutralDarker: #313543;
+    --neutral: #1c1c25;
+    --neutralDark: #101015;
+    --neutralDarker: #100f13;
 
     --contrast: #e5e5f0;
     --contrastLight: #F4F4F4;
@@ -16,22 +16,18 @@
     --textColor: #c7c5cd;
     --textColorAccent: #e5e5f0;
 
-    --border: 1px solid #2b2e3b;
+    --border: 1px solid #342b3f;
 
     --shadowBox: 0 0 20px var(--neutralDark);
 
     --gradient: linear-gradient(90deg, var(--accentClrDark) 50%, var(--accentClr));
     --gradient2: linear-gradient(90deg, var(--accentClr) 30%, var(--accentClrDark));
 
-    --border: 1px solid #2a2a2a;
-
-    --shadowBox: 0 0 20px #23265730;
-
-    --little-size: 12px;
-    --normal-size: 14px;
-    --medium-size: 16px;
-    --large-size: 18px;
-    --title-size: 22px;
+    --small-size: 10px;
+    --normal-size: 12px;
+    --medium-size: 14px;
+    --large-size: 16px;
+    --title-size: 20px;
 
     --font: 'Open Sans';
     --main-font: 'Chakra Petch';
@@ -153,7 +149,7 @@
     right: 25px;
 }
 .theme-switch-wrapper span {
-    font-size: var(--little-size);
+    font-size: var(--small-size);
     font-family: var(--main-font);
 }
 .theme-switch {
@@ -201,7 +197,7 @@ input:checked + .slider:before {
 
 /* FOND DU FORUM ---*/
 body {
-    background: var(--neutralDark);
+    background: var(--neutralDarker);
     font-family: var(--font);
     font-size: var(--normal-size);
     color: var(--textColor);
@@ -463,7 +459,7 @@ textarea {
 
 /*lien unique vers les pages numérotées*/
 .pagination span a {
-    font-size: var(--little-size);
+    font-size: var(--small-size);
 }
 
 /*survol des liens uniques des pages*/
@@ -600,8 +596,8 @@ a.specials_links:empty {
 
 /* Conteneur du lien de bienvenue et notification */
 #fa_right {
-    background: var(--neutral);
-    height: 35px;
+    background: #010008;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -1059,7 +1055,7 @@ ul#notif_list {
 
 /* Conteneur de la barre de nav */
 .navbar {
-    padding: 8px;
+    padding: 11px;
     display: flex;
     text-transform: uppercase;
 }
@@ -1139,7 +1135,7 @@ a.mainmenu img {display: none}
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
-    background: var(--neutral);
+    background: var(--neutralDark);
     padding: 10px;
     border-radius: 5px;
 }
@@ -1148,26 +1144,41 @@ a.mainmenu img {display: none}
     margin-bottom: 0
 }
 
-
 .forum-img {
     width: 35px;
-    height: 150px;
+    height: 105px;
+    background-color: #2f2949;
 }
 
 .forum_row_main {
-    width: 510px;
+    width: 560px;
     padding: 0 10px;
 }
 
+.forum_title_grp {
+    position: relative;
+    display: flex;
+    align-content: center;
+}
 .forum_title {
-    margin: 5px 0;
+    z-index: 50;
+    background: var(--neutralDark);
+    padding: 1px 10px;
+    margin-left: 46px;
+}
+.forum_title_line {
+    background: #342b3f;
+    width: calc(100% - 25px);
+    height: 1px;
+    margin: 0px 10px;
+    position: absolute;
+    top: 14px;
 }
 
+
 a.forumtitle {
-    width: 100%;
     font-size: var(--title-size);
     font-family: var(--main-font);
-    font-weight: 600;
     letter-spacing: var(--main-font-spacing);
     text-transform: uppercase;
     background: var(--gradient2);
@@ -1181,8 +1192,8 @@ a.forumtitle:hover {
 }
 
 .forum_desc {
-    height: 69px;
-    background-color: var(--neutralDark);
+    height: 74px;
+    background-color: var(--neutral);
     overflow: auto;
     border: var(--border);
     padding: 5px 10px;
@@ -1190,8 +1201,8 @@ a.forumtitle:hover {
 }
 
 .forum_sub {
-    height: 39px;
-    background-color: var(--neutralDark);
+    height: 25px;
+    background-color: var(--neutral);
     border: var(--border);
     margin-top: 5px;
     padding-right: 10px;
@@ -1210,19 +1221,21 @@ a.forumtitle:hover {
 
 .forum_lastpost-avatar {
     background-image: var(--gradient);
+    filter: opacity(0.8);
+    width: 70px;
 }
 
 .gradient_padding {
     background-color: var(--neutral);
     margin: 1px;
     padding: 5px;
-    width: 97.5px;
-    height: 150px;
+    width: 68px;
+    height: 103px;
 }
 
 .forum_lastpost-avatar img {
-    height: 140px;
-    width: 87.5px;
+    height: 93px;
+    width: 58px;
     object-fit: cover;
     object-position: center;
 }
@@ -1233,29 +1246,33 @@ a.forumtitle:hover {
     align-items: center;
     margin-left: 10px;
     text-transform: uppercase;
+    width: 180px;
 }
 
 .lastpost {
     text-align: center;
-    background-color: var(--neutralDark);
-    padding: 25px 0px;
-    width: 200px;
+    background-color: var(--neutral);
+    padding: 10px 0px;
+    width: 100%;
+    height: 74px;
     border: var(--border);
-    height: 108px;
 }
 
 .forum_details {
-    text-align: center;
-    background-color: var(--neutralDark);
-    padding: 10px 0px;
+    background-color: var(--neutral);
+    padding: 8px 0px;
     margin-top: 5px;
-    width: 200px;
+    width: 100%;
+    height: 25px;
     border: var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .forum_stats {
     font-family: var(--main-font);
-    font-size: var(--little-size);
+    font-size: var(--small-size);
 }
 
 
@@ -1331,7 +1348,7 @@ a.groups:last-child {margin-bottom: 0}
 }
 
 .credits {
-    font-size: var(--little-size);
+    font-size: var(--small-size);
     border: var(--border);
     border-radius: 5px;
     padding: 5px;
@@ -1756,7 +1773,7 @@ a.fa-mention {}
 /* Nom de balise "code, spoiler" */
 .codebox dt {
     font-weight: 700;
-    font-size: var(--little-size);
+    font-size: var(--small-size);
 }
 
 /* Bouton "sélectionner le" code */
@@ -2167,7 +2184,7 @@ div#tabs li:nth-child(5) {
 }
 
 .profil_preferences .italic {
-    font-size: var(--little-size);
+    font-size: var(--small-size);
 }
 
 /* EDITER SIGNATURE ---*/
@@ -2216,7 +2233,7 @@ div#tabs li:nth-child(5) {
 /* Colonne d'information du message */
 .postsearch_infos {
     border-right: var(--border);
-    font-size: var(--little-size);
+    font-size: var(--small-size);
 }
 
 
@@ -2295,6 +2312,6 @@ tag {
     color: white;
     border-radius: 10px;
     padding: 0px 10px;
-    font-size: var(--little-size);
+    font-size: var(--small-size);
 }
 

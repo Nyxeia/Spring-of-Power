@@ -50,15 +50,19 @@
         
         <!-- BEGIN forumrow -->
         <!-- Affichage d'un forum -->
+        <div class="forum_title_grp">
+            <div class="forum_title_line"></div>
+            <div class="forum_title">
+                <!-- Titre forum -->
+                <a href="{catrow.forumrow.U_VIEWFORUM}" class="forumtitle">{catrow.forumrow.FORUM_NAME}</a>
+            </div>
+        </div>
+
         <div class="forum_row row">
             <!-- Image forum : nouveau, rien, verrouillé -->
             <img class="forum-img" src="{catrow.forumrow.FORUM_FOLDER_IMG}" />
 
             <div class="forum_row_main">
-                <div class="forum_title">
-                    <!-- Titre forum -->
-                    <a href="{catrow.forumrow.U_VIEWFORUM}" class="forumtitle">{catrow.forumrow.FORUM_NAME}</a>
-                </div>
 
                 <!-- Description -->
                 <div class="forum_desc">{catrow.forumrow.FORUM_DESC}</div>
