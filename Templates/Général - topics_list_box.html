@@ -28,45 +28,63 @@
       	<!-- Icone de message -->
      	<span class="topic_msgicon"></span>
 
-        <!-- Label type de sujet : annonce, note, ... -->
-        <span class="topic-type">{topics_list_box.row.TOPIC_TYPE}</span>
+        <div class="topiclist-titlegrp">
+            <div class="topiclist-title">
+                <!-- Label type de sujet : annonce, note, ... -->
+                <span class="topic-type">{topics_list_box.row.TOPIC_TYPE}</span>
 
-        <!-- Titre du sujet -->
-        <a class="topictitle" href="{topics_list_box.row.U_VIEW_TOPIC}">{topics_list_box.row.TOPIC_TITLE}</a>&nbsp;
-      
-        <!-- Icon vous avez posté dans ce sujet -->
-        {topics_list_box.row.PARTICIPATE_POST_IMG}
-      
-        <br />
-      
-        <span class="topic-author">
-            {topics_list_box.row.L_BY}&nbsp;
-            <!-- Indication "par" -->
-            {topics_list_box.row.TOPIC_AUTHOR}
-            <!-- Auteur -->
-        </span>&nbsp;
-      
-      <!-- Pagination du sujet -->
-        <span class="topicslist-pagination">
-            {topics_list_box.row.GOTO_PAGE_NEW}
-            <!-- BEGIN nav_tree -->
-            {topics_list_box.row.TOPIC_NAV_TREE_NEW}
-            <!-- END nav_tree -->
-        </span>
+                <!-- Titre du sujet -->
+                <a class="topictitle" href="{topics_list_box.row.U_VIEW_TOPIC}">{topics_list_box.row.TOPIC_TITLE}</a>&nbsp;
+
+                <!-- Icon vous avez posté dans ce sujet -->
+                {topics_list_box.row.PARTICIPATE_POST_IMG}
+            </div>
+
+            <!-- Description du sujet -->
+            <!-- BEGIN switch_description -->
+            <div class="topicslist-description">
+                {topics_list_box.row.topic.switch_description.TOPIC_DESCRIPTION}
+            </div>
+            <!-- END switch_description -->
+        
+        <!-- Pagination du sujet -->
+            <span class="topicslist-pagination">
+                {topics_list_box.row.GOTO_PAGE_NEW}
+                <!-- BEGIN nav_tree -->
+                {topics_list_box.row.TOPIC_NAV_TREE_NEW}
+                <!-- END nav_tree -->
+            </span>
+        </div>
 
     </div>
 
-
-    <!-- Statistiques -->
-    <div class="topicslist-stats">
-        {topics_list_box.row.REPLIES} {L_REPLIES}
-        <!-- Nombres // Indication "messages" -->
-        <br />
-        {topics_list_box.row.VIEWS} {L_VIEWS}
-        <!-- Nombres // Indication "vues" -->
+    <!-- Auteur -->
+    <div class="topic-author">
+        {topics_list_box.row.TOPIC_AUTHOR}
     </div>
 
+    <!-- Dernier message -->
+    <div class="topicslist-lastpost">
+            <div>
+                <!-- Date du dernier message -->
+                <span class="topicslist-stats">{topics_list_box.row.LAST_POST_TIME}</span>
+                <br />
+                <!-- Auteur du dernier message -->
+                {topics_list_box.row.LAST_POST_AUTHOR}
+                <!-- Image-lien pour aller au dernier message -->
+                {topics_list_box.row.LAST_POST_IMG}
+            </div>
 
+            <!-- Statistiques -->
+            <div class="topicslist-stats">
+                <!-- Nombres // Indication "vues" -->
+                {topics_list_box.row.VIEWS} {L_VIEWS}
+                &nbsp;<span class="dot-separator">•</span>&nbsp;
+                <!-- Nombres // Indication "messages" -->
+                {topics_list_box.row.REPLIES} {L_REPLIES}
+
+            </div>
+    </div>
     <!-- Avatar du dernier posteur-->
     <div class="topicslist-avatar-lastpost lastpostavatar">
         <!-- BEGIN avatar -->
@@ -74,27 +92,6 @@
         <!-- END avatar -->
     </div>
 
-
-    <!-- Dernier message -->
-    <div class="topicslist-lastpost lastpost">
-      <span>
-        <!-- Date du dernier message -->
-        {topics_list_box.row.LAST_POST_TIME} &nbsp;
-        <br />
-        <!-- Auteur du dernier message -->
-        {topics_list_box.row.LAST_POST_AUTHOR} &nbsp;
-        <!-- Image-lien pour aller au dernier message -->
-        {topics_list_box.row.LAST_POST_IMG}
-      </span>
-    </div>
-
-
-    <!-- Description du sujet -->
-    <!-- BEGIN switch_description -->
-    <div class="topicslist-description">
-        {topics_list_box.row.topic.switch_description.TOPIC_DESCRIPTION}
-    </div>
-    <!-- END switch_description -->
 
 
 </div>
