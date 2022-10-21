@@ -2,7 +2,7 @@
 :root {
     --background: var(--neutral);
 
-    --neutral: #121413;
+    --neutral: #0f0f0f;
     --neutralDark: #0c0c0c;
     --neutralDarker: #262626;
 
@@ -10,22 +10,22 @@
     --contrastLight: #F4F4F4;
     --contrastLighter: #40485e;
 
-    --accent: #d55a5e;
-    --accentDark: #a42a30;
+    --accent: #6f347a;
+    --accentDark: #1b0034;
 
-    --special: #5ea2a8;
-    --specialDark: #1a7277;
+    --special: #8f796f;
+    --specialDark: #3b3531;
 
-    --textColor: #838383;
-    --textColorAccent: #afafaf;
+    --textColor: #706c6c;
+    --textColorAccent: #b1a9a9;
 
-    --border: 1px solid #42423e2e;
+    --border: 1px solid #42403e2e;
     --radius: 3px;
 
     --shadowBox: 0 0 20px var(--neutralDark);
 
     --gradient: linear-gradient(75deg, var(--accent) 20%, var(--special));
-    --gradient2: linear-gradient(75deg, var(--special) 20%, var(--accent));
+    --gradient2: linear-gradient(75deg, #6f665b 50%, #504544);
 
     --small-size: 10px;
     --normal-size: 12px;
@@ -1123,7 +1123,7 @@ a.mainmenu img {display: none}
 }
 
 .cate_title {
-    background: var(--neutralDark);
+    background: var(--gradient2);
     height: 50px;
     border-radius: 3px;
     display: flex;
@@ -1138,10 +1138,9 @@ a.mainmenu img {display: none}
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 200;
-    font-family: var(--main-font);
+    font-family: monospace;
     letter-spacing: 2px;
-    color: #a54643;
+    color: var(--accentDark);
 }
 
 .forum_row {
@@ -1739,7 +1738,10 @@ a.fa-mention {}
 
 .online:empty {display: none}
 
-.post_message {padding: 25px;}
+.post_message {
+    padding: 25px;
+    font-size: 13px;
+}
 
 
 /* REPONSE RAPIDE --- */
