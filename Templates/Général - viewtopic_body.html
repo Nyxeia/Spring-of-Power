@@ -1,45 +1,47 @@
 <br />
 
  
+<div class="nav_grid">
 
-<!----------------------------------------------->
-<!-- LIENS DE NAVIGATION -------------->
+    <!----------------------------------------------->
+    <!-- BARRE DE GESTION -------------->
 
-<div class="navigation_links">
+    <div class="topic_buttons">
+      
+            <!-- Boutons : nouveau -->
+            <!-- BEGIN switch_user_authpost -->
+            <a class="buttons" href="{U_POST_NEW_TOPIC}" rel="nofollow"><img class="newtopic_button" src="{POST_IMG}" class="{POST_IMG_CLASS}" alt="{L_POST_NEW_TOPIC}" /></a>
+            <!-- END switch_user_authpost -->
 
-    <!-- Chaîne de lien : Catégorie > Forum > Sous-fo -->
-    <span class="navigation_chain">
-        {NAV_CAT_DESC}
-    </span>
+            <!-- Bouton : répondre -->
+            <!-- BEGIN switch_user_authreply -->
+            <a class="buttons" href="{U_POST_REPLY_TOPIC}"><img class="reply_button" src="{REPLY_IMG}" class="i_reply" alt="{L_POST_REPLY_TOPIC}" /></a>
+            <!-- END switch_user_authreply -->
+     
+    </div>
 
-</div>
 
-<!----------------------------------------------->
-<!-- BARRE DE GESTION -------------->
+    <!----------------------------------------------->
+    <!-- LIENS DE NAVIGATION -------------->
 
-<div class="links_bar">
-  
-        <!-- Boutons : nouveau -->
-        <!-- BEGIN switch_user_authpost -->
-        <a class="buttons" href="{U_POST_NEW_TOPIC}" rel="nofollow"><img class="newtopic_button" src="{POST_IMG}" class="{POST_IMG_CLASS}" alt="{L_POST_NEW_TOPIC}" /></a>&nbsp;
-        <!-- END switch_user_authpost -->
+    <div class="navigation_links">
 
-        <!-- Bouton : répondre -->
-        <!-- BEGIN switch_user_authreply -->
-        <a class="buttons" href="{U_POST_REPLY_TOPIC}"><img class="reply_button" src="{REPLY_IMG}" class="i_reply" alt="{L_POST_REPLY_TOPIC}" /></a>
-        <!-- END switch_user_authreply -->
-  
-        <!-- Pagination -->
-        <span class="pagination right">
-            {PAGINATION}
+        <!-- Chaîne de lien : Catégorie > Forum > Sous-fo -->
+        <span class="navigation_chain">
+            {NAV_CAT_DESC}
         </span>
-         
-  
+
+    </div>
+
 </div>
 
 <!----------------------------------------------->
 <!-- MESSAGE -------------->
 
+<!-- Pagination -->
+<span class="pagination right">
+    {PAGINATION}
+</span>
 
 <!-- Contenenur des messages -->
 <div class="container">
@@ -47,9 +49,6 @@
     <!-- Titre du poste -->
     <h1 class="page-title">{TOPIC_TITLE}</h1>
   
-    <!-- Liste des participants du sujet -->
-    {POSTERS_LIST}
-
     <!-- Sondage (template : viewtopic_poll_ballot /// viewtopic_poll_result) -->
     {POLL_DISPLAY}
 
@@ -58,17 +57,18 @@
     <!-- BEGIN postrow -->
     <!-- BEGIN displayed -->
     <div id="{postrow.displayed.U_POST_ID}"></div>
-    <div class="post post_row post--{postrow.displayed.U_POST_ID}" id="p{postrow.displayed.U_POST_ID}">
+    <div class="post_row post--{postrow.displayed.U_POST_ID}" id="p{postrow.displayed.U_POST_ID}">
 
         <!-- Conteneur informations du message-->
         <div class="post_details">
 
             <span class="post_date">
                 <!-- Lien d'ancre vers le message -->
-                <a href="{postrow.displayed.POST_URL}">{postrow.displayed.POST_SUBJECT}</a>
+                <!-- <a href="{postrow.displayed.POST_URL}">{postrow.displayed.POST_SUBJECT}</a> -->
+                (<a href="{postrow.displayed.POST_URL}">#</a>)
 			&nbsp;
                 <!-- Date du message -->
-                <time>{postrow.displayed.POST_DATE_NEW}</time>
+                {postrow.displayed.POST_DATE_NEW}
             </span>
               
                 <!-- Boutons d'édition de message -->
@@ -112,24 +112,35 @@
                 <span class="post_rank">
                     {postrow.displayed.POSTER_RANK_NEW} <!-- Textuel -->
                     {postrow.displayed.RANK_IMAGE} <!-- Image -->
-                </span><br />
+                </span>
             </center>
 
+        <div class="avatar_container">
             <!-- Avatar -->
             <div class="post_avatar">
                 {postrow.displayed.POSTER_AVATAR}
             </div>
 
-            <br />
-
-            <!-- En ligne -->
-            <center>
-                <div class="{postrow.displayed.ONLINE_IMG_NEW}"> <!-- VOIR CSS .online -->
-                	{postrow.displayed.ONLINE_IMG_NEW}<!-- Textuel -->
+            <div class="avatar_links">
+            <!-- Lien de contact -->
+                <div class="profil_contact">
+                    <!-- Autre contact-->
+                    <!-- BEGIN contact_field -->
+                    {postrow.displayed.contact_field.CONTENT} <!-- Autre champs de contact -->
+                    <!-- END contact_field -->
+                    {postrow.displayed.PM_IMG} <!-- MP -->
                 </div>
-            </center>
+            </div>
+        </div>
 
-            <br />
+            <!-- PROFILE TABS -->
+            <div class="p-tab profil-rp left" style="color:transparent;">
+              IRP
+            </div>
+            <div class="p-tab profil-hrp right" style="color:transparent;">
+              HRP
+            </div>
+
 
             <div class="post_userinfo">
                
@@ -148,22 +159,18 @@
                 <!-- END profile_field -->
                 <!-- Fin de champs de profil -->
 
-                <!-- Champs de profil de la feuille de personnage -->
-                {postrow.displayed.POSTER_RPG}
-
             </div>
 
-            <br />
+            <!-- PROFIL CACHÉ -->
+            <div class="profil-box-rp" style="display: none;"></div>
+            <div class="profil-box-hrp" style="display: none;"></div>
 
-            <!-- Lien de contact -->
-            <div class="profil_contact">
-                {postrow.displayed.PROFILE_IMG} &nbsp; <!-- Profil -->
-                {postrow.displayed.PM_IMG} &nbsp; <!-- MP -->
-                <!-- Autre contact-->
-                <!-- BEGIN contact_field -->
-                {postrow.displayed.contact_field.CONTENT} <!-- Autre champs de contact -->
-                <!-- END contact_field -->
-            </div>
+            <!-- En ligne -->
+            <center>
+                <div class="{postrow.displayed.ONLINE_IMG_NEW}"> <!-- VOIR CSS .online -->
+                    {postrow.displayed.ONLINE_IMG_NEW}<!-- Textuel -->
+                </div>
+            </center>
 
         </div>
         <!-- Fin colonne profil -->
@@ -190,28 +197,28 @@
 <!-- Fin des messages -->
 
 
+<!-- Pagination -->
+<!-- BEGIN topicpagination -->
+<span class="pagination right">{PAGINATION}</span>
+<!-- END topicpagination -->
+
 <!----------------------------------------------->
 <!-- BARRE DE GESTION -------------->
 
 
-<div class="links_bar">
-  
+<div class="links_bar flex_space-between">
+          
+        <!-- BEGIN switch_plus_menu -->
+        <!-- Lien "sujets surveillés" -->
+        <a href="{U_WATCHSEARCH_JS_PLUS_MENU}">Sujets surveillés</a>
+        <!-- END switch_plus_menu -->
+
         <!-- Lien "surveiller le sujet" -->
         <!-- BEGIN switch_user_logged_in -->
         <!-- BEGIN watchtopic -->
-        <span class="specials_links">{S_WATCH_TOPIC}</span>
+        <span >{S_WATCH_TOPIC}</span>
         <!-- END watchtopic -->
         <!-- END switch_user_logged_in -->
-        
-        <!-- BEGIN switch_plus_menu -->
-        <!-- Lien "sujets surveillés" -->
-        &nbsp;<a class="specials_links" href="{U_WATCHSEARCH_JS_PLUS_MENU}">Sujets surveillés</a>
-        <!-- END switch_plus_menu -->
-
-    <!-- Pagination -->
-    <!-- BEGIN topicpagination -->
-    <span class="pagination right">{PAGINATION}</span>
-    <!-- END topicpagination -->
 
 </div>
 
@@ -254,7 +261,7 @@
 <!-- BARRE DE GESTION -------------->
 
 
-<div class="links_bar">
+<div class="topic_buttons">
         <!-- Bouton : nouveau -->
         <!-- BEGIN switch_user_authpost -->
         <a class="buttons" href="{U_POST_NEW_TOPIC}" rel="nofollow"><img class="newtopic_button" src="{POST_IMG}" class="{POST_IMG_CLASS}" alt="{L_POST_NEW_TOPIC}" /></a>&nbsp;
@@ -266,7 +273,7 @@
         <!-- END switch_user_authreply -->
 
     <!-- BEGIN switch_plus_menu -->
-    <span class="right">
+    <span class="topic_fave right">
         <a href="{U_FAVOURITE_JS_PLUS_MENU}">Ajouter le sujet à ses favoris</a>
     </span>
   <!-- END switch_plus_menu -->
@@ -276,24 +283,11 @@
 <br/>
 
 <!----------------------------------------------->
-<!-- SAUTER VERS UN AUTRE FORUM -------------->
-
-
-<form action="{S_JUMPBOX_ACTION}" method="get" onsubmit="if(document.jumpbox.f.value == -1){return false;}" class="left">
-    <fieldset class="jumpbox">
-        <label>{L_JUMP_TO}:&nbsp;</label>
-        {S_JUMPBOX_SELECT}&nbsp;
-        <input class="button2" type="submit" value="{L_GO}" />
-    </fieldset>
-</form>
-
-
-<!----------------------------------------------->
 <!-- BOUTONS DE MODERATION -------------->
 
 <!-- BEGIN viewtopic_bottom -->
-<form method="get" action="{S_FORM_MOD_ACTION}" class="right">
-    <fieldset class="quickmod">
+<form method="get" action="{S_FORM_MOD_ACTION}" class="quickmod left">
+    <fieldset>
         <input type="hidden" name="t" value="{TOPIC_ID}" />
 
         <!-- <input type="hidden" name="sid" value="{S_SID}" /> -->
@@ -302,9 +296,26 @@
         {S_SELECT_MOD}&nbsp;
         <input class="button2" type="submit" value="{L_GO}" />
     </fieldset>
-  <span class="right">{S_TOPIC_ADMIN}</span>
+  {S_TOPIC_ADMIN}
 </form>
 <!-- END viewtopic_bottom -->
+
+
+
+<!----------------------------------------------->
+<!-- SAUTER VERS UN AUTRE FORUM -------------->
+
+
+<form action="{S_JUMPBOX_ACTION}" method="get" onsubmit="if(document.jumpbox.f.value == -1){return false;}" class="right">
+    <fieldset class="jumpbox">
+        <label>{L_JUMP_TO}:&nbsp;</label>
+        {S_JUMPBOX_SELECT}&nbsp;
+        <input class="button2" type="submit" value="{L_GO}" />
+    </fieldset>
+</form>
+
+
+
 
 
 

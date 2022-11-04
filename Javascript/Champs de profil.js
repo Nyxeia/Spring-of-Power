@@ -1,67 +1,141 @@
-// PLACEMENT : Sur les sujets
+var $path = ".post_profile .post_userinfo .user_field";
+var $parent = ".post_profile";
 
-// [SPANISH] by Flerex
-// https://flerex.dev/entradas/clases-unicas-a-los-campos-del-miniperfil
+$( function(){
+  $('body')
+    .on('click', '.profil-rp', function(){
 
-// Options, by Monomer
-// Possibilité de déplacer un champs dans un autre élément
+      var rpBox = $(this).nextAll(".profil-box-rp:first");
+      var hrpBox = $(this).nextAll(".profil-box-hrp:first");
 
-!function() {
+      if (hrpBox.is(":visible")) {
 
-	const settings = {
-                semicolon: true, // false = retire les (:) après un nom de champs
-		cleanUp: true,
-          
-          // Option pour déplacer un champs dans un autre élément, laissez vide pour désactiver 
-          move: ['champ', 'champ'], // Nom du champs en MINISCULE et SANS ACCENT (exemple : 'message') et séparer les champs à deux mots par un tiret (exemple : 'etat-civil')
-          moveTo: '.class' // élément dans lequel les champs seront déplacés
-	},
+        hrpBox.hide();
+        rpBox.show();
+
+        $(this).css('color', 'white');
+        $(this).nextAll(".profil-hrp:first").css('color', 'transparent');
+
+      } else {
+
+        rpBox.slideToggle("fast", function() {
+
+          if (rpBox.is(":visible")) {
+            $(this).prevAll(".profil-rp:first").css('color', 'white');
+          } else {
+            $(this).prevAll(".profil-rp:first").css('color', 'transparent');
+          }
+
+          $(this).nextAll(".profil-hrp:first").css('color', 'transparent');
+
+        });
+
+      }
+
+    });
+});
+
+$( function(){
+  $('body')
+    .on('click', '.profil-hrp', function(){
+
+      var rpBox = $(this).nextAll(".profil-box-rp:first");
+      var hrpBox = $(this).nextAll(".profil-box-hrp:first");
+
+      if (rpBox.is(":visible")) {
+
+        rpBox.hide();
+        hrpBox.show();
+
+        $(this).css('color', 'white');
+        $(this).prevAll(".profil-rp:first").css('color', 'transparent');
+
+      } else {
+
+        hrpBox.slideToggle("fast", function() {
+
+          if (hrpBox.is(":visible")) {
+            $(this).prevAll(".profil-hrp:first").css('color', 'white');
+          } else {
+            $(this).prevAll(".profil-hrp:first").css('color', 'transparent');
+          }
+
+          // Previous since the hrp button comes after the rp button in the html code
+          $(this).prevAll(".profil-rp:first").css('color', 'transparent');
 
 
-	slugify = str => {
-        const from = 'àáäâãåăæçèéëêǵḧìíïîḿńǹñòóöôœøṕŕßśșțùúüûǘẃẍÿź·/_,:;',
-        to = 'aaaaaaaaceeeeghiiiimnnnooooooprssstuuuuuwxyz------',
-        reg = new RegExp(from.split('').join('|'), 'g');
+        });
 
-        return str.trim().toLowerCase()
-        		.replace(/\s+/g, '-')
-        		.replace(reg, c => to.charAt(from.indexOf(c)))
-        		.replace(/&/g, '-and-')
-        		.replace(/[^\w\-]+/g, '')
-                .replace(/\-\-+/g, '-')
-                .replace(/^-+/, '')
-                .replace(/-+$/, '');
-    },
+      }
 
-    hideSemicolon = (label, name) => {
-        if (label.firstElementChild)
-            label.lastChild.remove();
-        else
-            label.textContent = name;
-    },
+    });
+});
 
-    main = _ => {
 
-    	document.querySelectorAll('.user_field').forEach(p => {
-    		const labelcontainer = p.querySelector('.field_label'),
-    		label = labelcontainer.querySelector('.label'),
-            name = label.textContent.replace(/ *: *$/, ''),
-          slug = slugify(name);
+jQuery(function () {
 
-    		p.classList.add('field-' + slug);
-          	
-          if(settings.move.includes(slug)) {
-          p.closest('.post_profile').querySelector(settings.moveTo).appendChild(p);
+    // On parcourt chaque champs des profils
+    $( $path ).each(function( index ) {
+
+        var label = $(this).find('.label > span:first-child');
+        var field = label.html() ;
+
+        var found = false;
+        switch (field) {
+          case "Alias":
+          case "Age":
+          case "D.D.N.":
+          case "Genre":
+          case "Mutation":
+          case "Contre-coup":
+          case "Situation":
+          case "Lieu d'habitation":
+          case "Zone libre":
+            found = true;
+            break;
+          default: 
+            break;
+        } 
+
+        if (found){
+            $(this).parents($parent).find('.profil-box-rp').append(this);
+            //label.css({"color" : "#8b1b58"});
         }
+ 
+    });
 
-    		if (settings.cleanUp) {
-    			labelcontainer.textContent = settings.semicolon ? name + ': ' : name;
-    		} else if (!settings.semicolon) {
-                hideSemicolon(label, name)
-    		}
-    	});
+});
 
-    };
+jQuery(function () {
 
-    document.addEventListener('DOMContentLoaded', main);
-}();
+    // On parcourt chaque champs des profils
+    $( $path ).each(function( index ) {
+
+        var label = $(this).find('.label > span:first-child');
+        var field = label.html() ;
+
+        var found = false;
+        switch (field) {
+          case "Messages":
+          case "Dollars":
+          case "Avatar":
+          case "Pseudo":
+          case "Date d'inscription":
+          case "Lieu d'habitation":
+          case "Crédits":
+          case "Multis":
+          case "Infos RP":
+            found = true;
+            break;
+          default: 
+            break;
+        } 
+
+        if (found) {
+            $(this).parents($parent).find('.profil-box-hrp').append(this);
+            //label.css({"color" : "#8b1b58"});
+        }
+ 
+    });
+
+});

@@ -1638,10 +1638,11 @@ a.groups:last-child {margin-bottom: 0}
 
 .post_row {
     background: var(--neutral);
+    clear: both;
     display: grid;
-    grid-template-rows: max-content auto;
-    grid-template-columns: min-content 1fr;
-    border-bottom: 1px solid var(--neutralDark);
+    grid-template-rows: 47px auto;
+    border-bottom: var(--border);
+    overflow-wrap: break-word;
 }
 
 div.post_row:nth-of-type(2) {
@@ -1654,18 +1655,64 @@ div.post_row:last-of-type {
 }
 
 .post_details {
-    grid-column: 1 / span 2;
-    padding: 10px;
+    grid-column: 2;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--neutralDark);
     width: 100%;
+    height: fit-content;
+    font-style: italic;
+    font-size: var(--small-size);
+    padding: 4px 10px;
+    border-bottom: var(--border);
 }
 
 .post_date {
     flex-grow: 100;
 }
 
+.post_userinfo,
+.post_userinfo img,
+.field_content {
+    max-width: 200px;
+}
+
+.post_userinfo .user_field:first-child .label {
+    display: none;
+}
+
+.p-tab {
+    margin: 8px 0;
+    font-size: var(--small-size);
+    width: 98px;
+    height: 12px;
+    letter-spacing: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.profil-rp {
+    background: var(--accent);
+}
+.profil-hrp {
+    background: var(--special);
+}
+.profil-box-rp,
+.profil-box-hrp {
+    overflow: auto !important;
+    max-height: 300px;
+    background: var(--neutralDark);
+    padding: 5px;
+    clear: both;
+    text-align: justify;
+}
+.profil-box-rp img {
+    max-width: 185px;
+}
+.field_label {
+    text-transform: uppercase;
+}
 
 /* BOUTONS D'EDITION DU MESSAGE --- */
 /* Conteneur boutons d'édition */
@@ -1727,16 +1774,64 @@ button.rep-button .rep-nb {
 
 .post_profile {
     padding: 10px;
-    border-right: 1px solid var(--neutralDark);
+    border-right: var(--border);
+    grid-row: 1 / span 2;
 }
 
 .post_pseudo {
     font-weight: bold;
 }
 
-/* Lien "@" de mention */
-a.fa-mention {}
+.post_rank {
+    background: var(--bg1);
+    display: block;
+    text-transform: uppercase;
+    margin: 2px 0 10px;
+    border-radius: 2px;
+}
 
+.post_avatar a:hover {
+    cursor: default;
+}
+.avatar_container {
+    position: relative;
+}
+.avatar_links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    transition: 0.3s;
+}
+.avatar_links:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.8);
+}
+.profil_contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-rows: max-content;
+    grid-gap: 30px;
+    justify-items: center;
+    padding : 2px; 
+    border-radius: 10px;
+}
+
+.post_message {
+    padding: 15px 20px 20px;
+    font-size: 13px;
+}
+
+.fa-mention {
+    cursor: pointer;
+}
 
 /* Mention "en ligne" */
 .online {
@@ -1749,12 +1844,6 @@ a.fa-mention {}
 }
 
 .online:empty {display: none}
-
-.post_message {
-    padding: 25px;
-    font-size: 13px;
-}
-
 
 /* REPONSE RAPIDE --- */
 /*supression de la mention "réponse rapide" */
@@ -1895,10 +1984,6 @@ blockquote cite a {
 .codebox.hidecode dd {
     background: transparent;
     opacity: 0.8;
-}
-
-.fa-mention {
-    cursor: pointer;
 }
 
 /****** ------------------------------------------------------------------------------
