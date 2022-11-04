@@ -1,5 +1,6 @@
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
+    --header: url('https://2img.net/zupimages.net/up/22/42/rv4o.gif');
     --background: var(--neutral);
 
     --neutral: #0f0f0f;
@@ -37,7 +38,7 @@
     --main-font: 'Chakra Petch';
     --main-font-spacing: 1.5px;
 
-    --scrollbar-thumb: #4f4f4f;
+    --scrollbar-thumb: #52364f;
     --scrollbar-bg: var(--neutralDark);
 
     /* VARIABLES MESSENGER */
@@ -79,7 +80,9 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
+    --header: url('https://www.zupimages.net/up/22/44/t982.gif');
     --background: #1c111c;
+
     --neutral: #71645b;
     --neutralDark: #564d49;
     --neutralDarker: #485169;
@@ -235,12 +238,17 @@ body {
 
 /* BANNIERE ---*/
 /* Mettre la bannière en fond permet de la changer selon le thème clair ou sombre */
-#header img {
+#header {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 15px;
-    max-width: 900px;
+    width: 900px;
+    height: 478px;
+    background-image: var(--header);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 900px;
 }
 
 /* Conteneur de toutes les sous-sections
@@ -540,8 +548,6 @@ textarea {
  * Contient des boutons ou des liens spéciaux */
 .links_bar {
     padding: 10px;
-    border: var(--border);
-    border-radius: 5px;
     margin: 25px 0;
     clear: both;
 }
@@ -1891,7 +1897,9 @@ blockquote cite a {
     opacity: 0.8;
 }
 
-
+.fa-mention {
+    cursor: pointer;
+}
 
 /****** ------------------------------------------------------------------------------
  ****** MEMBRES ------------------------------------------------------ ******/
