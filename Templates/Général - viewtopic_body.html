@@ -103,16 +103,18 @@
 
         <!-- Colonne de profil -->
         <div class="post_profile" id="profile{postrow.displayed.U_POST_ID}">
-
+        <div class="post_profile_inner">
             <center>
-                <!-- Pseudo -->
-                <span class="post_pseudo">{postrow.displayed.POSTER_NAME}</span><br />
+                <div class="post_pseudo_rank">
+                    <!-- Pseudo -->
+                    <div class="post_pseudo">{postrow.displayed.POSTER_NAME}</div>
 
-                <!-- Rang -->
-                <span class="post_rank">
-                    {postrow.displayed.POSTER_RANK_NEW} <!-- Textuel -->
-                    {postrow.displayed.RANK_IMAGE} <!-- Image -->
-                </span>
+                    <!-- Rang -->
+                    <div class="post_rank">
+                        {postrow.displayed.POSTER_RANK_NEW} <!-- Textuel -->
+                        {postrow.displayed.RANK_IMAGE} <!-- Image -->
+                    </div>
+                </div>
             </center>
 
         <div class="avatar_container">
@@ -134,13 +136,15 @@
         </div>
 
             <!-- PROFILE TABS -->
-            <div class="p-tab profil-rp left" style="color:transparent;">
-              IRP
+            <div class="p-tab p-corps">
+                CORPS
             </div>
-            <div class="p-tab profil-hrp right" style="color:transparent;">
-              HRP
+            <div class="p-tab p-esprit">
+                ESPRIT
             </div>
-
+            <div class="p-tab p-ame">
+                ÂME
+            </div>
 
             <div class="post_userinfo">
                
@@ -162,8 +166,9 @@
             </div>
 
             <!-- PROFIL CACHÉ -->
-            <div class="profil-box-rp" style="display: none;"></div>
-            <div class="profil-box-hrp" style="display: none;"></div>
+            <div class="p-box-corps" style="display: none;"></div>
+            <div class="p-box-esprit" style="display: none;"></div>
+            <div class="p-box-ame" style="display: none;"></div>
 
             <!-- En ligne -->
             <center>
@@ -171,7 +176,7 @@
                     {postrow.displayed.ONLINE_IMG_NEW}<!-- Textuel -->
                 </div>
             </center>
-
+        </div>
         </div>
         <!-- Fin colonne profil -->
 
