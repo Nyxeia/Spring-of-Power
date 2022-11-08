@@ -47,7 +47,12 @@
 <div class="container">
 
     <!-- Titre du poste -->
-    <h1 class="page-title">{TOPIC_TITLE}</h1>
+    <div class="forum_title_grp topic_title_grp">
+        <div class="forum_title_line topic_title_line"></div>
+        <div class="topic_title">
+            <h1 class="page-title">{TOPIC_TITLE}</h1>
+        </div>
+    </div>
   
     <!-- Sondage (template : viewtopic_poll_ballot /// viewtopic_poll_result) -->
     {POLL_DISPLAY}
@@ -211,7 +216,7 @@
 <!-- BARRE DE GESTION -------------->
 
 
-<div class="links_bar flex_space-between">
+<div class="links_bar">
           
         <!-- BEGIN switch_plus_menu -->
         <!-- Lien "sujets surveillés" -->
@@ -221,7 +226,7 @@
         <!-- Lien "surveiller le sujet" -->
         <!-- BEGIN switch_user_logged_in -->
         <!-- BEGIN watchtopic -->
-        <span >{S_WATCH_TOPIC}</span>
+        <span class="specials_links right">{S_WATCH_TOPIC}</span>
         <!-- END watchtopic -->
         <!-- END switch_user_logged_in -->
 

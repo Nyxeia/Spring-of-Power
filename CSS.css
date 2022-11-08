@@ -330,14 +330,15 @@ h1,
 h1.page-title {
     text-align: center;
     text-transform: uppercase;
-    font-size: 20px;
-    font-family: var(--title-font);
+    font-size: 18px;
+    font-family: var(--main-font);
     font-weight: 300;
-    letter-spacing: 3px;
+    padding: 10px 15px;
+    letter-spacing: var(--main-font-spacing);
     color: var(--textColorAccent);
-    background: var(--neutral);
-    border-radius: var(--radius);
-    padding: 10px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Utilisé pour des titres de sujets, blogs... */
@@ -358,7 +359,16 @@ h3,
     font-weight: bold;
 }
 
-
+.topic_title_grp {
+    justify-content: center;
+}
+.topic_title_line {
+    top: 33px !important;
+}
+.topic_title {
+    background: var(--neutralDark);
+    z-index: 50;
+}
 
 /*** --------------------------------------- ***/
 /*** BOUTONS D'INTERACTION ET BARRE DE TEXTE ***/
@@ -1207,8 +1217,6 @@ a.mainmenu img {display: none}
     top: 14px;
     filter: opacity(40%);
 }
-
-
 a.forumtitle {
     font-size: var(--title-size);
     font-family: var(--main-font);
@@ -1219,7 +1227,6 @@ a.forumtitle {
     -webkit-text-fill-color: transparent;
     transition: letter-spacing 0.5s;
 }
-
 a.forumtitle:hover {
     letter-spacing: 5px;
 }
