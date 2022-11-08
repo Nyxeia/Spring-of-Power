@@ -25,7 +25,7 @@ $(function() {
   for (var a = $(['.post-options', '.profile-icons', '.post-options', '.posting-icons', '.profile-icons'][version]), b, c, d = ['.name strong a', '.author a', '.username a', '.author a', '.post_pseudo a'][version], e, i = 0, j = a.length, t = document.getElementById('text_editor_textarea'), l = version == 1 || version == 3 || version == 4; i<j; i++) {
     b = document.createElement('IMG');
     b.className = 'fa-mention';
-    b.src = 'https://images2.imgbox.com/44/fe/G8b7mpyi_o.png';
+    b.src = 'https://images2.imgbox.com/79/79/o58BjO5L_o.png';
     b.title = 'Mentionner ' + $(a[i]).closest('.post_row').find(d + ':not(.fa-mention)').text();
     b.onclick = function() {
       var n = this.title.replace(/^.*?\s/,'');
@@ -50,3 +50,4 @@ $(function() {
     t=$(t).sceditor('instance');
   });
 });
+

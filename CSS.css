@@ -37,6 +37,7 @@
     --font: 'Open Sans';
     --main-font: 'Chakra Petch';
     --main-font-spacing: 1.5px;
+    --title-font: 'Oswald';
 
     --scrollbar-thumb: #52364f;
     --scrollbar-bg: var(--neutralDark);
@@ -152,8 +153,9 @@
 }
 
 .theme-switch-wrapper {
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
+    flex-direction: column;
     position: fixed;
     z-index: 99;
     right: 25px;
@@ -326,12 +328,16 @@ a:hover {
 /* Utilisé pour des titres de pages */
 h1,
 h1.page-title {
-    color: var(--contrastLight);
-    margin: 10px 0 20px;
-    font-size: var(--title-size);
-    font-weight: 700;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: var(--title-font);
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: var(--textColorAccent);
+    background: var(--neutral);
+    border-radius: var(--radius);
+    padding: 10px;
 }
 
 /* Utilisé pour des titres de sujets, blogs... */
@@ -365,7 +371,7 @@ input.inputbox {
     border-radius: 5px;
     background: var(--neutralDark);
     font-size: var(--normal-size);
-    color: var(--contrastLight);
+    color: var(--textColorAccent);
     padding: 2px 6px;
 }
 
@@ -450,7 +456,9 @@ a.sceditor-button {
     /*ne pas supprimer*/
     min-height: 250px !important;
 }
-
+a.sceditor-button.sceditor-button-source {
+    display: none;
+}
 /*Boîte Smiley*/
 body#sce_smilies_body {
     background: transparent!important;
@@ -571,9 +579,9 @@ a.specials_links:empty {
     display: none
 }
 
-
-
-
+.topic_buttons {
+    margin: 10px 20px 10px 0;
+}
 
 
 /****** ------------------------------------------------------------------------------ 
@@ -1148,11 +1156,10 @@ a.mainmenu img {display: none}
     text-align: center;
     text-transform: uppercase;
     font-size: 22px;
-    font-family: Play;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    color: #350041;
-    -webkit-text-stroke: 1px #96818ded;
+    font-family: var(--title-font);
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #ffffff9c;
 }
 
 .forum_row {
@@ -1413,23 +1420,9 @@ a.groups:last-child {margin-bottom: 0}
 
 /* chaîne de lien de navigation : catégorie > forum > sous-fo */
 .navigation_chain {
-    font-size: 0;
-    /*retire les :: de séparation */
+    margin: 8px;
+    text-transform: uppercase;
 }
-
-.navigation_chain a {
-    font-size: initial;
-    /*rétablit la taille des liens*/
-    margin-right: 8px;
-}
-
-.navigation_chain a:before {
-    content: '›';
-    /*symbole ou texte modifiable*/
-    font-size: var(--nomal-size);
-    margin-right: 3px;
-}
-
 
 /* BOUTONS DE MESSAGE : Répondre, Nouveau,... ---* 
  * (réutilisé dans l'affichage d'un sujet (viewtopic_body) et les MP (privmsgs_body) */
@@ -1452,10 +1445,8 @@ a.groups:last-child {margin-bottom: 0}
 }
 
 #moderation_forum_tools a {
-    background: var(--neutralDark);
-    border-radius: 5px;
-    padding: 2px 8px;
     font-size: var(--normal-size);
+    text-transform: uppercase;
 }
 
 
@@ -1641,7 +1632,7 @@ a.groups:last-child {margin-bottom: 0}
     clear: both;
     display: grid;
     grid-template-rows: 47px auto;
-    grid-template-columns: min-content 659px;
+    grid-template-columns: min-content 640px;
     border-bottom: var(--border);
     overflow-wrap: break-word;
 }
@@ -1661,10 +1652,11 @@ div.post_row:last-of-type {
     align-items: center;
     width: 100%;
     height: fit-content;
-    font-style: italic;
-    font-size: var(--small-size);
     padding: 4px 10px;
     border-bottom: var(--border);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: var(--small-size);
 }
 
 .post_date {
@@ -1728,6 +1720,7 @@ div.post_row:last-of-type {
 }
 .field_label {
     text-transform: uppercase;
+    font-size: 11px;
 }
 
 /* BOUTONS D'EDITION DU MESSAGE --- */
@@ -1735,6 +1728,10 @@ div.post_row:last-of-type {
 ul.profile-icons {
     flex-grow: 1;
     display: flex;
+    align-items: center;
+}
+ul.profile-icons img {
+    width: 16px;
 }
 
 /*UN SEUL bouton d'édition */
@@ -1743,12 +1740,11 @@ ul.profile-icons li {
     border-radius: 5px;
 }
 
-/*hover d'un bouton d'édition*/
-ul.profile-icons li:hover {
-    background: var(--neutralDark);
+.fa-mention {
+    cursor: pointer;
+    padding: 0px 2px;
+    margin-top: 2px;
 }
-
-
 
 /* BOUTON LIKE --- */
 /* Conteneur du bouton like */
@@ -1808,16 +1804,20 @@ button.rep-button .rep-nb {
     margin-bottom: 8px;
 }
 .post_pseudo {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 8px;
-    padding-bottom: 8px;
+    margin: 5px;
+    padding-bottom: 5px;
     border-bottom: var(--border);
-    font-size: 13px;
+}
+.post_pseudo a {
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 .post_rank {
     text-transform: uppercase;
-    margin: 0 8px 8px 8px;
+    margin: 0 5px 5px 5px;
 }
 .post_avatar {
     border-radius: var(--radius);
@@ -1857,15 +1857,12 @@ button.rep-button .rep-nb {
     justify-items: center;
     padding : 2px; 
     border-radius: 10px;
+    width: 100%;
 }
 
 .post_message {
     padding: 15px 20px 20px;
     font-size: 13px;
-}
-
-.fa-mention {
-    cursor: pointer;
 }
 
 .online {
@@ -2106,6 +2103,9 @@ blockquote cite a {
     vertical-align: middle;
 }
 
+fieldset dt span {
+    color: var(--textColor) !important;
+}
 
 /*** ------------------------------- ***/
 /*** WOMBAT PROFILS EN POP UP ---- ***/
@@ -2493,6 +2493,32 @@ form[name=form_login] .content {
     border-radius: 5px;
 }
 
+.italic {
+    font-style: italic;
+}
+
+hr {
+    border: var(--border);
+}
+
+msgbtn {
+    font-size: 18px;
+    font-family: var(--title-font);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 3px 15px;
+    border-radius: var(--radius);
+    border: var(--border);
+    background: var(--neutral);
+}
+.newbtn {
+    color: var(--special);
+}
+.repbtn {
+    color: var(--accent);
+}
+
 /****** ------------------------------------------------------------------------------
  ****** CODE DU FORUM ------------------------------------------------------------------------ ******/
 
@@ -2502,7 +2528,7 @@ tag {
     text-transform: uppercase;
     color: white;
     border-radius: 10px;
-    padding: 0px 10px;
+    padding: 2px 10px;
     font-size: var(--small-size);
 }
 
