@@ -1,3 +1,15 @@
+var gradient = {"background" : "var(--gradient)", 
+"-webkit-background-clip" : "text",
+"-webkit-text-fill-color" : "transparent"};
+
+// tabs
+var defaultColor = {"color" : "var(--textColor)"};
+var selectedColor = {"color" : "var(--textColorAccent"};
+// var selectedColor = gradient;
+
+// label
+var labelColor = gradient;
+
 $( function(){
   $('body')
     .on('click', '.p-corps', function(){
@@ -12,22 +24,22 @@ $( function(){
         ame.hide();
         corps.show();
 
-        $(this).css('color', 'white');
-        $(this).nextAll(".p-esprit:first").css('color', 'var(--textColor)');
-        $(this).nextAll(".p-ame:first").css('color', 'var(--textColor)');
+        $(this).css(selectedColor);
+        $(this).nextAll(".p-esprit:first").css(defaultColor);
+        $(this).nextAll(".p-ame:first").css(defaultColor);
 
       } else {
 
         corps.slideToggle("fast", function() {
 
           if (corps.is(":visible")) {
-            $(this).prevAll(".p-corps:first").css('color', 'white');
+            $(this).prevAll(".p-corps:first").css(selectedColor);
           } else {
-            $(this).prevAll(".p-corps:first").css('color', 'var(--textColor)');
+            $(this).prevAll(".p-corps:first").css(defaultColor);
           }
 
-          $(this).nextAll(".p-esprit:first").css('color', 'var(--textColor)');
-          $(this).nextAll(".p-ame:first").css('color', 'var(--textColor)');
+          $(this).nextAll(".p-esprit:first").css(defaultColor);
+          $(this).nextAll(".p-ame:first").css(defaultColor);
 
         });
 
@@ -50,22 +62,22 @@ $( function(){
         ame.hide();
         esprit.show();
 
-        $(this).css('color', 'white');
-        $(this).prevAll(".p-tab:first").css('color', 'var(--textColor)');
-        $(this).nextAll(".p-tab:first").css('color', 'var(--textColor)');
+        $(this).css(selectedColor);
+        $(this).prevAll(".p-tab:first").css(defaultColor);
+        $(this).nextAll(".p-tab:first").css(defaultColor);
 
       } else {
 
         esprit.slideToggle("fast", function() {
 
           if (esprit.is(":visible")) {
-            $(this).prevAll(".p-esprit:first").css('color', 'white');
+            $(this).prevAll(".p-esprit:first").css(selectedColor);
           } else {
-            $(this).prevAll(".p-esprit:first").css('color', 'var(--textColor)');
+            $(this).prevAll(".p-esprit:first").css(defaultColor);
           }
 
-          $(this).prevAll(".p-tab:first").css('color', 'var(--textColor)');
-          $(this).nextAll(".p-tab:first").css('color', 'var(--textColor)');
+          $(this).prevAll(".p-tab:first").css(defaultColor);
+          $(this).nextAll(".p-tab:first").css(defaultColor);
 
         });
 
@@ -88,22 +100,22 @@ $( function(){
           esprit.hide();
           ame.show();
   
-          $(this).css('color', 'white');
-          $(this).prevAll(".p-corps:first").css('color', 'var(--textColor)');
-          $(this).prevAll(".p-esprit:first").css('color', 'var(--textColor)');
+          $(this).css(selectedColor);
+          $(this).prevAll(".p-corps:first").css(defaultColor);
+          $(this).prevAll(".p-esprit:first").css(defaultColor);
   
         } else {
   
           ame.slideToggle("fast", function() {
   
             if (ame.is(":visible")) {
-              $(this).prevAll(".p-ame:first").css('color', 'white');
+              $(this).prevAll(".p-ame:first").css(selectedColor);
             } else {
-              $(this).prevAll(".p-ame:first").css('color', 'var(--textColor)');
+              $(this).prevAll(".p-ame:first").css(defaultColor);
             }
   
-            $(this).prevAll(".p-corps:first").css('color', 'var(--textColor)');
-            $(this).prevAll(".p-esprit:first").css('color', 'var(--textColor)');
+            $(this).prevAll(".p-corps:first").css(defaultColor);
+            $(this).prevAll(".p-esprit:first").css(defaultColor);
           });
   
         }
@@ -113,6 +125,8 @@ $( function(){
 
 var $path = ".post_profile .post_userinfo .user_field";
 var $parent = ".post_profile";
+
+
 
 jQuery(function () {
 
@@ -139,7 +153,7 @@ jQuery(function () {
 
         if (found){
             $(this).parents($parent).find('.p-box-corps').append(this);
-            //label.css({"color" : "#8b1b58"});
+            label.css(labelColor);
         }
  
     });
@@ -170,12 +184,13 @@ jQuery(function () {
 
         if (found) {
             $(this).parents($parent).find('.p-box-esprit').append(this);
-            //label.css({"color" : "#8b1b58"});
+            label.css(labelColor);
         }
  
     });
 
 });
+
 
 jQuery(function () {
 
@@ -205,7 +220,7 @@ jQuery(function () {
 
         if (found) {
             $(this).parents($parent).find('.p-box-ame').append(this);
-            //label.css({"color" : "#8b1b58"});
+            label.css(labelColor);
         }
  
     });

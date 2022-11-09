@@ -20,7 +20,12 @@
 <div class="container">
 
     <!-- Titre de la liste des membres -->
-    <h1 class="page-title">{PAGE_TITLE}</h1>
+    <div class="forum_title_grp topic_title_grp">
+        <div class="forum_title_line topic_title_line"></div>
+        <div class="topic_title">
+            <h1 class="page-title">{PAGE_TITLE}</h1>
+        </div>
+    </div>
 
     <!-- Liste des membres -->
     <div class="userlist">
@@ -38,22 +43,16 @@
             <div class="userlist_details">
 
                 <!-- Pseudo -->
-                <span class="userlist_pseudo">
+                <div class="userlist_pseudo">
                     <a href="{memberrow.U_VIEWPROFILE}">{memberrow.USERNAME}</a>
-                </span>
+                </div>
 
                 <!-- Champs de profil -->
                 <div class="userlist_infos">
-                    {L_JOINED}: {memberrow.JOINED}<br />
-                    {L_VISITED}: {memberrow.LASTVISIT}<br />
-                    {L_POSTS}: {memberrow.POSTS}<br />
+                    <div>{memberrow.JOINED}</div>
+                    <div>{memberrow.POSTS} messages</div>
                 </div>
-
-                <!-- Lien de contact -->
-                <div class="userlist_contact right">
-                    {memberrow.PM_IMG}&nbsp;
-                    {memberrow.WWW_IMG}
-                </div>
+                <div class="userlist_visit">{memberrow.LASTVISIT}</div>
             </div>
 
         </div>
