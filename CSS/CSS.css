@@ -260,6 +260,9 @@ body {
     padding: 10px;
     margin: 12px 0;
 }
+.msgdie-panel {
+    text-align: center;
+}
 
 .sidebar {
     position: fixed;
@@ -579,6 +582,12 @@ textarea {
     margin: 25px 0;
     clear: both;
     font-size: var(--normal-size);
+}
+.links_bar a {
+    color: var(--textColor);
+}
+.links_bar a:hover {
+    color: var(--accent);
 }
 
 /* supprime si vide */
@@ -2045,29 +2054,52 @@ blockquote cite a {
     padding: 10px;
     grid-gap: 20px;
 }
-
+.profile_left {
+    background: var(--neutralDark);
+    padding: 5px;
+    border-radius: 5px;
+}
+.profile_rank,
+.profile_lastvisit {
+    border: var(--border);
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 5px;
+}
 .profile_avatar {
     width: 200px;
+    margin: 8px 0px;
+}
+.profile_avatar img {
+    border-radius: var(--radius);
+    border: var(--border);
+    padding: 5px;
 }
 
 .profile_infos {}
-
 .profile_contact form {
     display: flex;
 }
-
 .profile_contact form > div {
     margin-left: 5px;
+}
+.profile_contact {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 /* Suppression des cases vides de contact qui affichent " - " 
  * nth-child(n+4) supprime toutes les cases après la quatrième */
-.profile_contact form div:nth-child(n+4) {
+.profile_contact form div:nth-child(2) {
     display: none
 }
 
 .profile_content {
-    height: 265px;
+    height: 290px;
     overflow: auto;
 }
 
@@ -2378,28 +2410,40 @@ fieldset dt span {
 /* Onglets dans la modification de profil */
 #tabs ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 20px 0 10px
 }
 
 /*onglet*/
 #tabs li {
-    padding: 5px 10px;
-    border: 1px solid transparent;
+    padding: 5px;
 }
 
 /* Onglet selectionné */
 #tabs li.activetab {
     background: var(--neutralDark);
-    border: var(--border);
-    border-radius: 5px;
 }
 
 /* onglet au survol */
 #tabs li:hover {
     background: var(--neutralDark);
-    border-radius: 5px;
+}
+
+#tabs li a {
+    font-family: var(--title-font);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 3px 15px;
+    border-radius: var(--radius);
     border: var(--border);
+    background: var(--neutral);
+    color: var(--textColor);
+}
+#tabs li a:hover {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Suppression de l'onglet "amis et ignorés" */

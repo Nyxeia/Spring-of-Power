@@ -1,13 +1,23 @@
+// FLAT COLOR - NO GRADIENT
+//var flat = {"color" : "rgb(76 52 80)", "font-weight" : "600"};
+//var defaultColor = {"color" : "var(--textColor)", "font-weight" : "200"};
+//var selectedColor = flat;
+//var labelColor = flat;
+
+// WITH GRADIENT
 var gradient = {"background" : "var(--gradient)", 
 "-webkit-background-clip" : "text",
-"-webkit-text-fill-color" : "transparent"};
+"-webkit-text-fill-color" : "transparent",
+"font-weight" : "600"};
 
-// tabs
-var defaultColor = {"color" : "var(--textColor)"};
-var selectedColor = {"color" : "var(--textColorAccent"};
-// var selectedColor = gradient;
+var defaultColor = {
+  "color" : "var(--textColor)",
+  "background" : "none",
+  "-webkit-text-fill-color" : "var(--textColor)",
+  "font-weight" : "200"};
 
-// label
+var selectedColor = gradient;
+
 var labelColor = gradient;
 
 $( function(){

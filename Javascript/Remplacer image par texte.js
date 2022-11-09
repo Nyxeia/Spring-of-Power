@@ -12,6 +12,5 @@ $(function(){
   // BOUTON DE CONTACT 
    // Pour les boutons de contact affichée dans le profil seul, utilisez l'inspecteur d'élément pour trouver l'ID correspondant au bouton
 
-   // $('#field_idxxx img').replaceWith("Autre");
-  
+   //$('#field_id img').replaceWith("Autre");
 });

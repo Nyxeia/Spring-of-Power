@@ -5,19 +5,30 @@
 <div class="container" id="wombat">
 
     <!-- Username -->
-    <h1 class="page-title">{USERNAME}</h1>
+    <div class="forum_title_grp topic_title_grp">
+        <div class="forum_title_line topic_title_line"></div>
+        <div class="topic_title">
+            <h1 class="page-title">{USERNAME}</h1>
+        </div>
+    </div>
 
     <!-- Profile contents -->
     <div class="user_profile">
 
         <!-- Avatar -->
-        <div class="profile_avatar" id="user_avatar"> {AVATAR_IMG}</div>
-
+        <div class="profile_left">
+            <div class="profile_rank">{POSTER_RANK}</div>
+            <div class="profile_avatar" id="user_avatar"> {AVATAR_IMG}</div> 
+            <!-- "Last visited" field -->
+            <div class="profile_lastvisit">
+                <field>{LAST_VISIT_TIME}</field>
+            </div>
+        </div>
       
         <!-- Profile info -->
         <div class="profile_infos">
 
-            <div class="profile_contact right">
+            <div class="profile_contact">
                 <!-- Contact image link -->
                 <form action="{S_PROFILE_ACTION}" method="post" name="post">
                     <!-- BEGIN contact_field -->
@@ -26,32 +37,9 @@
                 </form>
             </div>
 
-            <!-- Rank-->
-            <strong>{POSTER_RANK}</strong><br />
-
-            <!-- Status: online -->
-            <!-- BEGIN switch_show_status -->
-            {USER_ONLINE}
-            <!-- END switch_show_status -->
-
-
-            <br/>
+            <div class="profile_mid">
             <!-- PROFILE FIELDS -->
             <div class="profile_content">
-
-                <!-- "Last visited" field -->
-                <div class="profile_field">
-                    <label>{L_LAST_VISITED} :</label>
-                    <field>{LAST_VISIT_TIME}</field>
-                </div>
-
-               <!-- "Private messages" field -->
-                <!-- BEGIN switch_dhow_mp -->
-                <div class="profile_field">
-                    <label>{L_PRIVATE_MSG} :</label>
-                    <field>{PRIVATE_MSG}</field>
-                </div>
-                <!-- END switch_dhow_mp -->
 
                 <!-- Other fields -->
                 <!-- BEGIN profile_field -->
@@ -62,17 +50,24 @@
                         <!-- "Message" field contents -->
                         <!-- BEGIN profil_type_user_posts -->
                         <a rel="nofollow" href="/st/{PUSERNAME}" id="opentopics">{L_SEARCH_USER_POSTS} :</a><!-- topics opened by -->
-
-                        <br />
+    
                         <a rel="nofollow" href="/sta/{PUSERNAME}" id="alltopics">{L_TOPICS}</a> <!-- all topics -->
-                      		&nbsp;-&nbsp;
+                            &nbsp;-&nbsp;
                         <a rel="nofollow" href="/spa/{PUSERNAME}" id="allposts">{L_POSTS}</a> <!-- all posts -->
                         <!-- END profil_type_user_posts -->
+
                     </field>
                 </div>
                 <!-- END profile_field -->
 
-              
+                <!-- "Private messages" field -->
+                <!-- BEGIN switch_dhow_mp -->
+                <div class="profile_field">
+                    <label>{L_PRIVATE_MSG} :</label>
+                    <field>{PRIVATE_MSG}</field>
+                </div>
+                <!-- END switch_dhow_mp -->
+
               	<!-- Character sheet -->
                 <!-- BEGIN switch_rpg -->
                 <!-- BEGIN rpg_fields -->
@@ -88,6 +83,16 @@
 
             </div>
             <!-- End of profile fields -->
+            </div>
+
+            <div class="profile_right">
+                <div class="profile_esprit"></div>
+                <div class="profile_ame"></div>
+            </div>
+
+            <div class="profile_msgs">
+
+            </div>
 
         </div>
 
@@ -96,7 +101,10 @@
 
     <!-- Profile moderation links -->
     <!-- BEGIN switch_auth_user -->
-    <div class="profile_admin">{ADMINISTRATE_USER}{BAN_USER}</div>
+    <div class="profile_admin">
+        <a href="/{PUSERNAME}">Profil complet</a> - 
+        {ADMINISTRATE_USER}{BAN_USER}
+    </div>
     <!-- END switch_auth_user -->
 
 
