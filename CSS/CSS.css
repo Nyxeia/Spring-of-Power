@@ -84,6 +84,9 @@
     --header: url('https://www.zupimages.net/up/22/44/t982.gif');
     --background: #1c111c;
 
+    /* --neutral: #aeaba9;
+    --neutralDark: #959291; */
+
     --neutral: #71645b;
     --neutralDark: #564d49;
     --neutralDarker: #485169;
@@ -1738,6 +1741,7 @@ div.post_row:last-of-type {
 .p-box-esprit img,
 .p-box-ame img {
     max-width: 185px;
+    display: block;
 }
 .field_label {
     text-transform: uppercase;
@@ -2064,6 +2068,10 @@ blockquote cite a {
     justify-content: space-between;;
 }
 .profile_right {
+    grid-row: 2 / span 2;
+    grid-column: 2;
+}
+.profile_content, .profile_right {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -2090,7 +2098,7 @@ blockquote cite a {
 .profile_infos {
     display: grid;
     grid-template-columns: min-content auto;
-    grid-template-rows: auto max-content auto;
+    grid-template-rows: auto auto;
     column-gap: 10px;
 }
 .profile_infotop {
@@ -2117,44 +2125,42 @@ blockquote cite a {
 
 .profile_msgs {
     display: flex;
-    gap: 10px;
-    grid-column: 1 / span 2;
+    gap: 5px;
     justify-content: center;
     padding: 8px !important;
 }
 
 .profile_content {
-    height: 325px;
+    height: 360px;
     margin-bottom: 10px;
 }
 .profile_bg {
     background: var(--neutralDark);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
 }
-.bg_main {
-    height: 100%;
-    width: 335px;
-}
-.profile_main {
+.profile_main, .profile_top, .profile_bot, .profile_player {
     height: 100%;
     overflow: auto;
     border: var(--border);
     border-radius: var(--radius);
-    padding: 10px;
+    padding: 0px 5px;
+}
+.bg_main {
+    height: 200px;
+    width: 335px;
+}
+.bg_player {
+    height:150px;
 }
 .bg_top {
-    height: 200px;
+    height: 185px;
 }
 .bg_bot {
-    height: 115px;
+    height: 214px;
 }
-
 .profile_field {
-    margin: 5px 0;
-    display: grid;
-    grid-template-columns: max-content auto;
-    grid-gap: 10px;
+    margin: 2px 0;
 }
 .profile_field label,
 .profile_field label > span {
@@ -2164,7 +2170,7 @@ blockquote cite a {
     text-transform: uppercase;
 }
 .profile_field field {
-    position: relative;
+    display: inline-block;
 }
 .profile_field img {
     max-width: 200px;
@@ -2201,53 +2207,6 @@ blockquote cite a {
 fieldset dt span {
     color: var(--textColor) !important;
 }
-
-/*** ------------------------------- ***/
-/*** WOMBAT PROFILS EN POP UP ---- ***/
-
- /* Fond atténué */
-.wombat-overlay {
-    position: fixed;
-    z-index: 990;
-    inset: 0;
-    opacity: 0;
-    visibility: hidden;
-    width: 100%;
-    height: 100%;
-    transition: 0.2s opacity ease;
-    background: var(--neutral);
-}
-
-/* effet de transition du fond atténué */
-.wombat-overlay.open {
-    opacity: .5;
-    visibility: visible;
-}
-
-/* Fenêtre du popup */
-.wombat-aside {
-    position: fixed;
-    inset: 0;
-    margin: auto;
-    z-index: 999;
-    transition: 0.2s all ease;
-    visibility: hidden;
-    opacity: 0;
-    width: 90%;
-    max-width: 900px;
-    box-shadow: var(--shadowBox);
-    border-radius: 10px;
-    height: max-content;
-    transform: translateX(-20%);
-}
-
-/* effet de transition pour la fenêtre */
-.wombat-aside.open {
-    opacity: 1;
-    transform: translateX(0);
-    visibility: visible;
-}
-
 
 /*** ------------------------------- ***/
 /*** PROFILS SIMPLIFIÉS DES TAGS ---- ***/

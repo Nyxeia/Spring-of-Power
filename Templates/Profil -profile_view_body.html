@@ -2,7 +2,7 @@
 <!-- ACTIVATE SIMPLE PROFILE: Users & Groups › Profiles › General options › Activate advanced profile: no -->
 
 <br/>
-<div class="container" id="wombat">
+<div class="container">
 
     <!-- Username -->
     <div class="forum_title_grp topic_title_grp">
@@ -38,6 +38,9 @@
             </div>
 
             <div class="profile_content">
+            <div class="profile_bg bg_player">
+                <div class="profile_player"></div>
+            </div>
             <!-- PROFILE FIELDS -->
             <div class="profile_bg bg_main">
             <div class="profile_main">
@@ -76,6 +79,18 @@
             <!-- End of profile fields -->
             </div>
 
+            <div class="profile_msgs profile_bg">
+                <!-- BEGIN profile_field -->
+                    <!-- BEGIN profil_type_user_posts -->
+                    <a rel="nofollow" href="/st/{PUSERNAME}" id="opentopics" class="btn">OUVERTURES</a><!-- topics opened by -->
+
+                    <a rel="nofollow" href="/sta/{PUSERNAME}" id="alltopics" class="btn">PARTICIPATIONS</a> <!-- all topics -->
+
+                    <a rel="nofollow" href="/spa/{PUSERNAME}" id="allposts" class="btn">MESSAGES</a> <!-- all posts -->
+                    <!-- END profil_type_user_posts -->
+                <!-- END profile_field -->
+            </div>
+
             <div class="profile_right">
                 <div class="profile_bg bg_top">
                 <div class="profile_top"></div>
@@ -83,18 +98,6 @@
                 <div class="profile_bg bg_bot">
                 <div class="profile_bot"></div>
                 </div>
-            </div>
-
-            <div class="profile_msgs profile_bg">
-                <!-- BEGIN profile_field -->
-                    <!-- BEGIN profil_type_user_posts -->
-                    <a rel="nofollow" href="/st/{PUSERNAME}" id="opentopics" class="btn">SUJETS OUVERTS</a><!-- topics opened by -->
-
-                    <a rel="nofollow" href="/sta/{PUSERNAME}" id="alltopics" class="btn">SUJETS PARTICIPÉS</a> <!-- all topics -->
-
-                    <a rel="nofollow" href="/spa/{PUSERNAME}" id="allposts" class="btn">MESSAGES POSTÉS</a> <!-- all posts -->
-                    <!-- END profil_type_user_posts -->
-                <!-- END profile_field -->
             </div>
 
         </div>
@@ -105,8 +108,7 @@
     <!-- Profile moderation links -->
     <!-- BEGIN switch_auth_user -->
     <div class="profile_admin">
-        <a href="/{PUSERNAME}">Profil complet</a> - 
-        {ADMINISTRATE_USER}{BAN_USER}
+        {BAN_USER}
     </div>
     <!-- END switch_auth_user -->
 
