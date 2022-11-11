@@ -28,7 +28,7 @@
         <!-- Profile info -->
         <div class="profile_infos">
 
-            <div class="profile_contact">
+            <div class="profile_contact profile_bg">
                 <!-- Contact image link -->
                 <form action="{S_PROFILE_ACTION}" method="post" name="post">
                     <!-- BEGIN contact_field -->
@@ -37,26 +37,16 @@
                 </form>
             </div>
 
-            <div class="profile_mid">
-            <!-- PROFILE FIELDS -->
             <div class="profile_content">
+            <!-- PROFILE FIELDS -->
+            <div class="profile_bg bg_main">
+            <div class="profile_main">
 
                 <!-- Other fields -->
                 <!-- BEGIN profile_field -->
                 <div class="profile_field" id="field_id{profile_field.ID}">
                     <label>{profile_field.LABEL}</label>
-                    <field>{profile_field.CONTENT}
-
-                        <!-- "Message" field contents -->
-                        <!-- BEGIN profil_type_user_posts -->
-                        <a rel="nofollow" href="/st/{PUSERNAME}" id="opentopics">{L_SEARCH_USER_POSTS} :</a><!-- topics opened by -->
-    
-                        <a rel="nofollow" href="/sta/{PUSERNAME}" id="alltopics">{L_TOPICS}</a> <!-- all topics -->
-                            &nbsp;-&nbsp;
-                        <a rel="nofollow" href="/spa/{PUSERNAME}" id="allposts">{L_POSTS}</a> <!-- all posts -->
-                        <!-- END profil_type_user_posts -->
-
-                    </field>
+                    <field>{profile_field.CONTENT}</field>
                 </div>
                 <!-- END profile_field -->
 
@@ -82,16 +72,29 @@
 
 
             </div>
+            </div>
             <!-- End of profile fields -->
             </div>
 
             <div class="profile_right">
-                <div class="profile_esprit"></div>
-                <div class="profile_ame"></div>
+                <div class="profile_bg bg_top">
+                <div class="profile_top"></div>
+                </div>
+                <div class="profile_bg bg_bot">
+                <div class="profile_bot"></div>
+                </div>
             </div>
 
-            <div class="profile_msgs">
+            <div class="profile_msgs profile_bg">
+                <!-- BEGIN profile_field -->
+                    <!-- BEGIN profil_type_user_posts -->
+                    <a rel="nofollow" href="/st/{PUSERNAME}" id="opentopics" class="btn">SUJETS OUVERTS</a><!-- topics opened by -->
 
+                    <a rel="nofollow" href="/sta/{PUSERNAME}" id="alltopics" class="btn">SUJETS PARTICIPÉS</a> <!-- all topics -->
+
+                    <a rel="nofollow" href="/spa/{PUSERNAME}" id="allposts" class="btn">MESSAGES POSTÉS</a> <!-- all posts -->
+                    <!-- END profil_type_user_posts -->
+                <!-- END profile_field -->
             </div>
 
         </div>
