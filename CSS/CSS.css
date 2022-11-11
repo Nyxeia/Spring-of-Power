@@ -1282,7 +1282,7 @@ a.forumtitle:hover {
     letter-spacing: 0.5px;
 }
 .forum_sub a:hover {
-    background: var(--gradient);
+    background-image: var(--gradient);
     color: white;
     padding: 3px 11px;
     border: none;
@@ -1827,6 +1827,7 @@ button.rep-button .rep-nb {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 8px;
+    text-align: center;
 }
 .post_pseudo {
     margin: 5px;
@@ -2065,7 +2066,7 @@ blockquote cite a {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;;
+    justify-content: space-between;
 }
 .profile_right {
     grid-row: 2 / span 2;
@@ -2075,6 +2076,15 @@ blockquote cite a {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.profile_pr {margin-bottom: 0 !important}
+.profile_pseudo {
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    max-width: 188px;
 }
 .profile_rank,
 .profile_lastvisit {
@@ -2113,7 +2123,6 @@ blockquote cite a {
 .profile_contact {
     display: flex;
     flex-direction: row-reverse;
-    padding: 10px;
     margin-bottom: 10px;
     grid-column: 1 / span 2;
 }
@@ -2136,7 +2145,7 @@ blockquote cite a {
 }
 .profile_bg {
     background: var(--neutralDark);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
 }
 .profile_main, .profile_top, .profile_bot, .profile_player {
@@ -2144,7 +2153,7 @@ blockquote cite a {
     overflow: auto;
     border: var(--border);
     border-radius: var(--radius);
-    padding: 0px 5px;
+    padding: 2px 5px;
 }
 .bg_main {
     height: 200px;
@@ -2157,7 +2166,7 @@ blockquote cite a {
     height: 185px;
 }
 .bg_bot {
-    height: 214px;
+    height: 215px;
 }
 .profile_field {
     margin: 2px 0;
@@ -2173,7 +2182,7 @@ blockquote cite a {
     display: inline-block;
 }
 .profile_field img {
-    max-width: 200px;
+    max-width: 230px;
 }
 .profile_admin {
     text-align: center;
@@ -2628,14 +2637,29 @@ msgbtn {
 
 /****** ------------------------------------------------------------------------------
  ****** CODE DU FORUM ------------------------------------------------------------------------ ******/
-
+tag, ltag {
+    font-family: var(--main-font);
+    font-size: var(--small-size);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 2px 10px;
+}
 tag {
     background: var(--gradient);
-    font-family: var(--main-font);
-    text-transform: uppercase;
     color: white;
     border-radius: 10px;
     padding: 2px 10px;
-    font-size: var(--small-size);
+}
+ltag {
+    background: var(--neutral);
+    color: var(--textColorAccent);
+    border-radius: 10px;
+    border: var(--border);
+}
+ltag:hover {
+    background: var(--gradient);
+    color: white;
+    padding: 3px 11px;
+    border: none;
 }
 

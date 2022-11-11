@@ -8,7 +8,7 @@
     <div class="forum_title_grp topic_title_grp">
         <div class="forum_title_line topic_title_line"></div>
         <div class="topic_title">
-            <h1 class="page-title">{USERNAME}</h1>
+            <h1 class="page-title">FICHE D'IDENTIFICATION</h1>
         </div>
     </div>
 
@@ -17,7 +17,14 @@
 
         <!-- Avatar -->
         <div class="profile_left">
-            <div class="profile_rank">{POSTER_RANK}</div>
+            <!-- <div class="profile_rank">{POSTER_RANK}</div> -->
+            <div class="post_pseudo_rank profile_pr">
+                <!-- Pseudo -->
+                <div class="post_pseudo profile_pseudo">{USERNAME}</div>
+
+                <!-- Rang -->
+                <div class="post_rank">{POSTER_RANK}</div>
+            </div>
             <div class="profile_avatar" id="user_avatar"> {AVATAR_IMG}</div> 
             <!-- "Last visited" field -->
             <div class="profile_lastvisit">
