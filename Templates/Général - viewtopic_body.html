@@ -4,8 +4,19 @@
 <div class="nav_grid">
 
     <!----------------------------------------------->
-    <!-- BARRE DE GESTION -------------->
+    <!-- LIENS DE NAVIGATION -------------->
 
+    <div class="navigation_links">
+
+        <!-- Chaîne de lien : Catégorie > Forum > Sous-fo -->
+        <span class="navigation_chain">
+            {NAV_CAT_DESC}
+        </span>
+
+    </div>
+
+    <!----------------------------------------------->
+    <!-- BARRE DE GESTION -------------->
     <div class="topic_buttons">
       
             <!-- Boutons : nouveau -->
@@ -18,19 +29,6 @@
             <a class="buttons" href="{U_POST_REPLY_TOPIC}"><img class="reply_button" src="{REPLY_IMG}" class="i_reply" alt="{L_POST_REPLY_TOPIC}" /></a>
             <!-- END switch_user_authreply -->
      
-    </div>
-
-
-    <!----------------------------------------------->
-    <!-- LIENS DE NAVIGATION -------------->
-
-    <div class="navigation_links">
-
-        <!-- Chaîne de lien : Catégorie > Forum > Sous-fo -->
-        <span class="navigation_chain">
-            {NAV_CAT_DESC}
-        </span>
-
     </div>
 
 </div>
@@ -271,7 +269,8 @@
 <!-- BARRE DE GESTION -------------->
 
 
-<div class="topic_buttons">
+<div class="viewforum_links">
+    <div>
         <!-- Bouton : nouveau -->
         <!-- BEGIN switch_user_authpost -->
         <a class="buttons" href="{U_POST_NEW_TOPIC}" rel="nofollow"><img class="newtopic_button" src="{POST_IMG}" class="{POST_IMG_CLASS}" alt="{L_POST_NEW_TOPIC}" /></a>&nbsp;
@@ -281,9 +280,9 @@
         <!-- BEGIN switch_user_authreply -->
         <a class="buttons" href="{U_POST_REPLY_TOPIC}"><img class="reply_button" src="{REPLY_IMG}" class="i_reply" alt="{L_POST_REPLY_TOPIC}" /></a>
         <!-- END switch_user_authreply -->
-
+    </div>
     <!-- BEGIN switch_plus_menu -->
-    <span class="topic_fave right">
+    <span class="links_bar right">
         <a href="{U_FAVOURITE_JS_PLUS_MENU}">Ajouter le sujet à ses favoris</a>
     </span>
   <!-- END switch_plus_menu -->

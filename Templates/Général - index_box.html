@@ -5,10 +5,10 @@
   <!-- BEGIN switch_user_logged_in -->
   <span>
         <!-- Messages depuis la dernière visite -->
-        <a id="lastvisit_posts" href="{U_SEARCH_NEW}">{L_SEARCH_NEW}</a>&nbsp;•&nbsp;
+        <a id="lastvisit_posts" href="{U_SEARCH_NEW}">{L_SEARCH_NEW}</a>&nbsp;&nbsp;
 
         <!-- Voir ses messages -->
-        <a href="{U_SEARCH_SELF}">{L_SEARCH_SELF}</a>&nbsp;•&nbsp;
+        <a href="{U_SEARCH_SELF}">{L_SEARCH_SELF}</a>&nbsp;&nbsp;
         
         <!-- Messages sans réponses -->
         <a id="posts_unanswered" href="{U_SEARCH_UNANSWERED}">{L_SEARCH_UNANSWERED}</a>
@@ -21,12 +21,6 @@
     <a class="specials_links right" id="mark_read" href="{U_MARK_READ}" accesskey="m">{L_MARK_FORUMS_READ}</a>
     <!-- END switch_user_logged_in -->
 </div>
-
-<!-- Modifications des textes de lien trop long -->
-<script type="text/javascript">document.getElementById('lastvisit_posts').innerHTML=document.getElementById ('lastvisit_posts').innerHTML.replace(/Voir les nouveaux messages depuis votre dernière visite/,"Nouveaux messages");</script>
-<script type="text/javascript">document.getElementById('posts_unanswered').innerHTML=document.getElementById ('posts_unanswered').innerHTML.replace(/Voir les messages sans réponses/,"Messages sans réponses");</script>
-<script type="text/javascript">document.getElementById('mark_read').innerHTML=document.getElementById ('mark_read').innerHTML.replace(/Marquer tous les forums comme lus/,"Tout marquer comme lu");</script>
-
 
 <!----------------------------------------------->
 <!-- CATEGORIES -------------->
@@ -118,18 +112,27 @@
 <!-- BEGIN switch_on_index -->
 <div class="links_bar">
         <!-- Sujets actifs du jour -->
-        <a href="{U_TODAY_ACTIVE}">{L_TODAY_ACTIVE}</a> &nbsp; • &nbsp;
+        <a href="{U_TODAY_ACTIVE}" id="sujetsactifs">{L_TODAY_ACTIVE}</a>&nbsp;&nbsp;
 
         <!-- Top 20 des posteurs du jour -->
-        <a href="{U_TODAY_POSTERS}">{L_TODAY_POSTERS}</a> &nbsp; • &nbsp;
+        <a href="{U_TODAY_POSTERS}" id="topjour">{L_TODAY_POSTERS}</a>&nbsp;&nbsp;
 
         <!-- Top 20 des posteurs du forum -->
-        <a href="{U_OVERALL_POSTERS}">{L_OVERALL_POSTERS}</a>
+        <a href="{U_OVERALL_POSTERS}" id="topforum">{L_OVERALL_POSTERS}</a>
 
     <!-- Supprimer des cookies du forum -->
     <!-- BEGIN switch_delete_cookies -->
-    <a class="specials_links right" href="{switch_on_index.switch_delete_cookies.U_DELETE_COOKIES}" rel="nofollow">{switch_on_index.switch_delete_cookies.L_DELETE_COOKIES}</a>
+    <a id="cookies" class="specials_links right" href="{switch_on_index.switch_delete_cookies.U_DELETE_COOKIES}" rel="nofollow">{switch_on_index.switch_delete_cookies.L_DELETE_COOKIES}</a>
     <!-- END switch_delete_cookies -->
 </div>
 <!-- END switch_on_index -->   
-            
+
+<!-- Modifications des textes de lien trop long -->
+<script type="text/javascript">document.getElementById('lastvisit_posts').innerHTML=document.getElementById ('lastvisit_posts').innerHTML.replace(/Voir les nouveaux messages depuis votre dernière visite/,"Nouveaux messages");</script>
+<script type="text/javascript">document.getElementById('posts_unanswered').innerHTML=document.getElementById ('posts_unanswered').innerHTML.replace(/Voir les messages sans réponses/,"Messages sans réponses");</script>
+<script type="text/javascript">document.getElementById('mark_read').innerHTML=document.getElementById ('mark_read').innerHTML.replace(/Marquer tous les forums comme lus/,"Tout marquer comme lu");</script>
+
+<script type="text/javascript">document.getElementById('sujetsactifs').innerHTML=document.getElementById ('sujetsactifs').innerHTML.replace(/Sujets actifs du jour/,"Sujets actifs");</script>
+<script type="text/javascript">document.getElementById('topjour').innerHTML=document.getElementById ('topjour').innerHTML.replace(/Top 20 des posteurs du jour/,"Top 20 du jour");</script>
+<script type="text/javascript">document.getElementById('topforum').innerHTML=document.getElementById ('topforum').innerHTML.replace(/Top 20 des posteurs du forum/,"Top 20 du forum");</script>
+<script type="text/javascript">document.getElementById('cookies').innerHTML=document.getElementById ('cookies').innerHTML.replace(/Supprimer les cookies du forum/,"Supprimer les cookies");</script>

@@ -65,48 +65,71 @@
 
 <!-- BEGIN disable_viewonline -->
 <div class="qeel">
+    <div class="cate_title qeel_title">
+        <h2>Qui est en ligne ?</h2>
+    </div>
+    <div class="qeel_inner">
 
     <div class="qeel-left">
 
-        <!-- Dernier inscrit -->
-        <div id="last_user">
-	<span id="lastuser_avatar"></span>
-          
-            <span id="newest_user">
-                {NEWEST_USER}<br /> est le dernier inscrit
-            </span>
-        </div><br />
+        <img src="https://zupimages.net/up/22/45/48ch.gif" id="group_desc_img" />
+        <div id="group_desc_box" class="qeel_bg" style="display: none;">
+            <div id="group_desc_title"></div>
+            <div id="group_desc_text"></div>
+        </div>
 
+        <div id="group_list" onmouseleave="show_grp_img()">
+            <a class="groups icarus qeel_bg" href="https://springofpower.forumactif.com/g4-icarus-phenomenon" onmouseover="icarus()">ICARUS PHENOMENON</a>
+            <a class="groups theseus qeel_bg" href="https://springofpower.forumactif.com/g3-theseus-paradox" onmouseover="theseus()">THESEUS PARADOX</a>
+            <a class="groups twilight qeel_bg" href="https://springofpower.forumactif.com/g5-twilight-zone" onmouseover="twilight()">TWILIGHT ZONE</a>
+            <a class="groups hybrid qeel_bg" href="https://springofpower.forumactif.com/g6-hybrid-theory" onmouseover="hybrid()">HYBRID THEORY</a>
+            <a class="groups disaster qeel_bg" href="https://springofpower.forumactif.com/g7-tomorrow-s-disaster" onmouseover="disaster()">TOMORROW'S DISASTER</a>
+            <a class="groups pnj qeel_bg" href="https://springofpower.forumactif.com/g8-pnj" onmouseover="pnj()">PNJ</a>
+        </div>
 
-        <!-- Total posts : X messages / Total users : X membres -->
-        Il y a <span id="qeel_posts">{TOTAL_POSTS}</span> et
-        <span id="qeel_members">{TOTAL_USERS}</span><br /><br />
+        <div id="qeel_post_box" class="qeel_bg">
+            <!-- Total posts : X messages / Total users : X membres -->
+            <div id="qeel_posts">{TOTAL_POSTS}</div>
+            <div id="qeel_members">{TOTAL_USERS}</div>
+        </div>
 
-
-        <a class="groups">Alpha</a>
-        <a class="groups">Bêta</a>
-        <a class="groups">Charlie</a>
     </div>
 
     <div class="qeel-middle">
 
-        <!-- X connectés :: 1 membre, 0 invisible, 0 invité -->
-      <div id="total_users">{TOTAL_USERS_ONLINE}</div>
-
-        <div class="separator"></div>
+        <!-- Dernier inscrit -->
+        <div id="last_user" class="qeel_bg">
+            <div id="lastuser_avatar"></div>
+            
+            <div id="newest_user">
+                <div id="newest_welcome">BIENVENUE À</div> 
+                <div id="newest_name">{NEWEST_USER}</div> 
+            </div>
+        </div>
 
         <!-- Connectés en ce moment -->
-        <div id="online_users">{LOGGED_IN_USER_LIST}</div>
+        <div id="qeel_online" class="qeel_bg">
+            <div id="online_users">
+            {LOGGED_IN_USER_LIST}</div>
 
-
-        <div class="credits">Ici crédits de ce qui qui l’a fait et qui qui l’admistre avec l’optimisation qui va bien. Et encore un peu plus de blabla.</div>
+            <!-- X connectés :: 1 membre, 0 invisible, 0 invité -->
+            <div id="total_users">{TOTAL_USERS_ONLINE}</div>
+        </div>
 
     </div>
 
     <!-- Derniers connectés au cours de ces Xh -->
-    <div class="qeel-right" id="24hconnected">
-        {L_CONNECTED_MEMBERS}<br />
+    <div class="qeel-right">
+        <div id="last_connected" class="qeel_bg">{L_CONNECTED_MEMBERS}</div>
+        <div style="position:relative">
+            <div id="credits_img"></div>
+            <div id="credits" class="credits qeel_bg fadein">
+                Ici crédits de ce qui qui l’a fait et qui qui l’admistre avec l’optimisation qui va bien. Et encore un peu plus de blabla.
+            </div>
     </div>
+    </div>
+
+</div>
 </div>
 
 
@@ -118,6 +141,7 @@ $(function(){
   
   $("#qeel_posts").html($("#qeel_posts").html().replace("Nos membres ont posté un total de", ""));
   
+  $("#qeel_members").html($("#qeel_members").html().replace("membres enregistrés", "habitants"));
   $("#qeel_members").html($("#qeel_members").html().replace("Nous avons", ""));
   
   $("#total_users").html($("#total_users").html().replace("Il y a en tout", ""));
@@ -126,7 +150,7 @@ $(function(){
   
   $("#online_users").html($("#online_users").html().replace("Utilisateurs enregistrés", "En ligne"));
   
-  $("#24hconnected").html($("#24hconnected").html().replace("Membres connectés au cours des 24 dernières heures :", "Connectés récemment"));
+  $("#24hconnected").html($("#24hconnected").html().replace("Connectés au cours des 24 dernières heures :", "Connectés récemment"));
 });
 </script>
 

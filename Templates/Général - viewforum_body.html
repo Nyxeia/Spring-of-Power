@@ -24,22 +24,23 @@
 <!----------------------------------------------->
 <!-- BARRE DE GESTION -------------->
 
-<div class="links_bar">
+<div class="viewforum_links">
+<!-- Boutons : nouveau, répondre, verrouillé -->
+<!-- BEGIN switch_user_authpost -->
+<a class="buttons" href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow"><img class="newtopic_button" src="{POST_IMG}" class="{POST_IMG_ID}" alt="{L_POST_NEW_TOPIC}" /></a>
+<!-- END switch_user_authpost -->
 
-    <!-- Boutons : nouveau, répondre, verrouillé -->
-    <!-- BEGIN switch_user_authpost -->
-        <a class="buttons" href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow"><img class="newtopic_button" src="{POST_IMG}" class="{POST_IMG_ID}" alt="{L_POST_NEW_TOPIC}" /></a>
-    <!-- END switch_user_authpost -->
+<div class="links_bar">
 
     <!-- Liens : Surveiller ce forum -- Sujets surveillés -->
     <!-- BEGIN switch_user_logged_in -->
     <span class="right">
-        {S_WATCH_FORUM} • <a href="{U_WATCHSEARCH_JS_PLUS_MENU}">Sujets surveillés</a>
+        {S_WATCH_FORUM} <a href="{U_WATCHSEARCH_JS_PLUS_MENU}">Sujets surveillés</a>
     </span>
     <!-- END switch_user_logged_in -->
 
 </div>
-
+</div>
 
 <!----------------------------------------------->
 <!-- LISTE DES SUJETS -------------->
@@ -58,12 +59,13 @@
 <!----------------------------------------------->
 <!-- BARRE DE GESTION -------------->
 
-<div class="links_bar">
+<div class="viewforum_links">
+<!-- Bouton : nouveau -->
+<!-- BEGIN switch_user_authpost -->
+<a class="buttons" href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow"><img class="newtopic_button" src="{POST_IMG}" class="{POST_IMG_ID}" alt="{L_POST_NEW_TOPIC}" /></a>
+<!-- END switch_user_authpost -->
 
-    <!-- Bouton : nouveau -->
-    <!-- BEGIN switch_user_authpost -->
-        <a class="buttons" href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow"><img class="newtopic_button" src="{POST_IMG}" class="{POST_IMG_ID}" alt="{L_POST_NEW_TOPIC}" /></a>
-    <!-- END switch_user_authpost -->
+<div class="links_bar">
 
     <!-- Lien "marquer comme lu" -->
     <!-- BEGIN switch_user_logged_in -->
@@ -73,7 +75,7 @@
     <!-- END switch_user_logged_in -->
 
 </div>
-
+</div>
 
 
 <!-- Conteneur : utilisateurs et pagination -->
