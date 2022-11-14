@@ -2802,6 +2802,7 @@ msgbtn {
     border-top: var(--border);
     padding-top: 5px;
     overflow: auto;
+    text-align: justify;
 }
 #pa_context {
     height: 200px;
@@ -2884,13 +2885,8 @@ msgbtn {
     margin-top: 10px;
     height: 166px;
 }
-#pa_exigences {
-    font-size: var(--small-size);
-    height: 44px;
-    margin-bottom: 10px;
-}
 #pa_news {
-    height: 112px;
+    height: 165px;
 }
 #pa_tempo_mdm {
     display: grid;
