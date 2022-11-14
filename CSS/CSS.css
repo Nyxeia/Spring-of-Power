@@ -1510,6 +1510,7 @@ a.groups:hover {
 
 #last_connected {
     height: 152px;
+    overflow: auto;
 }
 
 .credits {
@@ -2770,8 +2771,158 @@ msgbtn {
     border: none !important;
 }
 
-/****** ------------------------------------------------------------------------------
- ****** CODE DU FORUM ------------------------------------------------------------------------ ******/
+/****** --- PA --- ******/
+
+.pa_inner {
+    border-radius: 5px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 1px;
+}
+.pa_inner > div {
+    background: var(--neutralDark);
+    padding: 15px 10px;
+}
+.pa_section_title {
+    display: flex;
+    justify-content: center;
+}
+.pa_section_title > span{
+    font-family: var(--main-font);
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: var(--medium-size);
+}
+.pa_section_content {
+    border-top: var(--border);
+    padding-top: 5px;
+    overflow: auto;
+}
+#pa_context {
+    height: 200px;
+    margin-bottom: 10px;
+}
+#context_img {
+    position: absolute;
+    object-fit: cover;
+    height: inherit;
+    width: 100%;
+    border: var(--border);
+    border-radius: var(--radius);
+}
+#context_box {
+    position: absolute;
+    height: inherit;
+    width: 100%;
+}
+#pa_links {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 5px;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 130px auto;
+}
+.pa_link {
+    background: var(--neutral);
+    border: var(--border);
+    border-radius: var(--radius);
+    padding: 1px 0px;
+}
+.pa_link a {
+    background: var(--gradient) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    font-size: 12px;
+    font-family: var(--title-font);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    transition: letter-spacing 0.5s;
+}
+.pa_link a:hover {
+    letter-spacing: 2.5px;
+}
+.pa_staff_icons {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+.pa_admin img {
+    width: 87px;
+    border-radius: var(--radius);
+    border: var(--border);
+}
+.pa_admin div {
+    height: 1px;
+    margin: 0px 1px;
+}
+#admin_name > span {
+    font-size: var(--normal-size);
+    margin-bottom: 2px;
+}
+.admin_info .pa_section_content {
+    text-align: center;
+    height: 40px;
+}
+#admin_extra {
+    font-size: var(--small-size);
+}
+.pa_link_round {
+    font-size: 9px !important;
+    padding: 1px 8px !important;
+}
+.pa_link_round:hover {
+    padding: 2px 9px !important;;
+}
+#pa_infogen {
+    margin-top: 10px;
+    height: 166px;
+}
+#pa_exigences {
+    font-size: var(--small-size);
+    height: 44px;
+    margin-bottom: 10px;
+}
+#pa_news {
+    height: 112px;
+}
+#pa_tempo_mdm {
+    display: grid;
+    grid-template-columns: 130px auto;
+    height: 105px;
+    gap: 10px;
+    margin: 10px 0;
+}
+#pa_tempo {
+    height:inherit;
+}
+.mdm_img {
+    position: absolute;
+    width: 123px;
+    height: 50px;
+    border: var(--border);
+    border-radius: var(--radius);
+    object-fit: cover;
+}
+.mdm_info {
+    position: absolute;
+    height: 50px;
+    width: 123px;
+}
+#mdm2 {margin-top: 55px;}
+
+#pa_partners {
+    display: flex;
+    gap:10px;
+}
+
+/****** --- CODE DU FORUM --- ******/
 
 .icarus {color: var(--icarus)}
 .theseus {color: var(--theseus)}
@@ -2798,7 +2949,7 @@ msgbtn {
     -webkit-text-fill-color: transparent;
 }
 
-tag, ltag {
+tag, ltag, .ltag {
     font-family: var(--main-font);
     font-size: var(--small-size);
     letter-spacing: 0.5px;
@@ -2811,13 +2962,13 @@ tag {
     border-radius: 10px;
     padding: 2px 10px;
 }
-ltag {
+.ltag, ltag {
     background: var(--neutral);
     color: var(--textColorAccent);
     border-radius: 10px;
     border: var(--border);
 }
-ltag:hover {
+.ltag:hover, ltag:hover {
     background: var(--gradient);
     color: white;
     padding: 3px 11px;
