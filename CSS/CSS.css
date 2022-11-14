@@ -1289,10 +1289,10 @@ a.forumtitle:hover {
 
 .forum_sub {
     height: 25px;
-    margin-top: 5px;
+    margin-top: 3px;
     text-transform: uppercase;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-end;
 }
 
@@ -1492,7 +1492,7 @@ a.groups:hover {
 }
 
 #qeel_online {
-    height: 144px;
+    height: 148px;
 }
 
 #total_users {font-size: var(--small-size);}
