@@ -16,15 +16,19 @@
 
 <!----------------------------------------------->
 <!-- BARRE DE GESTION -------------->
-<div class="links_bar">
-      
-       <!-- Bouton: répondre -->
-       <!-- BEGIN switch_post_reply -->
-       <a href="{REPLY_PM_URL}" rel="nofollow" title="{REPLY_PM_IMG}" class="replypm_button buttons">{REPLY_PM_IMG}</a>
-        <!-- END switch_post_reply -->
-    </div>
 
+<!-- Bouton: répondre -->
+<div style="padding: 15px 10px;">
+<!-- BEGIN switch_post_reply -->
+<a href="{REPLY_PM_URL}" rel="nofollow" title="{REPLY_PM_IMG}" id="mpbtn" class="msgbtn repbtn buttons">{REPLY_PM_IMG}</a>
+<!-- END switch_post_reply -->
+</div>
 
+<script type="text/javascript">
+    $(function(){
+$("#mpbtn").html($("#mpbtn").html().replace("Répondre au message", "Répondre"));
+});
+</script>
 
 <form action="{S_PRIVMSGS_ACTION}" method="post">
 
@@ -65,13 +69,9 @@
                 <!-- avatar -->
                 {AVATAR_FROM}<br /><br />
 
-                <!-- pseudo -->
-                {MESSAGE_FROM}
-
                 <!-- Lien-image de contact -->
                 <!-- BEGIN switch_user_contact -->
-                <br />
-                {PROFILE_IMG} {WWW_IMG}
+                {PROFILE_IMG}
                 <!-- END switch_user_contact -->
             </div>
 

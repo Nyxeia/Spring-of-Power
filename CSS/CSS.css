@@ -344,7 +344,7 @@ h1.page-title {
     text-transform: uppercase;
     font-size: 18px;
     font-family: var(--main-font);
-    font-weight: 300;
+    font-weight: 400;
     padding: 0px 15px;
     letter-spacing: var(--main-font-spacing);
     background: var(--gradient);
@@ -1162,29 +1162,6 @@ a.mainmenu:hover {
 
 /* Image des liens */
 a.mainmenu img {display: none}
-
-
-/*** ------------------------------- ***/
-/*** ANNONCES DEFILANTES ----------- ***/
-
-/* Barre défilante */
-.module {
-    border-radius: 5px;
-    border: var(--border);
-    margin: 10px 0;
-    padding: 4px 8px;
-}
-
-
-/****** ------------------------------------------------------------------------------
- ****** PAGE PRINCIPALE, INDEX ------------------------------------------------------- ******/
-
-/* PAGE D'ACCUEIL ---*/
-.introduction {}
-
-
-
-
 
 /*** ------------------------------- ***/
 /*** CATEGORIES -------------------- ***/
@@ -2747,7 +2724,7 @@ hr {
     border: var(--border);
 }
 
-msgbtn {
+msgbtn, .msgbtn {
     font-size: 18px;
     font-family: var(--title-font);
     font-weight: 400;
@@ -2795,8 +2772,8 @@ msgbtn {
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 600;
     font-size: var(--medium-size);
+    font-weight: 500;
 }
 .pa_section_content {
     border-top: var(--border);
@@ -2833,6 +2810,7 @@ msgbtn {
     border: var(--border);
     border-radius: var(--radius);
     padding: 1px 0px;
+    text-align: center;
 }
 .pa_link a {
     background: var(--gradient) !important;
@@ -2915,7 +2893,84 @@ msgbtn {
 
 #pa_partners {
     display: flex;
+    align-items: center;
     gap:10px;
+}
+
+/*** PA_TOP ----------- ***/
+
+.module {
+    margin: 10px 0;
+}
+.pa_top {
+    border-radius: 10px;
+    background: var(--neutral);
+    padding: 10px;
+}
+.pa_top_inner {
+    display: grid;
+    grid-template-columns: 135px auto 380px 65px;
+    grid-gap: 5px;
+}
+.top_zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top_content {
+    background: var(--neutralDark);
+    border-radius: var(--radius);
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+}
+.top_title {
+    background: #421a46;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    font-family: var(--title-font);
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #ffffff9c;
+}
+.top_link a {
+    font-size: var(--small-size);
+    letter-spacing: 0.5px;
+    background: var(--neutral);
+    border: var(--border);
+    border-radius: 10px;
+    padding: 0 10px;
+    display: block;
+    margin: 5px;
+}
+.top_link a:hover {
+    color: white;
+    padding: 1px 11px;
+    border: none;
+    background: var(--gradient);
+}
+#zone2_content {
+    width: 100%;
+    margin: 5px;
+}
+#fa_notepad {
+    width: 100%;
+    height: 100%;
+    background: var(--neutral);
+    border-radius: var(--radius);
+    padding: 5px;
+    resize:none;
+}
+#zone3_content {
+    display: flex;
+}
+#zone3_col1, #zone3_col2 {
+    width:177px;
 }
 
 /****** --- CODE DU FORUM --- ******/

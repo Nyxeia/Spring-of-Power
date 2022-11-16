@@ -34,3 +34,9 @@ $(function() {
     el.find('img[src="https://2img.net/img.icons8.com/small/32/ffffff/name.png"]').replaceWith('<ltag>Présentation</ltag>');
     el.find('img[src="https://2img.net/img.icons8.com/small/32/ffffff/communication.png"]').replaceWith('<ltag>MP</ltag>');
   });
+
+  $(function() {
+    var el = $('.message_profil');
+      
+      el.find('img[src="https://2img.net/images2.imgbox.com/ba/03/D1iNQo0J_o.png"]').replaceWith('<ltag>Profil</ltag>');
+    });
