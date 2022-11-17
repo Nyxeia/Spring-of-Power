@@ -311,3 +311,30 @@ div#chatbox_messenger_form {
     font-weight: 500;
     display: inline !important;
 }
+
+/* Toolbar  */
+#fa_chat_container {
+    border: var(--border);
+    border-radius: 3px;
+    position: fixed;
+    right: 3px;
+    z-index: 999;
+    overflow: hidden;
+    min-width: 500px;
+    min-height: 250px;
+    transition: 300ms;
+}
+#fa_chat {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+#fa_chat_button {
+    line-height: 30px;
+    padding: 0 5px;
+    cursor: pointer;
+    margin-top: 1px;
+}
+#fa_chat_button.fa_chat_active {
+    color: var(--accent);
+}

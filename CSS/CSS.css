@@ -1,3 +1,6 @@
+@import url('https://nyxeia.github.io/Spring-of-Power/CSS/Chatbox.css');
+/* @import url('https://nyxeia.github.io/Spring-of-Power/CSS/messenger.css'); */
+
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
     --header: url('https://2img.net/zupimages.net/up/22/42/rv4o.gif');
@@ -142,9 +145,6 @@
     --FAM-titleClr: #171938;
     --FAM-buttonsClr: #171938;
  }
-
-/* @import url('https://nyxeia.github.io/Spring-of-Power/CSS/Chatbox.css');
-@import url('https://nyxeia.github.io/Spring-of-Power/CSS/messenger.css'); */
 
 * {
     box-sizing: border-box; /*évite que les éléments soient agrandis par le padding*/
