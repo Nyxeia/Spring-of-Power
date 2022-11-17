@@ -143,6 +143,9 @@
     --FAM-buttonsClr: #171938;
  }
 
+/* @import url('https://nyxeia.github.io/Spring-of-Power/CSS/Chatbox.css');
+@import url('https://nyxeia.github.io/Spring-of-Power/CSS/messenger.css'); */
+
 * {
     box-sizing: border-box; /*évite que les éléments soient agrandis par le padding*/
     scrollbar-width: thin;
