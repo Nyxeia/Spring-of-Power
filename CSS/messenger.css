@@ -28,7 +28,7 @@
     height: 90%;
     width: 90%;
     max-width: var(--FAM-windowSize);
-    left: 0;
+    right: 0;
     z-index: 99;
     visibility: visible;
     opacity: 1;
