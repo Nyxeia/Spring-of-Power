@@ -41,11 +41,27 @@
     padding-right: 50px;
 }
 
+#FAM[data-hidden=true] {
+    visibility: hidden;
+    opacity: 0;
+    right: calc(-100%);
+}
+
+#FAM.FAM-embedded {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 500px;
+    margin: 12px auto;
+    z-index: 1
+}
+
 #FAM-button {
-    color: var(--accent);
-    font-size: 18px;
-    background-color: var(--neutralDark);
-    border-radius: 10px;
+    color: #cbcbcb;
+    font-size: 22px;
+    background: var(--gradient);
+    border-radius: 50px;
     position: fixed;
     width: 45px;
     height: 45px;
@@ -60,13 +76,13 @@
 }
 
 #FAM-button:hover {
-    background: var(--FAM-accentClr);
-    color: var(--FAM-pluginBackground);
+    background: var(--gradient);
+    color: var(--neutralDark);
 }
 
 #FAM[data-hidden="false"] ~ #FAM-button {
-    background: var(--FAM-accentClr);
-    color: var(--FAM-pluginBackground);
+    background: var(--gradient);
+    color: var(--neutralDark);
 }
 
 
