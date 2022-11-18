@@ -1,5 +1,6 @@
+@import url('https://nyxeia.github.io/Spring-of-Power/CSS/messenger.css');
 @import url('https://nyxeia.github.io/Spring-of-Power/CSS/Chatbox.css');
-/* @import url('https://nyxeia.github.io/Spring-of-Power/CSS/messenger.css'); */
+
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
@@ -53,16 +54,12 @@
     --scrollbar-bg: var(--neutralDark);
 
     /* VARIABLES MESSENGER */
-    --FAM-pluginBackground: #1e212a;
-    --FAM-chatBackground: #181a21;
+    --FAM-pluginBackground: var(--neutral);
+    --FAM-chatBackground: var(--neutralDark);
     --FAM-textareaBackground: #1e212a;
     --FAM-msgBackground: #0B0E17;
     --FAM-myMsgBackground: #1e212a;
     --FAM-quoteBackground: rgba(255,255,255,0.04);
-
-    --FAM-gradient: linear-gradient(-90deg, rgba(30,33,42,1) 20%, rgba(30,33,42,0) 100%);
-    --FAM-gradientTop: linear-gradient(180deg, rgba(24, 26, 33,1) 20%, rgba(24, 26, 33,0) 100%);
-    --FAM-gradientBot: linear-gradient(0deg, rgba(24, 26, 33,1) 20%, rgba(24, 26, 33,0) 100%);
 
     --FAM-border: 1px solid #313543;
     --FAM-shadow: 0 0 20px var(--neutralDark);
@@ -70,7 +67,7 @@
     --FAM-sleepModeBackground: rgba(0, 0, 0, 0.5);
     --FAM-newMsgAnimation: rgb(255, 255, 255,.5);
 
-    --FAM-accentClr: #7583ff;
+    --FAM-accentClr: var(--gradient);
     --FAM-secondClr: #333c92;
     --FAM-fontClr: #c7c5cd;
     --FAM-fontLightClr: #9a96a3;
@@ -126,10 +123,6 @@
     --FAM-msgBackground: #dce3f4;
     --FAM-myMsgBackground: #fafbfc;
     --FAM-quoteBackground: #8a9fd236;
-
-    --FAM-gradient: linear-gradient(-90deg, rgba(250, 251, 252,1) 20%, rgba(250, 251, 252,0) 100%);
-    --FAM-gradientTop: linear-gradient(180deg, rgba(242, 244, 249,1) 20%, rgba(242, 244, 249,0) 100%);
-    --FAM-gradientBot: linear-gradient(0deg, rgba(242, 244, 249,1) 20%, rgba(242, 244, 249,0) 100%);
 
     --FAM-border: 1px solid #dce3f4;
     --FAM--shadowBox: 0 0 20px var(--contrastLight);
@@ -296,14 +289,14 @@ body {
 .elevator {
     position: fixed;
     bottom: 70px;
-    right: 8px;
-    width: 52px;
+    right: 10px;
     z-index: 999;
+    width: 45px;
+    text-align: center;
 }
 .elevator a {
-    display: block;
     text-align: center;
-    font-size: var(--title-size);
+    font-size: 40px;
     color: var(--special);
     transition: 0.4s;
 }
@@ -2976,7 +2969,7 @@ msgbtn, .msgbtn {
     width:177px;
 }
 
-
+/****** Chatbox toolbar ******/
 #fa_chat_container {
     border: var(--border);
     border-radius: 3px;

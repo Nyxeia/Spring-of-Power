@@ -3085,7 +3085,7 @@
           
           // FAM styles
           // NOTE : this is getting pretty big.. we should consider looking for a CDN.
-          $('head').append('<style type="text/css" id="FAM-main-stylesheet">;@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);#FAM[data-hidden=true]{visibility:hidden;opacity:0;right:calc(-100% + 65px)}#FAM.FAM-embedded{position:relative;bottom:0;right:0;width:100%;height:500px;margin:12px auto;z-index:1}</style>');
+          $('head').append('<style type="text/css" id="FAM-main-stylesheet">@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);</style>');
   
           // add Forumactif Messenger to the document
           if (FAM.config.embed) {
