@@ -18,6 +18,58 @@
     vertical-align: initial
 }
 
+#FAM {
+    display: grid;
+    grid-template-rows: max-content max-content 1fr;
+    color: var(--FAM-fontClr);
+    font-size: var(--FAM-fontSize);
+    background: var(--FAM-pluginBackground);
+    position: fixed;
+    height: 90%;
+    width: 90%;
+    max-width: var(--FAM-windowSize);
+    left: 0;
+    z-index: 99;
+    visibility: visible;
+    opacity: 1;
+    bottom: 0px;
+    transition-property: top, right, bottom, left, height, width, margin, opacity, visibility;
+    transition-duration: 700ms;
+    grid-template-columns: 100%;
+    box-shadow: var(--shadowBox);
+    padding-left: 15px;
+    padding-right: 50px;
+}
+
+#FAM-button {
+    color: var(--accent);
+    font-size: 18px;
+    background-color: var(--neutralDark);
+    border-radius: 10px;
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    right: 10px;
+    bottom: 22px;
+    cursor: pointer;
+    z-index:999;
+    transition-property: right;
+    transition-duration: 500ms;
+    display: grid;
+    place-items: center
+}
+
+#FAM-button:hover {
+    background: var(--FAM-accentClr);
+    color: var(--FAM-pluginBackground);
+}
+
+#FAM[data-hidden="false"] ~ #FAM-button {
+    background: var(--FAM-accentClr);
+    color: var(--FAM-pluginBackground);
+}
+
+
 #FAM-toolbar {
     color: var(--FAM-titleClr);
     position: relative;
