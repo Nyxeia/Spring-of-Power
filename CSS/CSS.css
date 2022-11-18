@@ -21,7 +21,7 @@
     --special: #8f796f;
     --specialDark: #3b3531;
 
-    --textColor: #706c6c;
+    --textColor: #818181;
     --textColorAccent: #b1a9a9;
 
     --border: 1px solid #42403e4d;
@@ -88,14 +88,10 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
-    --header: url('https://www.zupimages.net/up/22/44/t982.gif');
     --background: #1c111c;
 
-    /* --neutral: #aeaba9;
-    --neutralDark: #959291; */
-
-    --neutral: #71645b;
-    --neutralDark: #564d49;
+    --neutral: #c4c4c4;
+    --neutralDark: #afafaf;
     --neutralDarker: #485169;
 
     --contrast: #171938;
@@ -108,13 +104,20 @@
     --special: #551b66;
     --specialDark: #3b3531;
 
-    --textColor: #140721;
+    --textColor: #111111;
     --textColorAccent: #0d0c0c;
 
-    --border: 1px solid #867366c7;
+    --border: 1px solid #e6e6e6ab;
     --shadowBox: 0 0 20px var(--neutralDark);
 
     --gradient2: linear-gradient(75deg, #0f090f 30%, #422146);
+
+    --icarus: #3f6993;
+    --theseus: #4d6b60;
+    --twilight: #863939;
+    --hybrid: #965c27;
+    --disaster: #6b4f81;
+    --pnj: #313131;
 
     /* VARIABLES MESSENGER */
     --FAM-pluginBackground: #fafbfc;
@@ -201,7 +204,7 @@
     width: 12px;
 }
 input:checked + .slider {
-    background-color: #ccc;
+    background-color: var(--neutral);
 }
 input:checked + .slider:before {
     transform: translateX(20px);
@@ -594,7 +597,7 @@ textarea {
     padding: 20px 10px;
 }
 .links_bar a {
-    font-size: 11px;
+    font-size: 11px !important;
     font-family: var(--title-font);
     font-weight: 400;
     letter-spacing: 1px;
@@ -671,7 +674,7 @@ a.specials_links:empty {
 
 /* Conteneur du lien de bienvenue et notification */
 #fa_right {
-    background: #010008;
+    background: #040404;
     height: 40px;
     display: flex;
     align-items: center;
@@ -698,7 +701,9 @@ a.specials_links:empty {
 
 
 #fa_welcome,
-#fa_notifications {
+#fa_notifications,
+#fa_chat_button,
+.theme-switch-wrapper {
     color: #b1a9a9;
 }
 #fa_welcome:hover,
@@ -1484,6 +1489,7 @@ a.groups:hover {
 #last_connected {
     height: 152px;
     overflow: auto;
+    margin-bottom: 10px;
 }
 
 .credits {
@@ -1491,19 +1497,16 @@ a.groups:hover {
     position: absolute;
     font-size: var(--small-size);
     border: var(--border);
-    border-radius: 5px;
+    border-radius: var(--radius);
     padding: 5px;
 }
 #credits_img {
     width: 244px;
     height: 53px;
     border: var(--border);
-    border-radius: 5px;
-    background: url(https://zupimages.net/up/22/45/1dkc.png);
-    position: relative;
-    background-size: 100%;
-    background-position: bottom;
-    margin-top: 10px;
+    border-radius: var(--radius);
+    position: absolute;
+    object-fit: cover;
 }
 
 .qeel-right {
@@ -1724,32 +1727,6 @@ a.groups:hover {
     display: block;
     height: 100%;
 }
-
-/* Nombre de participants */
-.poster-count {
-    margin-left: 8px;
-}
-
-.poster-more-list {
-    display: none;
-}
-
-.poster-more {
-    display: grid;
-    place-items: center;
-    position: relative;
-}
-
-.poster-more:hover .poster-more-list {
-    display: block;
-    position: absolute;
-    top: 29px;
-    width: 150px;
-    background: var(--neutralDarker);
-    padding: 10px;
-    border-radius: 5px;
-}
-
 
 /*** ------------------------------- ***/
 /*** SUJET ------------------------- ***/
@@ -2993,20 +2970,20 @@ msgbtn, .msgbtn {
     margin-top: 1px;
 }
 #fa_chat_button.fa_chat_active {
-    color: var(--accent);
+    color: var(--special);
 }
 
 /****** --- CODE DU FORUM --- ******/
 
-.icarus {color: var(--icarus)}
-.theseus {color: var(--theseus)}
-.twilight {color: var(--twilight)}
-.hybrid {color: var(--hybrid)}
-.disaster {color: var(--disaster)}
-.pnj {color: var(--pnj)}
+.icarus {color: var(--icarus) !important}
+.theseus {color: var(--theseus) !important}
+.twilight {color: var(--twilight) !important}
+.hybrid {color: var(--hybrid) !important}
+.disaster {color: var(--disaster) !important}
+.pnj {color: var(--pnj) !important}
 
 .btn, btn {
-    font-size: 12px;
+    font-size: 11px!important;
     font-family: var(--title-font);
     font-weight: 400;
     letter-spacing: 1px;
