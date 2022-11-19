@@ -89,7 +89,6 @@
     --FAM-windowSize: 750px;
 }
 
-
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
     --background: #1c111c;
@@ -188,16 +187,18 @@
 .slider:hover {
     color: var(--hover_static);
 }
+/* dark mode */
 .slider:before {
     background: var(--gradient_static);
-    content: "☀";
+    content: url(https://nyxeia.github.io/Spring-of-Power/SVG/sun-svgrepo-com.svg);
     height: 30px;
     width: 30px;
     position: absolute;
     right: 7px;
 }
+/* light mode */
 input:checked + .slider:before {
-    content: "☪";
+    content: url(https://nyxeia.github.io/Spring-of-Power/SVG/moon-svgrepo-com.svg);
 }
 .slider.round:before {
     border-radius: 50%;
@@ -702,11 +703,13 @@ a.specials_links:empty {
 #fa_welcome,
 #fa_notifications,
 #fa_chat_button,
-.theme-switch-wrapper {
+.theme-switch-wrapper,
+.rightHeaderLink {
     color: #b1a9a9;
 }
 #fa_welcome:hover,
-#fa_notifications:hover {
+#fa_notifications:hover,
+.rightHeaderLink:hover {
     color: var(--special);
 }
 
@@ -928,8 +931,13 @@ ul#notif_list {
 /* Avatar du compte connecté */
 .switcheroo__squircle.active,
 .switcheroo__squircle.active img {
-    outline-color: var(--accentDark);
     cursor: default;
+    background: var(--gradient_static);
+    width: 37px;
+    height: 37px;
+}
+.switcheroo__squircle.active img {
+    padding: 4px;
 }
 
 /* AJOUTER UN COMPTE ---*/
