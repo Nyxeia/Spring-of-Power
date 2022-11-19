@@ -36,6 +36,7 @@
 
     --shadowBox: 0 0 20px var(--neutralDark);
 
+    --gradient_static: linear-gradient(75deg, #6b2578 20%, #8f796f);
     --gradient: linear-gradient(75deg, var(--accent) 20%, var(--special));
     --gradient2: linear-gradient(75deg, #3e1343 30%, #6e665f);
 
@@ -57,7 +58,7 @@
     --FAM-pluginBackground: var(--neutral);
     --FAM-chatBackground: var(--neutralDark);
     --FAM-textareaBackground: #1e212a;
-    --FAM-msgBackground: #0B0E17;
+    --FAM-msgBackground: #1d1d1d;
     --FAM-myMsgBackground: #1e212a;
     --FAM-quoteBackground: rgba(255,255,255,0.04);
 
@@ -281,7 +282,7 @@ body {
 
 .elevator {
     position: fixed;
-    bottom: 70px;
+    bottom: 95px;
     right: 10px;
     z-index: 999;
     width: 45px;
@@ -289,14 +290,22 @@ body {
 }
 .elevator a {
     text-align: center;
-    font-size: 40px;
-    color: var(--special);
-    transition: 0.4s;
+    color: #cbcbcb;
+    transition: 0.2s;
 }
 .elevator a:hover {
-    color: var(--accent);
+    color: var(--neutral);
 }
-
+.ele_arrow {
+    width: 30px;
+    height: 30px;
+    margin: 2px 0px;
+}
+#arrow_up, #arrow_down {
+    background: var(--gradient_static);
+    padding: 3px;
+    border-radius: 65px;
+}
 
 /****** ------------------------------------------------------------------------------
  ****** GÉNÉRALITÉS ------------------------------------------------------------------ 
@@ -499,7 +508,11 @@ textarea {
 /*** ------------------------------- ***/
 /*** PAGINATIONS -------------------- ***/
 
-.pagination {}
+.pagination {
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 2px;
+}
 
 /*lien unique vers les pages numérotées*/
 .pagination span a {
@@ -2717,7 +2730,7 @@ msgbtn, .msgbtn {
     border-radius: 5px;
     padding-top: 10px;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 285px 288px 285px;
     grid-gap: 1px;
 }
 .pa_inner > div {

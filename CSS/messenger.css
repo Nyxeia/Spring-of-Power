@@ -60,7 +60,7 @@
 #FAM-button {
     color: #cbcbcb;
     font-size: 22px;
-    background: var(--gradient);
+    background: var(--gradient_static);
     border-radius: 50px;
     position: fixed;
     width: 45px;
@@ -76,12 +76,12 @@
 }
 
 #FAM-button:hover {
-    background: var(--gradient);
+    background: var(--gradient_static);
     color: var(--neutralDark);
 }
 
 #FAM[data-hidden="false"] ~ #FAM-button {
-    background: var(--gradient);
+    background: var(--gradient_static);
     color: var(--neutralDark);
 }
 
@@ -297,7 +297,7 @@
 
 .FAM-button-large:hover {
     background: var(--gradient);
-    color: var(--textColorAccent);
+    color: white;
 }
 
 #FAM .FAM-inputbox {
