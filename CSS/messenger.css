@@ -72,7 +72,8 @@
     transition-property: right;
     transition-duration: 500ms;
     display: grid;
-    place-items: center
+    place-items: center;
+    transition: color 0.2s;
 }
 
 #FAM-button:hover {
