@@ -287,16 +287,17 @@
 }
 
 .FAM-button-large {
-    background-color: var(--FAM-accentClr);
+    background: var(--neutral);
     border-radius: 4px;
     font-weight: 700;
     padding: 5px 15px;
-    color: var(--FAM-pluginBackground);
+    color: var(--textColor);
     margin: 0 auto;
 }
 
 .FAM-button-large:hover {
-    background-color: var(--FAM-secondClr);
+    background: var(--gradient);
+    color: var(--textColorAccent);
 }
 
 #FAM .FAM-inputbox {
@@ -579,7 +580,7 @@ hr.FAM-hr {
 #FAM-new-topic {
     cursor: pointer;
     font-size: 28px;
-    color: var(--FAM-accentClr);
+    color: var(--accent);
     margin-bottom: 20px;
 }
 
@@ -790,10 +791,6 @@ a.FAM-attachment-thumb {
 .FAM-attachment-delete:hover .fa-circle {
     color: #F33
 }
-
-
-
-
 
 #FAM-msg-container {
     display: inline-block;
