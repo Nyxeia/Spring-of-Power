@@ -187,16 +187,18 @@
 .slider:hover {
     color: var(--hover_static);
 }
+/* dark mode */
 .slider:before {
     background: var(--gradient_static);
-    content: "☀";
+    content: url(https://nyxeia.github.io/Spring-of-Power/SVG/sun-svgrepo-com.svg);
     height: 30px;
     width: 30px;
     position: absolute;
     right: 7px;
 }
+/* light mode */
 input:checked + .slider:before {
-    content: "☪";
+    content: url(https://nyxeia.github.io/Spring-of-Power/SVG/moon-svgrepo-com.svg);
 }
 .slider.round:before {
     border-radius: 50%;
