@@ -24,6 +24,9 @@
     --textColor: #818181;
     --textColorAccent: #b1a9a9;
 
+    --hightlight_static: #cbcbcb;
+    --hover_static: #0f0f0f;
+
     --border: 1px solid #42403e4d;
     --radius: 3px;
 
@@ -158,50 +161,43 @@
     flex-direction: column;
     position: fixed;
     z-index: 99;
-    right: 25px;
+    right: 10px;
+    top: 59px;
+    width: 45px;
 }
 .theme-switch-wrapper span {
     font-size: var(--small-size);
     font-family: var(--main-font);
 }
-.theme-switch {
-    display: inline-block;
-    height: 20px;
-    position: relative;
-    width: 40px;
-    margin-top: 40px;
-}
 .theme-switch input {
     display: none;
 }
 .slider {
-    background-color: #000;
     bottom: 0;
     cursor: pointer;
     left: 0;
     position: absolute;
     right: 0;
     top: 0;
-    transition: 0.4s;
+    line-height: 28px;
+    text-align: center;
+    font-size: 22px;
+    color: var(--hightlight_static);
+    transition: 0.2s;
+}
+.slider:hover {
+    color: var(--hover_static);
 }
 .slider:before {
-    background-color: var(--special);
-    bottom: 4px;
-    content: "";
-    height: 12px;
-    left: 4px;
+    background: var(--gradient_static);
+    content: "☀";
+    height: 30px;
+    width: 30px;
     position: absolute;
-    transition: 0.4s;
-    width: 12px;
-}
-input:checked + .slider {
-    background-color: var(--neutral);
+    right: 7px;
 }
 input:checked + .slider:before {
-    transform: translateX(20px);
-}
-.slider.round {
-    border-radius: 20px;
+    content: "☪";
 }
 .slider.round:before {
     border-radius: 50%;
@@ -290,11 +286,11 @@ body {
 }
 .elevator a {
     text-align: center;
-    color: #cbcbcb;
+    color: var(--hightlight_static);
     transition: 0.2s;
 }
 .elevator a:hover {
-    color: var(--neutral);
+    color: var(--hover_static);
 }
 .ele_arrow {
     width: 30px;

@@ -77,7 +77,7 @@
 
 #FAM-button:hover {
     background: var(--gradient_static);
-    color: var(--neutralDark);
+    color: var(--hover_static);
 }
 
 #FAM[data-hidden="false"] ~ #FAM-button {
