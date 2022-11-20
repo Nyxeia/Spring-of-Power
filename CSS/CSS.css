@@ -560,13 +560,15 @@ textarea {
 .right {
     float: right
 }
-
 .left {
     float: left
 }
-
 .clear {
     clear: both
+}
+
+.center {
+    text-align: center;
 }
 
 /* Barre de gestion 
@@ -1796,6 +1798,11 @@ div.post_row:last-of-type {
     justify-content: center;
     align-items: center;
 }
+.p-tab:hover {
+    background: var(--gradient) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
 .p-corps {
     margin-left: 0;
 }
@@ -3016,7 +3023,7 @@ t2, .t2 {
     padding: 2px;
     text-transform: uppercase;
     color: var(--hightlight_static);
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
     font-weight: 300;
     border-radius: 5px;
@@ -3055,16 +3062,18 @@ e3, .e3 {
 
 e4, .e4 {
     font-family: var(--title-font);
-    font-size: var(--small-size);
     letter-spacing: 1px;
     color: var(--accentSoft);
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 e5, .e5 {
     font-family: var(--title-font);
-    font-size: var(--small-size);
     letter-spacing: 1px;
     color: var(--special);
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 bq {
@@ -3080,6 +3089,7 @@ box1, .box1 {
     border-radius: var(--radius);
     padding: 5px;
     margin: 10px 0;
+    display:block;
 }
 innerbox {
     display: block;
@@ -3092,6 +3102,7 @@ box2, .box2 {
     border: var(--border);
     border-radius: var(--radius);
     padding: 10px;
+    display:block;
 }
 
 .f_header {
@@ -3114,6 +3125,7 @@ box2, .box2 {
     background: var(--neutralDark);
     padding: 15px;
     border-radius: var(--radius);
+    width: 600px;
 }
 .special_container {
     margin-top: 20px;
@@ -3137,6 +3149,8 @@ box2, .box2 {
 /* F_TABS */
 .tab {
     font-size: 12px!important;
+    width: 100%;
+    text-align: center;
 }
 .tab:hover {
     cursor: pointer;
@@ -3174,4 +3188,27 @@ box2, .box2 {
     visibility: visible;
     transition: opacity .2s;
     position: relative;
+}
+
+/* FICHE PRES */
+.pres_grid {
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 7px;
+}
+.pres_ava {
+    width:200px;
+    margin: 10px 0 0 0;
+}
+.pres_id {
+    height: 313px;
+    overflow: auto;
+}
+.pres_hrp {
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+.pres_icon {
+    width: 75px;
+    height: 75px;
 }
