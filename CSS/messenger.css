@@ -257,8 +257,8 @@
 }
 
 .FAM-button {
-    background-color: var(--FAM-accentClr);
-    color: var(--FAM-pluginBackground);
+    background-color: var(--neutral);
+    color: var(--textColor);
     border-radius: 8px;
     padding: 5px 12px 6px;
     border: none;
