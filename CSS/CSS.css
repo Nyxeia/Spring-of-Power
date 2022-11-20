@@ -3125,7 +3125,7 @@ box2, .box2 {
     position: absolute;
     z-index: 1;
     margin-left: 10px;
-    margin-top: -10px;
+    margin-top: -8px;
 }
 .f_navlinks {
     display: flex;
@@ -3137,6 +3137,9 @@ box2, .box2 {
 /* F_TABS */
 .tab {
     font-size: 12px!important;
+}
+.tab:hover {
+    cursor: pointer;
 }
 .tabs_labels {
     display: flex;
