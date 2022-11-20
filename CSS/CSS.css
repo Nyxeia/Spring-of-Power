@@ -10,13 +10,11 @@
     --neutral: #0f0f0f;
     --neutralDark: #0c0c0c;
     --neutralDarker: #262626;
-
-    --contrast: #e5e5f0;
-    --contrastLight: #F4F4F4;
-    --contrastLighter: #40485e;
+    --neutralLight: #171717;
 
     --accent: #6b2578;
     --accentDark: #3a0843;
+    --accentSoft: #805673;
 
     --special: #8f796f;
     --specialDark: #3b3531;
@@ -61,7 +59,7 @@
     --FAM-pluginBackground: var(--neutral);
     --FAM-chatBackground: var(--neutralDark);
     --FAM-textareaBackground: #1e212a;
-    --FAM-msgBackground: #1d1d1d;
+    --FAM-msgBackground: var(--neutralLight);
     --FAM-myMsgBackground: #1e212a;
     --FAM-quoteBackground: rgba(255,255,255,0.04);
 
@@ -77,7 +75,7 @@
     --FAM-fontLightClr:var(--textColorAccent);
     --FAM-linkClr: var(--textColor);
     --FAM-titleClr: var(--textColor);
-    --FAM-buttonsClr: var(--neutral);
+    --FAM-buttonsClr: var(--textColor);
 
     --FAM-fontSize: 14px;
     --FAM-titleFont: 'Open Sans';
@@ -96,13 +94,11 @@
     --neutral: #c4c4c4;
     --neutralDark: #afafaf;
     --neutralDarker: #485169;
-
-    --contrast: #171938;
-    --contrastLight: #232657;
-    --contrastLighter: #c3c8f3;
+    --neutralLight: #d3d3d3;
 
     --accent: #29002e;
     --accentDark: #29002e;
+    --accentSoft: #703a5f;
 
     --special: #551b66;
     --specialDark: #3b3531;
@@ -124,12 +120,11 @@
 
     /* VARIABLES MESSENGER */
     --FAM-textareaBackground: #fafbfc;
-    --FAM-msgBackground: #dce3f4;
     --FAM-myMsgBackground: #fafbfc;
     --FAM-quoteBackground: #8a9fd236;
 
     --FAM-border: 1px solid #dce3f4;
-    --FAM--shadowBox: 0 0 20px var(--contrastLight);
+    --FAM--shadowBox: 0 0 20px var(--neutralLight);
   
     --FAM-sleepModeBackground: rgba(255, 255, 255, 0.6);
     --FAM-newMsgAnimation: rgb(0, 0, 0,.3);
@@ -180,28 +175,16 @@
     top: 0;
     line-height: 28px;
     text-align: center;
-    font-size: 22px;
-    color: var(--hightlight_static);
+}
+.theme_icon {
+    fill: var(--hightlight_static);
+    background: var(--gradient_static);
+    border-radius: 30px;
+    padding: 4px;
     transition: 0.2s;
 }
-.slider:hover {
-    color: var(--hover_static);
-}
-/* dark mode */
-.slider:before {
-    background: var(--gradient_static);
-    content: url(https://nyxeia.github.io/Spring-of-Power/SVG/sun-svgrepo-com.svg);
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    right: 7px;
-}
-/* light mode */
-input:checked + .slider:before {
-    content: url(https://nyxeia.github.io/Spring-of-Power/SVG/moon-svgrepo-com.svg);
-}
-.slider.round:before {
-    border-radius: 50%;
+.theme_icon:hover {
+    fill: var(--hover_static);
 }
 
 /* FOND DU FORUM ---*/
@@ -320,7 +303,7 @@ a {
 
 /*liens au survol*/
 a:hover {
-    color: var(--accent);
+    color: var(--accentSoft);
 }
 
 /* Emoji mis par défaut de FA
@@ -709,8 +692,9 @@ a.specials_links:empty {
 }
 #fa_welcome:hover,
 #fa_notifications:hover,
-.rightHeaderLink:hover {
-    color: var(--special);
+.rightHeaderLink:hover,
+#fa_chat_button:hover {
+    color: var(--accentSoft);
 }
 
 
@@ -944,7 +928,7 @@ ul#notif_list {
 /* button : ajouter un compte */
 .switcheroo__squircle--button {
     transition: border-radius 128ms var(--ease);
-    color: var(--contrastLight);
+    color: var(--textColorAccent);
 }
 
 /* icon plus */
@@ -1077,7 +1061,7 @@ ul#notif_list {
     border-radius: 4px;
     width: 100%;
     background-color: var(--neutral);
-    color: var(--contrastLight);
+    color: var(--textColorAccent);
     cursor: text;
 }
 
@@ -1099,7 +1083,7 @@ ul#notif_list {
 }
 
 .switcheroo__form-button:hover {
-    background: var(--contrastLight);
+    background: var(--gradient);
 }
 
 .monomer-modal.monomer-open,
@@ -1120,14 +1104,14 @@ ul#notif_list {
     color: var(--textColor);
     border: 0;
     outline: none;
-    background: var(--contrastLighter);
+    background: var(--neutralLight);
     border-radius: 4px;
     padding: 0;
     padding-left: 1px;
 }
 
 .monomer-close:hover {
-    background: var(--contrastLight);
+    background: var(--gradient);
 }
 
 
@@ -1165,7 +1149,7 @@ a.mainmenu {
     color: #b1a9a9;
 }
 a.mainmenu:hover {
-    color: var(--special);
+    color: var(--accentSoft);
 }
 
 /* Image des liens */
@@ -1859,44 +1843,8 @@ ul.profile-icons li {
     margin-top: 2px;
 }
 
-/* BOUTON LIKE --- */
-/* Conteneur du bouton like */
-.like_button {
-    float: right;
-    margin-left: 10px;
-    flex-grow: 1;
-    cursor: pointer;
-}
 
-/* Bouton like */
-.rep-button,
-.rep-button:active,
-.rep-button:focus {
-    background: var(--neutralDark);
-    color: var(--textColor);
-    border: none;
-    padding: 3px 5px;
-    border-radius: 5px;
-    font-weight: 600;
-}
-
-/*Bouton au survol*/
-.rep-button:hover {
-    background: var(--var(--contrastLighter))
-}
-
-/* Texte "j'aime" */
-button.rep-button .like_text {}
-
-/*compteur de like*/
-button.rep-button .rep-nb {
-    margin-left: 5px;
-    padding: 0 3px;
-    background: var(--neutral);
-    border-radius: 3px;
-}
-
-
+/* profil messages */
 .post_profile {
     padding: 7px;
     border-right: var(--border);
@@ -2068,6 +2016,9 @@ button.rep-button .rep-nb {
     display: block;
     width: 90%;
     margin: 0 auto;
+    padding: 3px;
+    border-radius: 2px;
+    background: var(--neutralLight);
 }
 
 /* Contenu code, spoiler et hide*/
@@ -2080,7 +2031,9 @@ button.rep-button .rep-nb {
 /* Nom de balise "code, spoiler" */
 .codebox dt {
     font-weight: 700;
-    font-size: var(--small-size);
+    font-variant: all-small-caps;
+    font-size: 14px;
+    color: var(--accentSoft);
 }
 
 /* Bouton "sélectionner le" code */
@@ -2118,9 +2071,18 @@ blockquote div {
 
 /* Citation mention "... a écrit" */
 blockquote cite {
-    display: block;
     margin-left: -20px;
+    display: block;
+    padding-left: -20px;
+    font-variant: all-small-caps;
+    font-weight: 700;
+    color: var(--accentSoft);
+    font-size: 14px;
     font-style: normal;
+    background: var(--neutralLight);
+    border-radius: var(--radius);
+    padding: 1px 5px;
+    margin-bottom: 5px;
 }
 
 /* Citation pseudo */
