@@ -2017,11 +2017,11 @@ ul.profile-icons li {
 /*** ------------------------------- ***/
 /*** TEXTES, BALISES, ETC ---------- ***/
 
-/* Lien-tag des utilisateurs */
-.mentiontag {}
-
-
-/* BALISES DE MESSAGE : spoiler, code, quote... */
+.group-mentiontag {
+    color: transparent;
+    font-size: 1px;
+    background-color: transparent !important;
+}
 
 /* Balise code, spoiler et hide*/
 .codebox {
@@ -2037,7 +2037,13 @@ ul.profile-icons li {
 .codebox dd {
     background: var(--neutralDark);
     border-radius: 5px;
-    padding: 5px
+    padding: 5px;
+    max-height: 110px;
+    overflow: auto;
+}
+.codebox.spoiler dd,
+.codebox.hidecode dd {
+    max-height: none !important;
 }
 
 /* Nom de balise "code, spoiler" */
@@ -3035,7 +3041,7 @@ t3, .t3 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: var(--medium-size);
-    margin: 5px 0px;
+    margin: 5px 0px 0px;
     color: var(--accentSoft);
     font-weight: 600;
 }
@@ -3045,19 +3051,19 @@ e1, .e1 {
     color: var(--special);
     font-weight: 700;
     letter-spacing: 1.5px;
-    font-size: 11px;
+    font-size: 11px !important;
 }
 
 e2, .e2 {
-    font-style: italic;
-    font-weight: 600;
-    color: var(--special);
-}
-
-e3, .e3 {
     font-weight: 600;
     border-bottom: var(--border);
     color: var(--accentSoft);
+}
+
+e3, .e3 {
+    font-style: italic;
+    font-weight: 600;
+    color: var(--special);
 }
 
 e4, .e4 {
@@ -3080,7 +3086,7 @@ bq {
     display: block;
     margin: 20px 50px;
     border-left: 5px solid var(--special);
-    padding: 5px 10px;
+    padding: 0px 10px;
 }
 
 box1, .box1 {
@@ -3095,6 +3101,8 @@ innerbox {
     display: block;
     padding: 5px 10px;
     text-align: justify;
+    font-size: 13px;
+    overflow: auto;
 }
 
 box2, .box2 {
@@ -3130,9 +3138,6 @@ box2, .box2 {
 .special_container {
     margin-top: 20px;
 }
-.special_box {
-    position:relative;
-}
 .special_title {
     position: absolute;
     z-index: 1;
@@ -3144,6 +3149,10 @@ box2, .box2 {
     justify-content: center;
     gap: 10px;
     margin: 10px 0px 5px;
+}
+.f_navlinks a {
+    width: 100%;
+    text-align: center;
 }
 
 /* F_TABS */
@@ -3169,6 +3178,11 @@ box2, .box2 {
     visibility: hidden;
     position: absolute;
 }
+.scrollable innerbox,
+.f_pres .tab_content innerbox {
+    max-height: 600px;
+}
+
 #tab1:checked ~ .tabs_list .tabs_labels .tab1,
 #tab2:checked ~ .tabs_list .tabs_labels .tab2,
 #tab3:checked ~ .tabs_list .tabs_labels .tab3,
@@ -3191,6 +3205,7 @@ box2, .box2 {
 }
 
 /* FICHE PRES */
+
 .pres_grid {
     display: grid;
     grid-template-columns: 200px auto;
@@ -3200,9 +3215,8 @@ box2, .box2 {
     width:200px;
     margin: 10px 0 0 0;
 }
-.pres_id {
-    height: 313px;
-    overflow: auto;
+.pres_id innerbox {
+    height: 263px;
 }
 .pres_hrp {
     display: grid;
