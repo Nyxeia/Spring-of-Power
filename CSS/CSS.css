@@ -104,7 +104,7 @@
     --specialDark: #3b3531;
 
     --textColor: #111111;
-    --textColorAccent: #0d0c0c;
+    --textColorAccent: #4e0064;
 
     --border: 1px solid #e6e6e6ab;
     --shadowBox: 0 0 20px var(--neutralDark);
@@ -3134,6 +3134,9 @@ box2, .box2 {
     padding: 15px;
     border-radius: var(--radius);
     width: 600px;
+}
+.f_bg a{
+    font-size: 14px;
 }
 .special_container {
     margin-top: 20px;
