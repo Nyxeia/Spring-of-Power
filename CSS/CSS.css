@@ -149,6 +149,12 @@
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accentDark);
 }
+
+::selection {
+  background: var(--accentDark);
+  color: var(--special);
+}
+
 .theme-switch-wrapper {
     display: inline-flex;
     align-items: center;
@@ -2228,7 +2234,7 @@ blockquote cite a {
     width: 335px;
 }
 .bg_player {
-    height:150px;
+    height:160px;
 }
 .bg_top {
     height: 185px;
@@ -3018,7 +3024,6 @@ t1, .t1 {
     font-family: var(--main-font);
     text-transform: uppercase;
     font-size: 24px;
-    padding: 15px
 }
 
 t2, .t2 {
@@ -3118,6 +3123,7 @@ box2, .box2 {
     justify-content: space-between;
     align-items: center;
     min-height: 100px;
+    padding-left: 20px;
 }
 .f_icon_box {
 
@@ -3127,6 +3133,11 @@ box2, .box2 {
     height: 50px;
     border-radius: 70px;
     margin: 5px 2px;
+    filter: sepia(70%);
+    -webkit-filter: sepia(70%);
+    -moz-filter: sepia(70%);
+    box-shadow: 3px 4px 4px -2px rgba(0,0,0,0.40);
+   
 }
 
 .f_bg {
@@ -3135,11 +3146,10 @@ box2, .box2 {
     border-radius: var(--radius);
     width: 600px;
 }
-.f_bg a{
-    font-size: 14px;
-}
+
 .special_container {
     margin-top: 20px;
+    position: relative;
 }
 .special_title {
     position: absolute;

@@ -149,6 +149,7 @@ jQuery(function () {
         var found = false;
         switch (field) {
             case "Alias":
+            case "Pronoms":
             case "Age":
             case "Zone libre":
             case "Dollars":
@@ -214,6 +215,7 @@ jQuery(function () {
         switch (field) {
             case "Date d'inscription":
             case "Pseudo":
+            case "Pronoms IRL":
             case "Messages":
             case "FC":
             case "Crédits":
