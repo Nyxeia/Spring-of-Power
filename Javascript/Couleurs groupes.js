@@ -20,7 +20,7 @@ $(function(){
         $(this).addClass("hybrid");
     });
 
-    $('span[style="color:#a1a1a1"]').each(function(){
+    $('span[style="color:#A1A1A1"]').each(function(){
         $(this).addClass("pnj");
     });
 
