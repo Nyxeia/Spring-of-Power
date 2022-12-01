@@ -1,14 +1,12 @@
 // PLACEMENT : sur toutes les pages
 
-$(function(){
-
-  // BOUTON DE SUJET 
-   $('.newtopic_button').replaceWith("<msgbtn class=\"newbtn\">Nouveau</msgbtn>"); // Ouvrir un nouveau sujet
-   $('.reply_button').replaceWith("<msgbtn class=\"repbtn\">Répondre</msgbtn>"); // Répondre au sujet
-  
-   $('.newpm_button img').replaceWith("<msgbtn class=\"newbtn\">Nouveau</msgbtn>"); // Envoyer un nouveau MP
-   $('.replypm_button img').replaceWith("<msgbtn class=\"repbtn\">Répondre</msgbtn>"); // Répondre au MP
-});
+$(function() {
+  var el = $('#main-content');
+    
+    el.find('img[src="https://2img.net/zupimages.net/up/22/42/hkuc.png"]').replaceWith('<msgbtn class=\"newbtn\">Nouveau</msgbtn>');
+    el.find('img[src="https://2img.net/zupimages.net/up/22/42/odyw.png"]').replaceWith('<msgbtn class=\"repbtn\">Répondre</msgbtn>');
+    el.find('img[src="https://2img.net/zupimages.net/up/22/42/tpii.png"]').replaceWith('<msgbtn class=\"repbtn\">Verrouillé</msgbtn>');
+  });
 
 $(function() {
   var el = $('.profil_contact');
