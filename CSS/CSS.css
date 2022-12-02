@@ -2974,11 +2974,11 @@ msgbtn, .msgbtn {
 
 /****** --- CODE DU FORUM --- ******/
 
-.icarus {color: var(--icarus) !important}
-.theseus {color: var(--theseus) !important}
-.twilight {color: var(--twilight) !important}
-.hybrid {color: var(--hybrid) !important}
-.disaster {color: var(--disaster) !important}
+.icarus, ip {color: var(--icarus) !important}
+.theseus, tp {color: var(--theseus) !important}
+.twilight, tz {color: var(--twilight) !important}
+.hybrid, ht {color: var(--hybrid) !important}
+.disaster, to {color: var(--disaster) !important}
 .pnj {color: var(--pnj) !important}
 
 .btn, btn {
