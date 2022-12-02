@@ -1298,6 +1298,12 @@ a.forumtitle:hover {
     gap: 5px;
 }
 
+.subforum {
+    height: 20px;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
 .forum_lastpost-avatar {
     background: var(--neutral);
     height: 105px;

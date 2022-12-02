@@ -52,6 +52,7 @@ $(document).ready(function() {
 	});
 });
 //]]>
+  
 </script>
 
 <!--------------------------------------->
@@ -93,6 +94,32 @@ $(document).ready(function() {
     });
 })();
   
+</script>
+  
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+	let hover = document.querySelectorAll(".subforum");
+
+	for (var i=0; i<hover.length; i++) {
+		var subforum = hover[i];
+
+		subforum.addEventListener("mouseover", autoOver);
+		subforum.addEventListener("mouseout", autoOut);	
+
+		if (subforum.scrollHeight > 20) {
+			subforum.insertAdjacentHTML('afterbegin', '<span class="ltag">+</span>');
+		}
+	}
+	
+	function autoOver() {
+		this.style.height = this.scrollHeight + "px";
+	}
+	
+	function autoOut() {
+		this.style.height = "20px";
+	}
+});
 </script>
 
 </body>
