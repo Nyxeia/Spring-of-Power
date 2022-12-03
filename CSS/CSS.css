@@ -295,11 +295,6 @@ form p {
     border-radius: 65px;
 }
 
-/****** ------------------------------------------------------------------------------
- ****** GÉNÉRALITÉS ------------------------------------------------------------------ 
- ****** Sélecteurs généraux s'appliquant à plusieurs reprises sur tout le forum ******/
-
-/*** ----------------------------------- ***/
 /*** LIENS ET TEXTE -------------------- ***/
 
 /* LIENS DU FORUM --- */
@@ -722,8 +717,6 @@ ul#notif_list {
     display: none;
 }
 
-
-/* MENU BIENVENUE ---*/
 /* conteneur */
 #fa_menulist {
     width: 350px;
@@ -1124,12 +1117,6 @@ ul#notif_list {
     background: var(--gradient);
 }
 
-
-
-
-/*** ------------------------------- ***/
-/*** BARRE DE NAVIGATION ----------- ***/
-
 /* Conteneur de la barre de nav */
 .navbar {
     padding: 11px;
@@ -1137,13 +1124,10 @@ ul#notif_list {
     text-transform: uppercase;
 }
 
-/* Suppression des liens peu utilisés*/
+.navbar a[href^="/images"],
 .navbar a[href^="/faq"],
-/*faq*/
 .navbar a[href^="/calendar"],
-/*calendrier*/
 .navbar a[href^="/groups"]
-/*groupes*/
     { display: none}
 
 ul.navbar.fix {
@@ -3255,4 +3239,66 @@ box2, .box2 {
 .pres_icon {
     width: 75px;
     height: 75px;
+}
+/* ARGO */
+.argo_header {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.argo_icon {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    background: var(--gradient);
+    padding: 2px;
+    margin: 10px 50px 10px 10px;
+}
+.argo_profile {
+    width: 100%;
+}
+.argo_id_btn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+.argo_follow {
+    margin-top: 15px;
+}
+.argo_name, .argo_follow {
+    margin-top: 10px;
+}
+.argo_container {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    row-gap: 5px;
+}
+.argo_img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+}
+.argo innerbox {
+    height: 545px;
+}
+.argo_comment {
+    display: flex;
+    align-items: center;
+}
+.argo_comment_icon {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    background: var(--gradient);
+    padding: 2px;
+    margin: 10px 25px 10px 10px;
+}
+.argo_newpost {
+    width:400px;
+}
+.argo_new_img {
+    width: 100%;
 }
