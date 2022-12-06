@@ -1302,6 +1302,7 @@ a.forumtitle:hover {
     object-fit: cover;
     object-position: center;
     border-radius: var(--radius);
+    filter: grayscale(70%);
 }
 
 .forum_lastpost {
@@ -2739,7 +2740,7 @@ msgbtn, .msgbtn {
 }
 .pa_section_content {
     border-top: var(--border);
-    padding-top: 5px;
+    padding: 5px 5px 0 0;
     overflow: auto;
     text-align: justify;
 }
@@ -2823,7 +2824,7 @@ msgbtn, .msgbtn {
 }
 #pa_infogen {
     margin-top: 10px;
-    height: 166px;
+    height: 168px;
 }
 #pa_news {
     height: 165px;

@@ -1,0 +1,924 @@
+<html>
+
+<!----
+ 
+    © hunterthemes.tumblr.com | Page #14 - Directory (dark)
+   
+   Modifié par Nyxeia pour Le Projet X
+   
+    ---->
+<meta charset="utf-8">
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+
+<style type="text/css">
+    /* CSS */
+
+    @import url('https://nyxeia.github.io/Spring-of-Power/CSS/CSS.css');
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        color: #eeeeee;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        background-color: var(--neutral);
+        background-image: url();
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Links */
+
+    a {
+        font-family: Arial;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: var(--accentSoft);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+    /* Bold and italic */
+
+    i,
+    em {
+        color: #bbbbbb;
+    }
+
+    /* Tumblr controls */
+
+    iframe.tmblr-iframe {
+        top: 2px !important;
+        right: 40px !important;
+        opacity: 0.8;
+        transform: scale(0.6);
+        transform-origin: 100% 0;
+        -webkit-transform: scale(0.8);
+        -webkit-transform-origin: 100% 0;
+        -o-transform: scale(0.8);
+        -o-transform-origin: 100% 0;
+        -moz-transform: scale(0.8);
+        -moz-transform-origin: 100% 0;
+        -ms-transform: scale(0.8);
+        -ms-transform-origin: 100% 0;
+        z-index: 100000 !important;
+        filter: invert(100%) hue-rotate(180deg);
+        -webkit-filter: invert(100%) hue-rotate(180deg);
+        -moz-filter: invert(100%) hue-rotate(180deg);
+        -o-filter: invert(100%) hue-rotate(180deg);
+        -ms-filter: invert(100%) hue-rotate(180deg);
+    }
+
+    iframe.tmblr-iframe:hover {
+        opacity: 1 !important;
+    }
+
+    /*-- Webkit scrollbar --*/
+
+    ::-webkit-scrollbar {
+        width: 9px;
+        height: 0px;
+    }
+
+    ::-webkit-scrollbar-button:start:decrement,
+    ::-webkit-scrollbar-button:end:increment {
+        height: 0px;
+        display: block;
+        background-color: #000000;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+        background-color: #000000;
+    }
+
+    ::-webkit-scrollbar-thumb:vertical {
+        height: 0px;
+        background-color: #ddd;
+        border: 4px solid #000000;
+    }
+
+    /*-- TOOLTIPS --*/
+
+    #s-m-t-tooltip {
+        margin: 24px 14px 7px 12px;
+        padding: 5px;
+        max-width: 250px;
+        color: #222;
+        background: #000000;
+        border: 1px solid #222;
+        font-size: 12px;
+        line-height: 15px;
+        z-index: 100000;
+    }
+
+    /* Fix */
+
+    iframe,
+    img,
+    embed,
+    object,
+    video {
+        max-width: 100%;
+        border: none;
+    }
+
+    input,
+    textarea,
+    select,
+    a {
+        outline: none;
+    }
+
+    /*------ MENU -----*/
+
+    #menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 45px;
+        background: var(--neutralDark);
+        border-bottom: var(--border)
+        z-index: 100;
+    }
+
+    /* Blog title */
+
+    #blogtitle {
+        margin-top: 0px;
+        margin-left: 270px;
+        font-family: var(--main-font);
+        font-size: 25px;
+        line-height: 45px;
+        color: #ffffff;
+        letter-spacing: 1px;
+        z-index: 10000;
+    }
+
+    /*------ SIDEBAR -----*/
+
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 230px;
+        height: 100%;
+        background: var(--neutralDark);
+        border-right: var(--border);
+        z-index: 100;
+    }
+
+    .triangle1 {
+        position: absolute;
+        margin: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 230px 175px 0;
+        border-color: transparent var(--accent) transparent transparent;
+        z-index: 1;
+    }
+
+    #avatar {
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 60px;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        z-index: 10;
+        overflow: hidden;
+        background: var(--gradient);
+        padding: 2px;
+    }
+
+    #avatar img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    #avatar img:hover {
+        -webkit-transition: all .7s ease;
+        -moz-transition: all .7s ease;
+        -o-transition: all .7s ease;
+        transition: all .7s ease;
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    #forum {
+        margin-top: 175px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    #description {
+        margin: 15px 25px;
+        text-align: justify;
+    }
+
+    .line {
+        background: var(--gradient);
+        height: 1px;
+        clear: both;
+    }
+
+    .link {
+        color: var(--accent);
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--main-font);
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        transition: letter-spacing 0.3s;
+        width: 100%;
+    }
+
+    .link:hover {
+        color: var(--accent);
+        letter-spacing: 2px;
+    }
+
+    /* -------- SORTING CONTENT ------- */
+
+    /* Sort box style */
+
+    .sorting {
+        max-height: -moz-calc(100% - 390px);
+        max-height: -webkit-calc(100% - 390px);
+        max-height: -o-calc(100% - 390px);
+        max-height: calc(100% - 390px);
+        overflow-y: auto;
+        margin: 20px 20px;
+    }
+
+    /* Sorting titles */
+
+    .heading {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-family:  var(--main-font);
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        transition: letter-spacing 0.3s;
+        width: 100%;
+        color: #ffffff;
+        cursor: pointer;
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .heading::before {
+        content: "► ";
+    }
+
+    .heading.close::before {
+        content: "▼ ";
+    }
+
+    .heading:hover {
+        color: var(--main-dark);
+    }
+
+    .tagbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .linkbox {
+        display: none;
+        font-size: 11px;
+    }
+
+    #linkbox1 {
+        height: 80px;
+    }
+
+    #linkbox2 {
+        height: 80px;
+    }
+
+    #linkbox3 {
+        height: 60px;
+    }
+
+    #linkbox4 {
+        height: 40px;
+    }
+
+    #linkbox5 {
+        height: 40px;
+    }
+
+    #linkbox6 {
+        height: 40px;
+    }
+
+    /* Sorting links */
+
+    #sorting a {
+        display: block;
+        padding: 1px 5px;
+        color: #bbbbbb;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #sorting a.selected {
+        color: var(--accent);
+    }
+
+    #sorting a:hover {
+        color: var(--main-dark);
+    }
+
+    /*------ CONTAINER -----*/
+
+    #container {
+        margin-left: 250px;
+        top: 60px;
+        width: -moz-calc(100% - 250px);
+        width: -webkit-calc(100% - 250px);
+        width: -o-calc(100% - 250px);
+        width: calc(100% - 250px);
+        height: auto;
+        z-index: 10;
+    }
+
+    /* Entries */
+
+    .story {
+        width: 230px;
+        margin: 15px;
+        -moz-transition-duration: 1s;
+        -webkit-transition-duration: 1s;
+        -o-transition-duration: 1s;
+    }
+
+    /* Entries */
+
+    .img-top {
+        object-position: top;
+    }
+
+    .img-bot {
+        object-position: bottom;
+    }
+
+    #entry {
+        width: 400px;
+        height: auto;
+        font-size: 13px;
+    }
+
+    .entry-top {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Images */
+
+    #entry img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .name {
+        margin-left: 8px;
+    }
+    .name a {
+        font-family: var(--title-font);
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+    .name > div {
+        margin-top: 10px;
+    }
+    .alias {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px !important;
+    }
+
+    .fact {
+        display: block;
+    }
+
+    .fact::before {
+        content: "— ";
+        color: var(--accent-light);
+    }
+
+    /* Titles */
+
+    #entry h1 {
+        margin: 0;
+        font-family:  var(--main-font);
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+    /* Info */
+    .label {
+        font-family:  var(--main-font);
+        text-transform: uppercase;
+        color: var(--accent);
+    }
+
+    .metier {
+        color: #bbbbbb;
+        font-size: 12px;
+        display: inline-block;
+    }
+
+    .info {
+        margin-top: 0px;
+        margin-left: -1px;
+        padding: 10px;
+        color: #bbbbbb;
+        line-height: 18px;
+        text-align: justify;
+    }
+
+    .info-text {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+
+    .etags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .etags span {
+        margin: 0 5px;
+    }
+
+    .fc {
+        font-style: italic;
+        color: #bbbbbb;
+    }
+
+    /*-- PAGE CREDIT --*/
+
+    #credit {
+        position: fixed;
+        right: 10px;
+        top: 8px;
+        width: 30px;
+        z-index: 10000;
+    }
+
+    /* END CSS */
+
+        {
+        CustomCSS
+    }
+</style>
+
+</head>
+
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- HTML -->
+
+<body>
+
+    <div id="menu">
+        <div id="blogtitle">RÉPERTOIRE DE SPRING OF POWER</div>
+    </div>
+    <!--End menu-->
+
+    <div id="sidebar">
+
+        <div class="triangle1"></div>
+
+        <div id="avatar"><img src="https://zupimages.net/up/22/46/vxf0.png"></div>
+
+        <div id="forum">
+            <a href="https://springofpower.forumactif.com/" class="link">SPRING OF POWER</a>
+        </div>
+
+        <div id="description">
+            SPRING OF POWER est un RPG fantastique mêlant <e1>mutants</e1> et <e1>cyber-technologie</e1> dans un monde dominé par des <e1>corporations</e1>. <br><br>
+            Il tire ses inspirations de diverses sources dont The Boys, Cyberpunk 2077, Ready Player One, Black Mirror, X-Men et bien d'autres.
+            <br><br>
+            <div class="line"></div>
+        </div>
+
+        <!-- These are the filter links. Don't change ".story" tag because it refreshes the page -->
+
+        <div id="sorting" class="sorting">
+
+            <div id="filters" class="option-set clearfix" data-option-key="filter">
+                <a href="#filter" data-option-filter=".story">Voir tous les personnages</a>
+                <a href="" id="toggle">Ouvrir toutes les catégories</a>
+
+                <div class="heading">Nature<div class="line"></div>
+                </div>
+                <div id="linkbox1" class="linkbox">
+                    <div class="tagbox">
+                        <a href="#filter" data-option-filter=".mutant"> #mutant</a>
+                        <a href="#filter" data-option-filter=".originel"> #originel </a>
+                        <a href="#filter" data-option-filter=".tb"> #true blood </a>
+                        <a href="#filter" data-option-filter=".bb"> #blue blood </a>
+                        <a href="#filter" data-option-filter=".cc"> #carbon copy </a>
+                        <a href="#filter" data-option-filter=".alt"> #altéré </a>
+                        <a href="#filter" data-option-filter=".type1"> #type 1 </a>
+                        <a href="#filter" data-option-filter=".type2"> #type 2 </a>
+                        <a href="#filter" data-option-filter=".civil"> #civil </a>
+                        <a href="#filter" data-option-filter=".militaire"> #militaire </a>
+                        <a href="#filter" data-option-filter=".interdit"> #interdit </a>
+                        <a href="#filter" data-option-filter=".humain"> #humain </a>
+                    </div>
+                </div>
+
+                <div class="heading">Idéologie<div class="line"></div>
+                </div>
+                <div id="linkbox2" class="linkbox">
+                    <div class="tagbox">
+                        <a href="#filter" data-option-filter=".ip"> #icarus phenomenon </a>
+                        <a href="#filter" data-option-filter=".tp"> #theseus paradox </a>
+                        <a href="#filter" data-option-filter=".tz"> #twilight zone </a>
+                        <a href="#filter" data-option-filter=".ht"> #hybrid theory </a>
+                        <a href="#filter" data-option-filter=".to"> #tomorrow's disaster </a>
+                    </div>
+                </div>
+
+                <div class="heading">Affiliation<div class="line"></div>
+                </div>
+                <div id="linkbox3" class="linkbox">
+                    <div class="tagbox">
+                        <a href="#filter" data-option-filter=".icarus"> #icarus inc</a>
+                        <a href="#filter" data-option-filter=".theseus"> #theseus corp </a>
+                        <a href="#filter" data-option-filter=".gouv"> #gouvernementale </a>
+                        <a href="#filter" data-option-filter=".indep"> #indépendante </a>
+                        <a href="#filter" data-option-filter=".crim"> #criminelle </a>
+                    </div>
+                </div>
+
+                <div class="heading">Lieu d'habitation<div class="line"></div>
+                </div>
+                <div id="linkbox4" class="linkbox">
+                    <div class="tagbox">
+                        <a href="#filter" data-option-filter=".sol"> #solaris </a>
+                        <a href="#filter" data-option-filter=".na"> #neo arcadia </a>
+                        <a href="#filter" data-option-filter=".nex"> #nexus </a>
+                        <a href="#filter" data-option-filter=".cbay"> #crimson bay </a>
+                        <a href="#filter" data-option-filter=".ua"> #underapple </a>
+                    </div>
+                </div>
+
+                <div class="heading">Groupe d'âge<div class="line"></div>
+                </div>
+                <div id="linkbox5" class="linkbox">
+                    <div class="tagbox">
+                        <a href="#filter" data-option-filter=".age1"> #16-17 </a>
+                        <a href="#filter" data-option-filter=".age2"> #18-24 </a>
+                        <a href="#filter" data-option-filter=".age3"> #25-34 </a>
+                        <a href="#filter" data-option-filter=".age4"> #35-44 </a>
+                        <a href="#filter" data-option-filter=".age5"> #45-54 </a>
+                        <a href="#filter" data-option-filter=".age6"> #55-99 </a>
+                        <a href="#filter" data-option-filter=".age7"> #100+ </a>
+                    </div>
+                </div>
+
+                <div class="heading">Autres<div class="line"></div>
+                </div>
+                <div id="linkbox6" class="linkbox">
+                    <div class="tagbox">
+                        <a href="#filter" data-option-filter=".lgbtqia"> #lgbtqia+ </a>
+                        <a href="#filter" data-option-filter=".poc"> #poc </a>
+                        <a href="#filter" data-option-filter=".single"> #single&looking</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--End sorting-->
+    </div>
+    <!--End sidebar-->
+
+    <!-- Container -->
+    <div id="container" class="clearfix">
+
+
+
+
+
+        <!--- DARIUS --->
+        <div id="entry" class="f_bg story">
+            <div class="box1 entry-top">
+                <img src="https://i.ibb.co/MBdHtK5/portrait.png" class="argo_icon">
+                <div class="name">
+                    <a class="disaster" href="https://springofpower.forumactif.com/u2">Darius Sinclair</a>
+                    <div>
+                        <span class="alias"><e1>Dracula | pseudo mw</e1></span>
+                        238 ans · Originel · Vampirisme<br>
+                        <span class="metier">Chirurgien et membre du CA au SHC</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #mutant </ltag>
+                <ltag> #mutant </ltag>
+                <ltag> #mutant </ltag>
+                <ltag> #mutant </ltag>
+                <ltag> #mutant </ltag>
+                <ltag> #mutant </ltag>
+                <span class="fc"> — ft. <b>Daniel Gillies</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+
+        <!--- MUTANT --->
+        <div id="entry" class="f_bg story">
+            <div class="box1 entry-top">
+                <img src="https://zupimages.net/up/22/47/7938.png" class="argo_icon">
+                <div class="name">
+                    <a class="icarus" href="https://springofpower.forumactif.com/u2">Prénom Nom</a>
+                    <div>
+                        <span class="alias"><e1>alias | pseudo mw</e1></span>
+                        XX ans · Type de mutant · Mutation<br>
+                        <span class="metier">Métier</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #mutant </ltag>
+                <ltag> #mutant </ltag>
+                <ltag> #mutant </ltag>
+                <ltag> #mutant </ltag>
+                <ltag> #mutant </ltag>
+                <ltag> #mutant </ltag>
+                <span class="fc"> — ft. <b>Célébrité</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+
+        <!--- ALTÉRÉ --->
+        <div id="entry" class="f_bg story">
+            <div class="box1 entry-top">
+                <img src="https://zupimages.net/up/22/47/iplc.png" class="argo_icon">
+                <div class="name">
+                    <a class="theseus" href="https://springofpower.forumactif.com/u2">Prénom Nom</a>
+                    <div>
+                        <span class="alias"><e1>alias | pseudo mw</e1></span>
+                        XX ans · Altéré · Type-Grade<br>
+                        <span class="metier">Métier</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #altéré </ltag>
+                <ltag> #altéré </ltag>
+                <ltag> #altéré </ltag>
+                <ltag> #altéré </ltag>
+                <ltag> #altéré </ltag>
+                <ltag> #altéré </ltag>
+                <span class="fc"> — ft. <b>Célébrité</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+
+        <!--- HUMAIN --->
+        <div id="entry" class="f_bg story">
+            <div class="box1 entry-top">
+                <img src="https://zupimages.net/up/22/47/ydft.png" class="argo_icon">
+                <div class="name">
+                    <a class="twilight" href="https://springofpower.forumactif.com/u2">Prénom Nom</a>
+                    <div>
+                        <span class="alias"><e1>alias | pseudo mw</e1></span>
+                        XX ans · Humain non-modifié<br>
+                        <span class="metier">Métier</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Fait saillant.</span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #humain </ltag>
+                <ltag> #humain </ltag>
+                <ltag> #humain </ltag>
+                <ltag> #humain </ltag>
+                <ltag> #humain </ltag>
+                <ltag> #humain </ltag>
+                <span class="fc"> — ft. <b>Célébrité</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+
+    </div>
+    <!--End container-->
+
+</body>
+
+<!---------- SCRIPTS ---------->
+
+<!-- Saturnicons script -->
+
+<link href="//dl.dropbox.com/s/50g6fbds3rh4m0j/saturnicons.css" rel="stylesheet">
+
+<!-- Jquery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Style my tooltips script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="jquery.style-my-tooltips.js"></script>
+
+<script type="text/javascript" src="https://static.tumblr.com/imovwvl/dJWl20ley/jqueryformasonry.js"></script>
+
+<script src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            $("[title]").style_my_tooltips({
+                tip_follows_cursor: true,
+                tip_delay_time: 200,
+                tip_fade_speed: 300
+            }
+            );
+        });
+    })(jQuery);
+</script>
+
+<!-- Filter scripts -->
+
+<script src="https://static.tumblr.com/fuu6t9w/kh8ml0pl9/jquery-1.7.1.min.js"></script>
+<script src="https://static.tumblr.com/fuu6t9w/eubml0pm0/jquery.isotope.min.js"></script>
+
+<script>
+    $(function () {
+        var $container = $('#container');
+
+        $container.isotope({
+            itemSelector: '.story'
+        });
+
+        var $optionSets = $('#sorting .option-set'),
+            $optionLinks = $optionSets.find('a');
+
+        $optionLinks.click(function () {
+            var $this = $(this);
+            // don't proceed if already selected
+            if ($this.hasClass('selected')) {
+                return false;
+            }
+
+            var $optionSet = $this.parents('.option-set');
+            $optionSet.find('.selected').removeClass('selected');
+            $this.addClass('selected');
+
+            // make option object dynamically, i.e. { filter: '.my-filter-class' }
+            var options = {},
+                key = $optionSet.attr('data-option-key'),
+                value = $this.attr('data-option-filter');
+            // parse 'false' as false boolean
+            value = value === 'false' ? false : value;
+            options[key] = value;
+            if (key === 'layoutMode' && typeof changeLayoutMode === 'function') {
+                // changes in layout modes need extra logic
+                changeLayoutMode($this, options)
+            } else {
+                // otherwise, apply new options
+                $container.isotope(options);
+            }
+
+            return false;
+        });
+
+    });
+</script>
+
+<!-- Hide/show on click -->
+
+<script>
+
+    let open = false;
+
+    $(function () {
+        $('body')
+            .on('click', '.heading', function () {
+
+                var linkbox = $(this).nextAll(".linkbox:first");
+                linkbox.slideToggle(300, function () {
+                    $(this).prevAll(".heading:first").toggleClass('close');
+                });
+
+            });
+    });
+
+    $("#toggle").click(function () {
+
+        var headings = $(this).nextAll(".heading");
+        var linkboxes = $(this).nextAll(".linkbox");
+
+        if (open) {
+            linkboxes.hide(300);
+            headings.removeClass("close");
+            open = false;
+            $(this).text("Ouvrir toutes les catégories");
+        } else {
+            linkboxes.show(300);
+            headings.addClass("close");
+            open = true;
+            $(this).text("Fermer toutes les catégories");
+        }
+
+    }); 
+</script>
+
+</html>
+
+<!-- END HTML -->
