@@ -12,8 +12,10 @@
 <!-- GOOGLE FONTS -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap" rel="stylesheet">
 
 <style type="text/css">
@@ -90,7 +92,7 @@
     /*-- Webkit scrollbar --*/
 
     ::-webkit-scrollbar {
-        width: 9px;
+        width: 6px;
         height: 0px;
     }
 
@@ -98,17 +100,17 @@
     ::-webkit-scrollbar-button:end:increment {
         height: 0px;
         display: block;
-        background-color: #000000;
+        background-color: var(--neutral);
     }
 
     ::-webkit-scrollbar-track-piece {
-        background-color: #000000;
+        background-color: var(--neutral);
     }
 
     ::-webkit-scrollbar-thumb:vertical {
         height: 0px;
-        background-color: #ddd;
-        border: 4px solid #000000;
+        background-color: var(--accent);
+        border-left: 4px solid var(--neutral);
     }
 
     /*-- TOOLTIPS --*/
@@ -152,8 +154,7 @@
         width: 100%;
         height: 45px;
         background: var(--neutralDark);
-        border-bottom: var(--border)
-        z-index: 100;
+        border-bottom: var(--border) z-index: 100;
     }
 
     /* Blog title */
@@ -265,10 +266,10 @@
     /* Sort box style */
 
     .sorting {
-        max-height: -moz-calc(100% - 390px);
-        max-height: -webkit-calc(100% - 390px);
-        max-height: -o-calc(100% - 390px);
-        max-height: calc(100% - 390px);
+        max-height: -moz-calc(100% - 480px);
+        max-height: -webkit-calc(100% - 480px);
+        max-height: -o-calc(100% - 480px);
+        max-height: calc(100% - 480px);
         overflow-y: auto;
         margin: 20px 20px;
     }
@@ -279,7 +280,7 @@
         display: block;
         text-align: center;
         text-transform: uppercase;
-        font-family:  var(--main-font);
+        font-family: var(--main-font);
         font-size: 12px;
         letter-spacing: 0.05em;
         transition: letter-spacing 0.3s;
@@ -409,14 +410,17 @@
     .name {
         margin-left: 8px;
     }
+
     .name a {
         font-family: var(--title-font);
         text-transform: uppercase;
         font-size: 22px;
     }
-    .name > div {
+
+    .name>div {
         margin-top: 10px;
     }
+
     .alias {
         display: block;
         margin-bottom: 10px;
@@ -429,14 +433,14 @@
 
     .fact::before {
         content: "— ";
-        color: var(--accent-light);
+        color: var(--accent);
     }
 
     /* Titles */
 
     #entry h1 {
         margin: 0;
-        font-family:  var(--main-font);
+        font-family: var(--main-font);
         font-size: 16px;
         line-height: 30px;
         text-transform: uppercase;
@@ -444,7 +448,7 @@
 
     /* Info */
     .label {
-        font-family:  var(--main-font);
+        font-family: var(--main-font);
         text-transform: uppercase;
         color: var(--accent);
     }
@@ -530,8 +534,10 @@
         </div>
 
         <div id="description">
-            SPRING OF POWER est un RPG fantastique mêlant <e1>mutants</e1> et <e1>cyber-technologie</e1> dans un monde dominé par des <e1>corporations</e1>. <br><br>
-            Il tire ses inspirations de diverses sources dont The Boys, Cyberpunk 2077, Ready Player One, Black Mirror, X-Men et bien d'autres.
+            SPRING OF POWER est un RPG fantastique mêlant <e1>mutants</e1> et <e1>cyber-technologie</e1> dans un monde
+            dominé par des <e1>corporations</e1>. <br><br>
+            Il tire ses inspirations de diverses sources dont The Boys, Cyberpunk 2077, Ready Player One, Black Mirror,
+            X-Men et bien d'autres.
             <br><br>
             <div class="line"></div>
         </div>
@@ -579,8 +585,8 @@
                 </div>
                 <div id="linkbox3" class="linkbox">
                     <div class="tagbox">
-                        <a href="#filter" data-option-filter=".icarus"> #icarus inc</a>
-                        <a href="#filter" data-option-filter=".theseus"> #theseus corp </a>
+                        <a href="#filter" data-option-filter=".icar"> #icarus inc</a>
+                        <a href="#filter" data-option-filter=".thes"> #theseus corp </a>
                         <a href="#filter" data-option-filter=".gouv"> #gouvernementale </a>
                         <a href="#filter" data-option-filter=".indep"> #indépendante </a>
                         <a href="#filter" data-option-filter=".crim"> #criminelle </a>
@@ -638,25 +644,33 @@
 
 
         <!--- DARIUS --->
-        <div id="entry" class="f_bg story">
+        <div id="entry" class="f_bg story mutant to icar sol age7">
             <div class="box1 entry-top">
-                <img src="https://i.ibb.co/MBdHtK5/portrait.png" class="argo_icon">
+                <img src="https://i.pinimg.com/564x/f1/64/4f/f1644fd07632eedacd9cff946568e383.jpg"
+                    class="argo_icon img-top">
                 <div class="name">
                     <a class="disaster" href="https://springofpower.forumactif.com/u2">Darius Sinclair</a>
                     <div>
-                        <span class="alias"><e1>Dracula | pseudo mw</e1></span>
-                        238 ans · Originel · Vampirisme<br>
-                        <span class="metier">Chirurgien et membre du CA au SHC</span>
+                        <span class="alias">
+                            <e1>Dracula | dr.sinclair</e1>
+                        </span>
+                        237 ans · Originel · Vampirisme<br>
+                        <span class="metier">Médecin spécialiste & chercheur au SHC</span>
                     </div>
                 </div>
             </div>
             <div class="box1 info">
                 <div class="info-text">
-                    <span class="fact">Fait saillant.</span>
-                    <span class="fact">Fait saillant.</span>
-                    <span class="fact">Fait saillant.</span>
-                    <span class="fact">Fait saillant.</span>
-                    <span class="fact">Fait saillant.</span>
+                    <span class="fact">Spécialiste en médecine mutante, il est bien reconnu dans le domaine. Il donne
+                        des conférences en personne et dans le Metaworld.</span>
+                    <span class="fact">Il supervise un labo de recherche pour trouver la formule de Vitae qui permettra
+                        de choisir la mutation obtenue et réduire ses contre-coups.</span>
+                    <span class="fact">Il est de nature bienveillante et refuse rarement d'aider les autres, mais a un
+                        côté particulièrement vicieux qu'il vaut mieux ne pas provoquer.</span>
+                    <span class="fact">Il maintient une apparence propre, soignée et élégante. Il porte souvent un
+                        costume.</span>
+                    <span class="fact">N'ayant pas été un bon père par le passé, il tente de faire mieux auprès de ceux
+                        sur qui il veille.</span>
                 </div>
                 <!--End info-text-->
 
@@ -665,16 +679,45 @@
 
             <div class="etags">
                 <ltag> #mutant </ltag>
-                <ltag> #mutant </ltag>
-                <ltag> #mutant </ltag>
-                <ltag> #mutant </ltag>
-                <ltag> #mutant </ltag>
-                <ltag> #mutant </ltag>
+                <ltag> #tomorrow's disaster </ltag>
+                <ltag> #icarus inc </ltag>
+                <ltag> #solaris </ltag>
+                <ltag> #100+ </ltag>
                 <span class="fc"> — ft. <b>Daniel Gillies</b></span>
             </div>
             <!--End etags -->
         </div>
         <!--End entry-->
+
+
+        <!--- YSOLD --->
+        <div id="entry" class="f_bg story mutant bb ht gouv nex age3 ">
+            <div class="box1 entry-top"> <img src="https://zupimages.net/up/22/50/499g.jpg" class="argo_icon">
+                <div class="name"> <a class="hybrid" href="https://springofpower.forumactif.com/u4">Ysold Ashford</a>
+                    <div> <span class="alias">
+                            <e1>Weasel | Trystan</e1>
+                        </span> 28 ans · Blue Blood · <br>Manipulation de l'esprit<br> <span class="metier">CERBER (Recon Team)</span> </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text"> 
+                    <span class="fact">Vient d'une famille aisée pro Icarus Inc.</span>
+                    <span class="fact">Son père était avocat</span>
+                    <span class="fact">Elle a travaillé dans un cabinet de détective privé</span>
+                    <span class="fact">Elle vit dans une colocation avec ses amies d'enfance.</span>
+                </div> 
+                <!--End info-text-->
+            </div> 
+            <!--End info-->
+            <div class="etags">
+                <ltag> #mutant </ltag>
+                <ltag> #blue blood </ltag>
+                <ltag> #hybrid theory </ltag>
+                <ltag> #gouvernementale </ltag>
+                <ltag> #nexus </ltag>
+                <ltag> #25-34 </ltag> <span class="fc"> — ft. <b>Florence Pugh</b></span>
+            </div> <!--End etags -->
+        </div> <!--End entry-->
 
 
         <!--- MUTANT --->
@@ -684,7 +727,9 @@
                 <div class="name">
                     <a class="icarus" href="https://springofpower.forumactif.com/u2">Prénom Nom</a>
                     <div>
-                        <span class="alias"><e1>alias | pseudo mw</e1></span>
+                        <span class="alias">
+                            <e1>alias | pseudo mw</e1>
+                        </span>
                         XX ans · Type de mutant · Mutation<br>
                         <span class="metier">Métier</span>
                     </div>
@@ -724,7 +769,9 @@
                 <div class="name">
                     <a class="theseus" href="https://springofpower.forumactif.com/u2">Prénom Nom</a>
                     <div>
-                        <span class="alias"><e1>alias | pseudo mw</e1></span>
+                        <span class="alias">
+                            <e1>alias | pseudo mw</e1>
+                        </span>
                         XX ans · Altéré · Type-Grade<br>
                         <span class="metier">Métier</span>
                     </div>
@@ -764,7 +811,9 @@
                 <div class="name">
                     <a class="twilight" href="https://springofpower.forumactif.com/u2">Prénom Nom</a>
                     <div>
-                        <span class="alias"><e1>alias | pseudo mw</e1></span>
+                        <span class="alias">
+                            <e1>alias | pseudo mw</e1>
+                        </span>
                         XX ans · Humain non-modifié<br>
                         <span class="metier">Métier</span>
                     </div>

@@ -9,7 +9,7 @@
 
     --neutral: #0f0f0f;
     --neutralDark: #0c0c0c;
-    --neutralDarker: #262626;
+    --neutralDarker: #050505;
     --neutralLight: #171717;
 
     --accent: #6b2578;
@@ -93,7 +93,7 @@
 
     --neutral: #c4c4c4;
     --neutralDark: #afafaf;
-    --neutralDarker: #485169;
+    --neutralDarker: #a5a5a5;
     --neutralLight: #d3d3d3;
 
     --accent: #29002e;
@@ -1178,7 +1178,7 @@ a.mainmenu img {display: none}
     font-family: var(--title-font);
     font-weight: 300;
     letter-spacing: 5px;
-    color: #ffffff9c;
+    color: var(--hightlight_static);
 }
 
 .forum_row {
@@ -1302,7 +1302,6 @@ a.forumtitle:hover {
     object-fit: cover;
     object-position: center;
     border-radius: var(--radius);
-    filter: grayscale(70%);
 }
 
 .forum_lastpost {
@@ -1370,7 +1369,7 @@ a.forumtitle:hover {
     background: var(--neutral);
     border-radius: var(--radius);
     border: var(--border);
-    padding: 5px 10px;
+    padding: 3px;
 }
 .qeel-left {
     border-radius: 5px 0 0 5px;
@@ -1409,6 +1408,7 @@ a.forumtitle:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5px 10px;
 }
 #newest_name a {
     font-family: var(--title-font);
@@ -1606,11 +1606,7 @@ a.groups:hover {
 /*titre du sujet*/
 .topictitle {
     font-size: var(--medium-size);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
     max-width: 410px;
-    white-space: nowrap;
     vertical-align: bottom;
 }
 
@@ -2249,9 +2245,6 @@ blockquote cite a {
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
 }
-.profile_field field {
-    display: inline-block;
-}
 .profile_field img {
     max-width: 230px;
 }
@@ -2259,25 +2252,28 @@ blockquote cite a {
     text-align: center;
     margin: 10px 0 0;
 }
-
-
-/* Bouton édition d'un champ de profil */
+.profile_contact .ajax-profil_edit {
+    display: none;
+}
+.profile_field field {
+    display: inline-block;
+}
+.ajax-profil_parent .field_editable > textarea
+{
+    width: 100%;
+}
+.ajax-profil_parent .field_uneditable
+{
+    text-align: justify;
+}
 .ajax-profil_edit {
     cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0px;
+    display: inline-block;
 }
-
-/* Bouton édition d'un champ de profil */
-.ajax-profil_edit {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: -15px;
+.ajax-profil_hover {
+    display: inline-block;
+    margin-right: 7px;
 }
-
-/* Bouton validation des modifications */
 .ajax-profil_valid {
     cursor: pointer;
     margin-left: 4px;
@@ -2729,18 +2725,21 @@ msgbtn, .msgbtn {
     justify-content: center;
 }
 .pa_section_title > span{
-    font-family: var(--main-font);
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: var(--medium-size);
-    font-weight: 500;
+    display: block;
+    background: var(--gradient2);
+    font-family: var(--title-font);
+    text-align: center;
+    padding: 2px;
+    text-transform: uppercase;
+    color: var(--hightlight_static);
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    border-radius: 3px;
+    width: 100%;
 }
 .pa_section_content {
-    border-top: var(--border);
-    padding: 5px 5px 0 0;
+    padding: 3px;
     overflow: auto;
     text-align: justify;
 }
@@ -2805,10 +2804,16 @@ msgbtn, .msgbtn {
     margin: 0px 1px;
 }
 #admin_name > span {
+    font-family: var(--main-font);
+    letter-spacing: 1px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: var(--normal-size);
-    margin-bottom: 2px;
+    font-weight: 500;
 }
 .admin_info .pa_section_content {
+    border-top: var(--border);
     text-align: center;
     height: 40px;
 }
@@ -2899,7 +2904,7 @@ msgbtn, .msgbtn {
     font-family: var(--title-font);
     font-weight: 300;
     letter-spacing: 3px;
-    color: #ffffff9c;
+    color: var(--hightlight_static);
 }
 .top_link a {
     font-size: var(--small-size);
@@ -3139,7 +3144,7 @@ box2, .box2 {
     -webkit-filter: sepia(70%);
     -moz-filter: sepia(70%);
     box-shadow: 3px 4px 4px -2px rgba(0,0,0,0.40);
-   
+    object-fit: cover;
 }
 
 .f_bg {
@@ -3231,11 +3236,16 @@ box2, .box2 {
     margin: 10px 0 0 0;
 }
 .pres_id innerbox {
-    height: 263px;
+    height: 302px;
 }
 .pres_hrp {
     display: grid;
     grid-template-columns: 100px auto;
+}
+.pres_hrp div {
+    height: 85px;
+    overflow: auto;
+    padding: 2px;
 }
 .pres_icon {
     width: 75px;
