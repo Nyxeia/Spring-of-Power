@@ -1667,7 +1667,6 @@ div.post_row:last-of-type {
 .p-box-esprit img,
 .p-box-ame img {
     max-width: 185px;
-    display: block;
 }
 .field_label {
     text-transform: uppercase;
@@ -2087,6 +2086,10 @@ blockquote cite a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
+}
+span.label {
+    display: inline-block;
+    padding-right: 5px;
 }
 .profile_field img {
     max-width: 230px;
@@ -3058,7 +3061,7 @@ box2, .box2 {
     margin: 10px 50px 10px 10px;
 }
 .argo_profile {
-    width: 100%;
+    width: 360px;
 }
 .argo_id_btn {
     display: flex;
@@ -3108,4 +3111,10 @@ box2, .box2 {
 /* CODE DIALOGUES */
 ds {
   color: var(--darius);
+}
+leta {
+    color: firebrick;
+}
+ys {
+font-family: 'Abril Fatface',cursive;letter-spacing:2px;color:Teal;font-size:12px;
 }
