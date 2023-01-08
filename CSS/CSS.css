@@ -2542,7 +2542,7 @@ msgbtn, .msgbtn {
     text-align: justify;
 }
 #pa_context {
-    height: 206px;
+    height: 198px;
     margin-bottom: 10px;
 }
 #context_img {
@@ -2592,9 +2592,6 @@ msgbtn, .msgbtn {
     justify-content: center;
     gap: 2px;
 }
-.admin_info {
-    margin-bottom: 1px;
-}
 .pa_admin img,
 .pa_modo img {
     border-radius: var(--radius);
@@ -2602,15 +2599,10 @@ msgbtn, .msgbtn {
     object-fit: cover;
 }
 .pa_admin img {
-    width: 88px;
-    height: 50px;
+    width: 52px;
+    height: 74px;
 }
-.pa_modo img {
-    width: 133px;
-    height: 30px;
-}
-.pa_admin div,
-.pa_modo div {
+.pa_admin div {
     height: 1px;
     margin: 0px 1px;
 }
@@ -2642,9 +2634,6 @@ msgbtn, .msgbtn {
 #pa_infogen {
     margin-top: 10px;
     height: 161px;
-}
-#pa_news {
-    height: 170px;
 }
 #pa_tempo_mdm {
     display: grid;
