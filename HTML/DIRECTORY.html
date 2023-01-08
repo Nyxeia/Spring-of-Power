@@ -1,0 +1,1723 @@
+<html>
+
+<!----
+ 
+    © hunterthemes.tumblr.com | Page #14 - Directory (dark)
+   
+   Modifié par Nyxeia pour Le Projet X
+   
+    ---->
+<meta charset="utf-8">
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+
+<style type="text/css">
+    /* CSS */
+
+    @import url('https://nyxeia.github.io/Spring-of-Power/CSS/CSS.css');
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        color: #eeeeee;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        background-color: var(--neutral);
+        background-image: url();
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Links */
+
+    a {
+        font-family: Arial;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: var(--accentSoft);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+    /* Bold and italic */
+
+    i,
+    em {
+        color: #bbbbbb;
+    }
+
+    /* Tumblr controls */
+
+    iframe.tmblr-iframe {
+        top: 2px !important;
+        right: 40px !important;
+        opacity: 0.8;
+        transform: scale(0.6);
+        transform-origin: 100% 0;
+        -webkit-transform: scale(0.8);
+        -webkit-transform-origin: 100% 0;
+        -o-transform: scale(0.8);
+        -o-transform-origin: 100% 0;
+        -moz-transform: scale(0.8);
+        -moz-transform-origin: 100% 0;
+        -ms-transform: scale(0.8);
+        -ms-transform-origin: 100% 0;
+        z-index: 100000 !important;
+        filter: invert(100%) hue-rotate(180deg);
+        -webkit-filter: invert(100%) hue-rotate(180deg);
+        -moz-filter: invert(100%) hue-rotate(180deg);
+        -o-filter: invert(100%) hue-rotate(180deg);
+        -ms-filter: invert(100%) hue-rotate(180deg);
+    }
+
+    iframe.tmblr-iframe:hover {
+        opacity: 1 !important;
+    }
+
+    /*-- Webkit scrollbar --*/
+
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 0px;
+    }
+
+    ::-webkit-scrollbar-button:start:decrement,
+    ::-webkit-scrollbar-button:end:increment {
+        height: 0px;
+        display: block;
+        background-color: var(--neutral);
+    }
+
+    ::-webkit-scrollbar-track-piece {
+        background-color: var(--neutral);
+    }
+
+    ::-webkit-scrollbar-thumb:vertical {
+        height: 0px;
+        background-color: var(--accent);
+        border-left: 4px solid var(--neutral);
+    }
+
+    /*-- TOOLTIPS --*/
+
+    #s-m-t-tooltip {
+        margin: 24px 14px 7px 12px;
+        padding: 5px;
+        max-width: 250px;
+        color: #222;
+        background: #000000;
+        border: 1px solid #222;
+        font-size: 12px;
+        line-height: 15px;
+        z-index: 100000;
+    }
+
+    /* Fix */
+
+    iframe,
+    img,
+    embed,
+    object,
+    video {
+        max-width: 100%;
+        border: none;
+    }
+
+    input,
+    textarea,
+    select,
+    a {
+        outline: none;
+    }
+
+    /*------ MENU -----*/
+
+    #menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 45px;
+        background: var(--neutralDark);
+        border-bottom: var(--border) z-index: 100;
+    }
+
+    /* Blog title */
+
+    #blogtitle {
+        margin-top: 0px;
+        margin-left: 270px;
+        font-family: var(--main-font);
+        font-size: 25px;
+        line-height: 45px;
+        color: #ffffff;
+        letter-spacing: 1px;
+        z-index: 10000;
+    }
+
+    /*------ SIDEBAR -----*/
+
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 230px;
+        height: 100%;
+        background: var(--neutralDark);
+        border-right: var(--border);
+        z-index: 100;
+    }
+
+    .triangle1 {
+        position: absolute;
+        margin: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 230px 175px 0;
+        border-color: transparent var(--accent) transparent transparent;
+        z-index: 1;
+    }
+
+    #avatar {
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 60px;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        z-index: 10;
+        overflow: hidden;
+        background: var(--gradient);
+        padding: 2px;
+    }
+
+    #avatar img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    #avatar img:hover {
+        -webkit-transition: all .7s ease;
+        -moz-transition: all .7s ease;
+        -o-transition: all .7s ease;
+        transition: all .7s ease;
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    #forum {
+        margin-top: 175px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    #description {
+        margin: 15px 25px;
+        text-align: justify;
+    }
+
+    .line {
+        background: var(--gradient);
+        height: 1px;
+        clear: both;
+    }
+
+    .link {
+        color: var(--accent);
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--main-font);
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        transition: letter-spacing 0.3s;
+        width: 100%;
+    }
+
+    .link:hover {
+        color: var(--accent);
+        letter-spacing: 2px;
+    }
+
+    /* -------- SORTING CONTENT ------- */
+
+    /* Sort box style */
+
+    .sorting {
+        max-height: -moz-calc(100% - 480px);
+        max-height: -webkit-calc(100% - 480px);
+        max-height: -o-calc(100% - 480px);
+        max-height: calc(100% - 480px);
+        overflow-y: auto;
+        margin: 20px 20px;
+    }
+
+    /* Sorting titles */
+
+    .heading {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--main-font);
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        transition: letter-spacing 0.3s;
+        width: 100%;
+        color: #ffffff;
+        cursor: pointer;
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .heading::before {
+        content: "► ";
+    }
+
+    .heading.close::before {
+        content: "▼ ";
+    }
+
+    .heading:hover {
+        color: var(--main-dark);
+    }
+
+    .tagbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .linkbox {
+        display: none;
+        font-size: 11px;
+    }
+
+    #linkbox1 {
+        height: 80px;
+    }
+
+    #linkbox2 {
+        height: 80px;
+    }
+
+    #linkbox3 {
+        height: 60px;
+    }
+
+    #linkbox4 {
+        height: 40px;
+    }
+
+    #linkbox5 {
+        height: 40px;
+    }
+
+    #linkbox6 {
+        height: 40px;
+    }
+
+    /* Sorting links */
+
+    #sorting a {
+        display: block;
+        padding: 1px 5px;
+        color: #bbbbbb;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #sorting a.selected {
+        color: var(--accent);
+    }
+
+    #sorting a:hover {
+        color: var(--main-dark);
+    }
+
+    /*------ CONTAINER -----*/
+
+    #container {
+        margin-left: 250px;
+        top: 60px;
+        width: -moz-calc(100% - 250px);
+        width: -webkit-calc(100% - 250px);
+        width: -o-calc(100% - 250px);
+        width: calc(100% - 250px);
+        height: auto;
+        z-index: 10;
+    }
+
+    /* Entries */
+
+    .story {
+        width: 230px;
+        margin: 15px;
+        -moz-transition-duration: 1s;
+        -webkit-transition-duration: 1s;
+        -o-transition-duration: 1s;
+    }
+
+    /* Entries */
+
+    .img-top {
+        object-position: top;
+    }
+
+    .img-bot {
+        object-position: bottom;
+    }
+
+    #entry {
+        width: 400px;
+        height: auto;
+        font-size: 13px;
+    }
+
+    .entry-top {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Images */
+
+    #entry img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .name {
+        margin-left: 8px;
+        max-width: 230px;
+    }
+
+    .name a {
+        font-family: var(--title-font);
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+
+    .name>div {
+        margin-top: 10px;
+    }
+
+    .alias {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px !important;
+    }
+
+    .fact {
+        display: block;
+    }
+
+    .fact::before {
+        content: "— ";
+        color: var(--accent);
+    }
+
+    /* Titles */
+
+    #entry h1 {
+        margin: 0;
+        font-family: var(--main-font);
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+    /* Info */
+    .label {
+        font-family: var(--main-font);
+        text-transform: uppercase;
+        color: var(--accent);
+    }
+
+    .metier {
+        color: #bbbbbb;
+        font-size: 12px;
+        display: inline-block;
+    }
+
+    .info {
+        margin-top: 0px;
+        margin-left: -1px;
+        padding: 10px;
+        color: #bbbbbb;
+        line-height: 18px;
+        text-align: justify;
+    }
+
+    .info-text {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+
+    .etags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .etags span {
+        margin: 0 5px;
+    }
+
+    .fc {
+        font-style: italic;
+        color: #bbbbbb;
+    }
+
+    /*-- PAGE CREDIT --*/
+
+    #credit {
+        position: fixed;
+        right: 10px;
+        top: 8px;
+        width: 30px;
+        z-index: 10000;
+    }
+
+    /* END CSS */
+
+        {
+        CustomCSS
+    }
+</style>
+
+</head>
+
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- HTML -->
+
+<body>
+
+    <div id="menu">
+        <div id="blogtitle">RÉPERTOIRE DE SPRING OF POWER</div>
+    </div>
+    <!--End menu-->
+
+    <div id="sidebar">
+
+        <div class="triangle1"></div>
+
+        <div id="avatar"><img src="https://zupimages.net/up/22/46/vxf0.png"></div>
+
+        <div id="forum">
+            <a href="https://springofpower.forumactif.com/" class="link">SPRING OF POWER</a>
+        </div>
+
+        <div id="description">
+            SPRING OF POWER est un RPG fantastique mêlant <e1>mutants</e1> et <e1>cyber-technologie</e1> dans un monde
+            dominé par des <e1>corporations</e1>. <br><br>
+            Il tire ses inspirations de diverses sources dont The Boys, Cyberpunk 2077, Ready Player One, Black Mirror,
+            X-Men et bien d'autres.
+            <br><br>
+            <div class="line"></div>
+        </div>
+
+        <!-- These are the filter links. Don't change ".story" tag because it refreshes the page -->
+
+        <div id="sorting" class="sorting">
+
+            <div id="filters" class="option-set clearfix" data-option-key="filter">
+                <a href="#filter" data-option-filter=".story">Voir tous les personnages</a>
+                <a href="" id="toggle">Ouvrir toutes les catégories</a>
+
+                <div class="heading">Nature<div class="line"></div>
+                </div>
+                <div id="linkbox1" class="linkbox">
+                    <div class="tagbox">
+                        <a href="#filter" data-option-filter=".mutant"> #mutant</a>
+                        <a href="#filter" data-option-filter=".originel"> #originel </a>
+                        <a href="#filter" data-option-filter=".tb"> #true blood </a>
+                        <a href="#filter" data-option-filter=".bb"> #blue blood </a>
+                        <a href="#filter" data-option-filter=".cc"> #carbon copy </a>
+                        <a href="#filter" data-option-filter=".alt"> #altéré </a>
+                        <a href="#filter" data-option-filter=".type1"> #type 1 </a>
+                        <a href="#filter" data-option-filter=".type2"> #type 2 </a>
+                        <a href="#filter" data-option-filter=".civil"> #civil </a>
+                        <a href="#filter" data-option-filter=".militaire"> #militaire </a>
+                        <a href="#filter" data-option-filter=".interdit"> #interdit </a>
+                        <a href="#filter" data-option-filter=".humain"> #humain </a>
+                    </div>
+                </div>
+
+                <div class="heading">Idéologie<div class="line"></div>
+                </div>
+                <div id="linkbox2" class="linkbox">
+                    <div class="tagbox">
+                        <a href="#filter" data-option-filter=".ip"> #icarus phenomenon </a>
+                        <a href="#filter" data-option-filter=".tp"> #theseus paradox </a>
+                        <a href="#filter" data-option-filter=".tz"> #twilight zone </a>
+                        <a href="#filter" data-option-filter=".ht"> #hybrid theory </a>
+                        <a href="#filter" data-option-filter=".to"> #tomorrow's disaster </a>
+                    </div>
+                </div>
+
+                <div class="heading">Affiliation<div class="line"></div>
+                </div>
+                <div id="linkbox3" class="linkbox">
+                    <div class="tagbox">
+                        <a href="#filter" data-option-filter=".icar"> #icarus inc</a>
+                        <a href="#filter" data-option-filter=".thes"> #theseus corp </a>
+                        <a href="#filter" data-option-filter=".gouv"> #gouvernementale </a>
+                        <a href="#filter" data-option-filter=".indep"> #indépendante </a>
+                        <a href="#filter" data-option-filter=".crim"> #criminelle </a>
+                    </div>
+                </div>
+
+                <div class="heading">Lieu d'habitation<div class="line"></div>
+                </div>
+                <div id="linkbox4" class="linkbox">
+                    <div class="tagbox">
+                        <a href="#filter" data-option-filter=".sol"> #solaris </a>
+                        <a href="#filter" data-option-filter=".na"> #neo arcadia </a>
+                        <a href="#filter" data-option-filter=".nex"> #nexus </a>
+                        <a href="#filter" data-option-filter=".cbay"> #crimson bay </a>
+                        <a href="#filter" data-option-filter=".ua"> #underapple </a>
+                    </div>
+                </div>
+
+                <div class="heading">Groupe d'âge<div class="line"></div>
+                </div>
+                <div id="linkbox5" class="linkbox">
+                    <div class="tagbox">
+                        <a href="#filter" data-option-filter=".age1"> #16-17 </a>
+                        <a href="#filter" data-option-filter=".age2"> #18-24 </a>
+                        <a href="#filter" data-option-filter=".age3"> #25-34 </a>
+                        <a href="#filter" data-option-filter=".age4"> #35-44 </a>
+                        <a href="#filter" data-option-filter=".age5"> #45-54 </a>
+                        <a href="#filter" data-option-filter=".age6"> #55-99 </a>
+                        <a href="#filter" data-option-filter=".age7"> #100+ </a>
+                    </div>
+                </div>
+
+                <div class="heading">Autres<div class="line"></div>
+                </div>
+                <div id="linkbox6" class="linkbox">
+                    <div class="tagbox">
+                        <a href="#filter" data-option-filter=".lgbtqia"> #lgbtqia+ </a>
+                        <a href="#filter" data-option-filter=".poc"> #poc </a>
+                        <a href="#filter" data-option-filter=".single"> #single&looking</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--End sorting-->
+    </div>
+    <!--End sidebar-->
+
+    <!-- Container -->
+    <div id="container" class="clearfix">
+
+
+        <!--- ABRAHAM GOSLAR --->
+       <div id="entry" class="f_bg story mutant bb ip icar sol age3">
+        <div class="box1 entry-top">
+            <img src="https://zupimages.net/up/22/52/yq0h.jpg" class="argo_icon">
+            <div class="name">
+                <a class="icarus" href="https://springofpower.forumactif.com/u39">Abraham Goslar</a>
+                <div>
+                    <span class="alias"><e1>Lion Boy | Lady Sapphire</e1></span>
+                    28 ans · Blue Blood · Lion de Némée<br>
+                    <span class="metier">Apprenti Super</span>
+                </div>
+            </div>
+        </div>
+        <div class="box1 info">
+            <div class="info-text">
+                <span class="fact">Sale môme récupéré par Icarus Inc qui lui a offert un avenir. Il leur est fidèle et loyal en conséquence.</span>
+                <span class="fact">Il entretient une relation fort contrariée avec Miss Doe, une autre apprentie super d'Icarus Inc, qui a grandi en foyer avec lui. Ils étaient meilleurs amis avant d'être amants, mais la médiatisation a quelque peu gâté leurs rapports.</span>
+                <span class="fact">Il a appris récemment qu'il était atteint d'une maladie rénale. Mais sa déchirure le rend inopérable, et à terme (on ne sait pas trop <i>quel</i> terme), il va y passer. </span>
+            </div>
+            <!--End info-text-->
+
+        </div>
+        <!--End info-->
+
+        <div class="etags">
+            <ltag> #mutant </ltag>
+            <ltag> #blue blood </ltag>
+            <ltag> #icarus phenomenon </ltag>
+            <ltag> #icarus inc </ltag>
+            <ltag> #solaris </ltag>
+            <ltag> #25-34 </ltag>
+            <span class="fc"> — ft. <b>David Corenswet</b></span>
+        </div>
+        <!--End etags -->
+    </div>
+    <!--End entry-->
+
+
+        <!--- ANASTASIA HOXHA --->
+       <div id="entry" class="f_bg story mutant tb tz indep cbay age7">
+        <div class="box1 entry-top">
+            <img src="https://64.media.tumblr.com/6b68e17fdfc81cfe7061eedd4725b534/3faacd82dc2a92d0-3e/s500x750/90f56ee8aa0041b4e592dfe70f7b8402ee749ea3.png" class="argo_icon">
+            <div class="name">
+                <a class="twilight" href="https://springofpower.forumactif.com/u6">Anastasia Hoxha</a>
+                <div>
+                    <span class="alias"><e1></e1></span>
+                    134 ans · True Blood · Chance<br>
+                    <span class="metier">Propriétaire d'une boutique au parfum d'étrangeté nommée Nevermore</span>
+                </div>
+            </div>
+        </div>
+        <div class="box1 info">
+            <div class="info-text">
+                <span class="fact">Son parfum est mélancolie, sa saison l'hiver, sa couleur le noir et si ce n'est pas assez éloquent, elle prépare son testament à l'heure actuelle.</span>
+                <span class="fact">Difficulté avec la technologie pourtant ce n'est pas faute de s'acharner mais n'en comprend pas forcément le principe.</span>
+                <span class="fact">Musicienne sans instrument, carrière enterrée et abandonnée il y a fort longtemps, cependant l'affinité ne s'est pas dissipée.</span>
+                <span class="fact">Marquée par une profonde nostalgie, elle adore les antiquités et se trouve adepte des brocantes et friperies.</span>
+                <span class="fact">Du sang sur les mains, ancienne infirmière ayant joué l'ange de la mort grâce à sa mutation et pour assouvir une vengeance personnelle.</span>
+                
+            </div>
+            <!--End info-text-->
+
+
+
+        </div>
+        <!--End info-->
+
+        <div class="etags">
+            <ltag> #mutant </ltag>
+            <ltag> #true blood</ltag>
+            <ltag> #twilight zone</ltag>
+            <ltag> #crimson bay</ltag>
+            <ltag> #100+</ltag>
+            <ltag> #independance</ltag>
+            <span class="fc"> — ft. <b>Elizabeth Olsen</b></span>
+        </div>
+        <!--End etags -->
+    </div>
+    <!--End entry-->
+
+
+    <!--- ANNIKA WEISS --->
+    <div id="entry" class="f_bg story mutant cc tz indep ua age3 lgbtqia">
+        <div class="box1 entry-top">
+            <img src="https://64.media.tumblr.com/b6e375e334f063c1a2fe42dc094b4738/tumblr_p5p1eu40OL1w6f1yao6_400.pnj" class="argo_icon">
+            <div class="name">
+                <a class="twilight" href="https://springofpower.forumactif.com/u43">Annika Weiss</a>
+                <div>
+                    <span class="alias"><e1>Morphée | Morphée</e1></span>
+                    28 ans · Carbon Copy · Somnokinésie<br>
+                    <span class="metier">Marchande de sable</span>
+                </div>
+            </div>
+        </div>
+        <div class="box1 info">
+            <div class="info-text">
+                <span class="fact">Naissance dans le Bronx. Issue d'une famille aisée, père qui travaille pour Theseus corp pendant que la mère s'occupe d'influenceurs en vogue, la dynamique familiale est étrange, et elle apprend bien vite à ne compter que sur son jumeau Elijah.</span>
+                <span class="fact">2005, New York explose. Les Weiss s'exilent à Philadelphie où Annika passe une adolescence en conflits constants avec ses parents et, étrangement, son frère.</span>
+                <span class="fact">2013, mère qui succombe à son cancer. Le patriarche rapatrie ce qui lui reste de famille sur le chantier de ce qui sera bientôt New Blossom sans leur demander leur avis. Annika le déteste profondément pour cela.</span>
+                <span class="fact">C'est après une dispute violente avec son père (et son frère qui s'en est mêlé) qu'elle claque la porte derrière elle, abandonne les jolies lumières de Neo Arcadia pour un ailleurs — peu importe lequel, il sera toujours mieux que l'atmosphère étouffante de la maison Weiss. Cet ailleurs, elle le trouve à Underapple, qu'elle n'a pas quittée depuis.</span>
+                <span class="fact">Première prise de Red en 2019. Tant pis pour la douleur des premières injections, Annika tient bon et développe des pouvoirs liés au sommeil. Elle se fait vite appeler Morphée, marchande de sable qui offre ses services en moyennant finance.</span>
+            </div>
+            <!--End info-text-->
+
+        </div>
+        <!--End info-->
+
+        <div class="etags">
+            <ltag> #mutant </ltag>
+            <ltag> #carbon copy </ltag>
+            <ltag> #twilight zone </ltag>
+            <ltag> #indépendante </ltag>
+            <ltag> #underapple </ltag>
+            <ltag> #25-34 </ltag>
+            <ltag> #lgbtqia+</ltag>
+            <span class="fc"> — ft. <b>Nicola Peltz</b></span>
+        </div>
+        <!--End etags -->
+    </div>
+    <!--End entry-->
+
+        <!--- ARCHER WILLIAMS --->
+        <div id="entry" class="f_bg story mutant tb tz crim ua age3 lgbtqia">
+            <div class="box1 entry-top">
+                <img src="https://64.media.tumblr.com/02fce62512bc4fd19fd90d134d587860/tumblr_ok76zcja5A1vyp3myo1_500.png" class="argo_icon">
+                <div class="name">
+                    <a class="twilight" href="https://springofpower.forumactif.com/u37">Archer Williams</a>
+                    <div>
+                        <span class="alias"><e1>Lupin | Lupin</e1></span>
+                        32 ans · True Blood · Altération cellulaire<br>
+                        <span class="metier">Voleur cambrioleur</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">Gamin d’Angleterre, gamin de l’ancien New York ensuite, gamin de l’Underapple, avec l’ambition de quitter son trou miteux pour briller dans New Blossom.</span>
+                    <span class="fact">Voleur, cambrioleur, il s’introduit chez ceux d’importance pour leur dérober leurs biens les plus précieux, pour les revendre sur le marché noir.</span>
+                    <span class="fact">Fortune dépensée pour sa famille, pour le MetaWorld dans lequel il passe beaucoup de temps. Vie de paraître plus que d’être. </span>
+                    <span class="fact">Son visage change sans cesse quand il utilise son don pour passer inaperçu. Le bleu perçant habituel disparaît dans un marron discret ou au contraire dans un violet charmant. Tout dépend ce qu’il fait.</span>
+                    <span class="fact">Fondamentalement généreux caché derrière une masse d’égoïsme simulé. Complètement adorable dissimulé sous des couches d’arrogantes prétentions. L’air désagréable qu’il traîne autour de lui, jamais réellement dissipé. Enfant maudit qui n’a toujours pas conscience de l’être.</span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #mutant </ltag>
+                <ltag> #true blood </ltag>
+                <ltag> #twilight zone </ltag>
+                <ltag> #criminelle </ltag>
+                <ltag> #underapple </ltag>
+                <ltag> #25-34 </ltag>
+                <ltag>lbgtqia+</ltag>
+                <span class="fc"> — ft. <b>Jack O’Connell</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+        <!--- BONNIE --->
+        <div id="entry" class="f_bg story mutant ip icar sol age4">
+            <div class="box1 entry-top">
+                <img src="https://64.media.tumblr.com/e8fd215c1f2d3e33252038855a60e6cc/8c48eed2aa068d34-7c/s640x960/27726291dcbfb60189880fe0ebbe921c5d806994.jpg" class="argo_icon">
+                <div class="name">
+                    <a class="icarus" href="https://springofpower.forumactif.com/u21">Bonnie Thompson</a>
+                    <div>
+                        <span class="alias"><e1>Ladyhawk | Ava</e1></span>
+                        42 ans · Blue Blood · Aérokinésie<br>
+                        <span class="metier">Super-Héroïne</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">Enfant star repérée par Icarus, elle obtient le rôle principal de « Super Bonnie » et prend sa première dose de Vitae à 16 ans.</span>
+                    <span class="fact">Passe les auditions pour rejoindre le casting des Sept, « héros » à la solde de la firme. Intègre la sélection et obtient les faveurs du public lui permettant de rejoindre la première bouture de l’équipe. </span>
+                    <span class="fact">Tombe amoureuse d’un de ses concurrents avec lequel elle se marie et adopte un adolescent.</span>
+                    <span class="fact">Sa vérité diffère de la réalité, surtout quand il s’agit de son cadet, Kian qu’elle a, à maintes reprises, laissé tomber.</span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #mutant </ltag>
+                <ltag> #blue blood </ltag>
+                <ltag> #icarus phenomenon </ltag>
+                <ltag> #icarus inc </ltag>
+                <ltag> #solaris </ltag>
+                <ltag> #35-44 </ltag>
+                <span class="fc"> — ft. <b>Gal Gadot</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+        <!--- DANI --->
+        <div id="entry" class="f_bg story humain tz indep cbay age3 single">
+            <div class="box1 entry-top">
+                <img src="https://64.media.tumblr.com/65f31c29cd41839b15fb075cba40e2fc/72bf61f0137e193f-e8/s400x600/9e76967ec85778bf8285c0b9c3ff7013a3e19500.jpg" class="argo_icon">
+                <div class="name">
+                    <a class="twilight" href="https://springofpower.forumactif.com/u14">Dani Duarte</a>
+                    <div>
+                        <span class="alias"><e1>Kaboom | Kaboom</e1></span>
+                        25 ans · Humaine non-modifiée<br>
+                        <span class="metier">Vendeuse</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">Elle est accro au MetaWorld où elle passe quasiment tout son temps libre.</span>
+                    <span class="fact">Elle vit dans un studio miteux, à Crimson Bay.</span>
+                    <span class="fact">Elle travaille dans une boutique de vinyles et de disques, dans le Nexus.</span>
+                    <span class="fact">Elle parle vite. Tout le temps. Comme si elle devait vous délivrer un message urgent.</span>
+                    <span class="fact">Elle est issue d'une famille de migrants qui a fait fortune dans le transport de marchandises.</span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #humain </ltag>
+                <ltag> #twilight zone </ltag>
+                <ltag> #indépendante </ltag>
+                <ltag> #crimson bay </ltag>
+                <ltag> #25-34 </ltag>
+                <ltag> #single&looking </ltag>
+                <span class="fc"> — ft. <b>Alba Baptista</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+
+        <!--- DARIUS --->
+        <div id="entry" class="f_bg story mutant originel to icar sol age7">
+            <div class="box1 entry-top">
+                <img src="https://i.pinimg.com/564x/f1/64/4f/f1644fd07632eedacd9cff946568e383.jpg"
+                    class="argo_icon img-top">
+                <div class="name">
+                    <a class="disaster" href="https://springofpower.forumactif.com/u2">Darius Sinclair</a>
+                    <div>
+                        <span class="alias">
+                            <e1>Dracula | dr.sinclair</e1>
+                        </span>
+                        237 ans · Originel · Vampirisme<br>
+                        <span class="metier">Médecin spécialiste & chercheur au SHC</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">Spécialiste en médecine mutante, il est bien reconnu dans le domaine. Il donne
+                        des conférences en personne et dans le Metaworld.</span>
+                    <span class="fact">Il supervise un labo de recherche pour trouver la formule de Vitae qui permettra
+                        de choisir la mutation obtenue et réduire ses contre-coups.</span>
+                    <span class="fact">Il est de nature bienveillante et refuse rarement d'aider les autres, mais a un
+                        côté particulièrement vicieux qu'il vaut mieux ne pas provoquer.</span>
+                    <span class="fact">Il maintient une apparence propre, soignée et élégante. Il porte souvent un
+                        costume.</span>
+                    <span class="fact">N'ayant pas été un bon père par le passé, il tente de faire mieux auprès de ceux
+                        sur qui il veille.</span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #mutant </ltag>
+                <ltag> #originel </ltag>
+                <ltag> #tomorrow's disaster </ltag>
+                <ltag> #icarus inc </ltag>
+                <ltag> #solaris </ltag>
+                <ltag> #100+ </ltag>
+                <span class="fc"> — ft. <b>Daniel Gillies</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+        <!--- DOC_RIVANI --->
+        <div id="entry" class="f_bg story alt type2 militaire to indep ua age4 lgbtqia poc single">
+            <div class="box1 entry-top">
+                <img src="https://64.media.tumblr.com/9766572d0baa88d7d3e6160ab97b8318/tumblr_p2neeh3IMM1uzr0u5o4_640.png" class="argo_icon">
+                <div class="name">
+                    <a class="disaster" href="https://springofpower.forumactif.com/u17">Doc Rivaci</a>
+                    <div>
+                        <span class="alias"><e1>el dottore</e1></span>
+                        38 ans · Altéré · 2-M<br>
+                        <span class="metier">Docteur dans une clinique clandestine</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">Son véritable nom est Faizan Bianchi, né Baqri.</span>
+                    <span class="fact">Il a grandit dans une famille nombreuse, et a été élevé par son voisinage du Bronx.</span>
+                    <span class="fact">Il a été militaire pour payer ses études de médecine.</span>
+                    <span class="fact">Il a rejoint CERBER avec son mari, Marco, jusqu'à la mort en cyberpsychose de celui-ci en 2022.</span>
+                    <span class="fact">Il s'est fait passé pour mort, a changé d'identité et rejoint une clinique clandestine de l'Underapple qu'il gère désormais</span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #altéré </ltag>
+                <ltag> #type 2 </ltag>
+                <ltag> #militaire </ltag>
+                <ltag> #tomorrow's disaster </ltag>
+                <ltag> #underapple </ltag>
+                <ltag> #independant </ltag>
+                <ltag> #lgbtqia+ </ltag>
+               <ltag> #poc </ltag>
+              
+                <span class="fc"> — ft. <b>Riz Ahmed</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+
+        <!--- ETHER SLAUGHTER --->
+        <div id="entry" class="f_bg story mutant tb to indep ua age3 lgbtqia single">
+            <div class="box1 entry-top">
+                <img src="https://64.media.tumblr.com/avatar_fa95703bab46_128.pnj" class="argo_icon">
+                <div class="name">
+                    <a class="disaster" href="https://springofpower.forumactif.com/u50">Ether Slaughter</a>
+                    <div>
+                        <span class="alias"><e1>Eth’</e1></span>
+                        30 ans · True Blood · Psychopompe (Mort)<br>
+                        <span class="metier">Ether travaille comme cartomancien, dans son petit logement.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">Il est né au Royaume-Uni et est arrivé, avec ses parents, aux USA l’année de ses 7 ans.</span>
+                    <span class="fact">Il a reçu sa mutation à 15 ans, par la déchirure survenue suite à la mort de ses parents.</span>
+                    <span class="fact">Sa seconde déchirure date de ses 25 ans, une attaque homophobe.</span>
+                    <span class="fact">Il a perdu son travail à l’hôpital à cause de ses addictions</span>
+                   
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #mutant </ltag>
+                <ltag> #true blood </ltag>
+                <ltag> #tomorrow's disaster </ltag>
+                <ltag> #indépendante </ltag>
+                <ltag> #25-34 </ltag>
+                <ltag> #lgbtqia+ </ltag>
+                <ltag> #single&looking </ltag>
+                <span class="fc"> — ft. <b>Tom Sturridge</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+
+        <!--- HAYES FITZSIMMONS --->
+        <div id="entry" class="f_bg story humain tz crim nex age5 lgbtqia">
+            <div class="box1 entry-top">
+                <img src="https://images2.imgbox.com/35/68/9xXtWqQ2_o.png" class="argo_icon">
+                <div class="name">
+                    <a class="twilight" href="https://springofpower.forumactif.com/u30">Hayes Fitzsimmons</a>
+                    <div>
+                    
+                        49 ans · Humain non-modifié<br>
+                        <span class="metier">Roi de Coeur (Fight Circle)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">New Yorkais born and bred, de ceux qui sont restés dans la ville et ont fait de l'Underapple leur terrain de jeu autant que ce New Blossom poussé depuis ses cendres.</span>
+                    <span class="fact">Fils d'un des fondateurs du Fight Circle, il a repris les rênes du gang il y a quelques années, sous le rôle du Roi de Coeur.</span>
+                    <span class="fact">Possède le club de boxe le Carré d'As, incontournable de Crimson Bay, en couverture de ses réelles activités.</span>
+                    <span class="fact">Travaille à sortir le gang de son état un peu moribond, grâce à diverses alliances et une modernisation menée de concert avec ses collègues.</span>
+                    <span class="fact">Heureusement marié, le couple est en fait un trouple gardé discret. Ça ne les regarde qu'eux.</span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #humain </ltag>
+                <ltag> #twilight zone </ltag>
+                <ltag> #criminelle </ltag>
+                <ltag> #nexus </ltag>
+                <ltag> #45-54 </ltag>
+                <ltag> #lbgtqia+ </ltag>
+                <span class="fc"> — ft. <b>Aidan Gillen</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+
+        <!--- HUGH REID --->
+       <div id="entry" class="f_bg story alt type1 civil ht icar na age5 lgbtqia single">
+        <div class="box1 entry-top">
+            <img src="https://i2-prod.manchestereveningnews.co.uk/whats-on/article23207819.ece/ALTERNATES/s1200c/0_severanceapple.jpg" class="argo_icon">
+            <div class="name">
+                <a class="hybrid" href="https://springofpower.forumactif.com/u45">Hugh Reid</a>
+                <div>
+                    <span class="alias"><e1> Hughie | LordAutie</e1></span>
+                    45 ans · Altéré · 1-C<br>
+                    <span class="metier">Bio-informaticien</span>
+                </div>
+            </div>
+        </div>
+        <div class="box1 info">
+            <div class="info-text">
+                <span class="fact">Hugh est autiste.</span>
+                <span class="fact">Il travaille à l'Unité M d'Icarus Inc., dans le laboratoire Synergie.</span>
+                <span class="fact">Il est passionné d'informatique, de sciences et de médias en général.</span>
+                <span class="fact">Sa petite sœur divorcée vit avec lui, en attendant de rebondir.</span>
+                <span class="fact">Il a connu plusieurs histoires d'amour compliquées, et attend de trouver la personne qui saura l'accepter et le comprendre.</span>
+            </div>
+            <!--End info-text-->
+
+        </div>
+        <!--End info-->
+
+        <div class="etags">
+            <ltag> #altéré </ltag>
+            <ltag> #hybrid theory </ltag>
+            <ltag> #icarus inc </ltag>
+            <ltag> #neo arcadia </ltag>
+            <ltag> #45-54 </ltag>
+            <ltag> #lgbtqia+ </ltag>
+            <ltag> #single&looking </ltag>
+            <span class="fc"> — ft. <b>Adam Scott</b></span>
+        </div>
+        <!--End etags -->
+    </div>
+    <!--End entry-->
+
+
+    <!--- JAMES B. PIERCE --->
+    <div id="entry" class="f_bg story alt type2 militaire tz gouv nex age5 ">
+        <div class="box1 entry-top">
+            <img src="https://64.media.tumblr.com/287566ad6dd4c703ef43bcae683432e9/c9705d1595906bb3-9f/s400x600/42c895d9355c4076878dd65da59fbd88effb204c.jpg" class="argo_icon">
+            <div class="name">
+                <a class="twilight" href="https://springofpower.forumactif.com/u26">James B. Pierce</a>
+                <div>
+                    <span class="alias"><e1> Caïn</e1></span>
+                    45 ans · Altéré · 2-M)<br>
+                    <span class="metier">Chef d’équipe de la cellule Elimination Squad de CERBER</span>
+                </div>
+            </div>
+        </div>
+        <div class="box1 info">
+            <div class="info-text">
+                <span class="fact">Il a perdu ses parents à l’âge de 13 ans dans un attentat causé par un mutant. Sa soeur adoptive a survécu, il l’ignore. Tout comme il ignore l’adoption de sa soeur, il pense toujours qu’ils sont jumeaux.</span>
+                <span class="fact">Quitte San Francisco suite au drame et s’installe avec son parrain à NY où il rencontre celui qui deviendra son meilleur ami : Nathaël Bates.</span>
+                <span class="fact">Rentre dans l’armée à 18 ans. Il est affecté dans l’ancienne unité de son parrain et décide de se spécialiser en tant que maître chien.</span>
+                <span class="fact">Il rejoint les rangs de CERBER à l’âge de 23 ans, recruté grâce à la promesse de se venger du meurtrier de ses parents. Vengeance qu’il obtient deux ans plus tard</span>
+                <span class="fact">Déménage dans le New-Jersey suite à la guerre civile. C’est là bas qu’il a rencontré son ex-femme à l’âge de 33 ans. Il devint une figure paternelle pour le fils de la jeune femme, enceinte lorsqu’ils se sont mit ensemble. Ils s’installent tous les trois à New Blossom en 2018.</span>
+                <span class="fact">A été obligé de tuer la femme de Nate - mutante appartenant à un sombre groupuscule-  suite à son arrestation qui tourna mal. Cet évènement l’ébranla énormément. Tuer son amie l’avait brisé.</span>
+                <span class="fact">Il divorce par consentement mutuel à l’âge de 42 ans, âge auquel il adopte son Tamaskan (chien-loup), nommé Loki afin de le former sur le terrain.</span>
+                <span class="fact">Il y’a 6 mois, suite à une blessure, on lui implanta deux prothèses oculaires avec vision infrarouge. Il se fit également implanter un immunosuppresseur. </span>
+
+            </div>
+            <!--End info-text-->
+
+        </div>
+        <!--End info-->
+
+        <div class="etags">
+            <ltag> #altéré </ltag>
+            <ltag> #type 2 </ltag>
+            <ltag> #militaire </ltag>
+            <ltag> #twilightzone </ltag>
+            <ltag> #gouvernementale </ltag>
+            <ltag> #nexus </ltag>
+            <ltag> #45-54 </ltag>
+            <span class="fc"> — ft. <b>Karl Urban</b></span>
+        </div>
+        <!--End etags -->
+    </div>
+    <!--End entry-->
+
+
+        <!--- KIAN --->
+        <div id="entry" class="f_bg story mutant tb ht crim sol age4 lgbtqia poc single">
+            <div class="box1 entry-top">
+                <img src="https://64.media.tumblr.com/b1e4d51572d413d2f0c7149b2b90ea1f/967e9095df143e9d-63/s400x600/eaf7930872b72121bd6eb56e939b84debf5ee45d.jpg" class="argo_icon">
+                <div class="name">
+                    <a class="hybrid" href="https://springofpower.forumactif.com/u33">Kian Azarian</a>
+                    <div>
+                        <span class="alias"><e1>Lightning</e1></span>
+                        40 ans · Blue Blood · Electrokinésie<br>
+                        <span class="metier">Gérant du club The Void</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">A grandi dans un foyer compliqué, avec une grande soeur</span>
+                    <span class="fact">A commencé le V quand il avait 16 ans, n'a jamais arrêté depuis et est très fier d'être un mutant</span>
+                    <span class="fact">Jaloux de sa soeur, il veut s'en prendre à Icarus pour se venger de l'avoir si longtemps méprisé au profit de Bonnie et d'avoir laissé son fiancé mourir</span>
+                    <span class="fact">Est veuf suite à une attaque dans une banque, l'a excessivement mal vécu et n'a toujours pas fait son deuil, des années plus tard</span>
+                    <span class="fact">Fait partie d'un groupe de terroristes de l'Underapple qui veut la tête d'Icarus</span>
+                    <span class="fact">Boit trop, se drogue régulièrement et a un comportement largement autodestructeur, même si ça a été pire dans le passé</span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #mutant </ltag>
+                <ltag> #true blood </ltag>
+                <ltag> #hybrid theory </ltag>
+                <ltag> #criminelle </ltag>
+                <ltag> #solaris </ltag>
+                <ltag> #35-44 </ltag>
+                <ltag> #lgbtqia+ </ltag>
+                <ltag> #poc </ltag>
+                <ltag> #single </ltag>
+                <span class="fc"> — ft. <b>Tomer Capon</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+        <!--- KIMURA RINTARŌ --->
+        <div id="entry" class="f_bg story alt type2 civil tp indep cbay age3 lgbtqia poc single">
+            <div class="box1 entry-top">
+                <img src="https://images2.imgbox.com/20/6d/CtS4LHEf_o.png" class="argo_icon">
+                <div class="name">
+                    <a class="theseus" href="https://springofpower.forumactif.com/u29">Kimura Rintarō</a>
+                    <div>
+                        <span class="alias"><e1>Rin | kay_aru</e1></span>
+                        29 ans · Altéré · 2-C<br>
+                        <span class="metier">Ingénieur en Altérations Cybernétiques</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">Génie dans son domaine, Rin passe plus de temps à bidouiller des trucs qu'à sociabiliser. </span>
+                    <span class="fact">Il a perdu sa jambe très jeune lors d'un tremblement de terre, depuis remplacée par une prothèse métallique. </span>
+                    <span class="fact">Porté par son ambition, il a quitté son Japon natal dans l'espoir de rejoindre Theseus Corp. avant que ses plans ne prennent une autre direction. </span>
+                    <span class="fact">Ancien membre de la Breakthrough Team chez CERBER, il a démissionné après qu'un agent soit tombé en cyberpsychose à cause d'un implant défectueux de sa création.</span>
+                    <span class="fact">Depuis 2023, il est à la tête de son propre atelier où il fabrique gadgets, prothèses et robots en tous genres pour les plus avisés. Pour les autres, c'est un simple mécano. </span>
+                    <span class="fact">Il fréquente régulièrement le Metaworld pour se détendre et se faire un peu d’argent supplémentaire. </span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #altéré </ltag>
+                <ltag> #type 2 </ltag>
+                <ltag> #civil </ltag>
+                <ltag> #theseus paradox </ltag>
+                <ltag> #indépendante </ltag>
+                <ltag> #crimson bay </ltag>
+                <ltag> #25-34 </ltag>
+                <ltag> #lgbtqia+ </ltag>
+                <ltag> #poc </ltag>
+                <ltag> #single </ltag>
+                <span class="fc"> — ft. <b>Yamazaki Kento</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+        <!--- LETA EYERE --->
+        <div id="entry" class="f_bg story mutant originel tz crim cbay age7">
+            <div class="box1 entry-top">
+                <img src="https://zupimages.net/up/22/51/1rou.png" class="argo_icon">
+                <div class="name">
+                    <a class="twilight" href="https://springofpower.forumactif.com/u3">Leta Eyre</a>
+                    <div>
+                        <span class="alias"><e1>Nemhain</e1></span>
+                        232 ans · Originelle · Banshee<br>
+                        <span class="metier">Mercenaire</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">Leta est une originelle qui a la capacité de se réincarner. Elle cohabite avec l'âme de Darla (l'âme de sa première vie).</span>
+                    <span class="fact">Elle est orpheline (dans cette vie) et a fugué de sa famille adoptive.</span>
+                    <span class="fact">Combattante, elle manie les armes blanches et pratique la boxe pour la détente.</span>
+                    <span class="fact">Elle a été directrice de l'unité M de 2018 à 2024.</span>
+                    <span class="fact">Elle a été enfermée dans le laboratoire Immortalis et sa libération a entrainé sa destruction.</span>
+                    <span class="fact">Elle est désormais mercenaire et à la tête des cavaliers de l'apocalypse. Elle incarne Death.</span>
+                    
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #mutant </ltag>
+                <ltag> #originel </ltag>
+                <ltag> #twilight zone </ltag>
+                <ltag> #criminelle </ltag>
+                <ltag> #crimson bay </ltag>
+                <ltag> #100+ </ltag>
+                <span class="fc"> — ft. <b>Barbara Palvin</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+        <!--- NORA --->
+       <div id="entry" class="f_bg story mutant tb tz indep nex age4">
+        <div class="box1 entry-top">
+            <img src="https://64.media.tumblr.com/df99c68798452d3695f7557e1c9b8a2c/b003a01135fe77f0-d5/s540x810/56900b806d6b7a32179cb1e52a75a7ce160e6dc5.jpg" class="argo_icon">
+            <div class="name">
+                <a class="twilight" href="https://springofpower.forumactif.com/u7">Nora G. Meyers</a>
+                <div>
+                    <span class="alias"><e1>Songe</e1></span>
+                    36 ans · True Blood · Manipulation des rêves et des cauchemars<br>
+                    <span class="metier">Coach dans une salle de boxe</span>
+                </div>
+            </div>
+        </div>
+        <div class="box1 info">
+            <div class="info-text">
+                <span class="fact">Née sous l'identité Gabriela Vidal, ses parents sont morts quand elle avait 9 ans, elle a été élevée par son parrain anti-mutant et a développé une haine envers eux jusqu'à ses 15 ans où elle découvre qu'elle en est une. Son frère, Ángel, tente de la tuer, elle est contrainte de fuir.</span>
+                <span class="fact">Elle est hébergée par un ami de sa mère, Darius, mutant également, qui va lui apprendre à s'accepter telle qu'elle est. Il prend soin d'elle jusqu'à sa majorité.</span>
+                <span class="fact">Nora a vadrouillé pendant quelques années à travers le monde. Elle s'est réinstallé à proximité de New York, puis a déménagé à New Blossom au moment de son inauguration en 2018.</span>
+                <span class="fact">En 2018, elle est recrutée dans une salle de boxe par Jeff, le patron, qui la prend sous son aile et lui propose de travailler pour lui. Elle accepte et c'est l'une des meilleures décisions de sa vie.</span>
+                <span class="fact">Peu de personnes sont au courant que Nora est mutante, même si elle n'en a plus honte, elle préfère rester discrète à ce sujet. </span>
+            </div>
+            <!--End info-text-->
+
+        </div>
+        <!--End info-->
+
+        <div class="etags">
+            <ltag> #mutant </ltag>
+            <ltag> #trueblood </ltag>
+            <ltag> #twilight zone </ltag>
+            <ltag> #indépendante </ltag>
+            <ltag> #nexus </ltag>
+            <ltag> #35-44 </ltag>
+            <span class="fc"> — ft. <b>Phoebe Tonkin</b></span>
+        </div>
+        <!--End etags -->
+        </div>
+        <!--End entry-->
+
+
+        <!--- RAE --->
+       <div id="entry" class="f_bg story mutant tb tz indep cbay age2 lgbtqia poc single">
+        <div class="box1 entry-top">
+            <img src="https://64.media.tumblr.com/52338e7edb3b830a300d508f6503efd9/4c5310402d7363d0-bb/s640x960/f6e0919de3f846570e1b91f1fb5346304d9789dd.jpg" class="argo_icon">
+            <div class="name">
+                <a class="twilight" href="https://springofpower.forumactif.com/u32">Rae Monroe</a>
+                <div>
+                    <span class="alias"><e1>Cheetah | cheetah</e1></span>
+                    22 ans · True Blood · Hybridation animale (félin)<br>
+                    <span class="metier">Etudiante en génétique</span>
+                </div>
+            </div>
+        </div>
+        <div class="box1 info">
+            <div class="info-text">
+                <span class="fact">Fille d'Abel O'Connell, elle n'a jamais connu son père.</span>
+                <span class="fact">Elle est née et a passé sa vie en Californie.</span>
+                <span class="fact">Elle a été élevée par sa mère dans un environnement précaire et instable.</span>
+                <span class="fact">Brillante, elle est entrée à l'Université de Berkeley.</span>
+                <span class="fact">Une violente agression a provoqué sa déchirure il y a de cela quelques semaines.</span>
+                <span class="fact">Elle est à New Blossom pour retrouver son père et lui demander son aide.</span>
+            </div>
+            <!--End info-text-->
+
+        </div>
+        <!--End info-->
+
+        <div class="etags">
+            <ltag> #mutant </ltag>
+            <ltag> #true blood </ltag>
+            <ltag> #twilight zone </ltag>
+            <ltag> #indépendante </ltag>
+            <ltag> #crimson bay </ltag>
+            <ltag> #18-24 </ltag>
+            <ltag> #lgbtqia+</ltag>
+            <ltag> #poc </ltag>
+            <ltag> #single&looking </ltag>
+            <span class="fc"> — ft. <b>Célébrité</b></span>
+        </div>
+        <!--End etags -->
+    </div>
+    <!--End entry-->
+
+
+        <!--- SAMUEL --->
+       <div id="entry" class="f_bg story alt type2 militaire ht thes na age3 lgbtqia">
+        <div class="box1 entry-top">
+            <img src="https://64.media.tumblr.com/10bad936f17ee15623eb73d65e5a67a9/4484311b8ba3a2f4-37/s500x750/36017308ca99f8fc4f005b995ba6db230851620e.jpg" class="argo_icon">
+            <div class="name">
+                <a class="hybrid" href="https://springofpower.forumactif.com/u28">Samuel Harbinger</a>
+                <div>
+                    <span class="alias"><e1>Sam | Ogma</e1></span>
+                    32 ans · Altéré · 2-M<br>
+                    <span class="metier">Ingénieur - Division S+ pour Theseus Corp</span>
+                </div>
+            </div>
+        </div>
+        <div class="box1 info">
+            <div class="info-text">
+                <span class="fact">Est adopté par une famille ayant des mutants. Rêve de prendre du V depuis pour correspondre à cette famille qui lui a tout donné.</span>
+                <span class="fact">Est altéré depuis ses 14 ans, après une chute sur une barrière s'est sectionné la moelle épinière, réparée par un implant.</span>
+                <span class="fact">Pris en charge par Theseus Corp depuis, il développe un intellect certain, une passion pour l'ingénieurie qui se mêle à ses connaissances de biologie..</span>
+                <span class="fact">Il devient un excellent proto-chirurgien, mais aspire à plus. Repéré par l'unité Cerber, il reste finalement chez Theseus pour rejoindre la division S+.</span>
+                <span class="fact">Sujet à des insomnies violentes qui le prive de tout sommeil à cause des interférences entre ses implants plus anciens et les plus récents. Tous deux obligatoires.</span>
+            </div>
+            <!--End info-text-->
+
+        </div>
+        <!--End info-->
+
+        <div class="etags">
+            <ltag> #altéré </ltag>
+            <ltag> #type 2 </ltag>
+            <ltag> #militaire </ltag>
+            <ltag> #hybrid theory </ltag>
+            <ltag> #theseus corp </ltag>
+            <ltag> #neo arcadia </ltag>
+            <ltag> #25-34</ltag>
+            <ltag> #lgbtqia+ </ltag>
+
+            <span class="fc"> — ft. <b>Freddy Carter</b></span>
+        </div>
+        <!--End etags -->
+    </div>
+    <!--End entry-->
+
+    
+        <!--- SETH  --->
+        <div id="entry" class="f_bg story alt type2 militaire ht gouv cbay age4 lgbtqia">
+            <div class="box1 entry-top">
+                <img src="https://i.pinimg.com/736x/36/aa/67/36aa67935e7f05c0362af68b1e694637--uk-actors-actors-male.jpg" class="argo_icon">
+                <div class="name">
+                    <a class="hybrid" href="https://springofpower.forumactif.com/u16">Seth Avery</a>
+                    <div>
+                        <span class="alias"><e1></e1></span>
+                    38 ans · Altéré · 2-M<br>
+                        <span class="metier">CERBER (Elimination Squad)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">- Naissance dans le Bronx, dans un foyer dysfonctionnel et violent. Seth tue son propre père abusif à l’âge de 9 ans.</span>
+                    <span class="fact">- Apprentissage de la vie dans les poings, les petits boulots plus ou moins légaux, et le besoin de protection constant envers sa mère et ses proches. </span>
+                    <span class="fact">- Il vit avec sa mère et Leta Forsyth de 2009 à 2012, en tant que sœur de coeur.</span>
+                    <span class="fact">- Il perd sa mère suite à une overdose de morphine, consommée en secret pour soulager sa lourde maladie cardiaque. Seth retrouve ses dealers et les assassine par vengeance.</span>
+                    <span class="fact">- Il rejoint l’armée américaine de 2013 à 2019. Ses jambes explosent alors qu’il marche sur une mine lors d’une mission en Libye. Elles seront remplacées par des prothèses cybernétiques de Theseus Corp une fois rentré d’urgence au pays.</span>
+        <span class="fact">- Il rejoint l’unité CERBER en 2020, affecté à l’Elimination squad. Seth croque la vie à pleines dents désormais, avec son caractère tempétueux, chaotico-gamin et grand guignolesque.</span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #altéré </ltag>
+                <ltag> #type 2 </ltag>
+                <ltag> #militaire </ltag>
+                <ltag> #hybrid theory </ltag>
+                <ltag> #gouvernementale </ltag>
+                <ltag> #crimson bay </ltag>
+                <ltag> #35-44 </ltag>
+                <ltag> #lbgtqia+ </ltag>
+                <span class="fc"> — ft. <b>Joseph Gilgun</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+
+        <!--- TOBIAS --->
+        <div id="entry" class="f_bg story mutant tb tz indep cbay age4 lgbtqia">
+            <div class="box1 entry-top">
+                <img src="https://64.media.tumblr.com/bca419f236183455ac7f303eb0ccf5fe/a9d83dfc6f442364-94/s250x400/3150d98c35e3862f6b3bd1cb009b159892e20cda.png" class="argo_icon">
+                <div class="name">
+                    <a class="twilight" href="https://springofpower.forumactif.com/u18">Tobias Grant</a>
+                    <div>
+                        <span class="alias"><e1>Father </e1></span>
+                        43 ans · True Blood · Voix Intérieure<br>
+                        <span class="metier">Prêtre Catholique</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text">
+                    <span class="fact">Il est né d'une mère humaine Irlandaise, et d'un père Américain Originel ou Descendant d'Originel, inconnu à ce jour.</span>
+                    <span class="fact">Il a découvert sa déchirure à 9 ans, mais n'a réalisé sa véritable nature qu'à 30 ans.</span>
+                    <span class="fact">Il est devenu prêtre à 25 ans, guidé par son pouvoir et sa foi.</span>
+                    <span class="fact">Après avoir découvert sa déchirure, il a écrit un livre sur son expérience, qui a rencontré un certain succès.</span>
+                    <span class="fact">Il continue à prêcher la bonne parole, malgré certains doutes vis-à-vis de l'Eglise.</span>
+                </div>
+                <!--End info-text-->
+
+            </div>
+            <!--End info-->
+
+            <div class="etags">
+                <ltag> #mutant </ltag>
+                <ltag> #true blood </ltag>
+                <ltag> #twilight zone </ltag>
+                <ltag> #indépendante </ltag>
+                <ltag> #crimson bay </ltag>
+                <ltag> #35-44 </ltag>
+            <ltag> #lgbtqia+ </ltag>
+                <span class="fc"> — ft. <b>Andrew Scott</b></span>
+            </div>
+            <!--End etags -->
+        </div>
+        <!--End entry-->
+
+
+        <!--- VÌDRA LUTER --->
+       <div id="entry" class="f_bg story mutant tb to indep cbay age2">
+        <div class="box1 entry-top">
+            <img src="https://hdfever.fr/wp-content/uploads/2022/12/his-dark-materials-700x380-dafne-keen.jpg" class="argo_icon">
+            <div class="name">
+                <a class="disaster" href="https://springofpower.forumactif.com/u73">Vìdra Luter</a>
+                <div>
+                    <span class="alias"><e1>Louloutre | Hecate</e1></span>
+                   18 ans · True Blood · Hecate<br>
+                    <span class="metier">Étudiante en Histoires anciennes & Archéologie</span>
+                </div>
+            </div>
+        </div>
+        <div class="box1 info">
+            <div class="info-text">
+                <span class="fact">Kidnappée par sa mère après un divorce houleux.</span>
+                <span class="fact">Elle se transforme en chien quand elle a besoin de se rassurer.</span>
+                <span class="fact">A tuée sa mère en légitime défense.</span>
+                <span class="fact">Fan du Metaworld, où elle passe beaucoup de temps parfois.</span>
+                <span class="fact">Elle peut voir les avenirs probables à un instant T.</span>
+            </div>
+            <!--End info-text-->
+
+        </div>
+        <!--End info-->
+
+        <div class="etags">
+            <ltag> #mutant </ltag>
+            <ltag> #true blood </ltag>
+            <ltag> #tomorrow's disaster </ltag>
+            <ltag> #indépendante </ltag>
+            <ltag> #crimson bay </ltag>
+            <ltag> #18-24 </ltag>
+            <span class="fc"> — ft. <b>Dafne Keen</b></span>
+        </div>
+        <!--End etags -->
+    </div>
+    <!--End entry-->
+
+
+        <!--- YSOLD --->
+        <div id="entry" class="f_bg story mutant bb ht gouv nex age3 ">
+            <div class="box1 entry-top"> <img src="https://zupimages.net/up/22/50/499g.jpg" class="argo_icon">
+                <div class="name"> <a class="hybrid" href="https://springofpower.forumactif.com/u4">Ysold Ashford</a>
+                    <div> <span class="alias">
+                            <e1>Weasel | Trystan</e1>
+                        </span> 28 ans · Blue Blood · <br>Manipulation de l'esprit<br> <span class="metier">CERBER (Recon Team)</span> </div>
+                </div>
+            </div>
+            <div class="box1 info">
+                <div class="info-text"> 
+                    <span class="fact">Vient d'une famille aisée pro Icarus Inc.</span>
+                    <span class="fact">Son père était avocat</span>
+                    <span class="fact">Elle a travaillé dans un cabinet de détective privé</span>
+                    <span class="fact">Elle vit dans une colocation avec ses amies d'enfance.</span>
+                </div> 
+                <!--End info-text-->
+            </div> 
+            <!--End info-->
+            <div class="etags">
+                <ltag> #mutant </ltag>
+                <ltag> #blue blood </ltag>
+                <ltag> #hybrid theory </ltag>
+                <ltag> #gouvernementale </ltag>
+                <ltag> #nexus </ltag>
+                <ltag> #25-34 </ltag> <span class="fc"> — ft. <b>Florence Pugh</b></span>
+            </div> <!--End etags -->
+        </div> <!--End entry-->
+
+
+        <!--- Valérian V. Machiavelli --->
+       <div id="entry" class="f_bg story VOS_TAGS_ICI">
+        <div class="box1 entry-top">
+            <img src="https://www.radiofrance.fr/s3/cruiser-production/2017/10/b3e60fe7-46dd-488c-b260-c6765e43e27d/200x200_166159.jpg-r_1920_1080-f_jpg-q_x-xxyxx.jpg" class="argo_icon">
+            <div class="name">
+                <a class="theseus" href="https://springofpower.forumactif.com/u23">Valérian V. Machiavelli</a>
+                <div>
+                    <span class="alias"><e1>V (la lettre)</e1></span>
+                    36 ans · Altéré · 2-M<br>
+                    <span class="metier">Unité CERBER (espionage team)</span>
+                </div>
+            </div>
+        </div>
+        <div class="box1 info">
+            <div class="info-text">
+                <span class="fact">Ses parents ont été tués par des mutants lorsqu'il avait treize ans. La famille de son meilleur ami a réussi à l'adopter.</span>
+                <span class="fact">Son meilleur ami a toujours voulu faire l'armée. A 16 ans, ils rejoignent les rangs de l'armée de terre américaine.</span>
+                <span class="fact">A 21 ans, il obtient sa première altérations : des implants oculaires. Il se fait tatouer un phoenix sur l'omoplate droite. Un an plus tard, il demande son second implant, un implant sanguin, ayant marre de prendre des comprimés tous les jours. A 27 ans, il a sa troisième altération, une prothèse qui lui permet de hacker un ordinateur et d'ouvrir les portes.</span>
+                <span class="fact">Après 7 ans d'armée, ils ont une proposition de mutation chez Theseus Corp, dans l'elimination squad. Ils acceptent et ils en font partis durant 10 ans.</span>
+                <span class="fact">Depuis 2022, V fait parti de l'espionage team.</span>
+            </div>
+            <!--End info-text-->
+
+        </div>
+        <!--End info-->
+
+        <div class="etags">
+            <ltag> #altéré </ltag>
+            <ltag> #2-M </ltag>
+            <ltag> #ex-militaire </ltag>
+            <ltag> #espionage team </ltag>
+            <ltag> #cerber </ltag>
+            <ltag> #crimson bay </ltag>
+            <ltag> #tag </ltag>
+            <span class="fc"> — ft. <b>Ryan Gosling</b></span>
+        </div>
+        <!--End etags -->
+    </div>
+    <!--End entry-->
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!--End container-->
+
+</body>
+
+<!---------- SCRIPTS ---------->
+
+<!-- Saturnicons script -->
+
+<link href="//dl.dropbox.com/s/50g6fbds3rh4m0j/saturnicons.css" rel="stylesheet">
+
+<!-- Jquery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Style my tooltips script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="jquery.style-my-tooltips.js"></script>
+
+<script type="text/javascript" src="https://static.tumblr.com/imovwvl/dJWl20ley/jqueryformasonry.js"></script>
+
+<script src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            $("[title]").style_my_tooltips({
+                tip_follows_cursor: true,
+                tip_delay_time: 200,
+                tip_fade_speed: 300
+            }
+            );
+        });
+    })(jQuery);
+</script>
+
+<!-- Filter scripts -->
+
+<script src="https://static.tumblr.com/fuu6t9w/kh8ml0pl9/jquery-1.7.1.min.js"></script>
+<script src="https://static.tumblr.com/fuu6t9w/eubml0pm0/jquery.isotope.min.js"></script>
+
+<script>
+    $(function () {
+        var $container = $('#container');
+
+        $container.isotope({
+            itemSelector: '.story'
+        });
+
+        var $optionSets = $('#sorting .option-set'),
+            $optionLinks = $optionSets.find('a');
+
+        $optionLinks.click(function () {
+            var $this = $(this);
+            // don't proceed if already selected
+            if ($this.hasClass('selected')) {
+                return false;
+            }
+
+            var $optionSet = $this.parents('.option-set');
+            $optionSet.find('.selected').removeClass('selected');
+            $this.addClass('selected');
+
+            // make option object dynamically, i.e. { filter: '.my-filter-class' }
+            var options = {},
+                key = $optionSet.attr('data-option-key'),
+                value = $this.attr('data-option-filter');
+            // parse 'false' as false boolean
+            value = value === 'false' ? false : value;
+            options[key] = value;
+            if (key === 'layoutMode' && typeof changeLayoutMode === 'function') {
+                // changes in layout modes need extra logic
+                changeLayoutMode($this, options)
+            } else {
+                // otherwise, apply new options
+                $container.isotope(options);
+            }
+
+            return false;
+        });
+
+    });
+</script>
+
+<!-- Hide/show on click -->
+
+<script>
+
+    let open = false;
+
+    $(function () {
+        $('body')
+            .on('click', '.heading', function () {
+
+                var linkbox = $(this).nextAll(".linkbox:first");
+                linkbox.slideToggle(300, function () {
+                    $(this).prevAll(".heading:first").toggleClass('close');
+                });
+
+            });
+    });
+
+    $("#toggle").click(function () {
+
+        var headings = $(this).nextAll(".heading");
+        var linkboxes = $(this).nextAll(".linkbox");
+
+        if (open) {
+            linkboxes.hide(300);
+            headings.removeClass("close");
+            open = false;
+            $(this).text("Ouvrir toutes les catégories");
+        } else {
+            linkboxes.show(300);
+            headings.addClass("close");
+            open = true;
+            $(this).text("Fermer toutes les catégories");
+        }
+
+    }); 
+</script>
+
+</html>
+
+<!-- END HTML -->

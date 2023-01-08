@@ -6,14 +6,14 @@
     // Configuration de Forumactif Messenger
     // Documentation des paramÃ¨tres : https://github.com/SethClydesdale/forumactif-messenger/wiki/Config
     config : {
-      chat_page : 'https://springofpower.forumactif.com/f37-argo',
-      chat_permission : 'member',  //  peut Ãªtre [all] ou [member] ou [staff]
-      main_title : 'ARGO',
+      chat_page : 'https://springofpower.forumactif.com/f43-argo-messenger',
+      chat_permission : 'all',  //  peut Ãªtre [all] ou [member] ou [staff]
+      main_title : 'ARGO Messenger',
       
       // Gestion des onglets initiaux 
       // https://github.com/SethClydesdale/forumactif-messenger/wiki/Config#initial_tabs
       tabs : true, // [true] pour activer les onglets
-      initial_tabs : ['https://springofpower.forumactif.com/f37-argo'], 
+      initial_tabs : ['https://springofpower.forumactif.com/f43-argo-messenger'], 
 
       refresh : 5000, // Taux de rafraichissement du plugin pour vÃ©rifier des nouveaux messages, en milliseconds (ne peut aller sous 3000ms, 3s)
       timeout : 10*60*1000, // Temps avant le mode veille (ici 10 minutes, 10*60*1000ms)

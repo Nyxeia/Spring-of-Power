@@ -21,7 +21,7 @@ jQuery(function () {
         switch (field) {
             case "Date d'inscription":
             case "Pseudo":
-            case "Pronoms IRL":    
+            case "Genre IRL":    
             case "Messages":
             case "FC":
             case "Crédits":
