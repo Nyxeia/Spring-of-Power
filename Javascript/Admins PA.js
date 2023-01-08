@@ -1,8 +1,8 @@
 var focusColor = getComputedStyle(document.documentElement).getPropertyValue('--gradient');
 var none = "transparent";
 
-var focusIds = ["admin1", "admin2", "admin3"];
-let adminCount = 3;
+var focusIds = ["admin1", "admin2", "admin3", "admin4", "admin5"];
+let adminCount = 5;
 
 
 function changeFocus(position) {
@@ -38,8 +38,26 @@ function admin2(){
 function admin3(){
     changeFocus(3);
   
-    document.getElementById('admin_name').innerHTML="<span>YSOLD ASHFORD</span>";
-    document.getElementById('admin_extra').innerHTML="PEG ⬩ PRÉSENT ⬩ NORMANDIE";
-    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u4";
-    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=4";
+    document.getElementById('admin_name').innerHTML="<span>SETH AVERY</span>";
+    document.getElementById('admin_extra').innerHTML="SYATO ⬩ PRÉSENTE ⬩ HAUTE-GARONNE";
+    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u16";
+    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=16";
+}
+
+function admin4(){
+    changeFocus(4);
+  
+    document.getElementById('admin_name').innerHTML="<span>NORA G. MEYERS</span>";
+    document.getElementById('admin_extra').innerHTML="ARKELLANA ⬩ PRÉSENTE ⬩ XXXXX";
+    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u7";
+    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=7";
+}
+
+function admin5(){
+    changeFocus(5);
+  
+    document.getElementById('admin_name').innerHTML="<span>KIAN AZARIAN</span>";
+    document.getElementById('admin_extra').innerHTML="UNDERRATED BOOGEYMAN ⬩ PRÉSENT ⬩ XXXXX";
+    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u33";
+    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=33";
 }

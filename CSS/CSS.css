@@ -4,7 +4,7 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    --header: url('https://2img.net/zupimages.net/up/22/42/rv4o.gif');
+    --header: url('https://www.zupimages.net/up/23/01/5q1v.gif');
     --background: var(--neutral);
 
     --neutral: #0f0f0f;
@@ -12,12 +12,12 @@
     --neutralDarker: #050505;
     --neutralLight: #171717;
 
-    --accent: #6b2578;
-    --accentDark: #3a0843;
-    --accentSoft: #805673;
+    --accent: #4f7274;
+    --accentDark: #3b4c4d;
+    --accentSoft: #729992;
 
-    --special: #8f796f;
-    --specialDark: #3b3531;
+    --special: #8c5e63;
+    --specialDark: #643737;
 
     --textColor: #818181;
     --textColorAccent: #b1a9a9;
@@ -37,9 +37,9 @@
 
     --shadowBox: 0 0 20px var(--neutralDark);
 
-    --gradient_static: linear-gradient(75deg, #6b2578 20%, #8f796f);
+    --gradient_static: linear-gradient(75deg, var(--accentDark) 20%, var(--specialDark));
     --gradient: linear-gradient(75deg, var(--accent) 20%, var(--special));
-    --gradient2: linear-gradient(75deg, #3e1343 30%, #6e665f);
+    --gradient2: linear-gradient(75deg, var(--accentDark) 30%, var(--specialDark));
 
     --small-size: 10px;
     --normal-size: 12px;
@@ -52,7 +52,7 @@
     --main-font-spacing: 1.5px;
     --title-font: 'Oswald';
 
-    --scrollbar-thumb: #52364f;
+    --scrollbar-thumb: var(--accentDark);
     --scrollbar-bg: var(--neutralDark);
 
     /* VARIABLES MESSENGER */
@@ -91,27 +91,25 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
-    --background: #1c111c;
+    --background: #141819;
 
     --neutral: #c4c4c4;
     --neutralDark: #afafaf;
     --neutralDarker: #a5a5a5;
     --neutralLight: #d3d3d3;
 
-    --accent: #29002e;
-    --accentDark: #29002e;
-    --accentSoft: #703a5f;
+    --accent: #335153;
+    --accentDark: #2a3e3f;
+    --accentSoft: #1f5957;
 
-    --special: #551b66;
-    --specialDark: #3b3531;
+    --special: #853443;
+    --specialDark: #692f2f;
 
     --textColor: #111111;
-    --textColorAccent: #4e0064;
+    --textColorAccent: #272727;
 
     --border: 1px solid #e6e6e6ab;
     --shadowBox: 0 0 20px var(--neutralDark);
-
-    --gradient2: linear-gradient(75deg, #0f090f 30%, #422146);
 
     --icarus: #3f6993;
     --theseus: #4d6b60;
@@ -151,11 +149,11 @@
     border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--accentDark);
+    background: var(--specialDark);
 }
 
 ::selection {
-  background: var(--accentDark);
+  background: var(--specialDark);
   color: var(--special);
 }
 
@@ -286,6 +284,11 @@ a {
     text-decoration: none;
     color: var(--textColorAccent);
     font-family: var(--main-font);
+}
+
+.post_message a,
+.qeel a {
+    font-weight: 600;
 }
 
 /*liens au survol*/
@@ -2539,7 +2542,7 @@ msgbtn, .msgbtn {
     text-align: justify;
 }
 #pa_context {
-    height: 200px;
+    height: 206px;
     margin-bottom: 10px;
 }
 #context_img {
@@ -2589,15 +2592,29 @@ msgbtn, .msgbtn {
     justify-content: center;
     gap: 2px;
 }
-.pa_admin img {
-    width: 87px;
+.admin_info {
+    margin-bottom: 1px;
+}
+.pa_admin img,
+.pa_modo img {
     border-radius: var(--radius);
     border: var(--border);
+    object-fit: cover;
 }
-.pa_admin div {
+.pa_admin img {
+    width: 88px;
+    height: 50px;
+}
+.pa_modo img {
+    width: 133px;
+    height: 30px;
+}
+.pa_admin div,
+.pa_modo div {
     height: 1px;
     margin: 0px 1px;
 }
+#admin_name { text-align: center;}
 #admin_name > span {
     font-family: var(--main-font);
     letter-spacing: 1px;
@@ -2624,10 +2641,10 @@ msgbtn, .msgbtn {
 }
 #pa_infogen {
     margin-top: 10px;
-    height: 168px;
+    height: 161px;
 }
 #pa_news {
-    height: 165px;
+    height: 170px;
 }
 #pa_tempo_mdm {
     display: grid;
@@ -2689,7 +2706,7 @@ msgbtn, .msgbtn {
     padding: 3px;
 }
 .top_title {
-    background: #421a46;
+    background: var(--accentDark);
     border-radius: 3px;
     display: flex;
     justify-content: center;
@@ -2852,6 +2869,14 @@ t3, .t3 {
     font-weight: 600;
 }
 
+e0, .e0 {
+    text-transform: uppercase;
+    color: var(--accentSoft);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 11px !important;
+}
+
 e1, .e1 {
     text-transform: uppercase;
     color: var(--special);
@@ -2934,9 +2959,6 @@ box2, .box2 {
     height: 50px;
     border-radius: 70px;
     margin: 5px 2px;
-    filter: sepia(70%);
-    -webkit-filter: sepia(70%);
-    -moz-filter: sepia(70%);
     box-shadow: 3px 4px 4px -2px rgba(0,0,0,0.40);
     object-fit: cover;
 }
