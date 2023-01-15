@@ -4,7 +4,8 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    --header: url('https://www.zupimages.net/up/23/01/5q1v.gif');
+    /* --header: url('https://www.zupimages.net/up/23/01/5q1v.gif'); */
+    --header: url('https://2img.net/zupimages.net/up/22/42/rv4o.gif');
     --background: var(--neutral);
 
     --neutral: #0f0f0f;
