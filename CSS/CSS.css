@@ -4,6 +4,7 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
+    /* --header: url('https://www.zupimages.net/up/23/01/5q1v.gif'); */
     --header: url('https://2img.net/zupimages.net/up/22/42/rv4o.gif');
     --background: var(--neutral);
 
@@ -12,12 +13,12 @@
     --neutralDarker: #050505;
     --neutralLight: #171717;
 
-    --accent: #6b2578;
-    --accentDark: #3a0843;
-    --accentSoft: #805673;
+    --accent: #4f7274;
+    --accentDark: #3b4c4d;
+    --accentSoft: #729992;
 
-    --special: #8f796f;
-    --specialDark: #3b3531;
+    --special: #8c5e63;
+    --specialDark: #643737;
 
     --textColor: #818181;
     --textColorAccent: #b1a9a9;
@@ -37,9 +38,9 @@
 
     --shadowBox: 0 0 20px var(--neutralDark);
 
-    --gradient_static: linear-gradient(75deg, #6b2578 20%, #8f796f);
+    --gradient_static: linear-gradient(75deg, var(--accentDark) 20%, var(--specialDark));
     --gradient: linear-gradient(75deg, var(--accent) 20%, var(--special));
-    --gradient2: linear-gradient(75deg, #3e1343 30%, #6e665f);
+    --gradient2: linear-gradient(75deg, var(--accentDark) 30%, var(--specialDark));
 
     --small-size: 10px;
     --normal-size: 12px;
@@ -52,7 +53,7 @@
     --main-font-spacing: 1.5px;
     --title-font: 'Oswald';
 
-    --scrollbar-thumb: #52364f;
+    --scrollbar-thumb: var(--accentDark);
     --scrollbar-bg: var(--neutralDark);
 
     /* VARIABLES MESSENGER */
@@ -91,27 +92,25 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
-    --background: #1c111c;
+    --background: #737a7b;
 
     --neutral: #c4c4c4;
     --neutralDark: #afafaf;
     --neutralDarker: #a5a5a5;
     --neutralLight: #d3d3d3;
 
-    --accent: #29002e;
-    --accentDark: #29002e;
-    --accentSoft: #703a5f;
+    --accent: #506c73;
+    --accentDark: #3e5f66;
+    --accentSoft: #4d8688;
 
-    --special: #551b66;
-    --specialDark: #3b3531;
+    --special: #a66470;
+    --specialDark: #9e5b5b;
 
     --textColor: #111111;
-    --textColorAccent: #4e0064;
+    --textColorAccent: #272727;
 
     --border: 1px solid #e6e6e6ab;
     --shadowBox: 0 0 20px var(--neutralDark);
-
-    --gradient2: linear-gradient(75deg, #0f090f 30%, #422146);
 
     --icarus: #3f6993;
     --theseus: #4d6b60;
@@ -151,12 +150,12 @@
     border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--accentDark);
+    background: var(--specialDark);
 }
 
 ::selection {
-  background: var(--accentDark);
-  color: var(--special);
+  background: var(--specialDark);
+  color: var(--accentSoft);
 }
 
 .theme-switch-wrapper {
@@ -286,6 +285,12 @@ a {
     text-decoration: none;
     color: var(--textColorAccent);
     font-family: var(--main-font);
+    transition : color 0.5s;
+}
+
+.post_message a,
+.qeel a {
+    font-weight: 600;
 }
 
 /*liens au survol*/
@@ -1203,6 +1208,27 @@ a.forumtitle:hover {
     grid-template-columns: 35% 35% 30%;
     grid-gap: 1px;
 }
+.qeel_inner a[href="/u2"]:before,
+.qeel_inner a[href="/u3"]:before,
+.qeel_inner a[href="/u16"]:before,
+.qeel_inner a[href="/u57"]:before,
+.qeel_inner a[href="/u77"]:before,
+.qeel_inner a[href="/u87"]:before
+{
+content:"✦";
+font-weight: 400;
+margin-right: 2px;
+}
+.qeel_inner a[href="/u7"]:before,
+.qeel_inner a[href="/u47"]:before,
+.qeel_inner a[href="/u33"]:before,
+.qeel_inner a[href="/u66"]:before,
+.qeel_inner a[href="/u112"]:before
+{
+content:"✧";
+font-weight: 400;
+margin-right: 2px;
+}
 
 .qeel_inner > div {
     background: var(--neutralDark);
@@ -1926,11 +1952,14 @@ div.cont_code {
 /* Citation contenu */
 blockquote div {
     padding-left: 20px;
+    background: var(--neutralDark);
+    border-radius: 5px;
+    padding: 10px;
+    border: var(--border);
 }
 
 /* Citation mention "... a écrit" */
 blockquote cite {
-    margin-left: -20px;
     display: block;
     padding-left: -20px;
     font-variant: all-small-caps;
@@ -2539,7 +2568,7 @@ msgbtn, .msgbtn {
     text-align: justify;
 }
 #pa_context {
-    height: 200px;
+    height: 198px;
     margin-bottom: 10px;
 }
 #context_img {
@@ -2589,15 +2618,21 @@ msgbtn, .msgbtn {
     justify-content: center;
     gap: 2px;
 }
-.pa_admin img {
-    width: 87px;
+.pa_admin img,
+.pa_modo img {
     border-radius: var(--radius);
     border: var(--border);
+    object-fit: cover;
+}
+.pa_admin img {
+    width: 52px;
+    height: 74px;
 }
 .pa_admin div {
     height: 1px;
     margin: 0px 1px;
 }
+#admin_name { text-align: center;}
 #admin_name > span {
     font-family: var(--main-font);
     letter-spacing: 1px;
@@ -2624,10 +2659,7 @@ msgbtn, .msgbtn {
 }
 #pa_infogen {
     margin-top: 10px;
-    height: 168px;
-}
-#pa_news {
-    height: 165px;
+    height: 161px;
 }
 #pa_tempo_mdm {
     display: grid;
@@ -2689,7 +2721,7 @@ msgbtn, .msgbtn {
     padding: 3px;
 }
 .top_title {
-    background: #421a46;
+    background: var(--accentDark);
     border-radius: 3px;
     display: flex;
     justify-content: center;
@@ -2852,6 +2884,14 @@ t3, .t3 {
     font-weight: 600;
 }
 
+e0, .e0 {
+    text-transform: uppercase;
+    color: var(--accentSoft);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 11px !important;
+}
+
 e1, .e1 {
     text-transform: uppercase;
     color: var(--special);
@@ -2934,9 +2974,6 @@ box2, .box2 {
     height: 50px;
     border-radius: 70px;
     margin: 5px 2px;
-    filter: sepia(70%);
-    -webkit-filter: sepia(70%);
-    -moz-filter: sepia(70%);
     box-shadow: 3px 4px 4px -2px rgba(0,0,0,0.40);
     object-fit: cover;
 }
@@ -3114,6 +3151,13 @@ ds {
 }
 leta {
     color: firebrick;
+}
+ascii {
+    color: #705d84;
+}
+merise {
+  color: #866868;
+  font-style: italic; 
 }
 ys {
 font-family: 'Abril Fatface',cursive;letter-spacing:2px;color:Teal;font-size:12px;
