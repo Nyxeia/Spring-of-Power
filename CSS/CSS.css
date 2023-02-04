@@ -92,19 +92,19 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
-    --background: #141819;
+    --background: #737a7b;
 
     --neutral: #c4c4c4;
     --neutralDark: #afafaf;
     --neutralDarker: #a5a5a5;
     --neutralLight: #d3d3d3;
 
-    --accent: #335153;
-    --accentDark: #2a3e3f;
-    --accentSoft: #1f5957;
+    --accent: #506c73;
+    --accentDark: #3e5f66;
+    --accentSoft: #4d8688;
 
-    --special: #853443;
-    --specialDark: #692f2f;
+    --special: #a66470;
+    --specialDark: #9e5b5b;
 
     --textColor: #111111;
     --textColorAccent: #272727;
@@ -155,7 +155,7 @@
 
 ::selection {
   background: var(--specialDark);
-  color: var(--special);
+  color: var(--accentSoft);
 }
 
 .theme-switch-wrapper {
@@ -285,6 +285,7 @@ a {
     text-decoration: none;
     color: var(--textColorAccent);
     font-family: var(--main-font);
+    transition : color 0.5s;
 }
 
 .post_message a,
@@ -1207,6 +1208,27 @@ a.forumtitle:hover {
     grid-template-columns: 35% 35% 30%;
     grid-gap: 1px;
 }
+.qeel_inner a[href="/u2"]:before,
+.qeel_inner a[href="/u3"]:before,
+.qeel_inner a[href="/u16"]:before,
+.qeel_inner a[href="/u57"]:before,
+.qeel_inner a[href="/u77"]:before,
+.qeel_inner a[href="/u87"]:before
+{
+content:"✦";
+font-weight: 400;
+margin-right: 2px;
+}
+.qeel_inner a[href="/u7"]:before,
+.qeel_inner a[href="/u47"]:before,
+.qeel_inner a[href="/u33"]:before,
+.qeel_inner a[href="/u66"]:before,
+.qeel_inner a[href="/u112"]:before
+{
+content:"✧";
+font-weight: 400;
+margin-right: 2px;
+}
 
 .qeel_inner > div {
     background: var(--neutralDark);
@@ -1930,11 +1952,14 @@ div.cont_code {
 /* Citation contenu */
 blockquote div {
     padding-left: 20px;
+    background: var(--neutralDark);
+    border-radius: 5px;
+    padding: 10px;
+    border: var(--border);
 }
 
 /* Citation mention "... a écrit" */
 blockquote cite {
-    margin-left: -20px;
     display: block;
     padding-left: -20px;
     font-variant: all-small-caps;
@@ -3126,6 +3151,13 @@ ds {
 }
 leta {
     color: firebrick;
+}
+ascii {
+    color: #705d84;
+}
+merise {
+  color: #866868;
+  font-style: italic; 
 }
 ys {
 font-family: 'Abril Fatface',cursive;letter-spacing:2px;color:Teal;font-size:12px;
