@@ -47,17 +47,17 @@ function admin3(){
 function admin4(){
     changeFocus(4);
   
-    document.getElementById('admin_name').innerHTML="<span>NORA | MODÉRATRICE</span>";
-    document.getElementById('admin_extra').innerHTML="Arkellana ⬩ Présente ⬩ France";
-    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u7";
-    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=7";
+    document.getElementById('admin_name').innerHTML="<span>KIAN | ADMINISTRATEUR-MJ</span>";
+    document.getElementById('admin_extra').innerHTML="Underrated Boogeyman ⬩ Présent ⬩ États-Unis";
+    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u33";
+    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=33";
 }
 
 function admin5(){
     changeFocus(5);
   
-    document.getElementById('admin_name').innerHTML="<span>KIAN | ANIMATEURICE</span>";
-    document.getElementById('admin_extra').innerHTML="Underrated Boogeyman ⬩ Présent ⬩ États-Unis";
-    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u33";
-    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=33";
+    document.getElementById('admin_name').innerHTML="<span>NOUS RECRUTONS !</span>";
+    document.getElementById('admin_extra').innerHTML="Animation et modération - <a href=\"https://springofpower.forumactif.com/t1211-le-staff-de-sop-recrute#21739\">En savoir plus</a>";
+    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u5";
+    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=5";
 }
