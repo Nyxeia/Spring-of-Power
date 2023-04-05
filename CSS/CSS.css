@@ -4,8 +4,7 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    /* --header: url('https://www.zupimages.net/up/23/01/5q1v.gif'); */
-    --header: url('https://2img.net/zupimages.net/up/22/42/rv4o.gif');
+    --header: url('https://www.zupimages.net/up/23/01/5q1v.gif');
     --background: var(--neutral);
 
     --neutral: #0f0f0f;
@@ -88,6 +87,7 @@
     --FAM-windowSize: 750px;
   
     --darius: #a693b6;
+    --edgar: #d69393;
 }
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
@@ -131,6 +131,7 @@
     --FAM-newMsgAnimation: rgb(0, 0, 0,.3);
   
     --darius: #5e258e;
+    --edgar: #a70000;
  }
 
 * {
@@ -1208,27 +1209,6 @@ a.forumtitle:hover {
     grid-template-columns: 35% 35% 30%;
     grid-gap: 1px;
 }
-.qeel_inner a[href="/u2"]:before,
-.qeel_inner a[href="/u3"]:before,
-.qeel_inner a[href="/u16"]:before,
-.qeel_inner a[href="/u57"]:before,
-.qeel_inner a[href="/u77"]:before,
-.qeel_inner a[href="/u87"]:before
-{
-content:"✦";
-font-weight: 400;
-margin-right: 2px;
-}
-.qeel_inner a[href="/u7"]:before,
-.qeel_inner a[href="/u47"]:before,
-.qeel_inner a[href="/u33"]:before,
-.qeel_inner a[href="/u66"]:before,
-.qeel_inner a[href="/u112"]:before
-{
-content:"✧";
-font-weight: 400;
-margin-right: 2px;
-}
 
 .qeel_inner > div {
     background: var(--neutralDark);
@@ -1283,8 +1263,6 @@ margin-right: 2px;
     font-family: var(--title-font);
     letter-spacing: 1px;
     text-transform: uppercase;
-}
-#newest_name strong {
     font-weight: 400 !important;
 }
 
@@ -1333,6 +1311,7 @@ a.groups:hover {
     padding-bottom: 5px;
     margin-bottom: 5px;
     color: var(--icarus);
+    font-weight: 600;
 }
 
 #qeel_online {
@@ -1952,6 +1931,9 @@ div.cont_code {
 /* Citation contenu */
 blockquote div {
     padding-left: 20px;
+}
+
+div:has( > cite) {
     background: var(--neutralDark);
     border-radius: 5px;
     padding: 10px;
@@ -2063,11 +2045,6 @@ blockquote cite a {
     flex-direction: row-reverse;
     margin-bottom: 10px;
     grid-column: 1 / span 2;
-}
-/* Suppression des cases vides de contact qui affichent " - " 
- * nth-child(n+4) supprime toutes les cases après la quatrième */
- .profile_contact form div:nth-child(2) {
-    display: none
 }
 
 .profile_msgs {
@@ -3145,9 +3122,37 @@ box2, .box2 {
     width: 100%;
 }
 
+.qeel_inner a[href="/u2"]:before, /* darius */
+.qeel_inner a[href="/u3"]:before, /* leta */
+.qeel_inner a[href="/u16"]:before, /* seth */ 
+.qeel_inner a[href="/u57"]:before, /* orion */
+.qeel_inner a[href="/u87"]:before, /* aurea */
+.qeel_inner a[href="/u144"]:before, /* cara */
+.qeel_inner a[href="/u146"]:before, /* nour */
+.qeel_inner a[href="/u200"]:before /* edgar */
+{
+content:"✦";
+font-weight: 400;
+margin-right: 2px;
+}
+.qeel_inner a[href="/u7"]:before, /* nora */
+.qeel_inner a[href="/u33"]:before, /* kian */
+.qeel_inner a[href="/u66"]:before, /* kenneth */
+.qeel_inner a[href="/u112"]:before, /* ari */
+.qeel_inner a[href="/u147"]:before, /* kurt */
+.qeel_inner a[href="/u196"]:before /* lance */
+{
+content:"✧";
+font-weight: 400;
+margin-right: 2px;
+}
+
 /* CODE DIALOGUES */
 ds {
   color: var(--darius);
+}
+ed {
+    color: var(--edgar);
 }
 leta {
     color: firebrick;
@@ -3159,6 +3164,9 @@ merise {
   color: #866868;
   font-style: italic; 
 }
-ys {
-font-family: 'Abril Fatface',cursive;letter-spacing:2px;color:Teal;font-size:12px;
+nora {
+    color: #493459;
+}
+cara {
+    color: #8e4b2f;
 }
