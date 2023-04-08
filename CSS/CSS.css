@@ -2861,6 +2861,38 @@ t3, .t3 {
     font-weight: 600;
 }
 
+t4, .t4 {
+    display: block;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    border-left: 5px solid var(--accentSoft);
+    font-family: var(--title-font);
+    letter-spacing: 2px;
+    color: var(--accentSoft);
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 2s;
+    
+}
+
+t5, .t5 {
+    display: block;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    border-left: 5px solid var(--special);
+    font-family: var(--title-font);
+    letter-spacing: 2px;
+    color: var(--special);
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 2s;
+    
+}
+
+t4:hover, t5:hover, .t4:hover, .t5:hover {
+  letter-spacing: 5px;
+}
+
 e0, .e0 {
     text-transform: uppercase;
     color: var(--accentSoft);
@@ -3123,29 +3155,30 @@ box2, .box2 {
 }
 
 .qeel_inner a[href="/u2"]:before, /* darius */
+.qeel_inner a[href="/u200"]:before, /* edgar */
 .qeel_inner a[href="/u3"]:before, /* leta */
-.qeel_inner a[href="/u16"]:before, /* seth */ 
-.qeel_inner a[href="/u57"]:before, /* orion */
 .qeel_inner a[href="/u87"]:before, /* aurea */
 .qeel_inner a[href="/u144"]:before, /* cara */
-.qeel_inner a[href="/u146"]:before, /* nour */
-.qeel_inner a[href="/u200"]:before /* edgar */
-{
-content:"✦";
-font-weight: 400;
-margin-right: 2px;
-}
-.qeel_inner a[href="/u7"]:before, /* nora */
+.qeel_inner a[href="/u16"]:before, /* seth */ 
+.qeel_inner a[href="/u57"]:before, /* orion */
+.qeel_inner a[href="/u146"]:before /* nour */
 .qeel_inner a[href="/u33"]:before, /* kian */
 .qeel_inner a[href="/u66"]:before, /* kenneth */
 .qeel_inner a[href="/u112"]:before, /* ari */
 .qeel_inner a[href="/u147"]:before, /* kurt */
 .qeel_inner a[href="/u196"]:before /* lance */
 {
-content:"✧";
+content:"✦";
 font-weight: 400;
 margin-right: 2px;
 }
+
+/* .qeel_inner a[href="/u33"]:before
+{
+content:"✧";
+font-weight: 400;
+margin-right: 2px;
+} */
 
 /* CODE DIALOGUES */
 ds {
