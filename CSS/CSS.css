@@ -5,6 +5,7 @@
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
     --header: url('https://www.zupimages.net/up/23/01/5q1v.gif');
+    /*--header: url('https://zupimages.net/up/23/14/masy.gif');*/
     --background: var(--neutral);
 
     --neutral: #0f0f0f;
@@ -12,12 +13,12 @@
     --neutralDarker: #050505;
     --neutralLight: #171717;
 
-    --accent: #4f7274;
-    --accentDark: #3b4c4d;
-    --accentSoft: #729992;
-
-    --special: #8c5e63;
-    --specialDark: #643737;
+    --accent: #5e1412;
+    --accentDark: #4f130e;
+    --accentSoft: #842821;
+  
+    --special: #915e32;
+    --specialDark: #56381d;
 
     --textColor: #818181;
     --textColorAccent: #b1a9a9;
@@ -92,19 +93,19 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
-    --background: #737a7b;
+    --background: #797979;
 
     --neutral: #c4c4c4;
     --neutralDark: #afafaf;
     --neutralDarker: #a5a5a5;
     --neutralLight: #d3d3d3;
 
-    --accent: #506c73;
-    --accentDark: #3e5f66;
-    --accentSoft: #4d8688;
-
-    --special: #a66470;
-    --specialDark: #9e5b5b;
+    --accent: #7e1a10;
+    --accentDark: #642016;
+    --accentSoft: #a42100;
+  
+    --special: #935d2e;
+    --specialDark: #866435;
 
     --textColor: #111111;
     --textColorAccent: #272727;
@@ -155,8 +156,8 @@
 }
 
 ::selection {
-  background: var(--specialDark);
-  color: var(--accentSoft);
+  background: var(--accent);
+  color: var(--hightlight_static);
 }
 
 .theme-switch-wrapper {
@@ -1025,8 +1026,8 @@ a.mainmenu img {display: none}
     text-transform: uppercase;
     font-size: 20px;
     font-family: var(--title-font);
-    font-weight: 300;
-    letter-spacing: 5px;
+    font-weight: 400;
+    letter-spacing: 4px;
     color: var(--hightlight_static);
 }
 
@@ -1883,7 +1884,8 @@ ul.profile-icons li {
 .codebox dd {
     background: var(--neutralDark);
     border-radius: 5px;
-    padding: 5px;
+    padding: 7px;
+    border: 1px solid var(--neutralDark);
     max-height: 110px;
     overflow: auto;
 }
@@ -2535,7 +2537,7 @@ msgbtn, .msgbtn {
     color: var(--hightlight_static);
     font-size: 12px;
     letter-spacing: 2px;
-    font-weight: 300;
+    font-weight: 400;
     border-radius: 3px;
     width: 100%;
 }
@@ -2846,7 +2848,7 @@ t2, .t2 {
     color: var(--hightlight_static);
     font-size: 16px;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 400;
     border-radius: 5px;
     margin: 5px 0;
 }
@@ -2940,8 +2942,13 @@ e5, .e5 {
 bq {
     display: block;
     margin: 20px 50px;
-    border-left: 5px solid var(--special);
+    border-left: 4px solid var(--special);
     padding: 0px 10px;
+    transition: 2s;
+}
+
+bq:hover {
+    border-left: 4px solid var(--accentDark);
 }
 
 box1, .box1 {
@@ -2981,10 +2988,11 @@ box2, .box2 {
 .f_icon {
     width: 50px;
     height: 50px;
-    border-radius: 70px;
-    margin: 5px 2px;
+    border-radius: 10px;
+    margin: 5px 7px;
     box-shadow: 3px 4px 4px -2px rgba(0,0,0,0.40);
     object-fit: cover;
+    transform: rotate(40deg);
 }
 
 .f_bg {
@@ -3088,8 +3096,8 @@ box2, .box2 {
     padding: 2px;
 }
 .pres_icon {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
 }
 /* ARGO */
 .argo_header {
