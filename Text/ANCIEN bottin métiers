@@ -1,0 +1,330 @@
+<div class="f_bg"><div class="box1 f_header"> <t1>Métiers et organisations</t1> <div class="f_icon_box"> <img class="f_icon" src="https://zupimages.net/up/22/47/94z3.png"> <img class="f_icon" src="https://zupimages.net/up/22/47/hx0z.png"> </div></div><box1><innerbox>Pour mieux s'y retrouver dans ce bottin, nous avons divisé les métiers en 5 grandes catégories :<bq><e1>Page 1 :</e1> arts / culture / sports / loisirs / divertissement / médias</bq><bq><e1>Page 2 :</e1> enseignement / droit / protection et sécurité / politique / services sociaux, communautaires et gouvernementaux</bq><bq><e1>Page 3 :</e1> soins et santé / sc. naturelles / ingénierie / architecture / informatique / technologie de l'information</bq><bq><e1>Page 4 :</e1> affaires / finances / gestion / vente et services</bq><bq><e1>Page 5 :</e1> criminalité / autres</bq> Nous avons aussi pré-rempli le bottin avec <e3>quelques idées de métiers</e3> liés à l'univers du forum ; <e2>ce n'est pas une liste exhaustive et vous pouvez ajouter de nouveaux métiers sous chacune des catégories.</e2> Les possibilités sont presque infinies !</innerbox></box1><input checked type="radio" id="tab1" name="f_tab"/><input type="radio" id="tab2" name="f_tab"/><input type="radio" id="tab3" name="f_tab"/><input type="radio" id="tab4" name="f_tab"/><input type="radio" id="tab5" name="f_tab"/><div class="tabs_list"> <div class="tabs_labels"> <label class="btn tab tab1" for="tab1">PAGE 1</label> <label class="btn tab tab2" for="tab2">PAGE 2</label> <label class="btn tab tab3" for="tab3">PAGE 3</label><label class="btn tab tab4" for="tab4">PAGE 4</label> <label class="btn tab tab5" for="tab5">PAGE 5</label></div></div><div class="tab_container"><div class="box1 tab_content tab1 scrollable"> <t2>arts / culture / sports / loisirs / divertissement / médias</t2> <innerbox><e4>— Super-héros</e4>
+[i]Ce sont des mutants sous contrat avec Icarus Inc et dont le boulot est non seulement de sauver des vies, mais aussi de faire briller la corporation par leurs nombreuses apparitions publiques et médiatiques. Ils ne sont pas aussi libres qu'ils en ont l'air ; ce sont principalement leurs supérieurs qui décident où et quand ils peuvent intervenir.[/i]<bq><e3>Les Sept —</e3> [url=https://springofpower.forumactif.com/t79-les-sept#192]postes vacants[/url]; @"Bonnie Thompson", @"Orion Wingfield",  @"Arcelia Serna", @"Elvira Wingfield", @"Theodore Newman",  @"Rhys Watson" 
+<e3>Apprenti.e —</e3> @"Jesse Adams", @"June Kitanović"
+<e3>Super Vilain —</e3> @"Liam Jones"</bq><e4>— Omnivox Media</e4>
+[i]C'est la grande chaîne d'information d'Icarus Inc. Plusieurs postes de télévision et de radio leur appartiennent, en plus de magazines et journaux.[/i]<bq><e3>Attachée de presse des Sept —</e3> @"Sloane Hatcher"
+<e3>Animateur.ice télé —</e3> libre
+<e3>Animateur.ice radio —</e3> libre
+<e3>Caméraman —</e3> libre
+<e3>Journaliste —</e3> @"Cara Marlowe"
+<e3>Photographe —</e3> libre
+<e3>Styliste —</e3> libre</bq><e4>— Omnivox Law</e4>
+[i]C'est le cabinet d'avocats principal d'Icarus Inc, situé dans la même tour qu'Omnivox Media.[/i]<bq><e3>Avocat principal des Sept —</e3> @"Edgar Pearson"
+<e3>Avocats associés —</e3> libre
+<e3>Avocats adjoints —</e3> libre
+<e3>Parajuristes —</e3> libre
+<e3>Secrétaire —</e3> libre</bq><e4>— Metaworld</e4>
+[i]Les idoles sont des célébrités dans le monde virtuel, mais certaines d'entre elles sont également reconnues dans la vie réelle. Les streamers sont ceux ayant fait du Metaworld leur métier, mais attendant encore le jour où ils deviendront des idoles.[/i]<bq><e3>Idole —</e3> @"Aurea Sinclair",  @"Marcus Yeong",  @"Heather Chiba" , @"Aurora Serna", @"Theo Bennett" 
+<e3>Streamer —</e3> @"Nova Kim"</bq>
+<e4>— Jade&Co</e4>
+[i]La société de production Jade&Co. est une société de production de documentaires et d'émissions audiovisuelles. Evelyn l'a créée il y a une dizaine d'années et la contrôle d'une main de fer. Elle a recruté des gens compétents, qu'elle a sélectionnés personnellement.[/i]<bq><e3>PDG —</e3> @"Evelyn Huang"
+<e3>Animatrice du talk-show "Late Night with Eve" —</e3> @"Evelyn Huang"
+...</bq><e4>— Carré d'As</e4>
+[i]Le club de boxe fondé en 1985 par Owen Fitzsimmons est situé dans Crimson Bay. Les entraînements et les matchs se succèdent au cœur du club où flotte toujours une fine odeur de sueur et de métal, et où on peut toujours trouver un·e partenaire de sparring. C'est aussi un point de rassemblement pour le Fight Circle, gang criminalisé.[/i]<bq><e3>Propriétaire —</e3> @"Hayes Fitzsimmons"
+<e3>Entraineuse —</e3> @"Hayley Collins"</bq><e4>— Casino "Arcana"</e4>
+[i]Situé dans l'ancien Chrysler Building retapé et remis à neuf, en plein coeur de l'Underapple, le Casino est ouvert à quiconque souhaite vivre les frissons des tables de paris risqués contre quelques jetons. De somptueux lots sont à gagner pour les meilleurs joueurs, d'autant qu'il semblerait que sa face éclatante cache un aspect plus confidentiel pour qui sait pousser quelques portes... [url=https://springofpower.forumactif.com/t814-arcana-casino-blanchiment-d-argent-recel-d-informations]Plus d'informations ici.[/url][/i]<bq><e3>Propriétaire & Co-Gérante —</e3> @"Nour Hatem"
+<e3>Formateur de croupiers —</e3> @"Rosendo Cortes"
+<e3>Croupiers —</e3> @"Lancelot Bénoïc" ;
+...</bq>
+<e4>— Circus of Wonders</e4>
+[i]Situé dans Crimson Bay, description à venir[/i]<bq><e3>Directrice —</e3> @"Ava Leafwings"
+...</bq><e4>— Cabaret «Bons Baisers de New-Orleans»</e4>
+<i>Cabaret enclavé au premier niveau de l'Arcana et drapé sous l'apparence d'un établissement à l'architecture et décoration colonial typique de Louisiane rappelant le Vieux Carrée de La Nouvelle-Orléans.
+À la fois osé et raffiné, l'établissement offre aux visiteurs du casino divers divertissements endiablés. On y consomme cigares et spiritueux, on s'y étonne d'y voir quelques numéros de magie, on y tremble devant quelques moments de spiritisme et on s'y perd surtout dans la contemplation des numéros de danse méticuleusement mis en scène.
+Cette façade exotique et festive cache évidemment des racines moins légales et des liens sombres avec les manigances de l'Arcana et les étrangetés clandestines des Loas. [url=https://springofpower.forumactif.com/t837-les-loas-organisation-criminelle-et-sectaire#13085]Plus d'informations ici.[/url]</i><bq><e3>Propriétaire —</e3> @"Jedediah T. Saint-Denis"
+<e3>Danseuses —</e3> @"Aurora Serna"
+<e3>Costumière —</e3> @"Elif Mizahri"</bq><e4>— Autres</e4><bq><e3>3D artist —</e3> @"Dak-Ho Jeong"
+<e3>Acteur.ice —</e3> @"Andrea Regan"
+<e3>Artiste—</e3> @"Alice Eyre"
+<e3>Céramiste —</e3> @"Nova Kim"
+<e3>Chanteur.euse —</e3> libre
+<e3>Coach sportive dans une salle de boxe —</e3> @"Nora G. Meyers"
+<e3>Coiffeur.euse —</e3> libre
+<e3>Danseur.euse —</e3>  @"Aurora Serna" 
+<e3>Danseur de charme / Aérien—</e3> @"Morgänn Amos"
+<e3>Gérant d'une galerie d'art —</e3> @"Sander Lindbohm"
+<e3>Influenceur.euse —</e3> @"Aurora Serna" 
+<e3>Journaliste —</e3> libre
+<e3>Mannequin—</e3> libre
+<e3>Photographe —</e3> libre
+<e3>Photojournaliste —</e3> @"Deon Lowe"
+<e3>Prêtre Catholique —</e3> @"Tobias Grant" ;  @"Hjalti Miller" 
+<e3>Propriétaire de Cabaret —</e3> @"Jedediah T. Saint-Denis"
+<e3>Propriétaire du podcast 'mutant or cryptid ?'  —</e3> @"Robin White"
+<e3>Reporter d'images indépendant —</e3> @"Jasper King"
+<e3>Scénariste, producteur et réalisateur —</e3> @"Ruben Hopkins"
+<e3>Virtuel designer—</e3> @"Dak-Ho Jeong"</bq> 
+</innerbox></div><div class="box1 tab_content tab2 scrollable"> <t2>enseignement / droit / sécurité / politique / services sociaux</t2> <innerbox><e4>— New Blossom Police Department (NBPD)</e4>
+[i]La police de New Blossom est la première à être appelée sur les lieux en cas d'incident mineur ou majeur.[/i]<bq><e3>Agent.e —</e3> libre
+<e3>Cadet —</e3> libre
+<e3>Détective —</e3> libre
+<e3>Secrétaire —</e3> libre</bq><e4>— l'Unité CERBER</e4>
+[i]La division spéciale de défense contre les mutants et altérés, chargée de protéger la population contre les ravages pouvant être causés par ceux-ci.[/i]
+
+<e1>Cyber Squad</e1><bq><e3>Coordinateur.ice de cellule —</e3> @"Zelim Hart"
+<e3>Chef.fe d'équipe —</e3> libre
+<e3>Membre d'équipe —</e3> @"Haziran Özgür" </bq> <e1>Elimination Squad</e1><bq><e3>Coordinateur.ice de cellule —</e3> @"Esteban Castillo"
+<e3>Chef.fes d'équipe —</e3>  @"James B. Pierce"  @"Ángel Vidal" 
+<e3>Membre d'équipe —</e3> @"Seth Avery" , @"Giani Malaspina" ,  @"William Swiftmoon" </bq> <e1>Rescue Team</e1><bq><e3>Coordinateur.ice de cellule —</e3> libre
+<e3>Chef.fe d'équipe —</e3> @"Jeremy Alexander", 
+<e3>Membre d'équipe —</e3> @"Faith Coleman"</bq><e1>Breakthrough Team</e1><bq><e3>Ingénieure en cybernétique et proto-chirurgienne —</e3> @"M.J. Fillmore"
+<e3>Styliste et couturier —</e3> @"Harold Cooper"
+<e3>Coordinateur.ice de cellule —</e3> libre
+<e3>Chef.fe d'équipe —</e3> libre
+<e3>Membre d'équipe —</e3> libre</bq> <e1>Espionage Team</e1><bq><e3>Coordinateur.ice de cellule —</e3> libre
+<e3>Chef.fe d'équipe —</e3>  libre 
+<e3>Membre de l'équipe —</e3> @"Valérian V. Machiavelli",  @"Peter Huang" </bq><e1>Recon Team</e1><bq><e3>Coordinateur.ice de cellule —</e3> libre
+<e3>Chef.fe d'équipe —</e3>  @"Keith Lim",  @"Keri Webster" (mise à pied) 
+<e3>Membre d'équipe —</e3> @"Ysold Ashford",  @"Keith Lim" </bq> <e4>— New Blossom Fire Department (NBFD)</e4>
+[i]Ce sont les pompiers de New Blossom.[/i]<bq><e3>Pompiers —</e3> libre
+<e3>Pompiers volontaires —</e3> @"Minerva Collins", @"Hestia Beaumont"</bq><e4>— Nex'University</e4>
+[i]L'université accueille tous les étudiants de New Blossom en proposant un grand éventail de cursus.[/i]<bq><e3>Directeur.ice —</e3> libre
+<e3>Professeur.e —</e3> @"Noâm Byrne" (affaires internationales), @"Felipe Marquez" (archéologie)
+<e3>Etudiante —</e3> @"Vìdra Luter" (histoires anciennes & archéologie)
+<e3>Bibliothécaire —</e3>  @"Willow Bowman" 
+<e3>Cuisinier.e —</e3> libre
+<e3>Volcanologue - Archéologue—</e3> @"Romy Mayfields"</bq><e4>— Fondation Matthews</e4> Il s'agit d'une Fondation protectrice et défenseure des arts, de l'éducation et de la tolérance. La fondation permet de financer différents orphelinats et écoles gratuites au sein de New Blossom/Underapple, ainsi que d'offrir des subventions à des artistes. La Fondation met également en place de nombreuses soupes populaires au sein de l'Underapple. Le siège de la fondation se trouve dans le quartier du Nexus.
+<bq><e3>Directrice —</e3> @"Sahar Matthews"</bq>
+<e4>— Autres</e4>
+<bq><e3>Avocat.e —</e3> @"Wayne Morkoh" 
+<e3>Bodyguard de leemur embauché par Icarus  —</e3> @"Ludvig White"
+<e3>Consultant en Cybersécurité pour Theseus Corp. —</e3> @"Lucian Holmes"
+<e3>Coroner —</e3> libre
+<e3>Détective privé.e —</e3> @"Algernon Carter", @"Lucian Holmes", @"Hestia Beaumont" 
+<e3>Gardien.ne de prison —</e3> libre
+<e3>Guide touristique —</e3> libre
+<e3>Juge —</e3> libre
+<e3>Médecin légiste —</e3> libre
+<e3>Politicien.ne —</e3> @"Achlys Deminoff"
+<e3>Secrétaire scolaire (Underapple) —</e3> @"MinHo Yeong"
+<e3>...</e3></bq></innerbox></div><div class="box1 tab_content tab3 scrollable"><t2>soins & santé / sc. naturelles / ingénierie / architecture / informatique</t2><innerbox><e4>— Starlight</e4>
+[i]Description à venir.[/i]<bq><e3>Directeur général —</e3> @"Woo Jung-hwa"
+<e3>Directrice du département Marketing —</e3> @"Ysold Ashford"</bq><e4>— Solaris Hospital Center</e4>
+[i]Un centre spécialisé en soins mutants, à la pointe de la recherche concernant les mutations et les déchirures. De nombreuses expériences faites sous l'égide d'Icarus Inc se font dans la partie universitaire du complexe hospitalier ; un centre d'internement est également mis à disposition des mutants souffrant de dérèglement concernant leur déchirure.[/i]<bq><e3>Médecin practicien.ne —</e3> @"Darius Sinclair"
+<e3>Superviseur de recherche —</e3> @"Darius Sinclair"
+<e3>Médecin chercheur.se —</e3> libre
+<e3>Infirmier.e —</e3> libre
+<e3>Psychiatre des Sept —</e3> @"Kurt Schafer" </bq> <e4>— Neo Arcadia Medical Center</e4>
+[i]Hôpital spécialisé en protochirurgie, le NAMC possède tout un pôle dédié à l'installation d'implants tandis qu'un autre s'oriente vers le soin des altérés. Un centre universitaire existe afin de faire avancer la recherche dans le domaine de la protochirurgie et des cyberpsychoses ; en plus d'un pôle d'internement pour les altérés atteints de cyberpsychose souhaitant se faire traiter.[/i]<bq><e3>Médecin practicien.ne—</e3> libre
+<e3>Médecin chercheur.se —</e3> @"River Finch"
+<e3>Infirmier.e —</e3> libre
+<e3>Ingénieur en protochirurgie —</e3>  @"River Finch" 
+<e3>Protochirurgien —</e3> @"Grisha Mahler"
+<e3>Psychologue —</e3> libre</bq><e4>— Ville de New Blossom</e4>
+[i]La construction de New Blossom a sollicité beaucoup de main d'oeuvre. Peut-être votre personnage a-t-il participé de près ou de loin à la refonte de la ville.[/i]<bq><e3>Architecte —</e3> libre
+<e3>Ingénieur.e —</e3> libre
+<e3>Paysagiste —</e3> libre
+<e3>Contremaître —</e3> libre
+<e3>Travailleur.euse de la construction —</e3> @"Hildegard von Wittelsbach"</bq>
+<e4>— Autres</e4><bq><e3>Architecte —</e3> libre
+<e3>Biologiste —</e3> libre
+<e3>Chirurgien & Médecin dans un centre d'accès —</e3> @"Matsudaira Ayumi"
+<e3>Chirurgien & Medecin dans l'underapple—</e3> @"Doc Rivaci", @"Reiner Einstürzen"
+<e3>Infirmer scolaire dans une école du Nexus —</e3> @"Reiner Einstürzen"
+<e3>Ingénieur en altérations cybernétiques —</e3> @"Kimura Rintarō"
+<e3>Massothérapeute —</e3> libre
+<e3>Médecin réserviste —</e3> @"Gael Satillan"
+<e3>Nutritionniste —</e3> libre
+<e3>Paysagiste —</e3> libre
+<e3>Pharmacologue —</e3> @"Salem Blackwood"
+<e3>Physiothérapeute —</e3> @"Ada Kombaté" 
+<e3>Programmeur.euse —</e3> libre
+<e3>Vétérinaire —</e3> libre
+<e3>...</e3></bq>
+
+</bq> </innerbox></div><div class="box1 tab_content tab4 scrollable"> <t2>affaires / finances / gestion / vente et services</t2> <innerbox><e4>— Le Styx</e4>
+Hôtel qui expose une décoration de l'ancien monde, en plein Crimson Bay. Centre névralgique du mercenariat, proposant divers services pour la complétion de contrats divers et variés. Repère des [url=https://springofpower.forumactif.com/t269-les-primordiaux-hotel-styx]Primordiaux[/url], le lieu est un territoire neutre accueillant quiconque montre patte blanche, et dispose de son propre règlement devant être suivi à la lettre. <bq><e3>Propriétaire et gérante —</e3> @"Selina Adler"
+<e3>Barman —</e3> @"Saul Thompson"</bq><e4>— Hyperion Hotel</e4>
+[i]L'Hyperion a été construit en l'honneur du leader des Sept. L'ambiance est celle d'une Amérique des années soixante et représente une expérience unique. Le velours et le charme faussement ancien permet d'offrir un moment d'évasion à la clientèle.[/i]<bq><e3>Propriétaire —</e3> libre
+...</bq><e4>— Golden Eyes</e4>
+[i]Le Golden Eyes est le restaurant le plus chic de tout New Blossom. L'ambiance raffinée oscille entre le cristal et l'argent tandis que la cuisine change tous les mois avec des spécialités gourmets par pays.[/i]<bq><e3>Propriétaire —</e3> @"Elizabeth Merrow"
+... </bq><e4>— L'Eclipse</e4> 
+[i]Club aux musiques tendances, plein de paillettes et lumières aveuglantes, on s’y perd en danses et cocktails. L’endroit a été créé et pensé pour vous faire dépenser, pour s’y amuser et danser. Façade parfaite d’un trafic souterrain de mods, aucun client ne se doute des activités illicites qui s’y dissimulent. Salle souvent comble, l'Éclipse jouit de la réputation de son propriétaire Teddy Thorpe et des nombreuses venues de certains membres des Sept. L’établissement ne possède qu’une seule salle, mais l’ambiance y change régulièrement. Le bar est réputé pour ses alcools et cocktails originaux. [/i]
+<bq><e3>Propriétaire —</e3> @"Teddy Thorpe"
+<e3>Hôtesse —</e3> @"Tamsin Phelps"
+...</bq>
+</bq><e4>— Nighthaven Club</e4>
+[i]C'est très certainement le meilleur club de tout New Blossom. Ses différentes salles aux ambiances diverses ainsi que ses technologies au service de la musique font danser jusqu'au bout de la nuit tous ses consommateurs.[/i]<bq><e3>Propriétaire —</e3> libre
+...</bq><e4>— The Void</e4>
+[i]Un des clubs les plus à la mode de la ville, situé dans Solaris, The Void abrite plusieurs salles avec plusieurs ambiances pour un thème général très néon et futuriste. On y trouve aussi une immense salle de concert en plus des dancefloors et plusieurs bars. Il est également louable pour des évènements privés.[/i]<bq><e3>Propriétaire —</e3> @"Kian Azarian"
+<e3>Barman —</e3> @"Lark Blackwell"
+<e3>Chanteur occasionnel —</e3> @"Lark Blackwell"
+<e3>Serveuse —</e3> @"Harper Haywood"
+...</bq><e4>— MetaCenter</e4>
+[i]Une salle d'arcade unique, fonctionnant en symbiose avec le Metaworld. Elle propose du matériel pour accéder au Metaworld – allant du casque le plus simple au modèle le plus évolué –, mais également un espace pour se sustenter avec des menus nommés d'après les créations du Metaworld. [/i]<bq><e3>Propriétaire —</e3> libre
+<e3>Gérante —</e3> @"Madison Carpenter"
+...</bq><e4>— Cats & Cup</e4>
+[i]Espace aussi feutré que chaleureux, le Cats & Cup est réputé pour la variété de ses thés et de ses pâtisseries. Les décorations à l'effigie des chats laissent présager un amour des bêtes par les propriétaires. Il n'est d'ailleurs pas rare de voir quelques chats trainer entre les tables.[/i]<bq><e3>Propriétaire et serveur —</e3> @"Ezekiel Moriarty"
+<e3>Serveuse —</e3> @"Minerva Collins"
+...</bq><e4>— Old Moma</e4>
+[i]Le Old MoMA est tout d'abord une rue rappelant l'ancienne zone de New York. Au coin de la rue se trouve également un Motel tout en hauteur s'appelant également le Old MoMA. Vétuste, il défie pourtant tous les prix lorsqu'il est question de trouver un lieu pour dormir.[/i]<bq><e3>...</e3></bq><e4>— Westway Diner</e4>
+[i]Particulièrement old fashion, ce diner propose un menu exclusivement constitué de burger, de tartes et de milkshake. Il joue la carte de la nostalgie ainsi que de la simplicité[/i]<bq><e3>...</e3></bq><e4>— The Penrose</e4>
+[i]Le Penrose est un bar à l'ambiance boisée où il est tout autant possible de commander une bière, un cocktail ou un scotch. Les billards et fléchettes attendent ceux souhaitant se détendre par un petit jeu entre deux gorgées. [/i]<bq><e3>...</e3></bq><e4>— Le Fitzgerald</e4>
+[i]Ouvert en 2018, le Fitzgerald est un salon de thé installé dans un bâtiment miraculé de l’ancienne New York, réhabilité pour accueillir le projet. Etabli dans Solaris, l'établissement entretien une image désuète et vintage largement inspirée des années cinquante. Le salon de thé frôle avec l'enseigne de luxe tout en restant accessible à des portes monnaies plus modestes voulant se faire plaisir une fois de temps à autre. On y trouve une grande salle principale, ainsi que deux salles qu'il est possible de privatiser.[/i]<bq><e3>Gérante —</e3> Meredith Fitzsimmons (PNJ)
+<e3>Manager —</e3> @"Robin White"</bq><e4>— Tiffany's Thrift</e4>
+[i]Friperie dans l'Underapple [/i]<bq><e3>Propriétaire et gérant —</e3> @"Tommi Fernsby"</bq>
+<e4>— THE SIMPLE BOOKSTORE</e4>
+[i]Présente depuis 50 ans dans le paysage de la ville, survivante de la catastrophe de 2005, The Simple Bookstore est une librairie spécialisée. Elle est versée dans la vente d'ouvrages thématiques, de beaux livres, d'essais traitant d'histoire, d'histoire de l'art, de sociologie et d'archéologie. Sa façade modeste cache une équipe de librairies enthousiastes et, si un·e libraire vous a à la bonne, une belle collection de thés à savourer en parcourant les rayons.[/i]
+<bq><e3>Propriétaire ―</e3> @"Tom Hopkins"
+<e3>Libraires ―</e3> @"Clemente Mazzarino", @"Diana Hart"
+<e3>Étudiant·e·s ―</e3> @"Vìdra Luter"</bq><e4>— Clean Industries</e4>
+[i]Société de nettoyage pour les entreprises et fin de chantiers. Fondée en 1989 à New York par Marcus Wheeler. Suite à la destruction de la ville, le siège social de la société change pour New Jersey. C'est en 2018 que Milo Wheeler reprend les activités à New Blossom en réouvrant l'entreprise au Nexus.[/i] <bq>Propriétaire —</e3> @"Milo Wheeler" </bq> <e4>— Autres</e4><bq><e3>Banquier.ere —</e3> libre
+<e3>Cadre Commercial —</e3> @"Asher Duncan"
+<e3>Caissier.ere —</e3> libre
+<e3>Chauffeuse de Taxi —</e3> @"Brianna Woodside"
+<e3>Chauffeuse-livreuse —</e3> @"Hildegard von Wittelsbach"
+<e3>Chauffeur Privé (voiture volante) —</e3> @"Curtis White"
+<e3>Commis à la pizzeria Rossini —</e3> @"Aline Larsen"
+<e3>Concierge —</e3> libre
+<e3>Courtièr.e en assurance —</e3> @"Lou White"
+<e3>Couturière—</e3> @"Cleo Avila"
+<e3>Cuisinier au Red Chips —</e3> @"Amy Armstrong"
+<e3>Déménageuse —</e3> @"Hildegard von Wittelsbach"
+<e3>Directrice de l'agence d'escort "Moonlight Sonata"—</e3> @"Dahlia Brahms"
+<e3>Employé d'une bodega —</e3> @"Aurelio Suarez"
+<e3>Escort de Luxe —</e3> @"Curtis White", @"Dahlia Brahms", @"Nérée Herichefet"
+<e3>Garagiste —</e3> @"Marco Moore"
+<e3>Libraire (Crimson bay) —</e3> @"Freyja Olsen"
+<e3>Livreuse —</e3> @"Brianna Woodside"
+<e3>Livreuse de pizza —</e3> @"Mackenzie Moreau"
+<e3>Magnat du lithium —</e3> @"Osmond Rose"
+<e3>Propriétaire de Nevermore —</e3> @"Anastasia Hoxha" 
+<e3>Propriétaire de Bean Nighe Antiques (#1304) —</e3> @"Gael Satillan"
+<e3>Restaurateur (sur site et ambulant) —</e3> @"Anani Kombaté"
+<e3>Vendeur.euse —</e3> @"Dani Duarte"
+<e3>...</e3>
+</bq> </innerbox></div><div class="box1 tab_content tab5 scrollable"> <t2>criminalité & autres</t2> <innerbox><e4>— Gangs</e4>
+[i]Il existe plusieurs gangs à New Blossom. Certains ont envahi Crimson Bay, d'autres l'Underapple ; et d'autres encore se fondent parmi la population de Solaris, Neo Arcadia et du Nexus. Les gangs inventés par les membres seront listés ci-dessous. 
+[u][b]Note[/b][/u] : Il n'est plus possible actuellement de créer des organisations criminelles à grande échelle, mais seulement des gangs ou des groupuscules. Pour en savoir plus, merci de se référer également au [url=https://springofpower.forumactif.com/t857-listing-des-organisations-et-restrictions#13854]listing des organisations.[/url][/i]
+
+<e1>Fight Circle</e1>
+[url=https://springofpower.forumactif.com/t134-fight-circle-gang#499]Pré-liens[/url] — [i]Gang situé à Crimson Bay. Gestion de combats clandestins, paris ainsi que vente de Red sur le marché noir. Haut gradé. [/i] <bq><e3>Roi de Pique —</e3> @"Joe Halpert"
+<e3>Roi de Coeur —</e3> @"Hayes Fitzsimmons"
+<e3>Roi de Carreau —</e3> @"Lenny Lloyd"
+<e3>Roi de Trèfle —</e3> @"Robin White"
+<e3>Chef de la sécurité —</e3> @"Moon Lim"</bq>
+
+<e1>The Orphans</e1>
+[url=https://springofpower.forumactif.com/t203-the-orphans]Pré-liens[/url] — [i]Créés par le Serpent, les Orphans sont un groupe de mutants anti-Icarus violent semant le chaos à New Blossom. Ils se rapprochent d'un groupe de super-vilains dont le but final est la destruction d'Icarus Inc. et ils s'allient volontiers aux Zonards pour semer le chaos.[/i] <bq><e3>Leader —</e3> @"Osmond Rose"
+<e3>Second —</e3> @"Kian Azarian"
+<e3>Membres —</e3> @"Amy Armstrong", @"Davina Reyes", @"Harper Haywood", @"Lark Blackwell", @"Wincenty Sojka"</bq>
+
+<e4>— Organisations criminelles</e4>
+[i]A l'instar des gangs, il existe également des organisations criminelles à New Blossom. Certaines ont envahie Crimson Bay, d'autres l'Underapple ; et d'autres encore se fondent parmi la population de Solaris, Neo Arcadia et du Nexus. Les organisations inventées par les membres seront listés ci-dessous.[/i]
+
+<e1>LES PRIMORDIAUX</e1>
+[url=https://springofpower.forumactif.com/t269-les-primordiaux-hotel-styx]Pré-liens[/url] — Les Primordiaux forment une Organisation neutre de principe, mais qui oeuvre pour instaurer de nouveau l'Ancien Monde, en brisant l'emprise qui se veut divine des corporations. Ils répandent le chaos sans que l'on puisse remonter à eux, et laissent leur ombre planer dans les rues de New Blossom. Leur centre d'opérations principal est le Styx.
+
+<bq><e3>Nyx —</e3> @"Selina Adler"
+<e3>Charon — </e3> libre
+<e3>Dolos — </e3> libre
+<e3>Ether —</e3> libre
+<e3>Phanès —</e3> @"Harold Cooper" 
+<e3>Epiphron —</e3> @"Freyja Olsen"
+<e3>Thanatos —</e3> libre
+<e3>Hypnos —</e3> @"Milo Wheeler" 
+<e3>Moros —</e3> libre
+</bq>
+
+<e1>Riders of apocalypse</e1>
+[url=https://springofpower.forumactif.com/t336-riders-of-the-apocalypse]Pré-liens[/url] — [i]Les ROA sont une organisation de mercenaires composée de Quatre Cavaliers et de leurs Fléaux respectifs ainsi que d'une Hydre avec ses têtes pensantes et ses Chimères. Leur QG se nomme la Cathédrale et se situe dans l'ancien Manhattan.[/i] <bq><e3>Cavaliers —</e3> @"Leta Eyre", @"Sander Lindbohm", @"Elijah Thorpe"
+<e3>Hydres—</e3> @"Noâm Byrne", @"Neal A. Callaghan"
+<e3>Fléaux —</e3> @"Cleo Avila", @"Jedediah T. Saint-Denis", @"Lucero Cortes"
+<e3>Chimères —</e3> libres</bq>
+
+<e1>ARCANA</e1>
+[url=https://springofpower.forumactif.com/t814-arcana-casino-blanchiment-d-argent-recel-d-informations]Pré-liens[/url] — [i]Organisation criminelle : Facette rutilante d'un Casino au coeur de l'ancien Chrysler Building dans l'Underapple, il cache en son sein tout un trafic de blanchiment d'argent et de recel d'informations précieuses illégalement acquises. Les Majors à sa tête en sont les garants, et les Atouts, leur personnel attitré à ce type d'activité.[/i]<bq><e3>Majors —</e3> @"Nour Hatem" (Empress) ; @"Rosendo Cortes" (Hanged Man) ; ...
+<e3>Atouts —</e3>  @"Jedediah T. Saint-Denis", @"Cara Marlowe", @"Sören Van Winkle" ; @"Jamie Powell" (libres)</bq>
+
+<e1>L'ECLIPSE</e1>
+[url=https://springofpower.forumactif.com/t718-l-eclipse]Pré-liens[/url] -- <i>Cachée derrière les paillettes et les strombinoscopes, derrière les lumières aveuglantes et les musiques assourdissantes, derrière les cocktails et les danses lancinantes, derrière la porte marquée de lettres rouges privé, l'activité réelle de l'Eclipse. Le club dissimule un trafic de mods, qu'ils volent et revendent au marché noir. Leurs prix sont compétitifs et l'argent ne va pas dans les poches de Theseus. Ils fournissent le monde pour qu'ils n'aillent pas se fournir chez eux... quitte à se débarrasser du porteur pour qu'il ne retourne pas à la source.</i>
+<bq><e3>Moon—</e3> @"Teddy Thorpe"
+<e3>Sun —</e3> @"Elvira Wingfield"
+<e3>Mercure —</e3> libre
+<e3>Mars —</e3> libre
+<e3>Pluton —</e3> libre
+<e3>Venus —</e3> @"Tamsin Phelps" + libre
+<e3>Jupiter —</e3> @"Clay Barton" + libre
+<e3>Saturne —</e3> libre</bq>
+
+<e1>Les Loas</e1>
+[url=https://springofpower.forumactif.com/t837-les-loas-organisation-criminelle-et-sectaire#13085]Pré-liens[/url] — [i]Organisation criminelle et sectaire : Les Loas vivent selon des préceptes liés aux rîtes et croyances Vaudous, baignés dans l'ésotérisme et aussi à l'aise dans la légalité que dans la criminalité. Croyants, trafiquant, zélotes et simples affiliés forment agglomérat bruyant, exotique et hétéroclites de petits groupes divers liés par la foi, les trafics et le mysticisme.[/i]
+<bq><e3> Souverains —</e3> @"Jedediah T. Saint-Denis"
+<e3>Péyi san Chapo —</e3> libres
+<e3>Main Gauche —</e3> libres
+<e3>Main Droite —</e3> @"Elif Mizahri" @"Aurora Serna"
+<e3>Associés et affiliés —</e3> @"Ether Slaughter"</bq>
+
+<e4>— L'Unité M</e4>
+[i]Icarus Inc possède une unité secrète et illégale inconnue des autorités et du grand public. Cette structure est composée d'une tête directrice appelée la Cellule D ainsi que de quatre laboratoires spécialisés chacun dans un domaine lié au génome mutant.[/i]
+
+<e1>CELLULE D</e1>
+[i]Sa spécificité repose dans sa connaissance de l’ensemble des laboratoires et des informations qui circulent au sein de l’Unité M.[/i] <bq><e3>Dirigeant.e —</e3> libre depuis novembre 2024
+<e3>Assistant.e de direction —</e3> libre
+<e3>Mercenaires —</e3> @"Damian O'Malley" ; @"Dexter Ward"
+<e3>Autres —</e3> ...</bq>
+<e1>SYNERGIE</e1>
+[i]Le laboratoire Synergie est spécialisé dans l'étude et l'application de solution pour créer une synergie entre mutation et altération.[/i] <bq><e3>Médecin en chef —</e3> libre
+<e3>Assistant.e médicale —</e3> libre
+<e3>Ingénieur principal —</e3> libre
+<e3>Assistant.e ingénieur —</e3> libre
+<e3>Ingénieurs —</e3> libre
+<e3>Bio-informaticien —</e3> @"Hugh Reid"
+<e3>Scientifiques —</e3> libre</bq>
+<e1>ALT-V</e1>
+[i]Ce laboratoire cherche à élaborer une version définitive du Vitae. Son but est de recréer des originels.[/i] <bq><e3>Médecin en chef —</e3> libre
+<e3>Assistant.e médicale —</e3> libre
+<e3>Scientifiques —</e3> @"Hazel Williams"  </bq>
+<e1>CTRL-V</e1>
+[i]Ce laboratoire a vu naitre le Red et en fabrique. Il est la source principale qui permet d'alimenter ses ventes au marché noir.[/i] <bq><e3>Médecin en chef —</e3> libre
+<e3>Assistant.e médicale —</e3> libre
+<e3>Scientifiques —</e3> libre</bq>
+
+<e4>— La Division S+</e4>
+[i]Theseus Corp possède une unité secrète et illégale inconnue des autorités et du grand public. Cette structure est composée d'une direction ainsi que de quatre secteurs à la pointe de la technologie.[/i]
+
+<e3>Mercenaire et Chercheur en génomique, [i]Psycho Squad[/i], [i]Division S+[/i] —</e3> @"Isaïe Benchetrit"
+
+<e1>EX-MACHINA</e1>
+[i]Ce secteur est spécialisé dans l'étude extrême du corps humain et de penser l'homme comme une machine.[/i] <bq><e3>Chef.fe ingénieur —</e3> libre
+<e3>Assistant.e ingénieur —</e3> libre
+<e3>Médecin principal —</e3> libre
+<e3>Assistant.e médical —</e3> libre
+<e3>Scientifiques —</e3> libres
+<e3>Ingénieurs—</e3> libres</bq>
+<e1>CP+</e1>
+[i]Les CP+ s'intéressent aux cyber-psychoses et à leur fonctionnement.[/i] <bq><e3>Chef.fe ingénieur —</e3> libre
+<e3>Assistant.e ingénieur —</e3> libre
+<e3>Médecin principal —</e3> libre
+<e3>Assistant.e médical —</e3> libre
+<e3>Psychologue —</e3> @"Monroe Boswell"
+<e3>Scientifiques —</e3>  @"Nour Hatem" 
+<e3>Ingénieurs—</e3> libres</bq>
+<e1>SYMBIOSE</e1>
+[i]Symbiose se spécialise dans l'étude et l'application de solutions pour créer une symbiose entre le gène mutant et les altérations.[/i] <bq><e3>Chef.fe ingénieur —</e3> libre
+<e3>Assistant.e ingénieur —</e3> libre
+<e3>Médecin principal —</e3> libre
+<e3>Assistant.e médical —</e3> libre
+<e3>Scientifiques —</e3> libres
+<e3>Ingénieurs —</e3> libres</bq>
+<e1>DUMP-IS</e1>
+[i]Ce secteur étudie les immunosuppresseurs et vise à créer des altérés pouvant s'en passer.[/i] <bq><e3>Chef.fe ingénieur —</e3> libre
+<e3>Assistant.e ingénieur —</e3> libre
+<e3>Médecin principal —</e3> libre
+<e3>Assistant.e médical —</e3> libre
+<e3>Scientifiques —</e3> libres
+<e3>Ingénieurs—</e3> libres</bq>
+
+<e4>— Autres</e4><bq><e3>Arnaqueur —</e3> @"Lou White"
+<e3>Artiste Faussaire —</e3> @"Sander Lindbohm"
+<e3>Cartomancien—</e3> @"Ether Slaughter"
+<e3>Chirurgien illégal (prothèses illégales) —</e3> @"Aurelio Suarez"
+<e3>Ingénieur en altérations cybernétiques illégales —</e3> @"Reiner Einstürzen"
+<e3>Mercenaire indépendant.e —</e3> @"Algernon Carter"
+<e3>Prostitué —</e3> @"Noah Carrington"
+<e3>Receleuse —</e3> @"Lucero Cortes"
+<e3>Revendeur de mods au marché noir —</e3> @"Clay Barton"
+<e3>Super-vilain —</e3> @"Kian Azarian"
+<e3>Trafiquant de Mods—</e3> @"Teddy Thorpe"
+<e3>Vigilant —</e3> @"Lancelot Bénoïc"
+<e3>Voleur.se indépendant.e —</e3> @"Archer Williams" @"Davina Reyes" @"Rowan Flanagan"</bq> </innerbox></div></div></div></div>
