@@ -4,8 +4,8 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    /* --header: url('https://www.zupimages.net/up/23/01/5q1v.gif'); */
-    --header: url('https://zupimages.net/up/23/14/masy.gif');
+    --header: url('https://www.zupimages.net/up/23/01/5q1v.gif');
+    /*--header: url('https://zupimages.net/up/23/14/masy.gif');*/
     --background: var(--neutral);
 
     --neutral: #0f0f0f;
@@ -2883,6 +2883,38 @@ t3, .t3 {
     font-weight: 600;
 }
 
+t4, .t4 {
+    display: block;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    border-left: 5px solid var(--accentSoft);
+    font-family: var(--title-font);
+    letter-spacing: 2px;
+    color: var(--accentSoft);
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 2s;
+    
+}
+
+t5, .t5 {
+    display: block;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    border-left: 5px solid var(--special);
+    font-family: var(--title-font);
+    letter-spacing: 2px;
+    color: var(--special);
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 2s;
+    
+}
+
+t4:hover, t5:hover, .t4:hover, .t5:hover {
+  letter-spacing: 5px;
+}
+
 e0, .e0 {
     text-transform: uppercase;
     color: var(--accentSoft);
@@ -2930,8 +2962,13 @@ e5, .e5 {
 bq {
     display: block;
     margin: 20px 50px;
-    border-left: 4px double var(--special);
+    border-left: 4px solid var(--special);
     padding: 0px 10px;
+    transition: 2s;
+}
+
+bq:hover {
+    border-left: 4px solid var(--accentDark);
 }
 
 box1, .box1 {
