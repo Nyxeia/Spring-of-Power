@@ -22,13 +22,17 @@ custo2 {
 }
 
 .mycontainer {
-    width: 200px;
+    width: 180px;
 }
 
 .namebox {
     width: 180px;
     margin-top: 10px;
     text-align: center;
+}
+
+.mycontainer .chargifs {
+    position: relative;
 }
 
 .mycontainer .chargif1 {
