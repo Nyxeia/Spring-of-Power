@@ -4,8 +4,7 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    --header: url('https://www.zupimages.net/up/23/01/5q1v.gif');
-    /*--header: url('https://zupimages.net/up/23/14/masy.gif');*/
+    --header: url('https://zupimages.net/up/23/14/masy.gif');
     --background: var(--neutral);
 
     --neutral: #0f0f0f;
@@ -89,6 +88,7 @@
   
     --darius: #a693b6;
     --edgar: #d69393;
+    --ryker: #7ac8c8;
 }
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
@@ -133,6 +133,7 @@
   
     --darius: #5e258e;
     --edgar: #a70000;
+    --ryker: #006666;
  }
 
 * {
@@ -2324,6 +2325,7 @@ fieldset dt span {
 #tabs ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 20px 0 10px
 }
 
@@ -3162,31 +3164,88 @@ box2, .box2 {
     width: 100%;
 }
 
+.tooltip {
+    position: relative;
+    display: inline;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 0;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+  
+.dotted {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #42403ea6;
+    text-underline-offset: 3px;
+}
+
+.dialogue,
+dialogue {
+    display: contents;
+}
+
+dialogue .base,
+.dialogue .base {
+    display: inline;
+}
+
+dialogue .trad,
+.dialogue .trad {
+    display: none;
+}
+
+dialogue:hover .base,
+.dialogue:hover .base {
+    display: none;
+}
+
+dialogue:hover .trad,
+.dialogue:hover .trad {
+    display: inline;
+}
+
 .qeel_inner a[href="/u2"]:before, /* darius */
 .qeel_inner a[href="/u200"]:before, /* edgar */
+.qeel_inner a[href="/u263"]:before, /* ryker */
 .qeel_inner a[href="/u3"]:before, /* leta */
 .qeel_inner a[href="/u87"]:before, /* aurea */
 .qeel_inner a[href="/u144"]:before, /* cara */
+.qeel_inner a[href="/u282"]:before, /* nathaël */
 .qeel_inner a[href="/u16"]:before, /* seth */ 
 .qeel_inner a[href="/u57"]:before, /* orion */
 .qeel_inner a[href="/u146"]:before, /* nour */
-.qeel_inner a[href="/u33"]:before, /* kian */
-.qeel_inner a[href="/u66"]:before, /* kenneth */
-.qeel_inner a[href="/u112"]:before, /* ari */
-.qeel_inner a[href="/u147"]:before, /* kurt */
-.qeel_inner a[href="/u196"]:before /* lance */
+.qeel_inner a[href="/u252"]:before /* archibald */
 {
 content:"✦";
 font-weight: 400;
 margin-right: 2px;
 }
 
-/* .qeel_inner a[href="/u33"]:before
+.qeel_inner a[href="/u149"]:before, /* clay */
+.qeel_inner a[href="/u179"]:before, /* rosendo */
+.qeel_inner a[href="/u205"]:before, /* liam */
+.qeel_inner a[href="/u250"]:before, /* brooks */
+.qeel_inner a[href="/u267"]:before, /* ernest */
+.qeel_inner a[href="/u290"]:before /* lennox */
 {
 content:"✧";
 font-weight: 400;
 margin-right: 2px;
-} */
+}
 
 /* CODE DIALOGUES */
 ds {
@@ -3194,6 +3253,9 @@ ds {
 }
 ed {
     color: var(--edgar);
+}
+ry {
+    color: var(--ryker);
 }
 leta {
     color: firebrick;
@@ -3205,9 +3267,9 @@ merise {
   color: #866868;
   font-style: italic; 
 }
-nora {
-    color: #493459;
-}
 cara {
     color: #8e4b2f;
+}
+nate {
+    color: #794732;
 }
