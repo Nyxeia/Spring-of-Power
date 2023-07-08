@@ -21,7 +21,7 @@ function admin1(){
     changeFocus(1);
 
     document.getElementById('admin_name').innerHTML="<span>DARIUS | ADMINISTRATRICE</span>";
-    document.getElementById('admin_extra').innerHTML="Nyxeia ⬩ Présente ⬩ Canada";
+    document.getElementById('admin_extra').innerHTML="Nyxeia ⬩ Présente ⬩ Québec";
     document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u2";
     document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=2";
 }
@@ -47,17 +47,17 @@ function admin3(){
 function admin4(){
     changeFocus(4);
   
-    document.getElementById('admin_name').innerHTML="<span>KIAN | ADMINISTRATEUR-MJ</span>";
-    document.getElementById('admin_extra').innerHTML="Underrated Boogeyman ⬩ Présent ⬩ États-Unis";
-    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u33";
-    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=33";
+    document.getElementById('admin_name').innerHTML="<span>CLAY | MODERATEUR-MJ</span>";
+    document.getElementById('admin_extra').innerHTML="Bones ⬩ Présent ⬩ France";
+    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u149";
+    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=149";
 }
 
 function admin5(){
     changeFocus(5);
   
-    document.getElementById('admin_name').innerHTML="<span>NOUS RECRUTONS !</span>";
-    document.getElementById('admin_extra').innerHTML="Animation et modération - <a href=\"https://springofpower.forumactif.com/t1211-le-staff-de-sop-recrute#21739\">En savoir plus</a>";
-    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u5";
-    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=5";
+  document.getElementById('admin_name').innerHTML="<span>RECRUTEMENT : ACTIF</span>";
+    document.getElementById('admin_extra').innerHTML="Postulez pour devenir modo !";
+    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/t1267-le-staff-de-sop-recrute";
+    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/u1";
 }

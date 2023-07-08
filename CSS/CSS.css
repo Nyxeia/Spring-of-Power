@@ -4,6 +4,7 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
+    /* --header: url('https://images2.imgbox.com/74/7e/9MbZAOmb_o.gif'); */
     --header: url('https://zupimages.net/up/23/14/masy.gif');
     --background: var(--neutral);
 
@@ -12,12 +13,13 @@
     --neutralDarker: #050505;
     --neutralLight: #171717;
 
-    --accent: #5e1412;
-    --accentDark: #4f130e;
-    --accentSoft: #99362f;
-  
-    --special: #915e32;
-    --specialDark: #56381d;
+    --accent: #35509b;
+    --accentDark: #23396e;
+    --accentSoft: #6980c0;
+    --special: #937396;
+    --specialDark: #84687b;
+    --accentLine: rgb(132,104,123, 0.5);
+    --specialLine: rgb(105,128,192, 0.5);
 
     --textColor: #818181;
     --textColorAccent: #b1a9a9;
@@ -26,7 +28,7 @@
     --hover_static: #0f0f0f;
 
     --border: 1px solid #42403e4d;
-    --radius: 3px;
+    --radius: 4px;
 
     --icarus: #7BA9CC;
     --theseus: #7BAA9A;
@@ -93,6 +95,8 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
+    /* --header: url('https://images2.imgbox.com/38/81/qR4iBXDL_o.gif'); */
+    --header: url('https://zupimages.net/up/23/14/masy.gif');
     --background: #797979;
 
     --neutral: #c4c4c4;
@@ -100,12 +104,11 @@
     --neutralDarker: #a5a5a5;
     --neutralLight: #d3d3d3;
 
-    --accent: #7e1a10;
-    --accentDark: #642016;
-    --accentSoft: #a42100;
-  
-    --special: #935d2e;
-    --specialDark: #866435;
+    --accent: #4a66c4;
+    --accentDark: #23396e;
+    --accentSoft: #3666c4;
+    --special: #73458b;
+    --specialDark: #865d7b;
 
     --textColor: #111111;
     --textColorAccent: #272727;
@@ -1876,7 +1879,7 @@ ul.profile-icons li {
     display: block;
     width: 90%;
     margin: 0 auto;
-    padding: 3px;
+    padding: 5px;
     border-radius: 2px;
     background: var(--neutralLight);
 }
@@ -1900,7 +1903,7 @@ ul.profile-icons li {
     font-weight: 700;
     font-variant: all-small-caps;
     font-size: 14px;
-    color: var(--accentSoft);
+    color: var(--special);
 }
 
 /* Bouton "sélectionner le" code */
@@ -1949,7 +1952,7 @@ blockquote cite {
     padding-left: -20px;
     font-variant: all-small-caps;
     font-weight: 700;
-    color: var(--accentSoft);
+    color: var(--special);
     font-size: 14px;
     font-style: normal;
     background: var(--neutralLight);
@@ -2489,6 +2492,16 @@ hr {
     border: var(--border);
 }
 
+line, .line {
+  display: block;
+  background: var(--gradient2); 
+  width: 85%; 
+  height: 2px; 
+  border-radius:50px;
+  box-shadow: var(--shadowBox);
+  margin: auto;
+}
+
 msgbtn, .msgbtn {
     font-size: 18px;
     font-family: var(--title-font);
@@ -2834,7 +2847,11 @@ tag a, .tag a {
 }
 
 t1, .t1 {
-    color: var(--special);
+    background: var(--gradient);
+    background-clip: border-box;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    color: transparent;
     font-family: var(--main-font);
     text-transform: uppercase;
     font-size: 24px;
@@ -2941,6 +2958,42 @@ e5, .e5 {
     text-transform: uppercase;
 }
 
+e6, .e6 {
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 12px;
+    box-shadow: inset 0 -7px 0 var(--specialLine);
+    text-decoration: none;
+    color: var(--textColorAccent);
+    transition: 2s;
+}
+
+e7, .e7 {
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 12px;
+    box-shadow: inset 0 -7px 0 var(--accentLine);
+    text-decoration: none;
+    color: var(--textColorAccent);
+    transition: 2s;
+}
+
+e6:hover, .e6:hover {
+  letter-spacing: 3px;
+  box-shadow: inset 0 -7px 0 var(--accentLine);
+}
+
+e7:hover, .e7:hover {
+  letter-spacing: 3px;
+  box-shadow: inset 0 -7px 0 var(--specialLine);
+}
+
 bq {
     display: block;
     margin: 20px 50px;
@@ -2990,11 +3043,10 @@ box2, .box2 {
 .f_icon {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
-    margin: 5px 7px;
-    box-shadow: 3px 4px 4px -2px rgba(0,0,0,0.40);
+    border-radius: 15px;
+    margin: 5px;
+    box-shadow: 3px 4px 4px -2px rgba(0,0,0,0.55);
     object-fit: cover;
-    transform: rotate(40deg);
 }
 
 .f_bg {
