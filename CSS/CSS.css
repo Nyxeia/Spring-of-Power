@@ -4,8 +4,7 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    /* --header: url('https://images2.imgbox.com/74/7e/9MbZAOmb_o.gif'); */
-    --header: url('https://zupimages.net/up/23/14/masy.gif');
+    --header: url('https://images2.imgbox.com/74/7e/9MbZAOmb_o.gif');
     --background: var(--neutral);
 
     --neutral: #0f0f0f;
@@ -95,8 +94,7 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
-    /* --header: url('https://images2.imgbox.com/38/81/qR4iBXDL_o.gif'); */
-    --header: url('https://zupimages.net/up/23/14/masy.gif');
+    --header: url('https://images2.imgbox.com/38/81/qR4iBXDL_o.gif');
     --background: #797979;
 
     --neutral: #c4c4c4;
@@ -1195,10 +1193,7 @@ a.forumtitle:hover {
     font-size: var(--small-size);
 }
 
-
-/*** ------------------------------- ***/
 /*** QUI EST EN LIGNE -------------- ***/
-
 .qeel {
     border-radius: 10px;
     background: var(--neutral);
@@ -1289,10 +1284,6 @@ a.groups {
     border-radius: 10px;
 }
 
-a.groups:hover {
-    
-}
-
 #qeel_post_box {
     display: flex;
     justify-content: space-around;
@@ -1376,11 +1367,7 @@ a.groups:hover {
     opacity: 1;
 }
 
-/****** ------------------------------------------------------------------------------
- ****** LISTE DES SUJETS ------------------------------------------------------------- ******/
-
-/*** ------------------------------- ***/
-/*** ENTETE ET FOOTER DE LA LISTE DES SUJETS ***/
+/****** LISTE DES SUJETS ******/
 
 /* Chaîne de navigation et pagination
  * (réutilisé dans l'affichage d'un sujet (viewtopic_body)) */
@@ -1397,8 +1384,7 @@ a.groups:hover {
     font-size: 13px;
 }
 
-/* BOUTONS DE MESSAGE : Répondre, Nouveau,... ---* 
- * (réutilisé dans l'affichage d'un sujet (viewtopic_body) et les MP (privmsgs_body) */
+/* BOUTONS DE MESSAGE : Répondre, Nouveau */
 .buttons {
     background: var(--neutralDark);
     padding: 1px 8px;
@@ -1410,7 +1396,6 @@ a.groups:hover {
     opacity: .7;
 }
 
-/* BOUTONS : modérer les sujets de ce forum */
 #moderation_forum_tools,
 #moderation_forum_tools strong {
     font-size: 0px;
@@ -1421,10 +1406,6 @@ a.groups:hover {
     text-transform: uppercase;
 }
 
-
-
-
-/*** ------------------------------- ***/
 /*** LISTE DES SUJETS -------------- ***/
 
 .topicslist_row {
@@ -1517,7 +1498,6 @@ a.groups:hover {
 .topicslist-stats {
     font-size: 10px;
 }
-
 .topicslist-avatar-lastpost img {
     object-fit: cover;
     object-position: center;
@@ -1527,7 +1507,6 @@ a.groups:hover {
     border: var(--border);
     border-radius: var(--radius);
 }
-
 .topicslist-lastpost {
     width: 180px;
     text-align: center;
@@ -1535,7 +1514,6 @@ a.groups:hover {
     border: var(--border);
     border-radius: var(--radius);
 }
-
 .topicslist-description {
     padding-top: 5px;
     width: 100%;
@@ -1543,15 +1521,7 @@ a.groups:hover {
     font-size: 10px !important;
 }
 
-
-
-
-/****** ------------------------------------------------------------------------------
- ****** AFFICHAGE D'UN SUJET --------------------------------------------------------- ******/
-
 /* PARTICIPANTS DU SUJET ---*/
-
-/* Conteneur de la liste des participants au sujet */
 .poster-list {
     display: flex;
     align-items: center;
@@ -1559,8 +1529,6 @@ a.groups:hover {
     margin-top: -10px;
     margin-bottom: 20px;
 }
-
-/* Avatar du participant*/
 .poster {
     background: var(--poster-avatar);
     height: 30px;
@@ -1571,17 +1539,13 @@ a.groups:hover {
     background-size: cover;
     background-position: center;
 }
-
 /* Lien de renvoi vers son profil */
 .poster a {
     display: block;
     height: 100%;
 }
 
-/*** ------------------------------- ***/
 /*** SUJET ------------------------- ***/
-
-
 .post_row {
     background: var(--neutral);
     clear: both;
@@ -1683,7 +1647,6 @@ div.post_row:last-of-type {
     font-size: 11px;
 }
 
-/* BOUTONS D'EDITION DU MESSAGE --- */
 /* Conteneur boutons d'édition */
 ul.profile-icons {
     flex-grow: 1;
@@ -1705,7 +1668,6 @@ ul.profile-icons li {
     padding: 0px 2px;
     margin-top: 2px;
 }
-
 
 /* profil messages */
 .post_profile {
@@ -1814,20 +1776,15 @@ ul.profile-icons li {
     justify-content: center;
 }
 
-
 /* Retire le cadre de la réponse rapide pour les invités */
 #quickreply_content:empty {display: none}
 
-
-/*** ------------------------------- ***/
 /*** SONDAGE ----------------------- ***/
-
 .poll {
     background: var(--neutral);
     border-radius: 5px;
     margin-bottom: 10px;
 }
-
 .head_poll {
     padding: 10px;
     border-bottom: 1px solid var(--neutralDark);
@@ -1835,35 +1792,29 @@ ul.profile-icons li {
     justify-content: space-between;
     align-items: center;
 }
-
 .poll_list {
     display: grid;
     grid-template-columns: 220px auto;
 }
-
 .poll_option {
     padding: 10px 20px 0 10px;
     border-right: 1px solid var(--neutralDark);
     text-align: right;
 }
-
 .poll_vote {
     padding: 10px 10px 0 20px;
     display: flex;
     align-items: center;
 }
-
 .poll_send {
     margin-left: 220px;
     padding: 20px 10px 20px 20px;
     border-left: 1px solid var(--neutralDark);
 }
-
 .poll_vote:nth-child(2),
 .poll_option:first-child {
     padding-top: 20px;
 }
-
 
 /*** ------------------------------- ***/
 /*** TEXTES, BALISES, ETC ---------- ***/
@@ -3270,6 +3221,31 @@ dialogue:hover .trad,
     display: inline;
 }
 
+progressbar {
+    background-color: var(--neutralDarker);
+    border-radius: 50px;
+    color: var(--hightlight_static);
+    display: inline-block;
+    font-weight: 600;
+    height: 23px;
+    overflow: hidden;
+    padding: 2px 0px;
+    position: relative;
+    width: 230px;
+    text-transform: uppercase;
+    border: var(--border);
+    text-align: left;
+    font-size: 11px;
+}
+progressbar>div {
+    background: var(--gradient);
+    border-radius: 50px;
+    overflow: hidden;
+    padding-right: 6px;
+    text-align: right;
+    line-height: 18px;
+}
+
 .qeel_inner a[href="/u2"]:before, /* darius */
 .qeel_inner a[href="/u200"]:before, /* edgar */
 .qeel_inner a[href="/u263"]:before, /* ryker */
@@ -3292,7 +3268,16 @@ margin-right: 2px;
 .qeel_inner a[href="/u205"]:before, /* liam */
 .qeel_inner a[href="/u250"]:before, /* brooks */
 .qeel_inner a[href="/u267"]:before, /* ernest */
-.qeel_inner a[href="/u290"]:before /* lennox */
+.qeel_inner a[href="/u290"]:before, /* lennox */
+.qeel_inner a[href="/u320"]:before, /* sean */
+.qeel_inner a[href="/u55"]:before, /* robin */
+.qeel_inner a[href="/u76"]:before, /* keith */
+.qeel_inner a[href="/u115"]:before, /* dak-ho */
+.qeel_inner a[href="/u174"]:before, /* ruben */
+.qeel_inner a[href="/u219"]:before, /* minho */
+.qeel_inner a[href="/u261"]:before, /* suni */
+.qeel_inner a[href="/u317"]:before, /* leopold */
+.qeel_inner a[href="/u363"]:before /* li-seok */
 {
 content:"✧";
 font-weight: 400;
