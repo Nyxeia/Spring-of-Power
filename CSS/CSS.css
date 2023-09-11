@@ -3256,7 +3256,8 @@ progressbar>div {
 .qeel_inner a[href="/u16"]:before, /* seth */ 
 .qeel_inner a[href="/u57"]:before, /* orion */
 .qeel_inner a[href="/u146"]:before, /* nour */
-.qeel_inner a[href="/u252"]:before /* archibald */
+.qeel_inner a[href="/u252"]:before, /* archibald */
+.qeel_inner a[href="/u371"]:before /* selen */
 {
 content:"✦";
 font-weight: 400;
@@ -3270,6 +3271,7 @@ margin-right: 2px;
 .qeel_inner a[href="/u267"]:before, /* ernest */
 .qeel_inner a[href="/u290"]:before, /* lennox */
 .qeel_inner a[href="/u320"]:before, /* sean */
+.qeel_inner a[href="/u372"]:before, /* gabriel */
 .qeel_inner a[href="/u55"]:before, /* robin */
 .qeel_inner a[href="/u76"]:before, /* keith */
 .qeel_inner a[href="/u115"]:before, /* dak-ho */
