@@ -5,7 +5,7 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    --header: url('https://images2.imgbox.com/74/7e/9MbZAOmb_o.gif');
+    --header: url('https://images2.imgbox.com/09/ef/AO6OAX7w_o.gif');
     --background: var(--neutral);
 
     --neutral: #0f0f0f;
@@ -13,13 +13,14 @@
     --neutralDarker: #050505;
     --neutralLight: #171717;
 
-    --accent: #35509b;
-    --accentDark: #23396e;
-    --accentSoft: #6980c0;
-    --special: #937396;
-    --specialDark: #84687b;
-    --accentLine: rgb(132,104,123, 0.5);
-    --specialLine: rgb(105,128,192, 0.5);
+    --accent: #005a56;
+    --accentDark: #013b33;
+    --accentSoft: #238d82;
+    --special: #b2894b;
+    --specialDark: #6d522a;
+
+    --accentLine: rgb(12,131,141, 0.5);
+    --specialLine: rgb(141,99,13, 0.5);
 
     --textColor: #818181;
     --textColorAccent: #b1a9a9;
@@ -95,7 +96,7 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
-    --header: url('https://images2.imgbox.com/38/81/qR4iBXDL_o.gif');
+    --header: url('https://images2.imgbox.com/89/fb/p3i9Kg4A_o.gif');
     --background: #797979;
 
     --neutral: #c4c4c4;
@@ -103,11 +104,11 @@
     --neutralDarker: #a5a5a5;
     --neutralLight: #d3d3d3;
 
-    --accent: #4a66c4;
-    --accentDark: #23396e;
-    --accentSoft: #3666c4;
-    --special: #73458b;
-    --specialDark: #865d7b;
+    --accent: #106365;
+    --accentDark: #184b44;
+    --accentSoft: #037d7d;
+    --special: #8f5b21;
+    --specialDark: #a07c45;
 
     --textColor: #111111;
     --textColorAccent: #272727;
@@ -2337,7 +2338,7 @@ msgbtn, .msgbtn {
     object-fit: cover;
 }
 .pa_admin img {
-    width: 52px;
+    width: 43px;
     height: 74px;
 }
 .pa_admin div {
@@ -2683,7 +2684,7 @@ e6, .e6 {
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 12px;
-    box-shadow: inset 0 -7px 0 var(--specialLine);
+    box-shadow: inset 0 -7px 0 var(--accentLine);
     text-decoration: none;
     color: var(--textColorAccent);
     transition: 2s;
@@ -2696,7 +2697,7 @@ e7, .e7 {
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 12px;
-    box-shadow: inset 0 -7px 0 var(--accentLine);
+    box-shadow: inset 0 -7px 0 var(--specialLine);
     text-decoration: none;
     color: var(--textColorAccent);
     transition: 2s;
@@ -2704,12 +2705,12 @@ e7, .e7 {
 
 e6:hover, .e6:hover {
   letter-spacing: 3px;
-  box-shadow: inset 0 -7px 0 var(--accentLine);
+  box-shadow: inset 0 -7px 0 var(--specialLine);
 }
 
 e7:hover, .e7:hover {
   letter-spacing: 3px;
-  box-shadow: inset 0 -7px 0 var(--specialLine);
+  box-shadow: inset 0 -7px 0 var(--accentLine);
 }
 
 bq {
@@ -3011,6 +3012,18 @@ progressbar>div {
     padding-right: 6px;
     text-align: right;
     line-height: 18px;
+}
+
+sp, .sp {
+    color: transparent !important;
+    background-color: var(--neutralDarker);
+    border-radius: 5px;
+    padding: 0px 3px;
+    transition: 0.5s;
+}
+sp:hover, .sp:hover {
+    color: var(--textColor) !important;
+    background-color:none;
 }
 
 .qeel_inner a[href="/u2"]:before, /* darius */
