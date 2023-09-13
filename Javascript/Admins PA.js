@@ -47,7 +47,7 @@ function admin3(){
 function admin4(){
     changeFocus(4);
   
-    document.getElementById('admin_name').innerHTML="<span>CLAY | MODERATEUR-MJ</span>";
+    document.getElementById('admin_name').innerHTML="<span>CLAY | MODÉRATEUR-MJ</span>";
     document.getElementById('admin_extra').innerHTML="Bones ⬩ Présent ⬩ France";
     document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u149";
     document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=149";
@@ -56,8 +56,8 @@ function admin4(){
 function admin5(){
     changeFocus(5);
   
-  document.getElementById('admin_name').innerHTML="<span>RECRUTEMENT : ACTIF</span>";
-    document.getElementById('admin_extra').innerHTML="Postulez pour devenir modo !";
-    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/t1267-le-staff-de-sop-recrute";
-    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/u1";
+  document.getElementById('admin_name').innerHTML="<span>ROBIN | MODÉRATRICE-MJ</span>";
+    document.getElementById('admin_extra').innerHTML="Fern ⬩ Présente ⬩ Québec";
+    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u55";
+    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=55";
 }

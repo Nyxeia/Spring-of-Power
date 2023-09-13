@@ -40,3 +40,10 @@ $(function() {
       
       el.find('img[src="https://2img.net/images2.imgbox.com/ba/03/D1iNQo0J_o.png"]').replaceWith('<ltag>Profil</ltag>');
     });
+
+
+    $(function() {
+      if (location.pathname.substring(0, 2) == '/u') {
+        $(".profile_contact #field_id:nth-child(2) span.gen").closest("#field_id").remove();
+      }
+    });
