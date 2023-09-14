@@ -25,7 +25,7 @@
     --textColor: #818181;
     --textColorAccent: #b1a9a9;
 
-    --hightlight_static: #cbcbcb;
+    --highlight_static: #cbcbcb;
     --hover_static: #0f0f0f;
 
     --border: 1px solid #42403e4d;
@@ -57,6 +57,9 @@
 
     --scrollbar-thumb: var(--accentDark);
     --scrollbar-bg: var(--neutralDark);
+    
+    --navbar-bg: #040404;
+    --navbar-txt: #ababab;
 
     /* VARIABLES MESSENGER */
     --FAM-pluginBackground: var(--neutral);
@@ -97,31 +100,36 @@
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
     --header: url('https://images2.imgbox.com/89/fb/p3i9Kg4A_o.gif');
-    --background: #797979;
+    --background: #bcbcbc;
 
-    --neutral: #c4c4c4;
-    --neutralDark: #afafaf;
-    --neutralDarker: #a5a5a5;
-    --neutralLight: #d3d3d3;
+    --neutral: #dfdfdf;
+    --neutralDark: #d2d2d2;
+    --neutralDarker: #939393;
+    --neutralLight: #e5e5e5;
 
-    --accent: #106365;
-    --accentDark: #184b44;
-    --accentSoft: #037d7d;
-    --special: #8f5b21;
-    --specialDark: #a07c45;
+    --accent: #217c7e;
+    --accentDark: #1d655b;
+    --accentSoft: #068f8f;
+    --special: #aa7133;
+    --specialDark: #97794c;
 
     --textColor: #111111;
     --textColorAccent: #272727;
 
-    --border: 1px solid #e6e6e6ab;
+    --highlight_static: #e7e7e7;
+
+    --border: 1px solid #ffffff8f;
     --shadowBox: 0 0 20px var(--neutralDark);
 
-    --icarus: #3f6993;
-    --theseus: #4d6b60;
-    --twilight: #863939;
-    --hybrid: #965c27;
-    --disaster: #6b4f81;
+    --icarus: #5391d3;
+    --theseus: #4d9577;
+    --twilight: #cb5858;
+    --hybrid: #cb9036;
+    --disaster: #9474d5;
     --pnj: #313131;
+
+    --navbar-bg: #e7e7e7;
+    --navbar-txt: #181818;
 
     /* VARIABLES MESSENGER */
     --FAM-textareaBackground: #fafbfc;
@@ -161,7 +169,7 @@
 
 ::selection {
   background: var(--accent);
-  color: var(--hightlight_static);
+  color: var(--highlight_static);
 }
 
 .theme-switch-wrapper {
@@ -193,7 +201,7 @@
     text-align: center;
 }
 .theme_icon {
-    fill: var(--hightlight_static);
+    fill: var(--highlight_static);
     background: var(--gradient_static);
     border-radius: 30px;
     padding: 4px;
@@ -269,7 +277,7 @@ form p {
 }
 .elevator a {
     text-align: center;
-    color: var(--hightlight_static);
+    color: var(--highlight_static);
     transition: 0.2s;
 }
 .elevator a:hover {
@@ -592,7 +600,7 @@ a.specials_links:empty {
 }
 
 #fa_right {
-    background: #040404;
+    background: var(--navbar-bg);
     height: 40px;
     display: flex;
     align-items: center;
@@ -617,7 +625,7 @@ a.specials_links:empty {
 #fa_chat_button,
 .theme-switch-wrapper,
 .rightHeaderLink {
-    color: #b1a9a9;
+    color: var(--navbar-txt);
 }
 #fa_welcome:hover,
 #fa_notifications:hover,
@@ -765,7 +773,7 @@ ul.navbar.fix {
 
 a.mainmenu {
     padding: 5px;
-    color: #b1a9a9;
+    color: var(--navbar-txt);
 }
 a.mainmenu:hover {
     color: var(--accentSoft);
@@ -798,7 +806,7 @@ a.mainmenu img {display: none}
     font-family: var(--title-font);
     font-weight: 400;
     letter-spacing: 4px;
-    color: var(--hightlight_static);
+    color: var(--highlight_static);
 }
 
 .forum_row {
@@ -2268,7 +2276,7 @@ msgbtn, .msgbtn {
     text-align: center;
     padding: 2px;
     text-transform: uppercase;
-    color: var(--hightlight_static);
+    color: var(--highlight_static);
     font-size: 12px;
     letter-spacing: 2px;
     font-weight: 400;
@@ -2443,7 +2451,7 @@ msgbtn, .msgbtn {
     font-family: var(--title-font);
     font-weight: 300;
     letter-spacing: 3px;
-    color: var(--hightlight_static);
+    color: var(--highlight_static);
 }
 .top_link a {
     font-size: var(--small-size);
@@ -2583,7 +2591,7 @@ t2, .t2 {
     text-align: center;
     padding: 2px;
     text-transform: uppercase;
-    color: var(--hightlight_static);
+    color: var(--highlight_static);
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 400;
@@ -2992,7 +3000,7 @@ dialogue:hover .trad,
 progressbar {
     background-color: var(--neutralDarker);
     border-radius: 50px;
-    color: var(--hightlight_static);
+    color: var(--highlight_static);
     display: inline-block;
     font-weight: 600;
     height: 23px;

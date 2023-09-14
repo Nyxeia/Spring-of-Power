@@ -58,7 +58,7 @@
 }
 
 #FAM-button {
-    color: var(--hightlight_static);
+    color: var(--highlight_static);
     font-size: 22px;
     background: var(--gradient_static);
     border-radius: 50px;

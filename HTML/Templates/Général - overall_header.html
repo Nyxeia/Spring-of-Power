@@ -286,28 +286,69 @@ button, select, input {font-family: var(--font);cursor: pointer;}
   
   <!-- début script dark mode -->
   <script>
-  const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+document.addEventListener('DOMContentLoaded', () => {
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
+const iframe = document.getElementById('frame_chatbox');
+iframe.addEventListener('load', ()=>{
+	const iframeDoc = iframe.contentDocument;
 
-if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-  
-    if (currentTheme === 'light') {
-        toggleSwitch.checked = true;
-    }
-}
+	if (currentTheme) {
+		iframeDoc.getElementsByClassName('chatbox')[0].setAttribute('data-theme', currentTheme);
 
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light');
-    }
-    else {        document.documentElement.setAttribute('data-theme', 'dark');
-          localStorage.setItem('theme', 'dark');
-    }    
-}
+		if (currentTheme === 'light') {
+			toggleSwitch.checked = true;
+		}
+	}
 
-toggleSwitch.addEventListener('change', switchTheme, false);
+	function switchTheme(e) {
+		if (e.target.checked) {
+			iframeDoc.getElementsByClassName('chatbox')[0].setAttribute('data-theme', 'light');
+
+			localStorage.setItem('theme', 'light');
+		}
+		else {        
+			iframeDoc.getElementsByClassName('chatbox')[0].setAttribute('data-theme', 'dark');
+
+			localStorage.setItem('theme', 'dark');
+		}    
+	}
+
+	toggleSwitch.addEventListener('change', switchTheme, false);
+});
+
+});
+
+</script>
+
+<script>
+	const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+	const currentTheme = localStorage.getItem('theme');
+
+	if (currentTheme) {
+		document.documentElement.setAttribute('data-theme', currentTheme);
+
+		if (currentTheme === 'light') {
+			toggleSwitch.checked = true;
+		}
+	}
+
+		function switchTheme(e) {
+			if (e.target.checked) {
+				document.documentElement.setAttribute('data-theme', 'light');
+	
+				localStorage.setItem('theme', 'light');
+			}
+			else {        
+				document.documentElement.setAttribute('data-theme', 'dark');
+	
+				localStorage.setItem('theme', 'dark');
+			}    
+		}
+	
+	toggleSwitch.addEventListener('change', switchTheme, false);
+	
 </script>
   <!-- DARK MODE END -->
 
