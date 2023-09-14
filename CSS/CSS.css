@@ -17,7 +17,7 @@
     --accentDark: #013b33;
     --accentSoft: #238d82;
     --special: #b2894b;
-    --specialDark: #6d522a;
+    --specialDark: #755f3f;
 
     --accentLine: rgb(12,131,141, 0.5);
     --specialLine: rgb(141,99,13, 0.5);
@@ -111,7 +111,7 @@
     --accentDark: #1d655b;
     --accentSoft: #068f8f;
     --special: #aa7133;
-    --specialDark: #97794c;
+    --specialDark: #826b4a;
 
     --textColor: #111111;
     --textColorAccent: #272727;
@@ -238,6 +238,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 900px;
+    border-radius: 12px;
+    border: var(--neutral) 5px solid;
 }
 
 /* Conteneur de toutes les sous-sections. */

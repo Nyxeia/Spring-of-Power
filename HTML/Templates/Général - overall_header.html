@@ -323,6 +323,43 @@ iframe.addEventListener('load', ()=>{
 </script>
 
 <script>
+	document.addEventListener('DOMContentLoaded', () => {
+	
+	const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+	const currentTheme = localStorage.getItem('theme');
+	const iframe = document.getElementById('fa_chat');
+	iframe.addEventListener('load', ()=>{
+		const iframeDoc = iframe.contentDocument;
+	
+		if (currentTheme) {
+			iframeDoc.getElementsByClassName('chatbox')[0].setAttribute('data-theme', currentTheme);
+	
+			if (currentTheme === 'light') {
+				toggleSwitch.checked = true;
+			}
+		}
+	
+		function switchTheme(e) {
+			if (e.target.checked) {
+				iframeDoc.getElementsByClassName('chatbox')[0].setAttribute('data-theme', 'light');
+	
+				localStorage.setItem('theme', 'light');
+			}
+			else {        
+				iframeDoc.getElementsByClassName('chatbox')[0].setAttribute('data-theme', 'dark');
+	
+				localStorage.setItem('theme', 'dark');
+			}    
+		}
+	
+		toggleSwitch.addEventListener('change', switchTheme, false);
+	});
+	
+	});
+	
+	</script>
+
+<script>
 	const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 	const currentTheme = localStorage.getItem('theme');
 
