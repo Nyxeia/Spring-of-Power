@@ -6,8 +6,11 @@
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
     --header: url('https://images2.imgbox.com/09/ef/AO6OAX7w_o.gif');
-    --background: var(--neutral);
+    --pa-context: url('https://images2.imgbox.com/99/b8/RudLeqNH_o.gif');
+    --qeel-groups: url('https://images2.imgbox.com/8f/f6/subeXulr_o.png');
+    --qeel-credits: url('https://images2.imgbox.com/c3/1e/WXoxvok4_o.png');
 
+    --background: var(--neutral);
     --neutral: #0f0f0f;
     --neutralDark: #0c0c0c;
     --neutralDarker: #050505;
@@ -19,8 +22,8 @@
     --special: #b2894b;
     --specialDark: #755f3f;
 
-    --accentLine: rgb(12,131,141, 0.5);
-    --specialLine: rgb(141,99,13, 0.5);
+    --accentLine: rgb(5,122,122, 0.36);
+    --specialLine: rgb(141,99,13, 0.45);
 
     --textColor: #818181;
     --textColorAccent: #b1a9a9;
@@ -100,8 +103,11 @@
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
     --header: url('https://images2.imgbox.com/89/fb/p3i9Kg4A_o.gif');
-    --background: #bcbcbc;
+    --pa-context: url('https://zupimages.net/up/23/04/hcj2.png');
+    --qeel-groups: url('https://www.zupimages.net/up/23/04/lf8r.png');
+    --qeel-credits: url('https://www.zupimages.net/up/23/04/h91h.png');
 
+    --background: #bcbcbc;
     --neutral: #dfdfdf;
     --neutralDark: #d2d2d2;
     --neutralDarker: #939393;
@@ -1068,6 +1074,7 @@ a.groups {
     padding: 6px 10px;
 }
 #group_desc_img {
+    content: var(--qeel-groups);
     height: 92px;
     width: 288px;
     border: var(--border);
@@ -1120,6 +1127,7 @@ a.groups {
     padding: 5px;
 }
 #credits_img {
+    content: var(--qeel-credits);
     width: 244px;
     height: 53px;
     border: var(--border);
@@ -2295,6 +2303,7 @@ msgbtn, .msgbtn {
     margin-bottom: 10px;
 }
 #context_img {
+    content: var(--pa-context);
     position: absolute;
     object-fit: cover;
     height: inherit;
@@ -3070,6 +3079,11 @@ sp:hover, .sp:hover {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+  }
+  .faq {
+    background: var(--neutralLight);
+    margin: 3px 0;
+    border-radius: 3px;
   }
 
 .qeel_inner a[href="/u2"]:before, /* darius */
