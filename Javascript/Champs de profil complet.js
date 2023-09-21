@@ -1,4 +1,4 @@
-var $path = ".profile_infos .profile_main .profile_field";
+var $path = ".user_profile .profile_infos .profile_main .profile_field";
 var $parent = ".profile_infos";
 
 // WITH GRADIENT
@@ -101,6 +101,31 @@ jQuery(function () {
         if (found) {
             $(this).parents($parent).find('.profile_top').append(this);
             label.css(labelColor);
+        }
+ 
+    });
+
+});
+
+jQuery(function () {
+    $( $path ).each(function( index ) {
+
+        var label = $(this).find('label > span:first-child');
+        var field = label.html();
+
+        var found = false;
+        switch (field) {
+            case "Staff":
+                found = true;
+            	console.log("found staff");
+                break;
+            default: 
+                break;
+        } 
+
+        if (found) {
+           console.log($(this).parents);
+            $('.role').append(this);
         }
  
     });

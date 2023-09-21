@@ -1332,6 +1332,12 @@ a.groups {
 }
 
 /*** SUJET ------------------------- ***/
+.post_anchor {
+    display: block;
+    height: 40px;
+    margin-top: -40px;
+    visibility: hidden;
+}
 .post_row {
     background: var(--neutral);
     clear: both;
@@ -1341,16 +1347,13 @@ a.groups {
     border-bottom: var(--border);
     overflow-wrap: break-word;
 }
-
 div.post_row:nth-of-type(2) {
     border-radius: 5px 5px 0 0;
 }
-
 div.post_row:last-of-type {
     border-radius: 0 0 5px 5px;
     border-bottom: none
 }
-
 .post_details {
     grid-column: 2;
     display: flex;
@@ -1363,24 +1366,35 @@ div.post_row:last-of-type {
     letter-spacing: 1px;
     font-size: var(--small-size);
 }
-
 .post_date {
     flex-grow: 100;
 }
-
 .post_userinfo,
 .post_userinfo img,
 .field_content {
     width: 212px;
 }
-
 .post_userinfo .user_field:first-child img{
     border-radius: var(--radius);
     border: var(--border);
     padding: 5px;
 }
-.post_userinfo .user_field:first-child .label {
+.post_userinfo .user_field:first-child .label, 
+.post_pseudo_rank .user_field .label,
+.post_rank .profile_field label {
     display: none;
+}
+.role, .role .user_field, .rank,
+.role .field_uneditable {
+    display: inline-block;
+}
+.role .user_field:after {
+    content: "✧";
+    margin: 0 3px 0 0;
+}
+.role .field_uneditable:after {
+    content: "✧";
+    margin: 0 3px 0 3px;
 }
 
 .p-tabs {
@@ -3060,31 +3074,31 @@ sp:hover, .sp:hover {
     font-size: 14px;
     border-radius: 3px;
 }
-  .active, .accordion:hover {
+.accordion.active, .accordion:hover {
     border-left: 5px solid var(--accentDark);
     background: var(--neutralLight);
-  }
-  .accordion:after {
+}
+.accordion:after {
     content: "✧";
     font-size: 13px;
     color: var(--specialDark);
     float: right;
     margin-left: 5px;
-  }
-  .active:after {
+}
+.accordion.active:after {
     content: "✦";
-  }
-  .acc_content {
+}
+.acc_content {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
-  .faq {
+}
+.faq {
     background: var(--neutralLight);
     margin: 3px 0;
     border-radius: 3px;
-  }
+}
 
 .qeel_inner a[href="/u2"]:before, /* darius */
 .qeel_inner a[href="/u200"]:before, /* edgar */

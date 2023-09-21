@@ -59,7 +59,7 @@
     <!-- Affichage d'un message -->
     <!-- BEGIN postrow -->
     <!-- BEGIN displayed -->
-    <div id="{postrow.displayed.U_POST_ID}"></div>
+    <div class="post_anchor" id="{postrow.displayed.U_POST_ID}"></div>
     <div class="post post_row post--{postrow.displayed.U_POST_ID}" id="p{postrow.displayed.U_POST_ID}">
 
         <!-- Conteneur informations du message-->
@@ -111,11 +111,14 @@
                 <div class="post_pseudo_rank">
                     <!-- Pseudo -->
                     <div class="post_pseudo">{postrow.displayed.POSTER_NAME}</div>
-
+                    
                     <!-- Rang -->
                     <div class="post_rank">
+                        <div class="role"></div>
+                        <div class="rank">
                         {postrow.displayed.POSTER_RANK_NEW} <!-- Textuel -->
                         {postrow.displayed.RANK_IMAGE} <!-- Image -->
+                        </div>
                     </div>
                 </div>
             </center>
