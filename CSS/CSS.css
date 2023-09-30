@@ -6,9 +6,9 @@
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
     --header: url('https://images2.imgbox.com/09/ef/AO6OAX7w_o.gif');
-    --pa-context: url('https://images2.imgbox.com/99/b8/RudLeqNH_o.gif');
-    --qeel-groups: url('https://images2.imgbox.com/8f/f6/subeXulr_o.png');
-    --qeel-credits: url('https://images2.imgbox.com/c3/1e/WXoxvok4_o.png');
+    --pa-context: url('https://images2.imgbox.com/ee/f0/ZGAHKoPt_o.gif');
+    --qeel-groups: url('https://images2.imgbox.com/ed/f8/twvcpO7D_o.png');
+    --qeel-credits: url('https://images2.imgbox.com/ef/9e/GerqbHTF_o.png');
 
     --background: var(--neutral);
     --neutral: #0f0f0f;
@@ -103,9 +103,9 @@
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
     --header: url('https://images2.imgbox.com/89/fb/p3i9Kg4A_o.gif');
-    --pa-context: url('https://zupimages.net/up/23/04/hcj2.png');
-    --qeel-groups: url('https://www.zupimages.net/up/23/04/lf8r.png');
-    --qeel-credits: url('https://www.zupimages.net/up/23/04/h91h.png');
+    --pa-context: url('https://images2.imgbox.com/2a/0a/LVTs9kI6_o.gif');
+    --qeel-groups: url('https://images2.imgbox.com/27/63/YvsGL1GJ_o.png');
+    --qeel-credits: url('https://images2.imgbox.com/0e/1d/sZdAHloK_o.png');
 
     --background: #bcbcbc;
     --neutral: #dfdfdf;
@@ -2548,6 +2548,9 @@ msgbtn, .msgbtn {
 .hybrid, ht {color: var(--hybrid) !important}
 .disaster, to {color: var(--disaster) !important}
 .pnj {color: var(--pnj) !important}
+.ok {background: var(--theseus) !important}
+.no {background: var(--twilight) !important}
+.exempt {background: var(--disaster) !important}
 
 .btn, btn {
     font-size: 11px!important;
@@ -2662,8 +2665,18 @@ t5, .t5 {
     
 }
 
-t4:hover, t5:hover, .t4:hover, .t5:hover {
-  letter-spacing: 5px;
+t6, .t6 {
+    font-family: 'Bebas Neue', cursive;
+    font-size:47px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity:0.8;
+    transition: 2s;
+}
+
+t4:hover, t5:hover, t6:hover, .t4:hover, .t5:hover, .t6:hover {
+  letter-spacing: 3px;
 }
 
 e0, .e0 {
@@ -2754,8 +2767,38 @@ bq {
     transition: 2s;
 }
 
+bq2 {
+  display: block;
+  margin: 20px 10px;
+  font-family:Alegreya, serif;
+  border-left: 4px solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      var(--accent), 
+      var(--special)
+    ) 1 100%;
+  font-size:10px; 
+  line-height:98%; 
+  text-transform:uppercase; 
+  width:50%; 
+  opacity:0.7;
+  text-align:justify;
+  padding: 0px 10px;
+}
+
 bq:hover {
-    border-left: 4px solid var(--accentDark);
+   border-left: 4px solid var(--accent);
+}
+
+bulle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius:0 50px 50px 0;
+  margin: 0 5px 0 0;
+  box-shadow: var(--shadowBox);
+  background: var(--textColor); 
 }
 
 box1, .box1 {
@@ -2799,6 +2842,14 @@ box2, .box2 {
     margin: 5px;
     box-shadow: 3px 4px 4px -2px rgba(0,0,0,0.55);
     object-fit: cover;
+}
+
+.img_rect {
+  width:200px;
+  height: 100px;
+  border-radius: var(--radius);
+  object-fit:cover;
+  border: 4px solid var(--neutralDark);
 }
 
 .f_bg {
