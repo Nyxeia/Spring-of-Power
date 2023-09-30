@@ -19,7 +19,7 @@
     --accent: #005a56;
     --accentDark: #013b33;
     --accentSoft: #238d82;
-    --special: #b2894b;
+    --special: #9f7b45;
     --specialDark: #755f3f;
 
     --accentLine: rgb(5,122,122, 0.36);
@@ -3099,25 +3099,25 @@ sp:hover, .sp:hover {
     margin: 3px 0;
     border-radius: 3px;
 }
-
+/* FONDAS */ 
 .qeel_inner a[href="/u2"]:before, /* darius */
 .qeel_inner a[href="/u200"]:before, /* edgar */
 .qeel_inner a[href="/u263"]:before, /* ryker */
 .qeel_inner a[href="/u3"]:before, /* leta */
 .qeel_inner a[href="/u87"]:before, /* aurea */
 .qeel_inner a[href="/u144"]:before, /* cara */
-.qeel_inner a[href="/u282"]:before, /* nathaël */
-.qeel_inner a[href="/u16"]:before, /* seth */ 
-.qeel_inner a[href="/u57"]:before, /* orion */
-.qeel_inner a[href="/u146"]:before, /* nour */
-.qeel_inner a[href="/u252"]:before, /* archibald */
-.qeel_inner a[href="/u371"]:before /* selen */
+.qeel_inner a[href="/u282"]:before /* nathaël */
 {
 content:"✦";
 font-weight: 400;
 margin-right: 2px;
 }
-
+/* ADMINS */ 
+.qeel_inner a[href="/u16"]:before, /* seth */ 
+.qeel_inner a[href="/u57"]:before, /* orion */
+.qeel_inner a[href="/u146"]:before, /* nour */
+.qeel_inner a[href="/u252"]:before, /* archibald */
+.qeel_inner a[href="/u371"]:before, /* selen */
 .qeel_inner a[href="/u149"]:before, /* clay */
 .qeel_inner a[href="/u179"]:before, /* rosendo */
 .qeel_inner a[href="/u205"]:before, /* liam */
@@ -3133,9 +3133,19 @@ margin-right: 2px;
 .qeel_inner a[href="/u219"]:before, /* minho */
 .qeel_inner a[href="/u261"]:before, /* suni */
 .qeel_inner a[href="/u317"]:before, /* leopold */
-.qeel_inner a[href="/u363"]:before /* li-seok */
+.qeel_inner a[href="/u363"]:before, /* li-seok */
+.qeel_inner a[href="/u393"]:before /* rené */
 {
 content:"✧";
+font-weight: 400;
+margin-right: 2px;
+}
+/* MODOS */ 
+.qeel_inner a[href="/u294"]:before, /* bella */
+.qeel_inner a[href="/u309"]:before, /* astra */
+.qeel_inner a[href="/u364"]:before /* evelyn */
+{
+content:"⬦";
 font-weight: 400;
 margin-right: 2px;
 }
