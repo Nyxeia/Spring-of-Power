@@ -2249,7 +2249,6 @@ line, .line {
   width: 85%; 
   height: 2px; 
   border-radius:50px;
-  box-shadow: var(--shadowBox);
   margin: auto;
 }
 
@@ -2665,7 +2664,7 @@ t5, .t5 {
     
 }
 
-t6, .t6 {
+t0, .t0 {
     font-family: 'Bebas Neue', cursive;
     font-size:47px;
     background: var(--gradient);
@@ -2675,7 +2674,7 @@ t6, .t6 {
     transition: 2s;
 }
 
-t4:hover, t5:hover, t6:hover, .t4:hover, .t5:hover, .t6:hover {
+t4:hover, t5:hover, t0:hover, .t4:hover, .t5:hover, .t0:hover {
   letter-spacing: 3px;
 }
 
@@ -2878,6 +2877,7 @@ box2, .box2 {
 .f_navlinks a {
     width: 100%;
     text-align: center;
+    font-weight: 400;
 }
 
 /* F_TABS */
@@ -3145,10 +3145,8 @@ sp:hover, .sp:hover {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-.faq {
-    background: var(--neutralLight);
-    margin: 3px 0;
-    border-radius: 3px;
+.acc_content p {
+    text-align: inherit;
 }
 /* FONDAS */ 
 .qeel_inner a[href="/u2"]:before, /* darius */
