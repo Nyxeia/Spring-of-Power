@@ -1,3 +1,5 @@
+// Code by NYXEIA
+
 // FLAT COLOR - NO GRADIENT
 //var flat = {"color" : "rgb(76 52 80)", "font-weight" : "600"};
 //var defaultColor = {"color" : "var(--textColor)", "font-weight" : "200"};
@@ -133,14 +135,11 @@ $( function(){
       });
   });
 
+
 var $path = ".post_profile .post_userinfo .user_field";
 var $parent = ".post_profile";
 
-
-
 jQuery(function () {
-
-    // On parcourt chaque champs des profils
     $( $path ).each(function( index ) {
 
         var label = $(this).find('.label > span:first-child');
@@ -172,8 +171,6 @@ jQuery(function () {
 });
 
 jQuery(function () {
-
-    // On parcourt chaque champs des profils
     $( $path ).each(function( index ) {
 
         var label = $(this).find('.label > span:first-child');
@@ -204,8 +201,6 @@ jQuery(function () {
 
 
 jQuery(function () {
-
-    // On parcourt chaque champs des profils
     $( $path ).each(function( index ) {
 
         var label = $(this).find('.label > span:first-child');
@@ -236,5 +231,29 @@ jQuery(function () {
         }
  
     });
+
+});
+
+
+jQuery(function () {
+  $( $path ).each(function( index ) {
+
+      var label = $(this).find('.label > span:first-child');
+      var field = label.html() ;
+
+      var found = false;
+      switch (field) {
+          case "Staff":
+              found = true;
+              break;
+          default: 
+              break;
+      } 
+
+      if (found) {
+          $(this).parents($parent).find('.role').append(this);
+      }
+
+  });
 
 });
