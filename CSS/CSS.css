@@ -2626,7 +2626,7 @@ t5, .t5 {
     transition: 2s;
     
 }
-t6, .t6 {
+t0, .t0 {
     font-family: 'Bebas Neue', cursive;
     font-size:47px;
     background: var(--gradient);
@@ -2636,7 +2636,7 @@ t6, .t6 {
     transition: 2s;
 }
 
-t4:hover, t5:hover, t6:hover, .t4:hover, .t5:hover, .t6:hover {
+t4:hover, t5:hover, t0:hover, .t4:hover, .t5:hover, .t0:hover {
   letter-spacing: 3px;
 }
 
