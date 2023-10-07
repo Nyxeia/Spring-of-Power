@@ -2568,7 +2568,6 @@ msgbtn, .msgbtn {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 tag, ltag, .tag, .ltag {
     font-family: var(--main-font);
     font-size: var(--small-size);
@@ -2581,12 +2580,11 @@ tag, .tag {
     color: white;
     border-radius: 10px;
     padding: 2px 10px;
+    font-weight: 400;
 }
-
 tag a, .tag a {
     color:white;
 }
-
 .ltag, ltag {
     background: var(--neutral);
     color: var(--textColorAccent);
@@ -3098,14 +3096,14 @@ progressbar>div {
     line-height: 18px;
 }
 
-sp, .sp {
+tw, .tw {
     color: transparent !important;
     background-color: var(--neutralDarker);
     border-radius: 5px;
     padding: 0px 3px;
     transition: 0.5s;
 }
-sp:hover, .sp:hover {
+tw:hover, .tw:hover {
     color: var(--textColor) !important;
     background-color:none;
 }
