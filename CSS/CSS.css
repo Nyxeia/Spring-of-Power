@@ -110,7 +110,7 @@
     --background: #bcbcbc;
     --neutral: #dfdfdf;
     --neutralDark: #d2d2d2;
-    --neutralDarker: #939393;
+    --neutralDarker: #b2b2b2;
     --neutralLight: #e5e5e5;
 
     --accent: #217c7e;
@@ -127,11 +127,11 @@
     --border: 1px solid #ffffff8f;
     --shadowBox: 0 0 20px var(--neutralDark);
 
-    --icarus: #5391d3;
-    --theseus: #4d9577;
-    --twilight: #cb5858;
-    --hybrid: #cb9036;
-    --disaster: #9474d5;
+    --icarus: #457fbc;
+    --theseus: #337b5d;
+    --twilight: #b74949;
+    --hybrid: #ad6832;
+    --disaster: #7558b0;
     --pnj: #313131;
 
     --navbar-bg: #e7e7e7;
@@ -300,6 +300,9 @@ form p {
     background: var(--gradient_static);
     padding: 3px;
     border-radius: 65px;
+}
+.grecaptcha-badge { 
+    visibility: hidden;
 }
 
 /* LIENS DU FORUM --- */
@@ -2554,7 +2557,7 @@ msgbtn, .msgbtn {
 .btn, btn {
     font-size: 11px!important;
     font-family: var(--title-font);
-    font-weight: 400;
+    font-weight: 400 !important;
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 2px 10px;
@@ -2582,8 +2585,8 @@ tag, .tag {
     padding: 2px 10px;
     font-weight: 400;
 }
-tag a, .tag a {
-    color:white;
+tag a, .tag a, ltag a:hover, .ltag a:hover {
+    color:white !important;
 }
 .ltag, ltag {
     background: var(--neutral);
@@ -3201,6 +3204,7 @@ tw:hover, .tw:hover {
 .qeel_inner a[href="/u3"]:before, /* leta */
 .qeel_inner a[href="/u87"]:before, /* aurea */
 .qeel_inner a[href="/u144"]:before, /* cara */
+.qeel_inner a[href="/u418"]:before, /* nysea */
 .qeel_inner a[href="/u282"]:before /* nathaël */
 {
 content:"✦";

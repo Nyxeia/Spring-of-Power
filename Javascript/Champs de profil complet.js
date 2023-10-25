@@ -21,6 +21,7 @@ jQuery(function () {
         switch (field) {
             case "Date d'inscription":
             case "Pseudo":
+            case "Comptes":
             case "Genre IRL":    
             case "Messages":
             case "FC":
@@ -90,7 +91,6 @@ jQuery(function () {
             case "Thèmes abordés":
             case "Thèmes refusés":
             case "Infos RP":
-            case "Comptes":
             case "Misc":
                 found = true;
                 break;

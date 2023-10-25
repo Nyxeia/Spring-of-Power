@@ -47,3 +47,9 @@ $(function() {
         $(".profile_contact #field_id:nth-child(2) span.gen").closest("#field_id").remove();
       }
     });
+
+  $(function() {
+var el = $('.topiclist-title');
+  
+el.find('img[src="https://2img.net/zupimages.net/up/22/46/94n0.png"]').replaceWith('<span style=\"color:var(--textColorAccent);font-size: 12px;line-height: 17px;\">✦</span>');
+});
