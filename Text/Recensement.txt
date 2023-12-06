@@ -1,85 +1,248 @@
-Abel O'Connell
-Achlys Deminoff
-Aileen Reed
-Alexander Ripley
-Algernon Carter
-Alice Eyre
-Anani Kombaté
-Anastasia Hoxha
-Ángel Vidal
-Astraea Thornton
-Archer Williams
-Ari Brask
-Aurea Sinclair
-Aurelio Suarez
-Ayun Seo
-Bianca Vidal
-Bonnie Thompson
-Brianna Woodside
-Capucine Lefebvre
-Clemente Mazzarino
-Cleo Avila
-Curtis White
-Dak-Ho Jeong
-Damian O'Malley
-Dani Duarte
-Darius Sinclair
-Davina Reyes
-Doc Rivaci
-Ether Slaughter
-Ezekiel Moriarty
-Faith Coleman
-Gaël Satillan
-Hayes Fitzsimmmons
-Haziran Özgür
-Hera Athalar
-Hildegard von Wittelsbach
-Hoshea McIntyre
-Huckleberry Alexander
-Hugh Reed
-Isaïah Blaenor
-James B. Pierce
-Jeremy Alexander
-Jesse Adams
-Joe Halpert
-Josefina Diaz
-Kay K. Sandford
-Keeran Davies
-Keith Lim
-Kenneth Weavers
-Kian Azarian
-Kimura Rintarō
-Lark Blackwell
-Lenny Lloyd
-Leta Eyre
-Lucero Cortes
-Lucian Holmes
-Marcus Yeong
-Mateo Avila
-Max Musgrove
-M.J. Fillmore
-Meredith Fitzsimmons
-Moon Lim
-Morgänn Amos
-Noah Carrington
-Nora G. Meyers
-Orion Wingfield
-Reiner Einstürzen
-River Finch
-Robin White
-Rowan Flanagan
-Salem Blackwood
-Sander Lindbohm
-Saul Thompson
-Selina Adler
-Seth Avery
-Skye Halpert
-Sumner Krane
-Tobias Grant
-Tom Hopkins
-Valérian V. Machiavelli
-Vìdra Luter
-Willow Bowman
-Yelena Leszczyńska
-Ysold Ashford
-Wú Yaowei
+<div class="f_bg"><div class="box1 f_header"> <t1>RECENSEMENT MENSUEL</t1> <div class="f_icon_box"> <img class="f_icon" src="https://zupimages.net/up/22/47/aaw1.png"> <img class="f_icon" src="https://zupimages.net/up/22/47/2l1c.png"> </div></div><box1><innerbox><t5>Pourquoi se recenser ? <hr></t5>Le recensement mensuel nous permet d'avoir <e7>une meilleure visibilité</e7> sur l'activité de chacun et de nous assurer que la condition d'un RP par mois soit respectée. <e0>Chaque personnage validé avant le 4e jour du mois en cours</e0> doit <e3>se recenser</e3> (c'est-à-dire que si vous êtes validé.e le 3e jour, vous devrez répondre au recensement du mois).<bq><e1>L'importance de signaler son absence :</e1> Si vous êtes absent.e ou revenez tout juste d'une absence, vous serez exempté.e du recensement. Donc n'oubliez pas de nous prévenir pour éviter de vous retrouver dans la liste des [i]membres en danger[/i] !</bq><bq><e1>Les exemptions :</e1> Les exemptions regroupent les membres ayant postés une absence ou s'étant arrangés avec le staff.
+<e3>Note :</e3> les absences se terminant avant <e2>le 20 du mois en cours</e2> sont [i]retirées des exemptions[/i] jusqu'à ce qu'on reçoive de vos nouvelles (si besoin de prolonger ou manque de temps pour RP au retour).</bq></innerbox></box1><box1><innerbox> <t4>Les personnages à recenser<hr></t4>
+<box2><center><bulle class="ok"></bulle><e5>personnage recensé </e5> ✧ <bulle class="no"></bulle> <e5>personnage non-recensé</e5> ✧ <bulle class="exempt"></bulle><e5>personnage exempté </e5></center></box2>
+[i]Si votre nom est dans la liste, vous [u]devez[/u] vous recenser ce mois-ci ou nous prévenir s'il faut vous exempter.[/i]
+<blockquote><bulle class="no"></bulle>Abel O'Connell
+<bulle class="no"></bulle>Abraham Allen
+<bulle class="no"></bulle>Ace Caldwell
+<bulle class="no"></bulle>Adrian Clark
+<bulle class="no"></bulle>Alastair Woodside
+<bulle class="no"></bulle>Alek Kitanović
+<bulle class="no"></bulle>Algernon Carter
+<bulle class="no"></bulle>Alice Eyre
+<bulle class="no"></bulle>Amber Burroughs
+<bulle class="no"></bulle>Amy Armstrong
+<bulle class="no"></bulle>Anastasia Hoxha
+<bulle class="no"></bulle>Andrea Regan
+<bulle class="exempt"></bulle>Angelina Taylor
+<bulle class="no"></bulle>Arcelia Serna
+<bulle class="no"></bulle>Archer Williams
+<bulle class="no"></bulle>Archibald Sherwood
+<bulle class="no"></bulle>Arden Whelan
+<bulle class="no"></bulle>Astra Stark
+<bulle class="exempt"></bulle>Audrina Lewden
+<bulle class="no"></bulle>Aurea Sinclair
+<bulle class="no"></bulle>Aurora Serna
+<bulle class="no"></bulle>Balthazar Arteaga
+<bulle class="no"></bulle>Beatrix Turner
+<bulle class="no"></bulle>Belladonna Faust
+<bulle class="no"></bulle>Billie Bloom
+<bulle class="no"></bulle>Blake Everest
+<bulle class="no"></bulle>Bolden B. Bee
+<bulle class="no"></bulle>Brianna Woodside
+<bulle class="no"></bulle>Brooks Howarth
+<bulle class="no"></bulle>Cara Marlowe
+<bulle class="no"></bulle>Cassian Lancaster
+<bulle class="no"></bulle>Chad Bennington
+<bulle class="no"></bulle>Charlie Yun
+<bulle class="no"></bulle>Charly D. Ashes
+<bulle class="no"></bulle>Cid Lopez
+<bulle class="no"></bulle>Claire Yazawa
+<bulle class="no"></bulle>Clemente Mazzarino
+<bulle class="no"></bulle>Cleo Avila
+<bulle class="no"></bulle>Cory Worgan
+<bulle class="no"></bulle>Curtis White
+<bulle class="no"></bulle>Dahlia Brahms
+<bulle class="no"></bulle>Daiane H. Revere
+<bulle class="no"></bulle>Dak-Ho Jeong
+<bulle class="no"></bulle>Damian O'Malley
+<bulle class="no"></bulle>Danessa Dayan
+<bulle class="no"></bulle>Dani Duarte
+<bulle class="no"></bulle>Darcy Carlton
+<bulle class="no"></bulle>Darius Sinclair
+<bulle class="no"></bulle>Delilah Nightingale
+<bulle class="no"></bulle>Deon Lowe
+<bulle class="no"></bulle>Douglas Porsall
+<bulle class="no"></bulle>Duncan Yoon
+<bulle class="no"></bulle>Edenmios Hamilton
+<bulle class="no"></bulle>Edgar Pearson
+<bulle class="no"></bulle>Eirik Castle
+<bulle class="no"></bulle>Eli Smith
+<bulle class="no"></bulle>Elias N. Singh
+<bulle class="no"></bulle>Elijah Thorpe
+<bulle class="no"></bulle>Elizabeth Merrow
+<bulle class="no"></bulle>Elvira Wingfield
+<bulle class="no"></bulle>Emile Aitken
+<bulle class="no"></bulle>Emily Osborne
+<bulle class="no"></bulle>Emma Lloyd-Cardarelli
+<bulle class="no"></bulle>Ephraïm Holden
+<bulle class="no"></bulle>Ernest Worgan
+<bulle class="no"></bulle>Esteban Castillo
+<bulle class="no"></bulle>Eurydice Davidson
+<bulle class="no"></bulle>Eusapia Lee
+<bulle class="no"></bulle>Evelyn Harvey
+<bulle class="no"></bulle>Ezekiel Moriarty
+<bulle class="no"></bulle>Ezra Knowles
+<bulle class="no"></bulle>Faith Coleman
+<bulle class="no"></bulle>Felix C. Schrödinger
+<bulle class="no"></bulle>Finn Callahan
+<bulle class="no"></bulle>Freyja Olsen
+<bulle class="no"></bulle>Gabriel Mehrmann
+<bulle class="no"></bulle>Gael Satillan
+<bulle class="no"></bulle>Georgie Pérez
+<bulle class="no"></bulle>Gigi White
+<bulle class="no"></bulle>Gio Evangelista
+<bulle class="no"></bulle>Gregory Tremblay
+<bulle class="no"></bulle>Hae-un Lee
+<bulle class="no"></bulle>Harper Haywood
+<bulle class="no"></bulle>Harry Laigse
+<bulle class="no"></bulle>Hayes Fitzsimmons
+<bulle class="no"></bulle>Hayley Collins
+<bulle class="no"></bulle>Haziran Özgür
+<bulle class="no"></bulle>Heather Chiba
+<bulle class="no"></bulle>Heidi Foster
+<bulle class="no"></bulle>Hermès Withdraw
+<bulle class="no"></bulle>Hestia Miller
+<bulle class="no"></bulle>Holly Reynolds
+<bulle class="no"></bulle>Hugh Reid
+<bulle class="no"></bulle>Husan Garrett
+<bulle class="no"></bulle>Ianthe Metzger
+<bulle class="no"></bulle>Imran Qureshi
+<bulle class="no"></bulle>Ira Adler
+<bulle class="no"></bulle>Isaiah Blackford
+<bulle class="no"></bulle>Ishan Chopra
+<bulle class="no"></bulle>Izak Rose
+<bulle class="no"></bulle>Jackson Withdraw
+<bulle class="no"></bulle>James B. Pierce
+<bulle class="no"></bulle>Jasper King
+<bulle class="no"></bulle>Jedediah T. Saint-Denis
+<bulle class="no"></bulle>Jeremiah Thompson
+<bulle class="no"></bulle>Jeremy Alexander
+<bulle class="no"></bulle>Jezabel Laveau
+<bulle class="no"></bulle>Ji-Ho Jeong
+<bulle class="no"></bulle>Jill S. Blair
+<bulle class="no"></bulle>John Hunnigan
+<bulle class="no"></bulle>Johnny Faulkner
+<bulle class="no"></bulle>Joi Lyon
+<bulle class="no"></bulle>Judith R. Blair
+<bulle class="exempt"></bulle>Jules Pelhman Odair
+<bulle class="no"></bulle>June Kitanović
+<bulle class="no"></bulle>Kali Lewden
+<bulle class="no"></bulle>Keith Lim
+<bulle class="no"></bulle>Kimura Rintarō
+<bulle class="no"></bulle>Kyoka Galleani
+<bulle class="no"></bulle>Laudna Dee
+<bulle class="no"></bulle>Layla De Vere
+<bulle class="no"></bulle>Lennox Pope
+<bulle class="no"></bulle>Lenny Lloyd
+<bulle class="no"></bulle>Leopold Yeoh
+<bulle class="no"></bulle>Leta Eyre
+<bulle class="no"></bulle>Levi Westwood
+<bulle class="no"></bulle>Lewis Williams
+<bulle class="no"></bulle>Li-Seok Dae
+<bulle class="no"></bulle>Liam Jones
+<bulle class="no"></bulle>Link Kowalski
+<bulle class="no"></bulle>Lisa Garnier
+<bulle class="no"></bulle>Llewhelyn Doyle
+<bulle class="no"></bulle>Logan Howarth
+<bulle class="no"></bulle>Loth Price
+<bulle class="no"></bulle>Lou White
+<bulle class="no"></bulle>Louis Griffith
+<bulle class="no"></bulle>Lourdes Aimé
+<bulle class="no"></bulle>Love Craft
+<bulle class="no"></bulle>Lucero Cortes
+<bulle class="no"></bulle>Lucian Holmes
+<bulle class="no"></bulle>Lucy Hall
+<bulle class="no"></bulle>Ludvig White
+<bulle class="no"></bulle>M.J. Fillmore
+<bulle class="no"></bulle>Mackenzie Moreau
+<bulle class="no"></bulle>Maera Bates
+<bulle class="no"></bulle>Maeve McAdams
+<bulle class="no"></bulle>Malenia Blackwell
+<bulle class="no"></bulle>Malyen Wrestling
+<bulle class="no"></bulle>Marcus Yeong
+<bulle class="no"></bulle>Marlon Scarrow
+<bulle class="no"></bulle>Margot Bower-Callahan
+<bulle class="no"></bulle>Marika Kotora
+<bulle class="no"></bulle>Mary Pelhman
+<bulle class="no"></bulle>Matsudaira Ayumi
+<bulle class="no"></bulle>Meg Everest
+<bulle class="no"></bulle>Melody Argusson
+<bulle class="no"></bulle>Mildred Marsh
+<bulle class="no"></bulle>MinHo Yeong
+<bulle class="no"></bulle>Miss Tigri
+<bulle class="no"></bulle>Mithridate Novichok
+<bulle class="no"></bulle>Miúki River
+<bulle class="no"></bulle>Moon Jeong
+<bulle class="no"></bulle>Murphy Faulkner
+<bulle class="no"></bulle>Nade Makaroff
+<bulle class="no"></bulle>Nate White
+<bulle class="no"></bulle>Nathaël Bates
+<bulle class="no"></bulle>Naël Saleh
+<bulle class="no"></bulle>Nayara Valente
+<bulle class="no"></bulle>Neal A. Callaghan
+<bulle class="no"></bulle>Nessie Yang
+<bulle class="no"></bulle>Niamh Callahan
+<bulle class="no"></bulle>Nixon Wright
+<bulle class="no"></bulle>Noah Carrington
+<bulle class="no"></bulle>Nour Hatem
+<bulle class="no"></bulle>Noâm byrne
+<bulle class="no"></bulle>Nysea Adler
+<bulle class="no"></bulle>Oliver Pelhman
+<bulle class="exempt"></bulle>Ollie Nam
+<bulle class="no"></bulle>Orion Wingfield
+<bulle class="no"></bulle>Osmond Rose
+<bulle class="no"></bulle>Pallabi Patel
+<bulle class="no"></bulle>Pasqual Castillo
+<bulle class="no"></bulle>Penelope Nee
+<bulle class="no"></bulle>Pia Müller
+<bulle class="no"></bulle>Rapha Wayne
+<bulle class="no"></bulle>René Joly
+<bulle class="no"></bulle>Rio Palmer
+<bulle class="no"></bulle>Rhys Watson
+<bulle class="no"></bulle>Robin White
+<bulle class="exempt"></bulle>Rocío Cortes
+<bulle class="no"></bulle>Rosendo Cortes
+<bulle class="no"></bulle>Rowen Laveau
+<bulle class="no"></bulle>Ruben Hopkins
+<bulle class="no"></bulle>Rue O’Brien
+<bulle class="no"></bulle>Ryan Chen
+<bulle class="no"></bulle>Ryker Hall
+<bulle class="no"></bulle>Sage Pelhman
+<bulle class="no"></bulle>Salem Blackwood
+<bulle class="no"></bulle>Samuel Norton Jr.
+<bulle class="no"></bulle>Sanna Hellqvist
+<bulle class="no"></bulle>Sasha Anderson
+<bulle class="no"></bulle>Sean Snider
+<bulle class="no"></bulle>Selen Mehrmann
+<bulle class="no"></bulle>Seth Avery
+<bulle class="no"></bulle>Shanti Bhatt
+<bulle class="no"></bulle>Si-Woo Lee
+<bulle class="no"></bulle>Siwon Jung
+<bulle class="no"></bulle>Skye Lane
+<bulle class="no"></bulle>Sloane Hatcher
+<bulle class="no"></bulle>Suni Park
+<bulle class="no"></bulle>Sylens Ziegler
+<bulle class="no"></bulle>Sören Van Winkle
+<bulle class="exempt"></bulle>Taylor Khan
+<bulle class="no"></bulle>Teddy Thorpe
+<bulle class="no"></bulle>Theo Bennett
+<bulle class="no"></bulle>Theodore Newman
+<bulle class="no"></bulle>Theodosia Velez
+<bulle class="no"></bulle>Tobias Grant
+<bulle class="no"></bulle>Tommi Fernsby
+<bulle class="no"></bulle>Ulysses Sharp
+<bulle class="exempt"></bulle>Valérian V. Machiaveli
+<bulle class="no"></bulle>Vico Caruso
+<bulle class="no"></bulle>Viktor Everest
+<bulle class="no"></bulle>Violet B. Autumn
+<bulle class="no"></bulle>William Swiftmoon
+<bulle class="no"></bulle>Willow Bowman
+<bulle class="no"></bulle>Wolfe McMillan
+<bulle class="exempt"></bulle>Woo Jung-hwa
+<bulle class="no"></bulle>Yara Sarhan
+<bulle class="no"></bulle>Yassine Warda
+<bulle class="no"></bulle>Yūzuru Keinen
+<bulle class="no"></bulle>Zacarias Castellano
+<bulle class="no"></bulle>Zelda Doyle
+<bulle class="no"></bulle>Zoey Pelhman
+<bulle class="no"></bulle>Zola Shapiro
+<bulle class="no"></bulle>Zoya Ward</blockquote>
+@Membres </innerbox></box1><box1><t5>Le code à utiliser<hr></t5>
+[code]<div class="f_bg"><box1> <t2>J'ai RP ce mois-ci !</t2> <innerbox><e1>Personnage :</e1> écrire ici.
+
+<e1>Lien du RP :</e1> [url=URL]Par ici[/url]
+
+(Ajouter des personnages au besoin)</innerbox></box1></div>[/code]
+
+</box1></div>
