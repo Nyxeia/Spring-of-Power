@@ -5,7 +5,7 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    --header: url('https://images2.imgbox.com/09/ef/AO6OAX7w_o.gif');
+    --header: url('https://images2.imgbox.com/88/75/gBHP3N92_o.gif');
     --pa-context: url('https://images2.imgbox.com/ee/f0/ZGAHKoPt_o.gif');
     --qeel-groups: url('https://images2.imgbox.com/ed/f8/twvcpO7D_o.png');
     --qeel-credits: url('https://images2.imgbox.com/ef/9e/GerqbHTF_o.png');
@@ -16,14 +16,15 @@
     --neutralDarker: #050505;
     --neutralLight: #171717;
 
-    --accent: #005a56;
-    --accentDark: #013b33;
-    --accentSoft: #238d82;
-    --special: #9f7b45;
-    --specialDark: #755f3f;
+    --accentDark: #401f51;
+    --specialDark: #273b63;
+    --accent: #5a2963;
+    --special: #425988;
+    --accentSoft: #8e549e;
+    --specialSoft: #607bb0;
 
-    --accentLine: rgb(5,122,122, 0.36);
-    --specialLine: rgb(141,99,13, 0.45);
+    --accentLine: rgb(157 58 192 / 36%); 
+    --specialLine: rgb(77 110 176 / 45%);
 
     --textColor: #818181;
     --textColorAccent: #b1a9a9;
@@ -43,9 +44,10 @@
 
     --shadowBox: 0 0 20px var(--neutralDark);
 
-    --gradient_static: linear-gradient(75deg, var(--accentDark) 20%, var(--specialDark));
+    --gradient_static: linear-gradient(75deg, var(--accentDark) 30%, var(--specialDark));
     --gradient: linear-gradient(75deg, var(--accent) 20%, var(--special));
-    --gradient2: linear-gradient(75deg, var(--accentDark) 30%, var(--specialDark));
+    --gradient2: linear-gradient(75deg, var(--accentDark) 40%, var(--specialDark));
+    --gradient3: linear-gradient(75deg, var(--accentSoft) 20%, var(--specialSoft));
 
     --small-size: 10px;
     --normal-size: 12px;
@@ -102,7 +104,7 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
-    --header: url('https://images2.imgbox.com/89/fb/p3i9Kg4A_o.gif');
+    --header: url('https://images2.imgbox.com/5a/72/Jzt9J5xz_o.gif');
     --pa-context: url('https://images2.imgbox.com/2a/0a/LVTs9kI6_o.gif');
     --qeel-groups: url('https://images2.imgbox.com/27/63/YvsGL1GJ_o.png');
     --qeel-credits: url('https://images2.imgbox.com/0e/1d/sZdAHloK_o.png');
@@ -113,11 +115,12 @@
     --neutralDarker: #b2b2b2;
     --neutralLight: #e5e5e5;
 
-    --accent: #217c7e;
-    --accentDark: #1d655b;
-    --accentSoft: #068f8f;
-    --special: #aa7133;
-    --specialDark: #826b4a;
+    --accentDark: #5e3a70;
+    --specialDark: #4f6695;
+    --accent: #703d7a;
+    --special: #4c6597;
+    --accentSoft: #8f38a7;
+    --specialSoft: #4970bc;
 
     --textColor: #111111;
     --textColorAccent: #272727;
@@ -2688,7 +2691,7 @@ e0, .e0 {
 
 e1, .e1 {
     text-transform: uppercase;
-    color: var(--special);
+    color: var(--specialSoft);
     font-weight: 700;
     letter-spacing: 1.5px;
     font-size: 11px !important;
@@ -2703,7 +2706,7 @@ e2, .e2 {
 e3, .e3 {
     font-style: italic;
     font-weight: 600;
-    color: var(--special);
+    color: var(--specialSoft);
 }
 
 e4, .e4 {
@@ -2717,7 +2720,7 @@ e4, .e4 {
 e5, .e5 {
     font-family: var(--title-font);
     letter-spacing: 1px;
-    color: var(--special);
+    color: var(--specialSoft);
     font-size: 12px;
     text-transform: uppercase;
 }
