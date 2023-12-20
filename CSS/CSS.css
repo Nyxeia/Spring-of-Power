@@ -5,10 +5,15 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    --header: url('https://images2.imgbox.com/88/75/gBHP3N92_o.gif');
-    --pa-context: url('https://images2.imgbox.com/ee/f0/ZGAHKoPt_o.gif');
+    --header: url('https://images2.imgbox.com/6d/9d/ZHS3svPy_o.gif');
+    --pa-context: url('https://images2.imgbox.com/10/2d/BOkgEWsl_o.gif');
     --qeel-groups: url('https://images2.imgbox.com/ed/f8/twvcpO7D_o.png');
     --qeel-credits: url('https://images2.imgbox.com/ef/9e/GerqbHTF_o.png');
+
+    --noNewCat: url('URL');
+    --newCat: url('URL');
+    --lockedCat: url('URL');
+    --newMsg: url('URL');
 
     --background: var(--neutral);
     --neutral: #0f0f0f;
@@ -16,12 +21,12 @@
     --neutralDarker: #050505;
     --neutralLight: #171717;
 
-    --accentDark: #401f51;
-    --specialDark: #273b63;
-    --accent: #5a2963;
-    --special: #425988;
-    --accentSoft: #8e549e;
-    --specialSoft: #607bb0;
+    --accentDark: #3a266b;
+    --specialDark: #225a55;
+    --accent: #543885;
+    --special: #246865;
+    --accentSoft: #735daa;
+    --specialSoft: #5c9090;
 
     --accentLine: rgb(157 58 192 / 36%); 
     --specialLine: rgb(77 110 176 / 45%);
@@ -46,8 +51,7 @@
 
     --gradient_static: linear-gradient(75deg, var(--accentDark) 30%, var(--specialDark));
     --gradient: linear-gradient(75deg, var(--accent) 20%, var(--special));
-    --gradient2: linear-gradient(75deg, var(--accentDark) 40%, var(--specialDark));
-    --gradient3: linear-gradient(75deg, var(--accentSoft) 20%, var(--specialSoft));
+    --gradient2: linear-gradient(75deg, var(--accentDark) 30%, var(--specialDark));
 
     --small-size: 10px;
     --normal-size: 12px;
@@ -109,18 +113,23 @@
     --qeel-groups: url('https://images2.imgbox.com/27/63/YvsGL1GJ_o.png');
     --qeel-credits: url('https://images2.imgbox.com/0e/1d/sZdAHloK_o.png');
 
+    --noNewCat: url('URL');
+    --newCat: url('URL');
+    --lockedCat: url('URL');
+    --newMsg: url('URL');
+
     --background: #bcbcbc;
     --neutral: #dfdfdf;
     --neutralDark: #d2d2d2;
     --neutralDarker: #b2b2b2;
     --neutralLight: #e5e5e5;
 
-    --accentDark: #5e3a70;
-    --specialDark: #4f6695;
-    --accent: #703d7a;
-    --special: #4c6597;
-    --accentSoft: #8f38a7;
-    --specialSoft: #4970bc;
+    --accentDark: #4a3a70;
+    --specialDark: #508F95;
+    --accent: #634e95;
+    --special: #44919b;
+    --accentSoft: #6748b2;
+    --specialSoft: #408B9B;
 
     --textColor: #111111;
     --textColorAccent: #272727;
@@ -1335,6 +1344,19 @@ a.groups {
 .poster a {
     display: block;
     height: 100%;
+}
+
+.cat-img-nonew {
+    content: var(--noNewCat);
+}
+.cat-img-new {
+    content: var(--newCat);
+}
+.cat-img-locked {
+    content: var(--lockedCat);
+}
+.msg-img-new {
+    content: var(--newMsg);
 }
 
 /*** SUJET ------------------------- ***/
