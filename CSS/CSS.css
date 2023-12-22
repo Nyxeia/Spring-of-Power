@@ -5,15 +5,14 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    --header: url('https://images2.imgbox.com/6d/9d/ZHS3svPy_o.gif');
+    --header: url('https://images2.imgbox.com/21/5c/boZICfnO_o.gif');
     --pa-context: url('https://images2.imgbox.com/10/2d/BOkgEWsl_o.gif');
-    --qeel-groups: url('https://images2.imgbox.com/ed/f8/twvcpO7D_o.png');
-    --qeel-credits: url('https://images2.imgbox.com/ef/9e/GerqbHTF_o.png');
+    --qeel-groups: url('https://images2.imgbox.com/21/8f/jsyEFAes_o.png');
+    --qeel-credits: url('https://images2.imgbox.com/c0/94/ydS3Pw2L_o.png');
 
-    --noNewCat: url('URL');
-    --newCat: url('URL');
-    --lockedCat: url('URL');
-    --newMsg: url('URL');
+    --noNewCat: url('https://images2.imgbox.com/86/e5/BUbasIJD_o.png');
+    --newCat: url('https://images2.imgbox.com/8d/3a/pIUFZHv7_o.gif');
+    --newMsg: url('https://images2.imgbox.com/0c/4a/ceftqSwP_o.gif');
 
     --background: var(--neutral);
     --neutral: #0f0f0f;
@@ -23,13 +22,13 @@
 
     --accentDark: #3a266b;
     --specialDark: #225a55;
-    --accent: #543885;
+    --accent: #4f3885;
     --special: #246865;
     --accentSoft: #735daa;
     --specialSoft: #5c9090;
 
-    --accentLine: rgb(157 58 192 / 36%); 
-    --specialLine: rgb(77 110 176 / 45%);
+    --accentLine: rgb(96 88 168 / 48%);
+    --specialLine: rgb(66 143 157 / 45%);
 
     --textColor: #818181;
     --textColorAccent: #b1a9a9;
@@ -108,15 +107,14 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
-    --header: url('https://images2.imgbox.com/5a/72/Jzt9J5xz_o.gif');
+    --header: url('https://images2.imgbox.com/5e/69/8sXizBYm_o.gif');
     --pa-context: url('https://images2.imgbox.com/2a/0a/LVTs9kI6_o.gif');
     --qeel-groups: url('https://images2.imgbox.com/27/63/YvsGL1GJ_o.png');
     --qeel-credits: url('https://images2.imgbox.com/0e/1d/sZdAHloK_o.png');
 
-    --noNewCat: url('URL');
-    --newCat: url('URL');
-    --lockedCat: url('URL');
-    --newMsg: url('URL');
+    --noNewCat: url('https://images2.imgbox.com/8d/3a/pIUFZHv7_o.gif');
+    --newCat: url('https://images2.imgbox.com/86/e5/BUbasIJD_o.png');
+    --newMsg: url('https://images2.imgbox.com/0c/4a/ceftqSwP_o.gif');
 
     --background: #bcbcbc;
     --neutral: #dfdfdf;
@@ -1352,9 +1350,6 @@ a.groups {
 .cat-img-new {
     content: var(--newCat);
 }
-.cat-img-locked {
-    content: var(--lockedCat);
-}
 .msg-img-new {
     content: var(--newMsg);
 }
@@ -1606,43 +1601,6 @@ ul.profile-icons li {
 
 /* Retire le cadre de la réponse rapide pour les invités */
 #quickreply_content:empty {display: none}
-
-/*** SONDAGE ----------------------- ***/
-.poll {
-    background: var(--neutral);
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-.head_poll {
-    padding: 10px;
-    border-bottom: 1px solid var(--neutralDark);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.poll_list {
-    display: grid;
-    grid-template-columns: 220px auto;
-}
-.poll_option {
-    padding: 10px 20px 0 10px;
-    border-right: 1px solid var(--neutralDark);
-    text-align: right;
-}
-.poll_vote {
-    padding: 10px 10px 0 20px;
-    display: flex;
-    align-items: center;
-}
-.poll_send {
-    margin-left: 220px;
-    padding: 20px 10px 20px 20px;
-    border-left: 1px solid var(--neutralDark);
-}
-.poll_vote:nth-child(2),
-.poll_option:first-child {
-    padding-top: 20px;
-}
 
 /*** ------------------------------- ***/
 /*** TEXTES, BALISES, ETC ---------- ***/
