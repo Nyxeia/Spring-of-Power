@@ -2,12 +2,12 @@
 @import url('https://nyxeia.github.io/Spring-of-Power/CSS/Chatbox.css');
 @import url('https://nyxeia.github.io/Spring-of-Power/CSS/Switcheroo.css');
 
-
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    --header: url('https://images2.imgbox.com/21/5c/boZICfnO_o.gif');
+    --header: url('https://images2.imgbox.com/09/ef/AO6OAX7w_o.gif');
+    /* --header: url('https://images2.imgbox.com/21/5c/boZICfnO_o.gif'); */
     --pa-context: url('https://images2.imgbox.com/10/2d/BOkgEWsl_o.gif');
-    --qeel-groups: url('https://images2.imgbox.com/21/8f/jsyEFAes_o.png');
+    --qeel-groups: url('https://images2.imgbox.com/08/1a/N1wcQ2IR_o.gif');
     --qeel-credits: url('https://images2.imgbox.com/c0/94/ydS3Pw2L_o.png');
 
     --noNewCat: url('https://images2.imgbox.com/86/e5/BUbasIJD_o.png');
@@ -107,14 +107,15 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
-    --header: url('https://images2.imgbox.com/5e/69/8sXizBYm_o.gif');
-    --pa-context: url('https://images2.imgbox.com/2a/0a/LVTs9kI6_o.gif');
-    --qeel-groups: url('https://images2.imgbox.com/27/63/YvsGL1GJ_o.png');
-    --qeel-credits: url('https://images2.imgbox.com/0e/1d/sZdAHloK_o.png');
+    --header: url('https://images2.imgbox.com/89/fb/p3i9Kg4A_o.gif');
+    /* --header: url('https://images2.imgbox.com/5e/69/8sXizBYm_o.gif'); */
+    --pa-context: url('https://images2.imgbox.com/4e/fa/BvgaxZHu_o.gif');
+    --qeel-groups: url('https://images2.imgbox.com/a6/07/CGx4XA6y_o.gif');
+    --qeel-credits: url('https://images2.imgbox.com/54/55/DN5cTguA_o.png');
 
-    --noNewCat: url('https://images2.imgbox.com/8d/3a/pIUFZHv7_o.gif');
-    --newCat: url('https://images2.imgbox.com/86/e5/BUbasIJD_o.png');
-    --newMsg: url('https://images2.imgbox.com/0c/4a/ceftqSwP_o.gif');
+    --noNewCat: url('https://images2.imgbox.com/f8/a0/FWKtxput_o.png');
+    --newCat: url('https://images2.imgbox.com/aa/aa/esrwWF9T_o.gif');
+    --newMsg: url('https://images2.imgbox.com/68/c5/XQF000LU_o.gif');
 
     --background: #bcbcbc;
     --neutral: #dfdfdf;
@@ -2984,7 +2985,7 @@ box2, .box2 {
     margin: 10px 25px 10px 10px;
 }
 .argossip {
-    content: url('https://i.imgur.com/otPMaTg.jpg');
+    content: url('https://i.imgur.com/uaPh9io.jpg');
 }
 .argo_newpost {
     width:400px;
@@ -3256,7 +3257,4 @@ cara {
 }
 nate {
     color: #794732;
-}
-nysea {
-    color: #a38971;
 }
