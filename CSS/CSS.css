@@ -333,13 +333,12 @@ a:hover {
     color: var(--accentSoft);
 }
 
-/* Emoji mis par défaut de FA
- * Les réduire les rend moins horribles à voir */
+/* Emoji mis par défaut de FA */
 .emojione {
     width: 19px !important
 }
 
-/* TITRES DES PAGES --- ***/
+/* TITRES DES PAGES */
 h1,
 h1.page-title {
     text-align: center;
@@ -1709,11 +1708,7 @@ blockquote cite a {
     opacity: 0.8;
 }
 
-/****** ------------------------------------------------------------------------------
- ****** MEMBRES ------------------------------------------------------ ******/
-
-/*** ------------------------------- ***/
-/*** PAGE DE PROFIL ---------------- ***/
+/* PAGE DE PROFIL */
 
 .user_profile {
     background: var(--neutral);
@@ -1879,9 +1874,7 @@ fieldset dt span {
     color: var(--textColor) !important;
 }
 
-/*** ------------------------------- ***/
-/*** PROFILS SIMPLIFIÉS DES TAGS ---- ***/
-
+/* PROFILS SIMPLIFIÉS DES TAGS */
 /* Supression de la flèche peu esthétique*/
 .tooltipster-arrow {}
 
@@ -1924,9 +1917,7 @@ fieldset dt span {
     display: none
 }
 
-
-/*** ------------------------------- ***/
-/*** LISTE DES MEMBRES ------------- ***/
+/* LISTE DES MEMBRES */
 
 .userlist {
     display: grid;
@@ -1958,8 +1949,6 @@ fieldset dt span {
     object-position: center;
 }
 
-.userlist_details {}
-
 .userlist_pseudo,
 .userlist_infos,
 .userlist_visit {
@@ -1985,9 +1974,7 @@ fieldset dt span {
     margin-bottom: 5px;
 }
 
-.userlist_contact {}
-
-/*** MESSAGES PRIVES -- ******/
+/* MESSAGES PRIVES */
 #privmsgs-menu {
     display: flex;
     justify-content: center;
@@ -2012,7 +1999,7 @@ fieldset dt span {
     padding: 10px;
 }
 
-/*** AFFICHAGE D'UN MESSAGE PRIVÉ -- ***/
+/* AFFICHAGE D'UN MESSAGE PRIVÉ */
 .message {
     background: var(--neutral);
     border-radius: 5px;
@@ -2044,13 +2031,11 @@ fieldset dt span {
     padding: 25px;
 }
 
-/*** PAGES ANNEXES  ******/
+/* PAGES ANNEXES */
 .message-edition {
     display: flex;
     flex-direction: row;
-    /* flex-direction: row-reverse; -- pour smileys à droite */
     gap: 15px;
-    /*espace entre la zone de texte et la boîte à smileys*/
 }
 
 /* Prévisualisation d'un message */
@@ -2061,7 +2046,7 @@ fieldset dt span {
     border-radius: 5px;
 }
 
-/*** EDITION DE PROFIL ------------- ***/
+/* EDITION DE PROFIL */
 #tabs ul {
     display: flex;
     justify-content: center;
@@ -2137,7 +2122,7 @@ div#tabs li:nth-child(5) {
     margin-top: 10px;
 }
 
-/*** GROUPS ----------- ***/
+/* GROUPS */
 .grp_table {
     text-align: center;
     background: var(--neutral);
@@ -2154,7 +2139,7 @@ div#tabs li:nth-child(5) {
     font-style: italic;
 }
 
-/*** PAGES DE RECHERCHES ----------- ***/
+/* PAGES DE RECHERCHES */
 .post_search {
     display: grid;
     grid-template-columns: 200px auto;
@@ -2423,7 +2408,7 @@ msgbtn, .msgbtn {
     gap:10px;
 }
 
-/*** PA_TOP ----------- ***/
+/* PA_TOP */
 .module {
     margin: 10px 0;
 }
@@ -2498,7 +2483,7 @@ msgbtn, .msgbtn {
     width:177px;
 }
 
-/****** Chatbox toolbar ******/
+/* Chatbox toolbar */
 #fa_chat_container {
     border: var(--border);
     border-radius: 3px;
@@ -2525,7 +2510,7 @@ msgbtn, .msgbtn {
     color: var(--special);
 }
 
-/****** --- CODE DU FORUM --- ******/
+/* --- CODE DU FORUM --- */
 
 .icarus, ip {color: var(--icarus) !important}
 .theseus, tp {color: var(--theseus) !important}
@@ -2998,6 +2983,9 @@ box2, .box2 {
     padding: 2px;
     margin: 10px 25px 10px 10px;
 }
+.argossip {
+    content: url('https://i.imgur.com/otPMaTg.jpg');
+}
 .argo_newpost {
     width:400px;
 }
@@ -3200,7 +3188,9 @@ margin-right: 2px;
 .qeel_inner a[href="/u146"]:before, /* nour */
 .qeel_inner a[href="/u252"]:before, /* archibald */
 .qeel_inner a[href="/u371"]:before, /* selen */
-.qeel_inner a[href="/u149"]:before, /* clay */
+.qeel_inner a[href="/u437"]:before, /* gregory */
+.qeel_inner a[href="/u505"]:before, /* leon */
+.qeel_inner a[href="/u149"]:before, /* chad */
 .qeel_inner a[href="/u179"]:before, /* rosendo */
 .qeel_inner a[href="/u205"]:before, /* liam */
 .qeel_inner a[href="/u250"]:before, /* brooks */
@@ -3209,6 +3199,9 @@ margin-right: 2px;
 .qeel_inner a[href="/u320"]:before, /* sean */
 .qeel_inner a[href="/u372"]:before, /* gabriel */
 .qeel_inner a[href="/u406"]:before, /* vico */
+.qeel_inner a[href="/u442"]:before, /* zacarias */
+.qeel_inner a[href="/u466"]:before, /* maddox */
+.qeel_inner a[href="/u501"]:before, /* tanner */
 .qeel_inner a[href="/u55"]:before, /* robin */
 .qeel_inner a[href="/u76"]:before, /* keith */
 .qeel_inner a[href="/u115"]:before, /* dak-ho */
@@ -3217,7 +3210,10 @@ margin-right: 2px;
 .qeel_inner a[href="/u261"]:before, /* suni */
 .qeel_inner a[href="/u317"]:before, /* leopold */
 .qeel_inner a[href="/u363"]:before, /* li-seok */
-.qeel_inner a[href="/u393"]:before /* rené */
+.qeel_inner a[href="/u393"]:before, /* rené */
+.qeel_inner a[href="/u456"]:before, /* aeji*/
+.qeel_inner a[href="/u496"]:before, /* tiny*/
+.qeel_inner a[href="/u506"]:before /* taylor */
 {
 content:"✧";
 font-weight: 400;
@@ -3226,7 +3222,9 @@ margin-right: 2px;
 /* MODOS */ 
 .qeel_inner a[href="/u294"]:before, /* bella */
 .qeel_inner a[href="/u309"]:before, /* astra */
-.qeel_inner a[href="/u364"]:before /* evelyn */
+.qeel_inner a[href="/u364"]:before, /* evelyn */
+.qeel_inner a[href="/u440"]:before, /* caleb */
+.qeel_inner a[href="/u498"]:before /* silke */
 {
 content:"⬦";
 font-weight: 400;
@@ -3258,4 +3256,7 @@ cara {
 }
 nate {
     color: #794732;
+}
+nysea {
+    color: #a38971;
 }
