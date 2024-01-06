@@ -2,13 +2,17 @@
 @import url('https://nyxeia.github.io/Spring-of-Power/CSS/Chatbox.css');
 @import url('https://nyxeia.github.io/Spring-of-Power/CSS/Switcheroo.css');
 
-
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
     --header: url('https://images2.imgbox.com/09/ef/AO6OAX7w_o.gif');
-    --pa-context: url('https://images2.imgbox.com/ee/f0/ZGAHKoPt_o.gif');
-    --qeel-groups: url('https://images2.imgbox.com/ed/f8/twvcpO7D_o.png');
-    --qeel-credits: url('https://images2.imgbox.com/ef/9e/GerqbHTF_o.png');
+    /* --header: url('https://images2.imgbox.com/21/5c/boZICfnO_o.gif'); */
+    --pa-context: url('https://images2.imgbox.com/10/2d/BOkgEWsl_o.gif');
+    --qeel-groups: url('https://images2.imgbox.com/08/1a/N1wcQ2IR_o.gif');
+    --qeel-credits: url('https://images2.imgbox.com/c0/94/ydS3Pw2L_o.png');
+
+    --noNewCat: url('https://images2.imgbox.com/86/e5/BUbasIJD_o.png');
+    --newCat: url('https://images2.imgbox.com/8d/3a/pIUFZHv7_o.gif');
+    --newMsg: url('https://images2.imgbox.com/0c/4a/ceftqSwP_o.gif');
 
     --background: var(--neutral);
     --neutral: #0f0f0f;
@@ -16,14 +20,15 @@
     --neutralDarker: #050505;
     --neutralLight: #171717;
 
-    --accent: #005a56;
-    --accentDark: #013b33;
-    --accentSoft: #238d82;
-    --special: #9f7b45;
-    --specialDark: #755f3f;
+    --accentDark: #3a266b;
+    --specialDark: #225a55;
+    --accent: #4f3885;
+    --special: #246865;
+    --accentSoft: #735daa;
+    --specialSoft: #5c9090;
 
-    --accentLine: rgb(5,122,122, 0.36);
-    --specialLine: rgb(141,99,13, 0.45);
+    --accentLine: rgb(96 88 168 / 48%);
+    --specialLine: rgb(66 143 157 / 45%);
 
     --textColor: #818181;
     --textColorAccent: #b1a9a9;
@@ -43,7 +48,7 @@
 
     --shadowBox: 0 0 20px var(--neutralDark);
 
-    --gradient_static: linear-gradient(75deg, var(--accentDark) 20%, var(--specialDark));
+    --gradient_static: linear-gradient(75deg, var(--accentDark) 30%, var(--specialDark));
     --gradient: linear-gradient(75deg, var(--accent) 20%, var(--special));
     --gradient2: linear-gradient(75deg, var(--accentDark) 30%, var(--specialDark));
 
@@ -103,9 +108,14 @@
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
     --header: url('https://images2.imgbox.com/89/fb/p3i9Kg4A_o.gif');
-    --pa-context: url('https://images2.imgbox.com/2a/0a/LVTs9kI6_o.gif');
-    --qeel-groups: url('https://images2.imgbox.com/27/63/YvsGL1GJ_o.png');
-    --qeel-credits: url('https://images2.imgbox.com/0e/1d/sZdAHloK_o.png');
+    /* --header: url('https://images2.imgbox.com/5e/69/8sXizBYm_o.gif'); */
+    --pa-context: url('https://images2.imgbox.com/4e/fa/BvgaxZHu_o.gif');
+    --qeel-groups: url('https://images2.imgbox.com/a6/07/CGx4XA6y_o.gif');
+    --qeel-credits: url('https://images2.imgbox.com/54/55/DN5cTguA_o.png');
+
+    --noNewCat: url('https://images2.imgbox.com/f8/a0/FWKtxput_o.png');
+    --newCat: url('https://images2.imgbox.com/aa/aa/esrwWF9T_o.gif');
+    --newMsg: url('https://images2.imgbox.com/68/c5/XQF000LU_o.gif');
 
     --background: #bcbcbc;
     --neutral: #dfdfdf;
@@ -113,11 +123,12 @@
     --neutralDarker: #b2b2b2;
     --neutralLight: #e5e5e5;
 
-    --accent: #217c7e;
-    --accentDark: #1d655b;
-    --accentSoft: #068f8f;
-    --special: #aa7133;
-    --specialDark: #826b4a;
+    --accentDark: #4a3a70;
+    --specialDark: #508F95;
+    --accent: #634e95;
+    --special: #44919b;
+    --accentSoft: #6748b2;
+    --specialSoft: #408B9B;
 
     --textColor: #111111;
     --textColorAccent: #272727;
@@ -1333,7 +1344,17 @@ a.groups {
     height: 100%;
 }
 
-/* SUJET */
+.cat-img-nonew {
+    content: var(--noNewCat);
+}
+.cat-img-new {
+    content: var(--newCat);
+}
+.msg-img-new {
+    content: var(--newMsg);
+}
+
+/*** SUJET ------------------------- ***/
 .post_anchor {
     display: block;
     height: 40px;
@@ -1580,43 +1601,6 @@ ul.profile-icons li {
 
 /* Retire le cadre de la réponse rapide pour les invités */
 #quickreply_content:empty {display: none}
-
-/*** SONDAGE ----------------------- ***/
-.poll {
-    background: var(--neutral);
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-.head_poll {
-    padding: 10px;
-    border-bottom: 1px solid var(--neutralDark);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.poll_list {
-    display: grid;
-    grid-template-columns: 220px auto;
-}
-.poll_option {
-    padding: 10px 20px 0 10px;
-    border-right: 1px solid var(--neutralDark);
-    text-align: right;
-}
-.poll_vote {
-    padding: 10px 10px 0 20px;
-    display: flex;
-    align-items: center;
-}
-.poll_send {
-    margin-left: 220px;
-    padding: 20px 10px 20px 20px;
-    border-left: 1px solid var(--neutralDark);
-}
-.poll_vote:nth-child(2),
-.poll_option:first-child {
-    padding-top: 20px;
-}
 
 /*** ------------------------------- ***/
 /*** TEXTES, BALISES, ETC ---------- ***/
@@ -2673,7 +2657,7 @@ e0, .e0 {
 
 e1, .e1 {
     text-transform: uppercase;
-    color: var(--special);
+    color: var(--specialSoft);
     font-weight: 700;
     letter-spacing: 1.5px;
     font-size: 11px !important;
@@ -2688,7 +2672,7 @@ e2, .e2 {
 e3, .e3 {
     font-style: italic;
     font-weight: 600;
-    color: var(--special);
+    color: var(--specialSoft);
 }
 
 e4, .e4 {
@@ -2702,7 +2686,7 @@ e4, .e4 {
 e5, .e5 {
     font-family: var(--title-font);
     letter-spacing: 1px;
-    color: var(--special);
+    color: var(--specialSoft);
     font-size: 12px;
     text-transform: uppercase;
 }
@@ -3001,7 +2985,7 @@ box2, .box2 {
     margin: 10px 25px 10px 10px;
 }
 .argossip {
-    content: url('https://i.imgur.com/otPMaTg.jpg');
+    content: url('https://i.imgur.com/uaPh9io.jpg');
 }
 .argo_newpost {
     width:400px;
@@ -3273,7 +3257,4 @@ cara {
 }
 nate {
     color: #794732;
-}
-nysea {
-    color: #a38971;
 }
