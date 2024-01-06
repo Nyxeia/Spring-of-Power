@@ -2,11 +2,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-// Placeholder URLs for categories
 var noNewCatTemp = "https://2img.net/images2.imgbox.com/40/ae/zxM5aOdz_o.png";
 var newCatTemp = "https://2img.net/images2.imgbox.com/1f/30/lUgHcoWf_o.gif";
-
-// Placeholder URLs for topics
 var newMsgTemp = "https://2img.net/images2.imgbox.com/5f/47/Vh0alSt9_o.gif";
 
 var currentCatImgList = document.getElementsByClassName("forum-img");
