@@ -6,13 +6,13 @@
 :root {
     /* --header: url('https://images2.imgbox.com/ff/db/4GP8LNxd_o.gif'); */
     --header: url('https://images2.imgbox.com/88/a6/X9zCWYMD_o.gif');
-    --pa-context: url('https://images2.imgbox.com/10/2d/BOkgEWsl_o.gif');
-    --qeel-groups: url('https://images2.imgbox.com/08/1a/N1wcQ2IR_o.gif');
-    --qeel-credits: url('https://images2.imgbox.com/c0/94/ydS3Pw2L_o.png');
+    --pa-context: url('https://images2.imgbox.com/4a/57/oVTaOGLW_o.gif');
+    --qeel-groups: url('https://images2.imgbox.com/1a/90/s2h8oXDE_o.png');
+    --qeel-credits: url('https://images2.imgbox.com/82/13/6wnis20A_o.png');
 
-    --noNewCat: url('https://images2.imgbox.com/86/e5/BUbasIJD_o.png');
-    --newCat: url('https://images2.imgbox.com/8d/3a/pIUFZHv7_o.gif');
-    --newMsg: url('https://images2.imgbox.com/0c/4a/ceftqSwP_o.gif');
+    --noNewCat: url('https://images2.imgbox.com/5a/6b/jE9Hd6lV_o.png');
+    --newCat: url('https://images2.imgbox.com/d8/5f/pcM1X9Mx_o.gif');
+    --newMsg: url('https://images2.imgbox.com/d4/64/qeQELatJ_o.gif');
 
     --background: var(--neutral);
     --neutral: #0f0f0f;
@@ -20,15 +20,15 @@
     --neutralDarker: #050505;
     --neutralLight: #171717;
 
-    --accentDark: #501818;
+    --accentDark: #521815;
     --specialDark: #564a47;
-    --accent: #732828;
-    --special: #655c5a;
-    --accentSoft: #954545;
+    --accent: #682222;
+    --special: #8b6862;
+    --accentSoft: #a53f3f;
     --specialSoft: #92716e;
 
-    --accentLine: rgb(96 88 168 / 48%);
-    --specialLine: rgb(66 143 157 / 45%);
+    --accentLine: rgb(167 63 45 / 57%);
+    --specialLine: rgb(150 102 83 / 45%);
 
     --textColor: #818181;
     --textColorAccent: #b1a9a9;
@@ -109,13 +109,13 @@
  [data-theme="light"] {
     /* --header: url('https://images2.imgbox.com/89/fb/p3i9Kg4A_o.gif'); */
     --header: url('https://images2.imgbox.com/88/a6/X9zCWYMD_o.gif');
-    --pa-context: url('https://images2.imgbox.com/4e/fa/BvgaxZHu_o.gif');
-    --qeel-groups: url('https://images2.imgbox.com/a6/07/CGx4XA6y_o.gif');
-    --qeel-credits: url('https://images2.imgbox.com/54/55/DN5cTguA_o.png');
+    --pa-context: url('https://images2.imgbox.com/4a/57/oVTaOGLW_o.gif');
+    --qeel-groups: url('https://images2.imgbox.com/1a/90/s2h8oXDE_o.png');
+    --qeel-credits: url('https://images2.imgbox.com/82/13/6wnis20A_o.png');
 
-    --noNewCat: url('https://images2.imgbox.com/f8/a0/FWKtxput_o.png');
-    --newCat: url('https://images2.imgbox.com/aa/aa/esrwWF9T_o.gif');
-    --newMsg: url('https://images2.imgbox.com/68/c5/XQF000LU_o.gif');
+    --noNewCat: url('https://images2.imgbox.com/5a/6b/jE9Hd6lV_o.png');
+    --newCat: url('https://images2.imgbox.com/d8/5f/pcM1X9Mx_o.gif');
+    --newMsg: url('https://images2.imgbox.com/d4/64/qeQELatJ_o.gif');
 
     --background: #bcbcbc;
     --neutral: #dfdfdf;
@@ -123,11 +123,11 @@
     --neutralDarker: #b2b2b2;
     --neutralLight: #e5e5e5;
 
-    --accentDark: #6b2828;
+    --accentDark: #631d1d;
     --specialDark: #736866;
     --accent: #742f2f;
-    --special: #827775;
-    --accentSoft: #b63636;
+    --special: #89716d;
+    --accentSoft: #982020;
     --specialSoft: #8b6262;
 
     --textColor: #111111;
@@ -167,6 +167,11 @@
 * {
     box-sizing: border-box; /*évite que les éléments soient agrandis par le padding*/
 }
+@-moz-document url-prefix() {
+    * {
+        scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+  }
+}
 ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -179,7 +184,7 @@
     border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--specialDark) !important;
+    background: var(--specialDark);
 }
 
 ::selection {
@@ -2328,20 +2333,27 @@ msgbtn, .msgbtn {
 .pa_link a:hover {
     letter-spacing: 2.5px;
 }
-.pa_staff_icons {
+.pa_staff_icons, .pa_staff_icons2 {
     display: flex;
     justify-content: center;
     gap: 2px;
 }
-.pa_admin img,
-.pa_modo img {
+.pa_staff_icons {
+    margin-bottom: 1px;
+}
+.pa_admin img{
     border-radius: var(--radius);
     border: var(--border);
     object-fit: cover;
+    filter: grayscale(0.25);
 }
-.pa_admin img {
-    width: 43px;
-    height: 74px;
+.pa_staff_icons .pa_admin img {
+    width: 133px;
+    height: 45px;
+}
+.pa_staff_icons2 .pa_admin img {
+    width: 88px;
+    height: 45px;
 }
 .pa_admin div {
     height: 1px;
@@ -2360,7 +2372,7 @@ msgbtn, .msgbtn {
 .admin_info .pa_section_content {
     border-top: var(--border);
     text-align: center;
-    height: 40px;
+    height: 22px;
 }
 #admin_extra {
     font-size: var(--small-size);

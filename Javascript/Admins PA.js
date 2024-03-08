@@ -1,8 +1,8 @@
 var focusColor = getComputedStyle(document.documentElement).getPropertyValue('--gradient');
 var none = "transparent";
 
-var focusIds = ["admin1", "admin2", "admin3", "admin4", "admin5", "admin6"];
-let adminCount = 6;
+var focusIds = ["admin1", "admin2", "admin3", "admin4", "admin5"];
+let adminCount = 5;
 
 
 function changeFocus(position) {
@@ -60,13 +60,4 @@ function admin5(){
     document.getElementById('admin_extra').innerHTML="Fern ⬩ Présente ⬩ Québec";
     document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u55";
     document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=55";
-}
-
-function admin6(){
-    changeFocus(6);
-  
-  document.getElementById('admin_name').innerHTML="<span>BELLADONNA | MODÉRATRICE</span>";
-    document.getElementById('admin_extra').innerHTML="Valkyrja ⬩ Présente ⬩ France";
-    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u294";
-    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=294";
 }
