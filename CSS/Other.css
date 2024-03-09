@@ -18,6 +18,9 @@
     font-size: 16px;
     text-transform: uppercase;
 }
+.head_poll h2{
+    font-weight: 400 !important;
+}
 .poll_list {
     display: grid;
     grid-template-columns: auto auto;
