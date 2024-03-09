@@ -10,14 +10,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0px !important;
+    border-left: 5px solid var(--accentSoft);
+    font-family: var(--title-font);
+    letter-spacing: 2px;
+    color: var(--accentSoft);
+    font-size: 16px;
+    text-transform: uppercase;
 }
 .poll_list {
     display: grid;
     grid-template-columns: 220px auto;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--specialSoft);
 }
 .poll_option {
     padding: 10px 20px 0 10px;
-    border-right: 1px solid var(--neutralDark);
     text-align: right;
 }
 .poll_vote {
@@ -26,9 +35,10 @@
     align-items: center;
 }
 .poll_send {
-    margin-left: 220px;
     padding: 20px 10px 20px 20px;
-    border-left: 1px solid var(--neutralDark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .poll_vote:nth-child(2),
 .poll_option:first-child {
