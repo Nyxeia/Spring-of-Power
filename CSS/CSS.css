@@ -1,6 +1,7 @@
 @import url('https://nyxeia.github.io/Spring-of-Power/CSS/messenger.css');
 @import url('https://nyxeia.github.io/Spring-of-Power/CSS/Chatbox.css');
 @import url('https://nyxeia.github.io/Spring-of-Power/CSS/Switcheroo.css');
+@import url('https://nyxeia.github.io/Spring-of-Power/CSS/Other.css');
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
@@ -2894,12 +2895,7 @@ box2, .box2 {
 #tab2:checked ~ .tabs_list .tabs_labels .tab2,
 #tab3:checked ~ .tabs_list .tabs_labels .tab3,
 #tab4:checked ~ .tabs_list .tabs_labels .tab4,
-#tab5:checked ~ .tabs_list .tabs_labels .tab5,
-#tab6:checked ~ .tabs_list .tabs_labels .tab6,
-#tab7:checked ~ .tabs_list .tabs_labels .tab7,
-#tab8:checked ~ .tabs_list .tabs_labels .tab8,
-#tab9:checked ~ .tabs_list .tabs_labels .tab9,
-#tab10:checked ~ .tabs_list .tabs_labels .tab10 {
+#tab5:checked ~ .tabs_list .tabs_labels .tab5{
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2909,12 +2905,7 @@ box2, .box2 {
 #tab2:checked ~ .tab_container .tab_content.tab2,
 #tab3:checked ~ .tab_container .tab_content.tab3,
 #tab4:checked ~ .tab_container .tab_content.tab4,
-#tab5:checked ~ .tab_container .tab_content.tab5,
-#tab6:checked ~ .tab_container .tab_content.tab6,
-#tab7:checked ~ .tab_container .tab_content.tab7,
-#tab8:checked ~ .tab_container .tab_content.tab8,
-#tab9:checked ~ .tab_container .tab_content.tab9,
-#tab10:checked ~ .tab_container .tab_content.tab10 {
+#tab5:checked ~ .tab_container .tab_content.tab5 {
     opacity: 1;
     visibility: visible;
     transition: opacity .2s;
@@ -3196,8 +3187,7 @@ tw:hover, .tw:hover {
 .qeel_inner a[href="/u3"]:before, /* leta */
 .qeel_inner a[href="/u87"]:before, /* aurea */
 .qeel_inner a[href="/u144"]:before, /* cara */
-.qeel_inner a[href="/u418"]:before, /* nysea */
-.qeel_inner a[href="/u282"]:before /* nathaël */
+.qeel_inner a[href="/u282"]:before /* cassia */
 {
 content:"✦";
 font-weight: 400;
@@ -3270,7 +3260,4 @@ merise {
 }
 cara {
     color: #8e4b2f;
-}
-nate {
-    color: #794732;
 }
