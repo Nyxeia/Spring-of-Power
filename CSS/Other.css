@@ -20,7 +20,7 @@
 }
 .poll_list {
     display: grid;
-    grid-template-columns: 220px auto;
+    grid-template-columns: auto auto;
     font-style: italic;
     font-weight: 600;
     color: var(--specialSoft);
