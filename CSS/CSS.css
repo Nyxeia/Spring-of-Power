@@ -1,6 +1,7 @@
 @import url('https://nyxeia.github.io/Spring-of-Power/CSS/messenger.css');
 @import url('https://nyxeia.github.io/Spring-of-Power/CSS/Chatbox.css');
 @import url('https://nyxeia.github.io/Spring-of-Power/CSS/Switcheroo.css');
+@import url('https://nyxeia.github.io/Spring-of-Power/CSS/Other.css');
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
@@ -164,8 +165,12 @@
 
 * {
     box-sizing: border-box; /*évite que les éléments soient agrandis par le padding*/
-    scrollbar-width: thin;
-    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+}
+@-moz-document url-prefix() {
+    * {
+        scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+        scrollbar-width: thin;
+  }
 }
 ::-webkit-scrollbar {
     width: 4px;
@@ -3218,7 +3223,8 @@ margin-right: 2px;
 .qeel_inner a[href="/u456"]:before, /* aeji*/
 .qeel_inner a[href="/u496"]:before, /* tiny*/
 .qeel_inner a[href="/u506"]:before, /* taylor */
-.qeel_inner a[href="/u530"]:before /* zee */
+.qeel_inner a[href="/u530"]:before, /* zee */
+.qeel_inner a[href="/u535"]:before /* wangshu */
 {
 content:"✧";
 font-weight: 400;
@@ -3229,7 +3235,8 @@ margin-right: 2px;
 .qeel_inner a[href="/u309"]:before, /* astra */
 .qeel_inner a[href="/u364"]:before, /* evelyn */
 .qeel_inner a[href="/u440"]:before, /* caleb */
-.qeel_inner a[href="/u498"]:before /* silke */
+.qeel_inner a[href="/u498"]:before, /* silke */
+.qeel_inner a[href="/u526"]:before /* zohra */
 {
 content:"⬦";
 font-weight: 400;
