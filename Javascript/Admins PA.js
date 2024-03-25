@@ -20,44 +20,38 @@ function changeFocus(position) {
 function admin1(){
     changeFocus(1);
 
-    document.getElementById('admin_name').innerHTML="<span>DARIUS | FONDATRICE</span>";
-    document.getElementById('admin_extra').innerHTML="Nyxeia ⬩ Présente ⬩ Québec";
-    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u2";
-    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=2";
+    document.getElementById('admin_name').innerHTML="<span>DARIUS | FONDATRICE </span>";
+    document.getElementById('admin_extra').innerHTML="Nyxeia ✧ Présente ✧ Québec";
+
 }
 
 function admin2(){
     changeFocus(2);
   
     document.getElementById('admin_name').innerHTML="<span>LETA | FONDATRICE</span>";
-    document.getElementById('admin_extra').innerHTML="Ellaenys ⬩ Présente ⬩ France";
-    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u3";
-    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=3";
+    document.getElementById('admin_extra').innerHTML="Ellaenys ✧ Présente ✧ France";
 }
 
 function admin3(){
     changeFocus(3);
   
-    document.getElementById('admin_name').innerHTML="<span>SETH | ADMINISTRATRICE </span>";
-    document.getElementById('admin_extra').innerHTML="Syato ⬩ Présente ⬩ France";
-    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u16";
-    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=16";
+    document.getElementById('admin_name').innerHTML="<span>MADDOX | ADMINISTRATEUR-MJ</span>";
+    document.getElementById('admin_extra').innerHTML="Bones ✧ Présent ✧ France";
+
 }
 
 function admin4(){
     changeFocus(4);
   
-    document.getElementById('admin_name').innerHTML="<span>CHAD | ADMINISTRATEUR-MJ</span>";
-    document.getElementById('admin_extra').innerHTML="Bones ⬩ Présent ⬩ France";
-    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u149";
-    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=149";
+  document.getElementById('admin_name').innerHTML="<span>ROBIN | ADMINISTRATRICE-MJ</span>";
+    document.getElementById('admin_extra').innerHTML="Fern ✧ Présente ✧ Québec";
+
 }
 
 function admin5(){
     changeFocus(5);
   
-  document.getElementById('admin_name').innerHTML="<span>ROBIN | ADMINISTRATRICE-MJ</span>";
-    document.getElementById('admin_extra').innerHTML="Fern ⬩ Présente ⬩ Québec";
-    document.getElementById('admin_profil').href="https://springofpower.forumactif.com/u55";
-    document.getElementById('admin_mp').href="https://springofpower.forumactif.com/privmsg?mode=post&u=55";
+  document.getElementById('admin_name').innerHTML="<span>BELLADONNA | ADMINISTRATRICE-MJ</span>";
+    document.getElementById('admin_extra').innerHTML="Valkyrja ✧ Présente ✧ France";
+
 }

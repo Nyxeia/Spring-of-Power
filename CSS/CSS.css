@@ -5,7 +5,6 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    /* --header: url('https://images2.imgbox.com/ff/db/4GP8LNxd_o.gif'); */
     --header: url('https://images2.imgbox.com/88/a6/X9zCWYMD_o.gif');
     --pa-context: url('https://images2.imgbox.com/4a/57/oVTaOGLW_o.gif');
     --qeel-groups: url('https://images2.imgbox.com/1a/90/s2h8oXDE_o.png');
@@ -102,13 +101,11 @@
     --FAM-windowSize: 750px;
   
     --darius: #a693b6;
-    --edgar: #d69393;
-    --ryker: #7ac8c8;
+    --skelton: #cfa28a;
 }
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
-    /* --header: url('https://images2.imgbox.com/89/fb/p3i9Kg4A_o.gif'); */
     --header: url('https://images2.imgbox.com/88/a6/X9zCWYMD_o.gif');
     --pa-context: url('https://images2.imgbox.com/4a/57/oVTaOGLW_o.gif');
     --qeel-groups: url('https://images2.imgbox.com/1a/90/s2h8oXDE_o.png');
@@ -161,8 +158,7 @@
     --FAM-newMsgAnimation: rgb(0, 0, 0,.3);
   
     --darius: #5e258e;
-    --edgar: #a70000;
-    --ryker: #006666;
+    --skelton: #c75c00;
  }
 
 * {
@@ -171,6 +167,7 @@
 @-moz-document url-prefix() {
     * {
         scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+        scrollbar-width: thin;
   }
 }
 ::-webkit-scrollbar {
@@ -2996,7 +2993,7 @@ box2, .box2 {
     margin: 10px 25px 10px 10px;
 }
 .argossip {
-    content: url('https://i.imgur.com/uaPh9io.jpg');
+    content: url('https://i.imgur.com/rknV8Ha.png');
 }
 .argo_newpost {
     width:400px;
@@ -3221,13 +3218,7 @@ margin-right: 2px;
 .qeel_inner a[href="/u496"]:before, /* tiny*/
 .qeel_inner a[href="/u506"]:before, /* taylor */
 .qeel_inner a[href="/u530"]:before, /* zee */
-.qeel_inner a[href="/u535"]:before /* wangshu */
-{
-content:"✧";
-font-weight: 400;
-margin-right: 2px;
-}
-/* MODOS */ 
+.qeel_inner a[href="/u535"]:before, /* wangshu */
 .qeel_inner a[href="/u294"]:before, /* bella */
 .qeel_inner a[href="/u309"]:before, /* astra */
 .qeel_inner a[href="/u364"]:before, /* evelyn */
@@ -3235,20 +3226,19 @@ margin-right: 2px;
 .qeel_inner a[href="/u498"]:before, /* silke */
 .qeel_inner a[href="/u526"]:before /* zohra */
 {
-content:"⬦";
+content:"✧";
 font-weight: 400;
 margin-right: 2px;
 }
+/* MODOS */ 
+/*{content:"⬦";font-weight: 400;margin-right: 2px;}*/
 
 /* CODE DIALOGUES */
 ds {
   color: var(--darius);
 }
-ed {
-    color: var(--edgar);
-}
-ry {
-    color: var(--ryker);
+sg {
+    color: var(--skelton);
 }
 leta {
     color: firebrick;
