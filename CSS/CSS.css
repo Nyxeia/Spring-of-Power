@@ -5,14 +5,14 @@
 
 /* VARIABLE DU MODE DE BASE (ici sombre) */
 :root {
-    --header: url('https://images2.imgbox.com/88/a6/X9zCWYMD_o.gif');
-    --pa-context: url('https://images2.imgbox.com/4a/57/oVTaOGLW_o.gif');
-    --qeel-groups: url('https://images2.imgbox.com/1a/90/s2h8oXDE_o.png');
-    --qeel-credits: url('https://images2.imgbox.com/82/13/6wnis20A_o.png');
+    --header: url('https://i.imgur.com/z0DpBJO.png');
+    --pa-context: url('https://i.imgur.com/UxJMnt3.png');
+    --qeel-groups: url('https://i.imgur.com/LgpkEcB.png');
+    --qeel-credits: url('https://i.imgur.com/uzBsUYP.png');
 
-    --noNewCat: url('https://images2.imgbox.com/5a/6b/jE9Hd6lV_o.png');
-    --newCat: url('https://images2.imgbox.com/d8/5f/pcM1X9Mx_o.gif');
-    --newMsg: url('https://images2.imgbox.com/d4/64/qeQELatJ_o.gif');
+    --noNewCat: url('https://i.imgur.com/uN9mMxU.png');
+    --newCat: url('https://i.imgur.com/LuKtUYV.png');
+    --newMsg: url('https://i.imgur.com/F1zF54O.png');
 
     --background: var(--neutral);
     --neutral: #0f0f0f;
@@ -20,15 +20,15 @@
     --neutralDarker: #050505;
     --neutralLight: #171717;
 
-    --accentDark: #521815;
-    --specialDark: #564a47;
-    --accent: #682222;
-    --special: #8b6862;
-    --accentSoft: #a53f3f;
-    --specialSoft: #92716e;
+    --accentDark: #231835;
+    --specialDark: #564753;
+    --accent: #403064;
+    --special: 	#7D7795;
+    --accentSoft: #9C4386;
+    --specialSoft: #7a6e92;
 
-    --accentLine: rgb(167 63 45 / 57%);
-    --specialLine: rgb(150 102 83 / 45%);
+    --accentLine: rgb(117, 89, 109);
+    --specialLine: rgb(96, 94, 125);
 
     --textColor: #818181;
     --textColorAccent: #b1a9a9;
@@ -106,14 +106,14 @@
 
 /* VARIABLES DU MODE INVERSE (ici clair) */
  [data-theme="light"] {
-    --header: url('https://images2.imgbox.com/88/a6/X9zCWYMD_o.gif');
-    --pa-context: url('https://images2.imgbox.com/4a/57/oVTaOGLW_o.gif');
-    --qeel-groups: url('https://images2.imgbox.com/1a/90/s2h8oXDE_o.png');
-    --qeel-credits: url('https://images2.imgbox.com/82/13/6wnis20A_o.png');
+    --header: url('https://i.imgur.com/z0DpBJO.png');
+    --pa-context: url('https://i.imgur.com/UxJMnt3.png');
+    --qeel-groups: url('https://i.imgur.com/LgpkEcB.png');
+    --qeel-credits: url('https://i.imgur.com/uzBsUYP.png');
 
-    --noNewCat: url('https://images2.imgbox.com/5a/6b/jE9Hd6lV_o.png');
-    --newCat: url('https://images2.imgbox.com/d8/5f/pcM1X9Mx_o.gif');
-    --newMsg: url('https://images2.imgbox.com/d4/64/qeQELatJ_o.gif');
+    --noNewCat: url('https://i.imgur.com/uN9mMxU.png');
+    --newCat: url('https://i.imgur.com/LuKtUYV.png');
+    --newMsg: url('https://i.imgur.com/F1zF54O.png');
 
     --background: #bcbcbc;
     --neutral: #dfdfdf;
@@ -121,12 +121,15 @@
     --neutralDarker: #b2b2b2;
     --neutralLight: #e5e5e5;
 
-    --accentDark: #631d1d;
-    --specialDark: #736866;
-    --accent: #742f2f;
-    --special: #89716d;
-    --accentSoft: #982020;
-    --specialSoft: #8b6262;
+    --accentDark: #382F49;
+    --specialDark: #564753;
+    --accent: #3a2766;
+    --special: 	#7D7795;
+    --accentSoft: #9C4386;
+    --specialSoft: #7a6e92;
+  
+      --accentLine: rgb(156, 115, 144);
+    --specialLine: rgb(136, 132, 184);
 
     --textColor: #111111;
     --textColorAccent: #272727;
@@ -2346,7 +2349,7 @@ msgbtn, .msgbtn {
     filter: grayscale(0.25);
 }
 .pa_staff_icons .pa_admin img {
-    width: 88px;
+    width: 66px;
     height: 45px;
 }
 .pa_admin div {
@@ -2983,7 +2986,7 @@ box2, .box2 {
     margin: 10px 25px 10px 10px;
 }
 .argossip {
-    content: url('https://i.imgur.com/rknV8Ha.png');
+    content: url('https://i.imgur.com/lRM4g52.png');
 }
 .argo_newpost {
     width:400px;
@@ -3169,52 +3172,16 @@ tw:hover, .tw:hover {
 }
 /* FONDAS */ 
 .qeel_inner a[href="/u2"]:before, /* darius */
-.qeel_inner a[href="/u200"]:before, /* edgar */
-.qeel_inner a[href="/u263"]:before, /* ryker */
-.qeel_inner a[href="/u3"]:before, /* leta */
-.qeel_inner a[href="/u87"]:before, /* aurea */
-.qeel_inner a[href="/u144"]:before, /* cara */
-.qeel_inner a[href="/u282"]:before /* cassia */
+.qeel_inner a[href="/u3"]:before /* leta */
 {
 content:"✦";
 font-weight: 400;
 margin-right: 2px;
 }
 /* ADMINS */ 
-.qeel_inner a[href="/u149"]:before, /* chad */
-.qeel_inner a[href="/u179"]:before, /* rosendo */
-.qeel_inner a[href="/u205"]:before, /* liam */
-.qeel_inner a[href="/u250"]:before, /* brooks */
-.qeel_inner a[href="/u267"]:before, /* ernest */
-.qeel_inner a[href="/u290"]:before, /* lennox */
-.qeel_inner a[href="/u320"]:before, /* sean */
-.qeel_inner a[href="/u372"]:before, /* gabriel */
-.qeel_inner a[href="/u406"]:before, /* vico */
-.qeel_inner a[href="/u442"]:before, /* zacarias */
 .qeel_inner a[href="/u466"]:before, /* maddox */
-.qeel_inner a[href="/u501"]:before, /* tanner */
-.qeel_inner a[href="/u513"]:before, /* armando*/
-.qeel_inner a[href="/u528"]:before, /* kenneth */
 .qeel_inner a[href="/u55"]:before, /* robin */
-.qeel_inner a[href="/u76"]:before, /* keith */
-.qeel_inner a[href="/u115"]:before, /* dak-ho */
-.qeel_inner a[href="/u174"]:before, /* ruben */
-.qeel_inner a[href="/u219"]:before, /* minho */
-.qeel_inner a[href="/u261"]:before, /* suni */
-.qeel_inner a[href="/u317"]:before, /* leopold */
-.qeel_inner a[href="/u363"]:before, /* li-seok */
-.qeel_inner a[href="/u393"]:before, /* rené */
-.qeel_inner a[href="/u456"]:before, /* aeji*/
-.qeel_inner a[href="/u496"]:before, /* tiny*/
-.qeel_inner a[href="/u506"]:before, /* taylor */
-.qeel_inner a[href="/u530"]:before, /* zee */
-.qeel_inner a[href="/u535"]:before, /* wangshu */
-.qeel_inner a[href="/u294"]:before, /* bella */
-.qeel_inner a[href="/u309"]:before, /* astra */
-.qeel_inner a[href="/u364"]:before, /* evelyn */
-.qeel_inner a[href="/u440"]:before, /* caleb */
-.qeel_inner a[href="/u498"]:before, /* silke */
-.qeel_inner a[href="/u526"]:before /* zohra */
+.qeel_inner a[href="/u294"]:before /* bella */
 {
 content:"✧";
 font-weight: 400;

@@ -1,8 +1,8 @@
 var focusColor = getComputedStyle(document.documentElement).getPropertyValue('--gradient');
 var none = "transparent";
 
-var focusIds = ["admin1", "admin2", "admin3"];
-let adminCount = 3;
+var focusIds = ["admin1", "admin2", "admin3", "admin4"];
+let adminCount = 4; // N'oubliez pas de changer le compteur ici quand vous ajoutez/retirez des admins
 
 
 function changeFocus(position) {
@@ -37,5 +37,13 @@ function admin3(){
   
   document.getElementById('admin_name').innerHTML="<span>BELLADONNA | ADMINISTRATRICE-MJ</span>";
     document.getElementById('admin_extra').innerHTML="Valkyrja ✧ Présente ✧ France";
+
+}
+
+function admin4(){
+    changeFocus(4);
+  
+  document.getElementById('admin_name').innerHTML="<span>VOUS ?</span>";
+    document.getElementById('admin_extra').innerHTML="✧ Le staff recrute! ✧";
 
 }
