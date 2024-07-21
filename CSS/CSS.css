@@ -2285,7 +2285,7 @@ msgbtn, .msgbtn {
     text-align: justify;
 }
 #pa_context {
-    height: 198px;
+    height: 191px;
     margin-bottom: 10px;
 }
 #context_img {
@@ -2306,7 +2306,7 @@ msgbtn, .msgbtn {
     display: grid;
     grid-auto-flow: column;
     grid-gap: 5px;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
     grid-template-columns: 130px auto;
 }
 .pa_link {
@@ -2346,10 +2346,6 @@ msgbtn, .msgbtn {
     filter: grayscale(0.25);
 }
 .pa_staff_icons .pa_admin img {
-    width: 133px;
-    height: 45px;
-}
-.pa_staff_icons2 .pa_admin img {
     width: 88px;
     height: 45px;
 }
@@ -2384,7 +2380,7 @@ msgbtn, .msgbtn {
 }
 #pa_infogen {
     margin-top: 10px;
-    height: 161px;
+    height: 172px;
 }
 #pa_tempo_mdm {
     display: grid;
@@ -2410,12 +2406,6 @@ msgbtn, .msgbtn {
     width: 123px;
 }
 #mdm2 {margin-top: 55px;}
-
-#pa_partners {
-    display: flex;
-    align-items: center;
-    gap:10px;
-}
 
 /* PA_TOP */
 .module {
